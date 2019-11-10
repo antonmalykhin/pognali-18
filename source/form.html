@@ -98,6 +98,100 @@
         </li>
       </ol>
     </section>
+    <section class="plan-creation">
+      <h2 class="visually-hidden">Форма создания плана путешествия</h2>
+      <p class="plan-creation__title">Добавить план:</p>
+      <div class="plan-creation__pagination pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item"><a>1</a></li>
+          <li class="pagination__item"><a href="#">2</a></li>
+          <li class="pagination__item"><a href="">3</a></li>
+        </ul>
+      </div>
+
+      <form class="plan-creation__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="plan-creation__fieldset">
+          <legend class="plan-creation__part-title">Шаг 1.
+            Даты пребывания</legend>
+          <p class="plan-creation__description">Укажите предпочтительное количество попутчиков, которых
+            вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
+          <label>
+            <span class="plan-creation__label">ищу попутчиков:</span>
+            <span class="plan-creation__unit">чел.</span>
+            <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
+            <input type="number" name="numOfPeople" id="numOfPeople" value="2" required>
+            <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
+          </label>
+
+          <label>
+            <span class="plan-creation__label">длительность:</span>
+            <span class="plan-creation__unit">дн.</span>
+            <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
+            <input type="number" name="numOfPeople" id="numOfPeople" value="2" required>
+            <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
+          </label>
+
+          <label>
+            <input type="checkbox" name="withChildren" id="withChildren" required>
+            <span class="plan-creation__label">Можно с
+              детьми</span>
+          </label>
+
+          <label>
+            <button class="btn plan-creation__btn plan-creation__btn--back">
+              назад</button> <input type="month" name="numOfPeople" id="numOfPeople" required>
+            <button class="btn plan-creation__btn plan-creation__btn--front">вперед</button>
+          </label>
+          <a class="btn plan-creation__btn plan-creation__btn--next" href="#">Следующий шаг</a>
+        </fieldset>
+        <fieldset class="plan-creation__fieldset">
+          <legend class="plan-creation__part-title">Шаг 2.
+            Маршрут</legend>
+          <p class="plan-creation__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или
+            сразу несколько.</p>
+          <ul class="plan-creation__list">
+            <li class="plan-creation__item">
+              <select name="firstCountry" id="firstCountry">
+                <option value="Bosnia and Herzegovina">Босния и Герцеговина</option>
+              </select>
+            </li>
+            <li class="plan-creation__item">
+              <select name="firstCountry" id="firstCountry">
+                <option value="Czech">Чехия</option>
+              </select>
+            </li>
+            <li class="plan-creation__item">
+              <button class="btn plan-creation__btn plan-creation__btn--add-country" type="button">Добавить
+                страну</button>
+            </li>
+          </ul>
+          <a class="btn plan-creation__btn plan-creation__btn--next" href="#">Следующий шаг</a>
+          <a class=" btn plan-creation__btn plan-creation__btn--previous" href="#">На шаг назад</a>
+        </fieldset>
+        <fieldset class="plan-creation__fieldset">
+          <legend class="plan-creation__part-title">Шаг 3.
+            Развлечения</legend>
+          <p class="plan-creation__description">Наконец, расскажите о своих планах времяпровождения.
+            Можно писать в свободной форме и ставить тэги.</p>
+          <label>
+            <span class="plan-creation__label">Босния и Герцеговина</span>
+            <textarea class="plan-creation__textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
+              placeholder="План действий"></textarea>
+          </label>
+          <label>
+            <span class="plan-creation__label">Чехия</span>
+            <textarea class="plan-creation__textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
+              placeholder="План действий">Пить пиво и лазить
+              по старым замкам, наслаждаться архитектурой
+              и вот это все.</textarea>
+          </label>
+          <button class="btn plan-creation__btn plan-creation__btn--next" type="submit">Отправить</button>
+          <a class=" btn plan-creation__btn plan-creation__btn--previous" href="#">На шаг назад</a>
+        </fieldset>
+      </form>
+
+    </section>
   </main>
 </body>
 
