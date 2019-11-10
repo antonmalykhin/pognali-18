@@ -116,21 +116,23 @@
           <p class="plan-creation__description">Укажите предпочтительное количество попутчиков, которых
             вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
-          <label>
+          <label for="numOfPeople">
             <span class="plan-creation__label">ищу попутчиков:</span>
             <span class="plan-creation__unit">чел.</span>
-            <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
-            <input type="number" name="numOfPeople" id="numOfPeople" value="2" required>
-            <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
           </label>
+          <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
+          <input type="number" name="numOfPeople" id="numOfPeople" value="2" required>
+          <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
 
-          <label>
+
+          <label for="numOfDays">
             <span class="plan-creation__label">длительность:</span>
             <span class="plan-creation__unit">дн.</span>
-            <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
-            <input type="number" name="numOfPeople" id="numOfPeople" value="2" required>
-            <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
           </label>
+          <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
+          <input type="number" name="numOfDays" id="numOfDays" value="2" required>
+          <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
+
 
           <label>
             <input type="checkbox" name="withChildren" id="withChildren" required>
@@ -138,11 +140,12 @@
               детьми</span>
           </label>
 
-          <label>
-            <button class="btn plan-creation__btn plan-creation__btn--back">
-              назад</button> <input type="month" name="numOfPeople" id="numOfPeople" required>
-            <button class="btn plan-creation__btn plan-creation__btn--front">вперед</button>
-          </label>
+
+          <button class="btn plan-creation__btn plan-creation__btn--back">
+            назад</button>
+          <input type="date" name="date" id="date" required>
+          <button class="btn plan-creation__btn plan-creation__btn--front">вперед</button>
+
           <a class="btn plan-creation__btn plan-creation__btn--next" href="#">Следующий шаг</a>
         </fieldset>
         <fieldset class="plan-creation__fieldset">
@@ -157,7 +160,7 @@
               </select>
             </li>
             <li class="plan-creation__item">
-              <select name="firstCountry" id="firstCountry">
+              <select name="secondCountry" id="secondCountry">
                 <option value="Czech">Чехия</option>
               </select>
             </li>
