@@ -12,7 +12,7 @@
       <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сервиса «Погнали»">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle open-close-btn" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="#">О сервисе</a></li>
@@ -21,7 +21,7 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="btn login__btn user-list__login" href="#">авторизация</a>
+            <a class="btn user-list__login" href="#">авторизация</a>
           </li>
         </ul>
         <ul class="main-nav__list contacts-list">
@@ -129,7 +129,7 @@
         пляж и коктейль, а другому маршрут для хайкинга.</p>
       <a class="travelmates__slogan">Теперь можно легко найти единомышленников!</a>
       <ul class="travelmates__list">
-        <li class="travelmates__item">
+        <li class="travelmates__item user-card">
 
           <img class="travelmates__photo" src="https://via.placeholder.com/150x150" alt="Фотография пользователя">
           <div class="travelmates__level-label">
@@ -167,7 +167,7 @@
           </ul>
         </li>
 
-        <li class="travelmates__item travelmates__item--online">
+        <li class="travelmates__item travelmates__item--online user-card">
 
           <img class="travelmates__photo" src="https://via.placeholder.com/150x150" alt="Фотография пользователя">
           <div class="travelmates__level-label">
@@ -203,7 +203,6 @@
               </p>
             </li>
           </ul>
-
         </li>
       </ul>
 
@@ -238,7 +237,7 @@
         это быстро и бесплатно!
         Уже зарегистрированы? Тогда скорее <a class="cta-form__link" href="#">авторизуйтесь</a>.</p>
       <form class="cta-form__form" action="https://echo.htmlacademy.ru" method="POST">
-        <input class="cta-form__field" type="email" placeholder="E-mail">
+        <input class="cta-form__field emailfield" type="email" placeholder="E-mail">
         <button class="btn cta-form__btn" type="button" aria-label="Отправить">Отправить</button>
       </form>
       <p class="cta-form">Остались вопросы?
