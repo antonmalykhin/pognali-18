@@ -12,7 +12,7 @@
       <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сервиса «Погнали»">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle open-close-btn" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="#">О сервисе</a></li>
@@ -21,7 +21,7 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="btn login__btn user-list__login" href="#">авторизация</a>
+            <a class="btn user-list__login" href="#">авторизация</a>
           </li>
         </ul>
         <ul class="main-nav__list contacts-list">
@@ -44,7 +44,6 @@
           </li>
         </ul>
       </div>
-      <p class="page-header__title">Попутчики</p>
     </nav>
   </header>
 
@@ -55,202 +54,110 @@
       <a href="#" class="btn countries-filter__btn">
         <h2 class="countries-filter__title">Фильтрация по странам</h2>
       </a>
-      <form class="countries-filter__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="countries-filter__fieldset">
-          <legend class="visually-hidden">Геополитические полисы</legend>
-          <ul class="countries-filter__list polices-list">
-            <li class="polices-list__item">
-              <label>
-                <input class="countries-filter__input" type="radio" name="polices" value="Европа" checked>
-                <span class="countries-filter__label">Европа</span>
-              </label>
-            </li>
-            <li class="polices-list__item">
-              <label>
-                <input class="countries-filter__input" type="radio" name="polices" value="Азия">
-                <span class="countries-filter__label">Азия</span>
-              </label>
-            </li>
-            <li class="polices-list__item">
-              <label>
-                <input class="countries-filter__input" type="radio" name="polices" value="Америка">
-                <span class="countries-filter__label">Америка</span>
-              </label>
-            </li>
-            <li class="polices-list__item">
-              <label>
-                <input class="countries-filter__input" type="radio" name="polices" value="Острова">
-                <span class="countries-filter__label">Острова</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="countries-filter__fieldset">
-          <legend class="visually-hidden">Выбрать букву</legend>
-          <table class="table">
-            <tr class="row">
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="а" checked>
-                  <span class="countries-filter__label table__label">а</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="б">
-                  <span class="countries-filter__label table__label">б</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="в">
-                  <span class="countries-filter__label table__label">в</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="г">
-                  <span class="countries-filter__label table__label">г</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="д">
-                  <span class="countries-filter__label table__label">д</span>
-                </label>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="е">
-                  <span class="countries-filter__label table__label">е</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="з">
-                  <span class="countries-filter__label table__label">з</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="и">
-                  <span class="countries-filter__label table__label">и</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="к">
-                  <span class="countries-filter__label table__label">к</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="л">
-                  <span class="countries-filter__label table__label">л</span>
-                </label>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="м">
-                  <span class="countries-filter__label table__label">м</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="н">
-                  <span class="countries-filter__label table__label">н</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="о">
-                  <span class="countries-filter__label table__label">о</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="п">
-                  <span class="countries-filter__label table__label">п</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="р">
-                  <span class="countries-filter__label table__label">р</span>
-                </label>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="р">
-                  <span class="countries-filter__label table__label">с</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="т">
-                  <span class="countries-filter__label table__label">т</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="у">
-                  <span class="countries-filter__label table__label">у</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="ф">
-                  <span class="countries-filter__label table__label">ф</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="х">
-                  <span class="countries-filter__label table__label">х</span>
-                </label>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="ч">
-                  <span class="countries-filter__label table__label">ч</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="ш">
-                  <span class="countries-filter__label table__label">ш</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="э">
-                  <span class="countries-filter__label table__label">э</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="ю">
-                  <span class="countries-filter__label table__label">ю</span>
-                </label>
-              </td>
-              <td class="cell">
-                <label>
-                  <input class="countries-filter__input table__item" type="radio" name="alphabet" value="я">
-                  <span class="countries-filter__label table__label">я</span>
-                </label>
-              </td>
-            </tr>
-          </table>
-        </fieldset>
-      </form>
+
+      <ul class="countries-filter__list polices-list">
+        <li class="polices-list__item">
+          <a class="countries-filter__link" href="#">Европа</a>
+        </li>
+        <li class="polices-list__item">
+          <a class="countries-filter__link" href="#">Азия</a>
+        </li>
+        <li class="polices-list__item">
+          <a class="countries-filter__link" href="#">Америка</a>
+        </li>
+        <li class="polices-list__item">
+          <a class="countries-filter__link" href="#">Острова</a>
+        </li>
+      </ul>
+
+      <table class="countries-filter__table table">
+        <tr>
+          <td>
+            <a class="countries-filter__link table__link" href="#">а</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">б</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">в</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">г</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">д</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="countries-filter__link table__link" href="#">е</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">з</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">и</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">к</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">л</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="countries-filter__link table__link" href="#">м</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">н</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">о</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">п</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">р</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="countries-filter__link table__link" href="#">с</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">т</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">у</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">ф</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">х</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="countries-filter__link table__link" href="#">ч</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">ш</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">э</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">ю</a>
+          </td>
+          <td>
+            <a class="countries-filter__link table__link" href="#">я</a>
+          </td>
+        </tr>
+      </table>
+
       <ul class="countries-filter__list countries-list">
         <li class="countries-list__item">
           <a class="countries-filter__link" href="#">Афганистан</a>
@@ -288,76 +195,75 @@
       <h2 class="visually-hidden">Форма фильтрации попутчиков</h2>
       <p class="travelmates-filter__title">Подберите идеального
         попутчика</p>
-      <form action="https://echo.htmlacademy.ru" class="travelmates-filter__form">
+      <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="travelmates-filter__fieldset">
           <legend class="travelmates-filter__legend">Хобби</legend>
-          <button class="arrow-btn travelmates-filter__arrow-btn travelmates-filter__arrow-btn--open" type="button"
-            aria-label="Кнопка развернуть раздел Хобби">Развернуть</button>
         </fieldset>
-
-        <fieldset class="travelmates-filter__fieldset">
+        <fieldset class="travelmates-filter__fieldset travelmates-filter__fieldset--active">
           <legend class="travelmates-filter__legend">Музыка</legend>
-          <button class="arrow-btn travelmates-filter__arrow-btn travelmates-filter__arrow-btn--close" type="button"
-            aria-label="Кнопка свернуть раздел Музыка">Свернуть</button>
-          <label>
-            <input class="travelmates-filter__input" type="radio" name="music" value="тяжелый рок">
-            <span class="travelmates-filter__label">Тяжелый рок</span>
-          </label>
-          <label>
-            <input class="travelmates-filter__input" type="radio" name="music" value="русский рэп">
-            <span class="travelmates-filter__label">Русский рэп</span>
-          </label>
-          <label>
-            <input class="travelmates-filter__input" type="radio" name="music" value="евроденс">
-            <span class="travelmates-filter__label">Евроденс</span>
-          </label>
-        </fieldset>
-
-        <fieldset class="travelmates-filter__fieldset">
-          <legend class="travelmates-filter__legend">Еда</legend>
-          <button class="arrow-btn travelmates-filter__arrow-btn travelmates-filter__arrow-btn--open" type="button"
-            aria-label="Кнопка развернуть раздел Еда">Развернуть</button>
-        </fieldset>
-
-        <fieldset class="travelmates-filter__fieldset">
-          <legend class="travelmates-filter__legend">Транспорт</legend>
-          <button class="arrow-btn travelmates-filter__arrow-btn travelmates-filter__arrow-btn--close" type="button"
-            aria-label="Кнопка свернуть раздел Транспорт">Свернуть</button>
-          <ul class="travelmates-filter__list transport-list">
-            <li class="transport-list__item">
+          <ul class="travelmates-filter__list">
+            <li class="travelmates-filter__item">
               <label>
-                <input class="travelmates-filter__input" type="radio" name="transport" value="авиаперелет">
-                <span class="travelmates-filter__label" aria-label="авиаперелет">Авиаперелет</span>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="тяжелый рок">
+                <span class="travelmates-filter__label">Тяжелый рок</span>
               </label>
             </li>
-            <li class="transport-list__item">
+            <li class="travelmates-filter__item">
               <label>
-                <input class="travelmates-filter__input" type="radio" name="transport" value="авиаперелет">
-                <span class="travelmates-filter__label" aria-label="автотранспорт">Автотранспорт</span>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="русский рэп">
+                <span class="travelmates-filter__label">Русский рэп</span>
               </label>
             </li>
-            <li class="transport-list__item">
+            <li class="travelmates-filter__item">
               <label>
-                <input class="travelmates-filter__input" type="radio" name="transport" value="авиаперелет">
-                <span class="travelmates-filter__label" aria-label="велосипед">Велосипед</span>
-              </label>
-            </li>
-            <li class="transport-list__item">
-              <label>
-                <input class="travelmates-filter__input" type="radio" name="transport" value="авиаперелет">
-                <span class="travelmates-filter__label" aria-label="пешком">Пешком</span>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="евроденс">
+                <span class="travelmates-filter__label">Евроденс</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="travelmates-filter__fieldset">
-          <legend class="travelmates-filter__legend">Левел</legend>
+          <legend class="travelmates-filter__legend">Еда</legend>
+        </fieldset>
+
+        <fieldset class="travelmates-filter__fieldset travelmates-filter__fieldset--active">
+          <legend class="travelmates-filter__legend">Транспорт</legend>
           <button class="arrow-btn travelmates-filter__arrow-btn travelmates-filter__arrow-btn--close" type="button"
-            aria-label="Кнопка свернуть раздел Левел">Свернуть</button>
-          <input type="text" value="30" aria-label="минимальное значение уровня">
-          <input type="text" value="100" aria-label="максимальное значение уровня">
-          <div class="slider">
+            aria-label="Кнопка свернуть раздел Транспорт">Свернуть</button>
+          <ul class="travelmates-filter__list transport-list">
+            <li class="transport-list__item">
+              <label>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
+                <span class="travelmates-filter__label" aria-label="авиаперелет">Авиаперелет</span>
+              </label>
+            </li>
+            <li class="transport-list__item">
+              <label>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
+                <span class="travelmates-filter__label" aria-label="автотранспорт">Автотранспорт</span>
+              </label>
+            </li>
+            <li class="transport-list__item">
+              <label>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
+                <span class="travelmates-filter__label" aria-label="велосипед">Велосипед</span>
+              </label>
+            </li>
+            <li class="transport-list__item">
+              <label>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
+                <span class="travelmates-filter__label" aria-label="пешком">Пешком</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="travelmates-filter__fieldset travelmates-filter__fieldset--active">
+          <legend class="travelmates-filter__legend">Левел</legend>
+          <input class="textfield travelmates__text" type="text" value="30" aria-label="минимальное значение уровня">
+          <input class="textfield travelmates__text" type="text" value="100" aria-label="максимальное значение уровня">
+          <div class="travelmates-filter__slider slider">
             <div class="line">
               <div class="rang-line"></div>
             </div>
@@ -373,7 +279,7 @@
     <section class="travelmates">
       <h2 class="visually-hidden">Карточки путешественников</h2>
       <ul class="travelmates__list">
-        <li class="travelmates__item">
+        <li class="travelmates__item user-card">
           <img class="travelmates__photo travelmates__photo--small" src="https://via.placeholder.com/150x150"
             alt="Фотография пользователя Таня Фирсова">
           <button class="btn travelmates__like-btn travelmates__like--selected" aria-label="Поставить лайк"></button>
@@ -418,7 +324,7 @@
 
           <a href="" class="btn travelmates__btn">Позвать!</a>
         </li>
-        <li class="travelmates__card">
+        <li class="travelmates__item user-card">
           <img class="travelmates__photo travelmates__photo--small" src="https://via.placeholder.com/150x150"
             alt="Фотография пользователя Петя Демин">
           <button class="btn travelmates__like-btn travelmates__like--selected" aria-label="Поставить лайк"></button>
@@ -459,7 +365,7 @@
 
           <a href="" class="btn travelmates__btn">Позвать!</a>
         </li>
-        <li class="travelmates__card">
+        <li class="travelmates__item user-card">
           <img class="travelmates__photo travelmates__photo--small" src="https://via.placeholder.com/150x150"
             alt="Фотография пользователя Марк Смолов">
           <button class="btn travelmates__like-btn travelmates__like--selected" aria-label="Поставить лайк"></button>
@@ -500,9 +406,9 @@
             <p class="travelmates__level">level</p>
           </div>
 
-          <a href="" class="btn travelmates__btn">Позвать!</a>
+          <a href="#" class="btn travelmates__btn">Позвать!</a>
         </li>
-        <li class="travelmates__card">
+        <li class="travelmates__item user-card">
           <img class="travelmates__photo travelmates__photo--small" src="https://via.placeholder.com/150x150"
             alt="Фотография пользователя Лариса Роговая">
           <button class="btn travelmates__like-btn travelmates__like--selected" aria-label="Поставить лайк"></button>
@@ -541,10 +447,10 @@
             <p class="travelmates__level">level</p>
           </div>
 
-          <a href="" class="btn travelmates__btn">Позвать!</a>
+          <a href="#" class="btn travelmates__btn">Позвать!</a>
         </li>
       </ul>
-      <a href="" class="btn travelmates__btn travelmates__btn--bg-transparent">Показать еще</a>
+      <a href="#" class="btn travelmates__btn travelmates__btn--bg-transparent">Показать еще</a>
       <ul class="travelmates__pagination pagination">
         <li class="travelmates__pagination-item"><a class="btn pagination__btn pagination__btn--back" href="#"
             aria-label="Назад">Назад</a></li>
