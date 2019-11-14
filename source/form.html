@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сервиса «Погнали»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle open-close-btn" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="#">О сервисе</a></li>
+          <li class="site-list__item"><a href="#">Направления</a></li>
+          <li class="site-list__item"><a href="#">Попутчики</a></li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="btn user-list__login" href="#">авторизация</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__phone" href="tel:8-800-555-86-28">8 800 555-86-28</a>
+          </li>
+          <li class="contacts-list__item">
+            <a class="contacts-list__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__facebook" href="#">facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__vk" href="#">vk</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__instagram" href="#">instagram</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Форма пользователя</h1>
+    <section class="travelmates travelmates__card">
+      <h2 class="visually-hidden">Карточка путешественника</h2>
+      <div class="travelmates__level-label">
+        <p class="travelmates__scores">80</p>
+        <p class="travelmates__level">level</p>
+      </div>
+      <img class="travelmates__photo travelmates__photo--small" src="https://via.placeholder.com/150x150"
+        alt="Фотография пользователя Петя Демин">
+      <button class="btn travelmates__btn change-photo__btn" type="button">Сменить фото</button>
+      <p class="travelmates__text travelmates__text--large">тэги</p>
+      <p class="travelmates__tags">#бургер #бар #футбол #концерт #крафт</p>
+      <p class="travelmates__text travelmates__text--large">транспорт</p>
+      <ul class="travelmates__transport-list transport-list">
+        <li class="transport-list-item">
+          <p class="travelmates__transport-type travelmates__transport-type--enable" aria-label="Авиаперелет">
+            Авиаперелет</p>
+        </li>
+        <li class="transport-list-item">
+          <p class="travelmates__transport-type travelmates__transport-type--enable" aria-label="Автотранспорт">
+            Автотранспорт</p>
+        </li>
+        <li class="transport-list-item">
+          <p class="travelmates__transport-type travelmates__transport-type--disable" aria-label="Велосипед">
+            Велосипед</p>
+        </li>
+        <li class="transport-list-item">
+          <p class="travelmates__transport-type travelmates__transport-type--enable" aria-label="Пешком">Пешком
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="plans">
+      <h2 class="plans__title">Мои планы:</h2>
+      <ol class="plans__list">
+        <li class="plans__item">
+          <p class="plans__country">Франция, Италия</p>
+          <p class="plans__travelmates">3 попутчика</p>
+          <p class="plans__date">26 мар — 29 мар</p>
+          <a class="btn plans__btn">Изменить</a>
+        </li>
+        <li class="plans__item">
+          <p class="plans__country">Таиланд, Индонезия</p>
+          <p class="plans__travelmates">1 попутчик</p>
+          <p class="plans__date">1 июл — 15 июл</p>
+          <a class="btn plans__btn">Изменить</a>
+        </li>
+      </ol>
+    </section>
+    <section class="plan-creation">
+      <h2 class="visually-hidden">Форма создания плана путешествия</h2>
+      <p class="plan-creation__title">Добавить план:</p>
+      <div class="plan-creation__pagination pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item"><a>1</a></li>
+          <li class="pagination__item"><a href="#">2</a></li>
+          <li class="pagination__item"><a href="">3</a></li>
+        </ul>
+      </div>
+
+      <form class="plan-creation__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="plan-creation__fieldset">
+          <legend class="plan-creation__part-title">Шаг 1.
+            Даты пребывания</legend>
+          <p class="plan-creation__description">Укажите предпочтительное количество попутчиков, которых
+            вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
+          <label for="numOfPeople">
+            <span class="plan-creation__label">ищу попутчиков:</span>
+            <span class="plan-creation__unit">чел.</span>
+          </label>
+          <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
+          <input class="plan-creation__number numberfield" type="number" name="numOfPeople" id="numOfPeople" value="2"
+            required>
+          <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
+
+
+          <label for="numOfDays">
+            <span class="plan-creation__label">длительность:</span>
+            <span class="plan-creation__unit">дн.</span>
+          </label>
+          <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
+          <input class="plan-creation__number numberfield" type="number" name="numOfDays" id="numOfDays" value="2"
+            required>
+          <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
+
+
+          <label>
+            <input class="plan-creation__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren"
+              required>
+            <span class="plan-creation__label">Можно с
+              детьми</span>
+          </label>
+
+
+          <button class="btn plan-creation__btn plan-creation__btn--back">
+            назад</button>
+          <input class="plan-creation__date datefield" type="date" name="date" id="date" required>
+          <button class="btn plan-creation__btn plan-creation__btn--front">вперед</button>
+
+          <a class="btn plan-creation__btn plan-creation__btn--next" href="#">Следующий шаг</a>
+        </fieldset>
+        <fieldset class="plan-creation__fieldset">
+          <legend class="plan-creation__part-title">Шаг 2.
+            Маршрут</legend>
+          <p class="plan-creation__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или
+            сразу несколько.</p>
+          <ul class="plan-creation__list">
+            <li class="plan-creation__item">
+              <select class="plan-creation__select selectfield" name="firstCountry" id="firstCountry">
+                <option class="plan-creation__option selectfield__item" value="Bosnia and Herzegovina">Босния и
+                  Герцеговина</option>
+              </select>
+            </li>
+            <li class="plan-creation__item">
+              <select class="plan-creation__select selectfield" name="secondCountry" id="secondCountry">
+                <option class="plan-creation__option selectfield__item" value="Czech">Чехия</option>
+              </select>
+            </li>
+            <li class="plan-creation__item">
+              <button class="btn plan-creation__btn plan-creation__btn--add-country" type="button">Добавить
+                страну</button>
+            </li>
+          </ul>
+          <a class="btn plan-creation__btn plan-creation__btn--next" href="#">Следующий шаг</a>
+          <a class=" btn plan-creation__btn plan-creation__btn--previous" href="#">На шаг назад</a>
+        </fieldset>
+        <fieldset class="plan-creation__fieldset">
+          <legend class="plan-creation__part-title">Шаг 3.
+            Развлечения</legend>
+          <p class="plan-creation__description">Наконец, расскажите о своих планах времяпровождения.
+            Можно писать в свободной форме и ставить тэги.</p>
+          <label>
+            <span class="plan-creation__label">Босния и Герцеговина</span>
+            <textarea class="plan-creation__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
+              placeholder="План действий"></textarea>
+          </label>
+          <label>
+            <span class="plan-creation__label">Чехия</span>
+            <textarea class="plan-creation__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
+              placeholder="План действий">Пить пиво и лазить
+              по старым замкам, наслаждаться архитектурой
+              и вот это все.</textarea>
+          </label>
+          <button class="btn plan-creation__btn plan-creation__btn--next" type="submit">Отправить</button>
+          <a class=" btn plan-creation__btn plan-creation__btn--previous" href="#">На шаг назад</a>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="#">
+      <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сервиса «Погнали»">
+    </a>
+
+    <ul class="page-footer__list social-list">
+      <li class="social-list__item">
+        <a class="social-list__facebook" href="#">facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__vk" href="#">vk</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__instagram" href="#">instagram</a>
+      </li>
+    </ul>
+
+    <div class="developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="developer__logo" src="https://via.placeholder.com/150x150" alt="HTMLAcademy">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
