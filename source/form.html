@@ -48,67 +48,98 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Форма пользователя</h1>
-    <section class="travelmates travelmates__card">
-      <h2 class="visually-hidden">Карточка путешественника</h2>
-      <div class="travelmates__level-label">
-        <p class="travelmates__scores">80</p>
-        <p class="travelmates__level">level</p>
-      </div>
-      <img class="travelmates__photo travelmates__photo--small" src="https://via.placeholder.com/150x150"
-        alt="Фотография пользователя Петя Демин">
-      <button class="btn travelmates__btn change-photo__btn" type="button">Сменить фото</button>
-      <p class="travelmates__text travelmates__text--large">тэги</p>
-      <p class="travelmates__tags">#бургер #бар #футбол #концерт #крафт</p>
-      <p class="travelmates__text travelmates__text--large">транспорт</p>
-      <ul class="travelmates__transport-list transport-list">
-        <li class="transport-list-item">
-          <p class="travelmates__transport-type travelmates__transport-type--enable" aria-label="Авиаперелет">
-            Авиаперелет</p>
-        </li>
-        <li class="transport-list-item">
-          <p class="travelmates__transport-type travelmates__transport-type--enable" aria-label="Автотранспорт">
-            Автотранспорт</p>
-        </li>
-        <li class="transport-list-item">
-          <p class="travelmates__transport-type travelmates__transport-type--disable" aria-label="Велосипед">
-            Велосипед</p>
-        </li>
-        <li class="transport-list-item">
-          <p class="travelmates__transport-type travelmates__transport-type--enable" aria-label="Пешком">Пешком
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section class="plans">
-      <h2 class="plans__title">Мои планы:</h2>
-      <ol class="plans__list">
-        <li class="plans__item">
-          <p class="plans__country">Франция, Италия</p>
-          <p class="plans__travelmates">3 попутчика</p>
-          <p class="plans__date">26 мар — 29 мар</p>
-          <a class="btn plans__btn">Изменить</a>
-        </li>
-        <li class="plans__item">
-          <p class="plans__country">Таиланд, Индонезия</p>
-          <p class="plans__travelmates">1 попутчик</p>
-          <p class="plans__date">1 июл — 15 июл</p>
-          <a class="btn plans__btn">Изменить</a>
-        </li>
-      </ol>
-    </section>
-    <section class="plan-creation">
-      <h2 class="visually-hidden">Форма создания плана путешествия</h2>
-      <p class="plan-creation__title">Добавить план:</p>
-      <div class="plan-creation__pagination pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item"><a>1</a></li>
-          <li class="pagination__item"><a href="#">2</a></li>
-          <li class="pagination__item"><a href="">3</a></li>
-        </ul>
-      </div>
 
-      <form class="plan-creation__form" action="https://echo.htmlacademy.ru" method="post">
+    <h1 class="visually-hidden">Форма пользователя</h1>
+
+    <form class="plan-creation__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+
+      <section class="user-card">
+
+        <h2 class="visually-hidden">Карточка путешественника</h2>
+
+        <div class="user-card__level-label">
+          <p class="user-card__scores">80</p>
+          <p class="user-card__level">level</p>
+        </div>
+
+        <img class="user-card__photo user-card__photo--small" src="https://via.placeholder.com/150x150"
+          alt="Фотография пользователя Петя Демин">
+        <label>
+          <span class="user-card__label label-text">Сменить фото</span>
+          <input class="user-card__file-field filefield" type="file" name="changePhoto" id="changePhoto">
+        </label>
+        <label>
+          <span class="user-card__label label-text">тэги</span>
+          <textarea class="user-card__tags textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+        </label>
+
+
+        <label>
+          <span class="user-card__text">транспорт</span>
+          <ul class="user-card__transport-list">
+            <li class="user-card__transport-item">
+              <label>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
+                <span class="user-card__transport-type" aria-label="авиаперелет">Авиаперелет</span>
+              </label>
+            </li>
+            <li class="user-card__transport-item">
+              <label>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
+                <span class="user-card__transport-type" aria-label="автотранспорт">Автотранспорт</span>
+              </label>
+            </li>
+            <li class="user-card__transport-item">
+              <label>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
+                <span class="user-card__transport-type" aria-label="велосипед">Велосипед</span>
+              </label>
+            </li>
+            <li class="user-card__transport-item">
+              <label>
+                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
+                <span class="user-card__transport-type" aria-label="пешком">Пешком</span>
+              </label>
+            </li>
+          </ul>
+        </label>
+      </section>
+
+      <section class="plans">
+
+        <h2 class="plans__title">Мои планы:</h2>
+
+        <ol class="plans__list">
+          <li class="plans__item">
+            <p class="plans__country">Франция, Италия</p>
+            <p class="plans__travelmates">3 попутчика</p>
+            <p class="plans__date">26 мар — 29 мар</p>
+            <a class="btn plans__btn">Изменить</a>
+          </li>
+          <li class="plans__item">
+            <p class="plans__country">Таиланд, Индонезия</p>
+            <p class="plans__travelmates">1 попутчик</p>
+            <p class="plans__date">1 июл — 15 июл</p>
+            <a class="btn plans__btn">Изменить</a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="plan-creation">
+
+        <h2 class="visually-hidden">Форма создания плана путешествия</h2>
+
+        <p class="plan-creation__title">Добавить план:</p>
+
+        <div class="plan-creation__pagination pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item"><a>1</a></li>
+            <li class="pagination__item"><a href="#">2</a></li>
+            <li class="pagination__item"><a href="#">3</a></li>
+          </ul>
+        </div>
+
+
         <fieldset class="plan-creation__fieldset">
           <legend class="plan-creation__part-title">Шаг 1.
             Даты пребывания</legend>
@@ -195,8 +226,9 @@
           <button class="btn plan-creation__btn plan-creation__btn--next" type="submit">Отправить</button>
           <a class=" btn plan-creation__btn plan-creation__btn--previous" href="#">На шаг назад</a>
         </fieldset>
-      </form>
-    </section>
+      </section>
+    </form>
+
   </main>
 
   <footer class="page-footer">
