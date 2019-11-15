@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сервиса «Погнали»">
+      <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Логотип сервиса «Погнали»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle open-close-btn" type="button">Открыть меню</button>
@@ -60,9 +60,10 @@
           <li class="contacts-list__item"><a class="contacts-list__phone" href="tel:8-800-555-86-28"
               aria-label="Телефон: 8 800 555-86-28">8 800 555-86-28</a></li>
           <li class="contacts-list__item"><a class="contacts-list__email" href="mailto:mail@htmlacademy.ru"
-              aria-label="Адрес электронной почты: mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+              aria-label="Адрес электронной почты: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
         </ul>
-        <a class="btn login__btn intro-title__login" href="#">авторизация</a>
+        <a class="btn login-btn intro-title__login" href="#">авторизация</a>
       </section>
 
       <section class="feedback">
@@ -140,7 +141,7 @@
             <ul class="user-card__flags">
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                   alt="Шри-Ланка" title="Шри-Ланка"></li>
-              <li class="travelmates__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
+              <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                   alt="Тайланд" title="Тайланд"></li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                   alt="Сейшелы" title="Сейшелы"></li>
@@ -169,7 +170,7 @@
           </div>
         </li>
 
-        <li class="travelmates__item travelmates__item--online user-card">
+        <li class="travelmates__item travelmates__item--online">
 
           <div class="user-card">
             <img class="user-card__photo" src="https://via.placeholder.com/150x150" alt="Фотография пользователя">
@@ -180,7 +181,7 @@
             <ul class="user-card__flags">
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                   alt="Бельгия" title="Бельгия">Бельгия</li>
-              <li class="travelmates__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
+              <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                   alt="Чехия" title="Чехия">Чехия</li>
             </ul>
             <a class="user-card__user-name" href="#">Петя Демин</a>
@@ -191,10 +192,9 @@
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
                   Авиаперелет</p>
               </li>
-              <li class="user-card__transport-item"">
-                                  <p class=" user-card__transport-type user-card__transport-type--enable"
-                aria-label="Автотранспорт">
-                Автотранспорт</p>
+              <li class="user-card__transport-item">
+                <p class=" user-card__transport-type user-card__transport-type--enable" aria-label="Автотранспорт">
+                  Автотранспорт</p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
@@ -243,7 +243,7 @@
         <input class="cta-form__field emailfield" type="email" placeholder="E-mail">
         <button class="btn cta-form__btn" type="button" aria-label="Отправить">Отправить</button>
       </form>
-      <p class="cta-form">Остались вопросы?
+      <p class="cta-form__text">Остались вопросы?
         Мы с радостью на них ответим!</p>
       <ul class="cta-form__list contacts-list">
         <li class="contacts__item">
