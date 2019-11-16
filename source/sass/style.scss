@@ -1,3 +1,8 @@
+@import "variables";
+@import "fonts";
+@import "globals";
+@import "mixins";
+// ---------------------------
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/site-list";
@@ -5,7 +10,6 @@
 @import "blocks/contacts-list";
 @import "blocks/social-list";
 @import "blocks/page-main";
-@import "blocks/visually-hidden";
 @import "blocks/intro";
 @import "blocks/intro-title";
 @import "blocks/btn";
@@ -20,10 +24,11 @@
 @import "blocks/rates";
 @import "blocks/cta-form";
 @import "blocks/emailfield";
-@import "blocks/contacts";
+@import "blocks/map";
 @import "blocks/page-footer";
 @import "blocks/developer";
 @import "blocks/modal";
+@import "blocks/open-close-btn";
 // -------------------------
 @import "blocks/countries-filter";
 @import "blocks/polices-list";
