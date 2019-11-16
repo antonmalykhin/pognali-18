@@ -4,17 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="libs/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" width="100" height="19"
-        alt="Логотип сервиса «Погнали»">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle open-close-btn" type="button">Открыть меню</button>
+      <a class="main-nav__logo page-header__logo" href="#">
+        <img class="main-nav__logo-image page-header__logo-image" src="img/logo-mobile-white@1x.png" width="100"
+          height="19" alt="Логотип сервиса «Погнали»">
+      </a>
+      <button class="main-nav__toggle open-close-btn" type="button" aria-label="Открыть меню">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a>О сервисе</a></li>
@@ -36,13 +37,13 @@
         </ul>
         <ul class="main-nav__list social-list">
           <li class="social-list__item">
-            <a class="social-list__facebook" href="#" aria-label="facebook">facebook</a>
+            <a class="social-list__facebook" href="#" aria-label="facebook"></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__vk" href="#" aria-label="вконтакте">vk</a>
+            <a class="social-list__vk" href="#" aria-label="вконтакте"></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__instagram" href="#" aria-label="instagram">instagram</a>
+            <a class="social-list__instagram" href="#" aria-label="instagram"></a>
           </li>
         </ul>
       </div>
@@ -55,14 +56,12 @@
       <h2 class="visually-hidden">Интро</h2>
       <section class="intro-title">
         <h3 class="visually-hidden">Вступительная часть</h3>
-        <b class="intro-title__slogan">В путешествие с крутыми попутчиками!</b>
-        <img class="intro-title__image" src="img/traveller-illustration-mobile@1x.png" width="192" height="255"
-          alt="Иллюстрация путешественника">
+        <p class="intro-title__slogan">В путешествие с крутыми попутчиками!</p>
         <ul class="intro-title__list contacts-list">
-          <li class="contacts-list__item"><a class="contacts-list__phone" href="tel:8-800-555-86-28"
-              aria-label="Телефон: 8 800 555-86-28">8 800 555-86-28</a></li>
-          <li class="contacts-list__item"><a class="contacts-list__email" href="mailto:mail@htmlacademy.ru"
-              aria-label="Адрес электронной почты: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="contacts-list__item"><a class="contacts-list__phone contacts-list__phone--theme-orange-icon"
+              href="tel:8-800-555-86-28" aria-label="Телефон: 8 800 555-86-28"></a></li>
+          <li class="contacts-list__item"><a class="contacts-list__email contacts-list__email--theme-yellow-icon"
+              href="mailto:mail@htmlacademy.ru" aria-label="Адрес электронной почты: mail@htmlacademy.ru"></a>
           </li>
         </ul>
         <a class="btn login-btn intro-title__login" href="#">авторизация</a>
@@ -154,18 +153,18 @@
             <ul class="user-card__transport-list">
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
-                  Авиаперелет</p>
+                </p>
               </li>
               <li class="user-card__transport-item"">
                 <p class=" user-card__transport-type user-card__transport-type--disable" aria-label="Автотранспорт">
-                Автотранспорт</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
-                  Велосипед</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
-                <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">Пешком
+                <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">
                 </p>
               </li>
             </ul>
@@ -183,9 +182,9 @@
             </div>
             <ul class="user-card__flags">
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Бельгия" title="Бельгия">Бельгия</li>
+                  alt="Бельгия" title="Бельгия"></li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Чехия" title="Чехия">Чехия</li>
+                  alt="Чехия" title="Чехия"></li>
             </ul>
             <a class="user-card__user-name" href="#">Петя Демин</a>
             <p class="user-card__tags">#бургер #бар #футбол
@@ -193,18 +192,18 @@
             <ul class="user-card__transport-list">
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
-                  Авиаперелет</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class=" user-card__transport-type user-card__transport-type--enable" aria-label="Автотранспорт">
-                  Автотранспорт</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
-                  Велосипед</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
-                <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Пешком">Пешком
+                <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Пешком">
                 </p>
               </li>
             </ul>
@@ -212,7 +211,7 @@
         </li>
       </ul>
 
-      <a class="btn countries__btn" href="#">Показать всех</a>
+      <a class="btn travelmates__btn" href="#">Показать всех</a>
     </section>
 
     <section class="rates">
@@ -233,7 +232,7 @@
           <p class="rates__price">59 руб./мес</p>
         </li>
       </ul>
-      <a class="btn rates__btn">Показать тарифы для бизнеса</a>
+      <a class="rates__btn">Показать тарифы для бизнеса</a>
     </section>
 
     <section class="cta-form">
@@ -244,25 +243,27 @@
         Уже зарегистрированы? Тогда скорее <a class="cta-form__link" href="#">авторизуйтесь</a>.</p>
       <form class="cta-form__form" action="https://echo.htmlacademy.ru" method="POST">
         <input class="cta-form__field emailfield" type="email" placeholder="E-mail">
-        <button class="btn cta-form__btn" type="button" aria-label="Отправить">Отправить</button>
+        <button class="btn cta-form__btn" type="button" aria-label="Отправить"></button>
       </form>
       <p class="cta-form__text">Остались вопросы?
         Мы с радостью на них ответим!</p>
       <ul class="cta-form__list contacts-list">
-        <li class="contacts__item">
-          <a class="contacts__phone" href="tel:8-800-555-86-28">8 800 555-86-28</a>
+        <li class="contacts-list__item">
+          <a class="contacts-list__phone contacts-list__phone--theme-yellow-text" href="tel:8-800-555-86-28">8 800
+            555-86-28</a>
         </li>
-        <li class="contacts__item">
-          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <li class="contacts-list__item">
+          <a class="contacts-list__email
+          contacts-list__email--theme-yellow-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
       </ul>
     </section>
 
-    <section class="contacts">
+    <section class="map">
       <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__address">ул. Большая
+      <p class="map__address">ул. Большая
         Конюшенная, 19/8</p>
-      <a class="btn contacts__btn" href="#">Проложить маршрут</a>
+      <a class="btn map__btn" href="#">Проложить маршрут</a>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533198!2d30.320858716361723!3d59.93871648187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573580370300!5m2!1sru!2sru"
         width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-label="Офис по адресу: Санкт-Петербург,
@@ -278,13 +279,13 @@
 
     <ul class="page-footer__list social-list">
       <li class="social-list__item">
-        <a class="social-list__facebook" href="#" aria-label="facebook">facebook</a>
+        <a class="social-list__facebook" href="#" aria-label="facebook"></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__vk" href="#" aria-label="вконтакте">vk</a>
+        <a class="social-list__vk" href="#" aria-label="вконтакте"></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__instagram" href="#" aria-label="instagram">instagram</a>
+        <a class="social-list__instagram" href="#" aria-label="instagram"></a>
       </li>
     </ul>
 
@@ -296,8 +297,8 @@
     </div>
   </footer>
 
-  <section class="rates__business-plans modal">
-    <h2 class="visually-hidden">Тарифы для бизнеса</h2>
+  <section class="rates rates__business-plans modal">
+    <h2 class="rates__title">Тарифы для бизнеса</h2>
     <ul class="rates__list">
       <li class="rates__item">
         <p class="rates__plan">Реклама у блоггера</p>
