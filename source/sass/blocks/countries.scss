@@ -1,0 +1,52 @@
+.countries {
+  background-color: #edeff6;
+}
+
+.countries__title {
+  font-family: $main-font;
+
+  @include font(700, normal, 24px, 24px);
+  color: #ff8d30;
+}
+
+.countries__description {
+  font-family: $main-font;
+
+  @include font(300, normal, 16px, 22px);
+  color: #444444;
+}
+
+.countries__list {
+  @include list-reset;
+}
+
+.countries__item {
+  background-color: $white-color;
+}
+
+.countries__country {
+  font-family: $main-font;
+
+  @include font(700, normal, 21px, 21px);
+  color: #161c35;
+}
+
+.countries__slogan {
+  font-family: $main-font;
+
+  @include font(500, normal, 16px, 18px);
+  color: rgba(#444444, 0.3);
+}
+
+.countries__users {
+  font-family: $main-font;
+
+  @include font(500, normal, 16px, 30px);
+  color: rgba(#444444, 0.3);
+}
+
+.countries__btn {
+  padding: 24px 132px 24px 24px;
+  border-radius: 10px;
+  color: #1d2e5b;
+}

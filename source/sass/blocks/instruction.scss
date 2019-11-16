@@ -1,0 +1,49 @@
+.instruction {
+  background-color: #192144;
+}
+
+.instruction__list {
+  @include list-reset;
+}
+
+.instruction__item {
+  position: relative;
+  &::after {
+    position: absolute;
+    @include font(700, normal, 18px, 18px);
+    color: #ffffff;
+    right: 0;
+  }
+}
+
+.instruction__item:nth-of-type(1) {
+  background-color: #ff8d30;
+  &::after {
+    content: "1";
+  }
+}
+
+.instruction__item:nth-of-type(2) {
+  background-color: #ffa530;
+  &::after {
+    content: "2";
+  }
+}
+
+.instruction__item:nth-of-type(3) {
+  background-color: #ffbd30;
+  &::after {
+    content: "3";
+  }
+}
+
+.instruction__item:nth-of-type(4) {
+  background-color: #ffd74b;
+  &::after {
+    content: "4";
+  }
+}
+
+.instruction__list a {
+  color: #161c35;
+}

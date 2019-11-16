@@ -1,0 +1,108 @@
+.user-card {
+  background-color: $white-color;
+  position: relative;
+}
+
+.user-card__level-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.user-card__scores {
+  font-family: $main-font;
+
+  @include font(700, normal, 24px 24px);
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.user-card__level {
+  font-family: $main-font;
+
+  @include font(400, normal, 14px 14px);
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.user-card__flags {
+  @include list-reset;
+}
+
+.user-card__user-name {
+  font-family: $main-font;
+
+  @include font(700, normal, 21px, 21px);
+  color: #1d2e5b;
+}
+
+.user-card__tags {
+  font-family: $main-font;
+
+  @include font(400, normal, 16px, 18px);
+  color: #444444;
+}
+
+.user-card__transport-list {
+  @include list-reset;
+}
+
+.user-card__transport-type {
+  width: 24px;
+  height: 21px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 21px;
+    top: 0;
+    right: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.user-card__transport-item:nth-of-type(1) {
+  .user-card__transport-type {
+    &::before {
+      background-image: url("../../img/plane.svg");
+    }
+  }
+}
+
+.user-card__transport-item:nth-of-type(2) {
+  .user-card__transport-type {
+    &::before {
+      background-image: url("../../img/bus.svg");
+    }
+  }
+}
+
+.user-card__transport-item:nth-of-type(3) {
+  .user-card__transport-type {
+    &::before {
+      background-image: url("../../img/bike.svg");
+    }
+  }
+}
+
+.user-card__transport-item:nth-of-type(4) {
+  .user-card__transport-type {
+    &::before {
+      background-image: url("../../img/run.svg");
+    }
+  }
+}

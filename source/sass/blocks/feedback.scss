@@ -1,0 +1,17 @@
+.feedback__item {
+  margin: 0;
+}
+
+.feedback__text {
+  font-family: $main-font;
+
+  @include font(300, italic, 16px, 22px);
+  color: $white-color;
+}
+
+.feedback__author {
+  font-family: $main-font;
+
+  @include font(700, normal, 16px, 22px);
+  color: $white-color;
+}

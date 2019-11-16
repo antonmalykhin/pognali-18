@@ -1,0 +1,18 @@
+.intro-title {
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"),
+    url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center, center;
+  background-size: contain, contain;
+}
+
+.intro-title__slogan {
+  font-family: $main-font;
+
+  @include font(700, normal, 36px, 40px);
+  color: $white-color;
+}
+
+.intro-title__login {
+  padding: 40px 13px;
+}

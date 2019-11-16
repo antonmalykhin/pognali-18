@@ -1,0 +1,26 @@
+.social-list {
+  @include list-reset;
+}
+
+@mixin social-link {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23px;
+  height: 23px;
+  display: block;
+}
+
+.social-list__facebook {
+  @include social-link;
+  background-image: url("../../img/facebook.svg");
+}
+
+.social-list__vk {
+  @include social-link;
+  background-image: url("../../img/vk.svg");
+}
+
+.social-list__instagram {
+  @include social-link;
+  background-image: url("../../img/instagram.svg");
+}

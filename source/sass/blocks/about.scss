@@ -1,0 +1,24 @@
+.about {
+  background-image: url("../../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about__title {
+  font-family: $main-font;
+
+  @include font(700, normal, 24px, 24px);
+  color: #ff8d30;
+}
+
+.about__text {
+  font-family: $main-font;
+
+  @include font(300, normal, 16px, 22px);
+  color: $white-color;
+}
+
+.about__text--bold {
+  font-weight: 700;
+}

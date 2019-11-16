@@ -1,0 +1,42 @@
+.rates {
+  background-color: #edeff6;
+}
+
+.rates__title {
+  font-family: $main-font;
+  color: #ff8d30;
+
+  @include font(700, normal, 24px, 24px);
+}
+
+.rates__list {
+  @include list-reset;
+}
+
+.rates__plan,
+.rates__price {
+  font-family: $main-font;
+  color: #444444;
+
+  @include font(300, normal, 16px, 22px);
+}
+
+.rates__btn {
+  font-family: $main-font;
+  color: #192144;
+
+  @include font(700, normal, 16px, 16px);
+}
+
+.rates__btn--close {
+  width: 270px;
+
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  background-color: #f3f4f8;
+  border-radius: 0 0 20px 20px;
+
+  @include font(700, normal, 16px, 24px);
+}
