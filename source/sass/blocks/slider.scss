@@ -1,0 +1,35 @@
+.slider {
+  margin-top: 20px;
+  position: relative;
+}
+
+.line {
+  width: 220px;
+  height: 2px;
+  background-color: rgba(#1d2e5b, 0.3);
+}
+
+.slider__rang-line {
+  width: 144px;
+  height: 2px;
+  opacity: 1;
+  background-color: #1d2e5b;
+}
+
+.slider__handler {
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  position: absolute;
+
+  top: -4px;
+
+  &:nth-of-type(1) {
+    left: 0;
+  }
+
+  &:nth-of-type(2) {
+    left: 144px;
+  }
+}

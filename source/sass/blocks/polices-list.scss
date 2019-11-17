@@ -1,0 +1,17 @@
+.polices-list {
+  @include list-reset;
+}
+
+.polices-list__link {
+  font-family: $main-font;
+
+  @include font(700, normal, 16px, 22px);
+
+  text-transform: uppercase;
+  color: #192144;
+  opacity: 0.3;
+
+  &#{--current} {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,12 @@
+.page-main {
+  background-color: #edeff6;
+}
+
+.page-main__title {
+  font-family: $main-font;
+  color: #ffffff;
+
+  background-color: #161c35;
+
+  @include font(700, normal, 36px, 40px);
+}
