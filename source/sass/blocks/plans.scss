@@ -1,0 +1,68 @@
+.plans {
+  background-color: #dee3ef;
+}
+
+.plans__list {
+  list-style: none;
+}
+
+@for $i from 1 through 3 {
+  .plans__item:nth-of-type(#{$i}) {
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    &::before {
+      content: "#{$i}.";
+
+      font-family: $main-font;
+      color: #1d2e5b;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+
+      @include font(500, normal, 16px, 16px);
+    }
+  }
+}
+
+.plans__title {
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  @include font(700, normal, 24px, 24px);
+}
+
+.plans__country {
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  @include font(700, normal, 16px, 16px);
+}
+
+.plans__travelmates {
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  @include font(500, normal, 14px, 14px);
+}
+
+.plans__date {
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  @include font(500, normal, 14px, 14px);
+}
+
+.plans__btn {
+  font-family: $main-font;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.3;
+  @include font(500, normal, 14px, 18px);
+}

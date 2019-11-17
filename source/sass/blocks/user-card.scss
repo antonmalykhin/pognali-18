@@ -191,3 +191,37 @@
 
   @include font(500, normal, 17px, 30px);
 }
+
+.user-card__change-photo-btn {
+  background-color: #dfe3f0;
+  border-radius: 20px;
+  padding: 13px 75px;
+  font-family: $main-font;
+  color: #161c35;
+  text-transform: uppercase;
+
+  @include font(700, normal, 17px, 17px);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.user-card__fieldset {
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+
+.user-card__legend {
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  @include font(700, normal, 16px, 18px);
+}
+
+.user-card__textarea {
+  background-color: transparent;
+  border: none;
+  width: 270px;
+}
