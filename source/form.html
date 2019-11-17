@@ -10,17 +10,18 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19"
-        alt="Логотип сервиса «Погнали»">
-    </a>
     <nav class="main-nav">
+      <a class="main-nav__logo page-header__logo" href="#">
+        <img class="main-nav__logo-image page-header__logo-image" src="img/logo-mobile-white@1x.png" width="100"
+          height="19" alt="Логотип сервиса «Погнали»">
+      </a>
+
       <button class="main-nav__toggle open-close-btn" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="main-nav__item""><a href=" index.html">О сервисе</a></li>
-          <li class="main-nav__item""><a>Направления</a></li>
-          <li class=" main-nav__item""><a href="catalog.html">Попутчики</a></li>
+          <li class="site-list__item"><a href=" index.html">О сервисе</a></li>
+          <li class="site-list__item"><a>Направления</a></li>
+          <li class=" site-list__item"><a href="catalog.html">Попутчики</a></li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
@@ -37,13 +38,13 @@
         </ul>
         <ul class="main-nav__list social-list">
           <li class="social-list__item">
-            <a class="social-list__facebook" href="#" aria-label="facebook">facebook</a>
+            <a class="social-list__facebook" href="#" aria-label="facebook"></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__vk" href="#" aria-label="вконтакте">vk</a>
+            <a class="social-list__vk" href="#" aria-label="вконтакте"></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__instagram" href="#" aria-label="instagram">instagram</a>
+            <a class="social-list__instagram" href="#" aria-label="instagram"></a>
           </li>
         </ul>
       </div>
@@ -51,12 +52,14 @@
   </header>
 
   <main class="page-main">
+
     <section class="plan-creation">
-      <h1 class="visually-hidden">Страница создания планов путешествий</h1>
+      <h1 class="page-main__title">Направления</h1>
+
       <form class="plan-creation__form" action="https://echo.htmlacademy.ru" method="post"
         enctype="multipart/form-data">
 
-        <section class="user-card">
+        <section class="plan-creation__user user-card">
 
           <h2 class="visually-hidden">Карточка путешественника</h2>
 
@@ -68,44 +71,46 @@
           <img class="user-card__photo user-card__photo--small" src="img/demin-tablet@1x.jpg" width="100" height="100"
             alt="Фотография пользователя Петя Демин">
           <label>
-            <span class="user-card__label label-text">Сменить фото</span>
-            <input class="user-card__file-field filefield" type="file" name="changePhoto" id="changePhoto">
+            <span class="user-card__change-photo-btn">Сменить фото</span>
+            <input class="user-card__file-field filefield visually-hidden" type="file" name="changePhoto"
+              id="changePhoto">
           </label>
-          <label>
-            <span class="user-card__label label-text">тэги</span>
-            <textarea class="user-card__tags textarea">#бургер #бар #футбол #концерт #крафт</textarea>
-          </label>
+          <fieldset class="user-card__fieldset fieldset">
+            <legend class="user-card__legend">тэги</legend>
+            <textarea
+              class="user-card__tags user-card__textarea textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+          </fieldset>
 
 
-          <fieldset class="plan-creation__fieldset fieldset">
-            <legend class="user-card__text">транспорт</legend>
-            <ul class="user-card__transport-list">
-              <li class="user-card__transport-item">
+          <fieldset class="user-card__fieldset fieldset">
+            <legend class="user-card__legend">транспорт</legend>
+            <ul class="user-card__transport-list transport-list">
+              <li class="transport-list__item">
                 <label>
                   <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
                     value="авиаперелет">
-                  <span class="user-card__transport-type" aria-label="авиаперелет">Авиаперелет</span>
+                  <span class="transport-list__transport-type" aria-label="авиаперелет"></span>
                 </label>
               </li>
-              <li class="user-card__transport-item">
+              <li class="transport-list__item">
                 <label>
                   <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
                     value="авиаперелет">
-                  <span class="user-card__transport-type" aria-label="автотранспорт">Автотранспорт</span>
+                  <span class="transport-list__transport-type" aria-label="автотранспорт"></span>
                 </label>
               </li>
-              <li class="user-card__transport-item">
+              <li class="transport-list__item">
                 <label>
                   <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
                     value="авиаперелет">
-                  <span class="user-card__transport-type" aria-label="велосипед">Велосипед</span>
+                  <span class="transport-list__transport-type" aria-label="велосипед"></span>
                 </label>
               </li>
-              <li class="user-card__transport-item">
+              <li class="transport-list__item">
                 <label>
                   <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
                     value="авиаперелет">
-                  <span class="user-card__transport-type" aria-label="пешком">Пешком</span>
+                  <span class="transport-list__transport-type" aria-label="пешком"></span>
                 </label>
               </li>
             </ul>
@@ -121,24 +126,24 @@
               <p class="plans__country">Франция, Италия</p>
               <p class="plans__travelmates">3 попутчика</p>
               <p class="plans__date">26 мар — 29 мар</p>
-              <a class="btn plans__btn">Изменить</a>
+              <a class="plans__btn" href="#">Изменить</a>
             </li>
-            <li class="plans__item">
+            <li class=" plans__item">
               <p class="plans__country">Таиланд, Индонезия</p>
               <p class="plans__travelmates">1 попутчик</p>
               <p class="plans__date">1 июл — 15 июл</p>
-              <a class="btn plans__btn">Изменить</a>
+              <a class="plans__btn" href="#">Изменить</a>
             </li>
           </ol>
         </section>
 
-        <section class="plan-creation__section">
+        <section class="plan-add">
 
           <h2 class="visually-hidden">Форма создания плана путешествия</h2>
 
-          <p class="plan-creation__title">Добавить план:</p>
+          <p class="plan-creation__title plan-add__title">Добавить план:</p>
 
-          <div class="plan-creation__pagination pagination">
+          <div class="plan-add__pagination pagination">
             <ul class="pagination__list">
               <li class="pagination__item"><a>1</a></li>
               <li class="pagination__item"><a href="#">2</a></li>
@@ -147,91 +152,92 @@
           </div>
 
 
-          <fieldset class="plan-creation__fieldset fieldset">
-            <legend class="plan-creation__part-title">Шаг 1.
+          <fieldset class="plan-add__fieldset fieldset">
+            <legend class="plan-add__part-title">Шаг 1.
               Даты пребывания</legend>
-            <p class="plan-creation__description">Укажите предпочтительное количество попутчиков, которых
+            <p class="plan-add__description">Укажите предпочтительное количество попутчиков, которых
               вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
             <label for="numOfPeople">
-              <span class="plan-creation__label">ищу попутчиков:</span>
-              <span class="plan-creation__unit">чел.</span>
+              <span class="plan-add__label">ищу попутчиков:</span>
+              <span class="plan-add__unit">чел.</span>
             </label>
-            <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
-            <input class="plan-creation__number numberfield" type="number" name="numOfPeople" id="numOfPeople" value="2"
+            <button class="btn plan-add__btn plan-add__btn--minus">-</button>
+            <input class="plan-add__number numberfield" type="number" name="numOfPeople" id="numOfPeople" value="2"
               required>
-            <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
+            <button class="btn plan-add__btn plan-add__btn--plus">+</button>
 
 
             <label for="numOfDays">
-              <span class="plan-creation__label">длительность:</span>
-              <span class="plan-creation__unit">дн.</span>
+              <span class="plan-add__label">длительность:</span>
+              <span class="plan-add__unit">дн.</span>
             </label>
-            <button class="btn plan-creation__btn plan-creation__btn--minus">-</button>
-            <input class="plan-creation__number numberfield" type="number" name="numOfDays" id="numOfDays" value="2"
+            <button class="btn plan-add__btn plan-add__btn--minus">-</button>
+            <input class="plan-add__number numberfield" type="number" name="numOfDays" id="numOfDays" value="2"
               required>
-            <button class="btn plan-creation__btn plan-creation__btn--plus">+</button>
+            <button class="btn plan-add__btn plan-add__btn--plus">+</button>
 
 
             <label>
-              <input class="plan-creation__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren"
-                required>
-              <span class="plan-creation__label">Можно с
+              <input class="plan-add__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren" required>
+              <span class="plan-add__label">Можно с
                 детьми</span>
             </label>
 
 
-            <button class="btn plan-creation__btn plan-creation__btn--back">
+            <button class="btn plan-add__btn plan-add__btn--back">
               назад</button>
-            <input class="plan-creation__date datefield" type="date" name="date" id="date" required>
-            <button class="btn plan-creation__btn plan-creation__btn--front">вперед</button>
+            <input class="plan-add__date datefield" type="date" name="date" id="date" required>
+            <button class="btn plan-add__btn plan-add__btn--front">вперед</button>
 
-            <a class="btn plan-creation__btn plan-creation__btn--next" href="#">Следующий шаг</a>
+            <a class="btn plan-add__btn plan-add__btn--next" href="#">Следующий шаг</a>
           </fieldset>
-          <fieldset class="plan-creation__fieldset fieldset">
-            <legend class="plan-creation__part-title">Шаг 2.
+          <fieldset class="plan-add__fieldset fieldset">
+            <legend class="plan-add__part-title">Шаг 2.
               Маршрут</legend>
-            <p class="plan-creation__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или
+            <p class="plan-add__description">Укажите страны, которые вы хотели по посетить. Это может быть
+              одна или
               сразу несколько.</p>
-            <ul class="plan-creation__list">
-              <li class="plan-creation__item">
-                <select class="plan-creation__select selectfield" name="firstCountry" id="firstCountry">
-                  <option class="plan-creation__option selectfield__item" value="Bosnia and Herzegovina">Босния и
+            <ul class="plan-add__list">
+              <li class="plan-add__item">
+                <select class="plan-add__select selectfield" name="firstCountry" id="firstCountry">
+                  <option class="plan-add__option selectfield__item" value="Bosnia and Herzegovina">Босния
+                    и
                     Герцеговина</option>
                 </select>
               </li>
-              <li class="plan-creation__item">
-                <select class="plan-creation__select selectfield" name="secondCountry" id="secondCountry">
-                  <option class="plan-creation__option selectfield__item" value="Czech">Чехия</option>
+              <li class="plan-add__item">
+                <select class="plan-add__select selectfield" name="secondCountry" id="secondCountry">
+                  <option class="plan-add__option selectfield__item" value="Czech">Чехия</option>
                 </select>
               </li>
-              <li class="plan-creation__item">
-                <button class="btn plan-creation__btn plan-creation__btn--add-country" type="button">Добавить
+              <li class="plan-add__item">
+                <button class="btn plan-add__btn plan-add--add-country" type="button">Добавить
                   страну</button>
               </li>
             </ul>
-            <a class="btn plan-creation__btn plan-creation__btn--next" href="#">Следующий шаг</a>
-            <a class=" btn plan-creation__btn plan-creation__btn--previous" href="#">На шаг назад</a>
+            <a class="btn plan-add__btn plan-add__btn--next" href="#">Следующий шаг</a>
+            <a class=" btn plan-add__btn plan-add__btn--previous" href="#">На шаг назад</a>
           </fieldset>
-          <fieldset class="plan-creation__fieldset fieldset">
-            <legend class="plan-creation__part-title">Шаг 3.
+          <fieldset class="plan-add__fieldset fieldset">
+            <legend class="plan-add__part-title">Шаг 3.
               Развлечения</legend>
-            <p class="plan-creation__description">Наконец, расскажите о своих планах времяпровождения.
+            <p class="plan-add__description">Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.</p>
             <label>
-              <span class="plan-creation__label">Босния и Герцеговина</span>
-              <textarea class="plan-creation__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
+              <span class="plan-add__label">Босния и Герцеговина</span>
+              <textarea class="plan-add__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
                 placeholder="План действий"></textarea>
             </label>
             <label>
-              <span class="plan-creation__label">Чехия</span>
-              <textarea class="plan-creation__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
+              <span class="plan-add__label">Чехия</span>
+              <textarea class="plan-add__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
                 placeholder="План действий">Пить пиво и лазить
                 по старым замкам, наслаждаться архитектурой
                 и вот это все.</textarea>
             </label>
-            <button class="btn plan-creation__btn plan-creation__btn--next" type="submit">Отправить</button>
-            <a class=" btn plan-creation__btn plan-creation__btn--previous" href="#">На шаг назад</a>
+            <button class="btn plan-add__btn plan-add__btn--next" type="submit">Отправить</button>
+            <a class=" btn plan-add__btn plan-add__btn--previous" href="#">На шаг назад</a>
           </fieldset>
         </section>
       </form>
@@ -246,13 +252,13 @@
 
     <ul class="page-footer__list social-list">
       <li class="social-list__item">
-        <a class="social-list__facebook" href="#" aria-label="facebook">facebook</a>
+        <a class="social-list__facebook" href="#" aria-label="facebook"></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__vk" href="#" aria-label="вконтакте">vk</a>
+        <a class="social-list__vk" href="#" aria-label="вконтакте"></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__instagram" href="#" aria-label="instagram">instagram</a>
+        <a class="social-list__instagram" href="#" aria-label="instagram"></a>
       </li>
     </ul>
 
