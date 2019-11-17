@@ -1,0 +1,58 @@
+.transport-list {
+  @include list-reset;
+}
+
+.transport-list__transport-type {
+  position: relative;
+
+  width: 24px;
+  height: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    width: 33px;
+    height: 33px;
+
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    border-radius: 50%;
+  }
+}
+
+.transport-list__item:nth-of-type(1) {
+  .transport-list__transport-type {
+    &::before {
+      background-image: url("../../img/plane.svg");
+    }
+  }
+}
+
+.transport-list__item:nth-of-type(2) {
+  .transport-list__transport-type {
+    &::before {
+      background-image: url("../../img/bus.svg");
+    }
+  }
+}
+
+.transport-list__item:nth-of-type(3) {
+  .transport-list__transport-type {
+    &::before {
+      background-image: url("../../img/bike.svg");
+    }
+  }
+}
+
+.transport-list__item:nth-of-type(4) {
+  .transport-list__transport-type {
+    &::before {
+      background-image: url("../../img/run.svg");
+    }
+  }
+}

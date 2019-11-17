@@ -1,0 +1,11 @@
+.countries-list {
+  @include list-reset;
+}
+
+.countries-list__link {
+  font-family: $main-font;
+
+  @include font(400, normal, 16px, 22px);
+
+  color: $text-color;
+}
