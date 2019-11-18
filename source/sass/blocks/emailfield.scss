@@ -1,15 +1,19 @@
-.cta-form__field {
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: none;
-  padding-left: 24px;
+.emailfield {
   padding-right: 65px;
+  padding-left: 24px;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
 
   &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
     font-family: $main-font;
+    color: $text-color;
+    font-style: normal;
 
-    @include font(700, normal, 18px, 18px);
-    color: #444444;
     opacity: 0.3;
   }
 }

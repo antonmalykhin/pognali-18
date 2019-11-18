@@ -13,9 +13,11 @@
     position: absolute;
     right: 0;
 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
     color: #ffffff;
-
-    @include font(700, normal, 18px, 18px);
+    font-style: normal;
   }
 }
 

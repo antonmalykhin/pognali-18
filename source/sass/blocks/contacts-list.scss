@@ -6,38 +6,17 @@
   margin-bottom: 20px;
 }
 
-@mixin links {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 700;
-  color: #192144;
-  position: relative;
-
-  padding-left: 55px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    background-color: #121936;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-    border-radius: 50%;
-  }
-}
-
 .contacts-list__phone {
-  @include links;
-
-  padding-left: 55px;
   margin-bottom: 20px;
+  padding-left: 55px;
+
+  @include links;
 
   &::before {
     top: -17px;
     left: 0;
-    background-image: url("../../img/contacts-phone.svg");
+
+    background-image: url("../img/contacts-phone.svg");
   }
 }
 
@@ -47,7 +26,8 @@
   &::before {
     top: -17px;
     left: 0;
-    background-image: url("../../img/contacts-mail.svg");
+
+    background-image: url("../img/contacts-mail.svg");
   }
 }
 
@@ -58,8 +38,9 @@
   padding: 0;
 
   &::before {
-    background-color: #ff8d30;
     top: 0;
+
+    background-color: #ff8d30;
   }
 }
 
@@ -70,8 +51,9 @@
   padding: 0;
 
   &::before {
-    background-color: #ffbd30;
     top: 0;
+
+    background-color: #ffbd30;
   }
 }
 

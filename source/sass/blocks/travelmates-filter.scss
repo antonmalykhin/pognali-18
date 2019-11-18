@@ -7,10 +7,12 @@
 }
 
 .travelmates-filter__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
   font-family: $main-font;
   color: #1d2e5b;
-
-  @include font(700, normal, 22px, 22px);
+  font-style: normal;
 }
 
 .travelmates-filter__fieldset {
@@ -18,10 +20,12 @@
 }
 
 .travelmates-filter__legend {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
   font-family: $main-font;
   color: #1d2e5b;
-
-  @include font(700, normal, 16px, 18px);
+  font-style: normal;
 }
 
 .travelmates-filter__list {
@@ -29,22 +33,26 @@
 }
 
 .travelmates-filter__label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
   font-family: $main-font;
   color: $text-color;
-
-  @include font(400, normal, 15px, 15px);
+  font-style: normal;
 }
 
 .travelmates-filter__text {
   width: 111px;
   height: 35px;
 
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 13px;
   font-family: $main-font;
   color: #1d2e5b;
   text-transform: uppercase;
+  font-style: normal;
   letter-spacing: 0.1em;
-
-  @include font(500, normal, 15px, 13px);
 
   &:nth-of-type(1) {
     border-right: none;
@@ -61,13 +69,15 @@
   width: 230px;
   padding: 13px 76px;
 
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
   font-family: $main-font;
   color: #161c35;
   text-transform: uppercase;
+  font-style: normal;
 
   background-color: #ffffff;
   border: none;
   border-radius: 20px;
-
-  @include font(700, normal, 17px, 17px);
 }

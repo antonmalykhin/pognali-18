@@ -3,9 +3,11 @@
 }
 
 .plan-creation__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
   font-family: $main-font;
   color: #1d2e5b;
   text-transform: uppercase;
-
-  @include font(700, normal, 24px, 24px);
+  font-style: normal;
 }

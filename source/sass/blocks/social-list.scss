@@ -2,25 +2,20 @@
   @include list-reset;
 }
 
-@mixin social-link {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 23px;
-  height: 23px;
-  display: block;
-}
-
 .social-list__facebook {
+  background-image: url("../img/facebook.svg");
+
   @include social-link;
-  background-image: url("../../img/facebook.svg");
 }
 
 .social-list__vk {
+  background-image: url("../img/vk.svg");
+
   @include social-link;
-  background-image: url("../../img/vk.svg");
 }
 
 .social-list__instagram {
+  background-image: url("../img/instagram.svg");
+
   @include social-link;
-  background-image: url("../../img/instagram.svg");
 }

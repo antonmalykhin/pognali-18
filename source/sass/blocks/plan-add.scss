@@ -3,17 +3,21 @@
 }
 
 .plan-add__part-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
   font-family: $main-font;
   color: #1d2e5b;
-
-  @include font(700, normal, 20px, 20px);
+  font-style: normal;
 }
 
 .plan-add__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
   font-family: $main-font;
   color: $text-color;
-
-  @include font(400, normal, 16px, 22px);
+  font-style: normal;
 }
 
 .plan-add__fieldset {
@@ -22,32 +26,38 @@
 }
 
 .plan-add__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
   font-family: $main-font;
   color: #1d2e5b;
   text-transform: uppercase;
+  font-style: normal;
   letter-spacing: 0.1em;
+}
 
-  @include font(500, normal, 16px, 26px);
-
-  &#{--checkbox-label} {
-    font-family: $main-font;
-    color: $text-color;
-    text-transform: inherit;
-    letter-spacing: 0;
-
-    @include font(400, normal, 15px, 15px);
-  }
+.plan-add__label--checkbox-label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  font-family: $main-font;
+  color: $text-color;
+  text-transform: inherit;
+  font-style: normal;
+  letter-spacing: 0;
 }
 
 .plan-add__unit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
   font-family: $main-font;
   color: #1d2e5b;
   text-transform: uppercase;
+  font-style: normal;
   letter-spacing: 0.1em;
 
   opacity: 0.3;
-
-  @include font(500, normal, 16px, 26px);
 }
 
 .plan-add__field-wrapper {
@@ -85,45 +95,45 @@
     background-position: center;
     opacity: 0.3;
   }
+}
 
-  &#{--minus} {
-    position: absolute;
-    top: 0;
-    left: 0;
+.plan-add__btn--minus {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    &::after {
-      background-image: url("../../img/qty-minus-mobile.svg");
-    }
+  &::after {
+    background-image: url("../img/qty-minus-mobile.svg");
   }
+}
 
-  &#{--plus} {
-    position: absolute;
-    top: 0;
-    right: 0;
+.plan-add__btn--plus {
+  position: absolute;
+  top: 0;
+  right: 0;
 
-    &::after {
-      background-image: url("../../img/qty-plus-mobile.svg");
-    }
+  &::after {
+    background-image: url("../img/qty-plus-mobile.svg");
   }
+}
 
-  &#{--back} {
-    position: absolute;
-    top: 0;
-    left: 0;
+.plan-add__btn--back {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    &::after {
-      background-image: url("../../img/month-arrow-left.svg");
-    }
+  &::after {
+    background-image: url("../img/month-arrow-left.svg");
   }
+}
 
-  &#{--front} {
-    position: absolute;
-    top: 0;
-    right: 0;
+.plan-add__btn--front {
+  position: absolute;
+  top: 0;
+  right: 0;
 
-    &::after {
-      background-image: url("../../img/month-arrow-right.svg");
-    }
+  &::after {
+    background-image: url("../img/month-arrow-right.svg");
   }
 }
 
@@ -142,16 +152,18 @@
   width: 220px;
   padding: 16px 12px;
 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
   font-family: $main-font;
   text-align: left;
   color: #1d2e5b;
   text-transform: uppercase;
+  font-style: normal;
   letter-spacing: 0.1em;
 
   background-color: #edeff6;
   border-radius: 4px;
-
-  @include font(500, normal, 14px, 18px);
 }
 
 .plan-add__list {
@@ -163,10 +175,12 @@
   width: 220px;
   padding: 15px;
 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
   font-family: $main-font;
   color: $text-color;
-
-  @include font(400, normal, 16px, 22px);
+  font-style: normal;
 
   &::placeholder {
     opacity: 0.3;

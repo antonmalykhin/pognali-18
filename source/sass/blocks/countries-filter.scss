@@ -3,17 +3,20 @@
 }
 
 .countries-filter__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
   font-family: $main-font;
   color: #192144;
   text-transform: uppercase;
-
-  @include font(700, normal, 16px, 22px);
+  font-style: normal;
 }
 
 .countries-filter__btn {
   width: 270px;
   padding: 14px 84px 13px 109px;
+
   background-color: #d6daed;
-  border-radius: 20px;
   border: none;
+  border-radius: 20px;
 }

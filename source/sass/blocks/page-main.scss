@@ -3,10 +3,12 @@
 }
 
 .page-main__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
   font-family: $main-font;
-  color: #ffffff;
+  color: $white-color;
+  font-style: normal;
 
   background-color: #161c35;
-
-  @include font(700, normal, 36px, 40px);
 }

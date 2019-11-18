@@ -3,37 +3,41 @@
 }
 
 .pagination__btn {
+  position: relative;
+
   display: block;
   width: 135px;
   height: 50px;
+
   background-color: $white-color;
   border: none;
-  position: relative;
 
   &::after {
     content: "";
-    width: 10px;
-    height: 20px;
+    position: absolute;
     top: 17px;
     left: 63px;
-    position: absolute;
+
+    width: 10px;
+    height: 20px;
+
     background-repeat: no-repeat;
   }
+}
 
-  &#{--back} {
-    border-radius: 20px 0 0 20px;
+.pagination__btn--back {
+  border-radius: 20px 0 0 20px;
 
-    &::after {
-      background-image: url("../../img/triangle-arrow-left.svg");
-    }
+  &::after {
+    background-image: url("../img/triangle-arrow-left.svg");
   }
+}
 
-  &#{--front} {
-    border-radius: 0 20px 20px 0;
+.pagination__btn--front {
+  border-radius: 0 20px 20px 0;
 
-    &::after {
-      background-image: url("../../img/triangle-arrow-right.svg");
-    }
+  &::after {
+    background-image: url("../img/triangle-arrow-right.svg");
   }
 }
 
@@ -43,17 +47,20 @@
 
 .pagination__item a {
   position: relative;
+
   display: block;
   width: 5px;
   height: 5px;
 
   &::after {
-    position: absolute;
     content: "";
-    width: 5px;
-    height: 5px;
+    position: absolute;
     top: 0;
     left: 0;
+
+    width: 5px;
+    height: 5px;
+
     background-color: #1d2e5b;
   }
 }

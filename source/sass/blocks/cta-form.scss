@@ -3,21 +3,25 @@
 }
 
 .cta-form__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
   font-family: $main-font;
-
-  @include font(700, normal, 24px, 24px);
   color: #ff8d30;
+  font-style: normal;
 }
 
 .cta-form__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
   font-family: $main-font;
-
-  @include font(300, normal, 16px, 22px);
   color: #ffffff;
+  font-style: normal;
 
   .cta-form__link {
-    text-decoration: underline;
     color: #ffd74b;
+    text-decoration: underline;
   }
 }
 
@@ -33,21 +37,25 @@
 
 .cta-form__btn {
   position: absolute;
+  top: 0;
+  left: 210px;
+
   width: 60px;
   height: 62px;
   padding: 0;
+
   border-radius: 10px;
-  top: 0;
-  left: 210px;
 
   &::after {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 14px;
     top: 24px;
     left: 27px;
-    background-image: url("../../img/triangle-arrow-right.svg");
+
+    width: 10px;
+    height: 14px;
+
+    background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

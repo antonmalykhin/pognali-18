@@ -3,9 +3,10 @@
 }
 
 .countries-list__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
   font-family: $main-font;
-
-  @include font(400, normal, 16px, 22px);
-
   color: $text-color;
+  font-style: normal;
 }
