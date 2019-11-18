@@ -1,0 +1,6 @@
+.developer__text {
+  font-family: $main-font;
+  color: $text-color;
+
+  @include font(400, normal, 16px, 22px);
+}

@@ -6,20 +6,26 @@
   list-style: none;
 }
 
-@for $i from 1 through 3 {
-  .plans__item:nth-of-type(#{$i}) {
-    background-color: #ffffff;
-    border-radius: 10px;
+.plans__item {
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  @include font(500, normal, 16px, 16px);
+
+  &:nth-of-type(1) {
     &::before {
-      content: "#{$i}.";
+      content: "1.";
+    }
+  }
 
-      font-family: $main-font;
-      color: #1d2e5b;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-
-      @include font(500, normal, 16px, 16px);
+  &:nth-of-type(2) {
+    &::before {
+      content: "2.";
     }
   }
 }
@@ -63,6 +69,8 @@
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+
   opacity: 0.3;
+
   @include font(500, normal, 14px, 18px);
 }

@@ -100,6 +100,7 @@
     position: absolute;
     top: 0;
     right: 0;
+
     &::after {
       background-image: url("../../img/qty-plus-mobile.svg");
     }
@@ -109,6 +110,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     &::after {
       background-image: url("../../img/month-arrow-left.svg");
     }
@@ -118,6 +120,7 @@
     position: absolute;
     top: 0;
     right: 0;
+
     &::after {
       background-image: url("../../img/month-arrow-right.svg");
     }
@@ -126,9 +129,9 @@
 
 .plan-add__btn-next {
   display: block;
+  box-sizing: border-box;
   width: 230px;
   padding: 5px 45px;
-  box-sizing: border-box;
 }
 
 .plan-add__btn-prew {
