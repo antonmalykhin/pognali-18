@@ -1,0 +1,16 @@
+.datefield {
+  box-sizing: border-box;
+  width: 220px;
+  height: 43px;
+  padding: 0 43px;
+
+  font-family: $main-font;
+  text-align: center;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+
+  @include font(700, normal, 20px, 20px);
+}
