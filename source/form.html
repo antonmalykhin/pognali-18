@@ -119,7 +119,7 @@
 
         <section class="plans">
 
-          <h2 class="plans__title">Мои планы:</h2>
+          <h2 class="plans__title plan-creation__title">Мои планы:</h2>
 
           <ol class="plans__list">
             <li class="plans__item">
@@ -145,56 +145,65 @@
 
           <div class="plan-add__pagination pagination">
             <ul class="pagination__list">
-              <li class="pagination__item"><a>1</a></li>
-              <li class="pagination__item"><a href="#">2</a></li>
-              <li class="pagination__item"><a href="#">3</a></li>
+              <li class="pagination__item"><a></a></li>
+              <li class="pagination__item"><a href="#"></a></li>
+              <li class="pagination__item"><a href="#"></a></li>
             </ul>
           </div>
 
 
           <fieldset class="plan-add__fieldset fieldset">
-            <legend class="plan-add__part-title">Шаг 1.
-              Даты пребывания</legend>
+            <p class="plan-add__part-title"><span class="plan-add__step">Шаг 1.</span>
+              <span class="plan-add__text">Даты пребывания</span></p>
             <p class="plan-add__description">Укажите предпочтительное количество попутчиков, которых
               вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
 
             <label for="numOfPeople">
               <span class="plan-add__label">ищу попутчиков:</span>
               <span class="plan-add__unit">чел.</span>
             </label>
-            <button class="btn plan-add__btn plan-add__btn--minus">-</button>
-            <input class="plan-add__number numberfield" type="number" name="numOfPeople" id="numOfPeople" value="2"
-              required>
-            <button class="btn plan-add__btn plan-add__btn--plus">+</button>
+            <div class="plan-add__field-wrapper">
+              <button class="btn plan-add__btn plan-add__btn--minus"></button>
+              <input class="plan-add__number numberfield" type="text" name="numOfPeople" id="numOfPeople" value="2"
+                pattern="[1-9]{1,2}" required>
+              <button class="btn plan-add__btn plan-add__btn--plus"></button>
+            </div>
+
 
 
             <label for="numOfDays">
               <span class="plan-add__label">длительность:</span>
               <span class="plan-add__unit">дн.</span>
             </label>
-            <button class="btn plan-add__btn plan-add__btn--minus">-</button>
-            <input class="plan-add__number numberfield" type="number" name="numOfDays" id="numOfDays" value="2"
-              required>
-            <button class="btn plan-add__btn plan-add__btn--plus">+</button>
+            <div class="plan-add__field-wrapper">
+              <button class="btn plan-add__btn plan-add__btn--minus"></button>
+              <input class="plan-add__number numberfield" type="text" name="numOfDays" id="numOfDays" value="2"
+                pattern="[1-9]{1,3}" required>
+              <button class="btn plan-add__btn plan-add__btn--plus"></button>
+            </div>
 
 
             <label>
               <input class="plan-add__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren" required>
-              <span class="plan-add__label">Можно с
+              <span class="plan-add__label plan-add__label--checkbox-label">Можно с
                 детьми</span>
             </label>
 
 
-            <button class="btn plan-add__btn plan-add__btn--back">
-              назад</button>
-            <input class="plan-add__date datefield" type="date" name="date" id="date" required>
-            <button class="btn plan-add__btn plan-add__btn--front">вперед</button>
+            <div class="plan-add__field-wrapper">
+              <button class="btn plan-add__btn plan-add__btn--back">
+              </button>
+              <input class="plan-add__date datefield" type="text" name="date" id="date" required value="март 2019">
+              <button class="btn plan-add__btn plan-add__btn--front"></button>
+            </div>
 
-            <a class="btn plan-add__btn plan-add__btn--next" href="#">Следующий шаг</a>
+            <a class="btn plan-add__btn-next" href="#">Следующий шаг</a>
           </fieldset>
           <fieldset class="plan-add__fieldset fieldset">
-            <legend class="plan-add__part-title">Шаг 2.
-              Маршрут</legend>
+            <p class="plan-add__part-title"><span class="plan-add__step">Шаг 2.</span>
+              <span class="plan-add__text">Маршрут</span></p>
+
             <p class="plan-add__description">Укажите страны, которые вы хотели по посетить. Это может быть
               одна или
               сразу несколько.</p>
@@ -212,16 +221,17 @@
                 </select>
               </li>
               <li class="plan-add__item">
-                <button class="btn plan-add__btn plan-add--add-country" type="button">Добавить
+                <button class="btn plan-add__btn-add-country" type="button">Добавить
                   страну</button>
               </li>
             </ul>
-            <a class="btn plan-add__btn plan-add__btn--next" href="#">Следующий шаг</a>
-            <a class=" btn plan-add__btn plan-add__btn--previous" href="#">На шаг назад</a>
+            <a class="btn plan-add__btn-next" href="#">Следующий шаг</a>
+            <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
           </fieldset>
           <fieldset class="plan-add__fieldset fieldset">
-            <legend class="plan-add__part-title">Шаг 3.
-              Развлечения</legend>
+            <p class="plan-add__part-title"><span class="plan-add__step">Шаг 3.</span>
+              <span class="plan-add__text">Развлечения</span></p>
+
             <p class="plan-add__description">Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.</p>
             <label>
@@ -229,15 +239,15 @@
               <textarea class="plan-add__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
                 placeholder="План действий"></textarea>
             </label>
+
             <label>
               <span class="plan-add__label">Чехия</span>
               <textarea class="plan-add__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
-                placeholder="План действий">Пить пиво и лазить
-                по старым замкам, наслаждаться архитектурой
-                и вот это все.</textarea>
+                placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </label>
-            <button class="btn plan-add__btn plan-add__btn--next" type="submit">Отправить</button>
-            <a class=" btn plan-add__btn plan-add__btn--previous" href="#">На шаг назад</a>
+
+            <button class="btn plan-add__btn-next" type="button">Отправить</button>
+            <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
           </fieldset>
         </section>
       </form>
