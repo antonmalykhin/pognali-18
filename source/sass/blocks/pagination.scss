@@ -36,3 +36,24 @@
     }
   }
 }
+
+.pagination__list {
+  @include list-reset;
+}
+
+.pagination__item a {
+  position: relative;
+  display: block;
+  width: 5px;
+  height: 5px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background-color: #1d2e5b;
+  }
+}

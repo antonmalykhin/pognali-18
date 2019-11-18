@@ -1,3 +1,11 @@
 .plan-creation__user {
   background-color: transparent;
 }
+
+.plan-creation__title {
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  @include font(700, normal, 24px, 24px);
+}
