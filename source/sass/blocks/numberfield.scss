@@ -1,0 +1,20 @@
+.numberfield {
+  box-sizing: border-box;
+  width: 220px;
+  height: 43px;
+  padding: 0 43px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  font-family: $main-font;
+  text-align: center;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}

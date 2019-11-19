@@ -1,0 +1,188 @@
+.plan-add {
+  background-color: #d4d9eb;
+}
+
+.plan-add__part-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  font-style: normal;
+}
+
+.plan-add__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  color: $text-color;
+  font-style: normal;
+}
+
+.plan-add__fieldset {
+  background-color: $white-color;
+  border-radius: 10px;
+}
+
+.plan-add__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.plan-add__label--checkbox-label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  font-family: $main-font;
+  color: $text-color;
+  text-transform: inherit;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.plan-add__unit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+
+  opacity: 0.3;
+}
+
+.plan-add__field-wrapper {
+  position: relative;
+
+  width: 220px;
+}
+
+.plan-add__date {
+  border-right: none;
+  border-left: none;
+}
+
+.plan-add__btn {
+  position: relative;
+
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  padding: 0;
+
+  background-color: transparent;
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 14px;
+
+    width: 14px;
+    height: 14px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+  }
+}
+
+.plan-add__btn--minus {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &::after {
+    background-image: url("../img/qty-minus-mobile.svg");
+  }
+}
+
+.plan-add__btn--plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &::after {
+    background-image: url("../img/qty-plus-mobile.svg");
+  }
+}
+
+.plan-add__btn--back {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &::after {
+    background-image: url("../img/month-arrow-left.svg");
+  }
+}
+
+.plan-add__btn--front {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &::after {
+    background-image: url("../img/month-arrow-right.svg");
+  }
+}
+
+.plan-add__btn-next {
+  display: block;
+  box-sizing: border-box;
+  width: 230px;
+  padding: 5px 45px;
+}
+
+.plan-add__btn-prew {
+  background-color: transparent;
+}
+
+.plan-add__btn-add-country {
+  width: 220px;
+  padding: 16px 12px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $main-font;
+  text-align: left;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+
+  background-color: #edeff6;
+  border-radius: 4px;
+}
+
+.plan-add__list {
+  @include list-reset;
+}
+
+.plan-add__textarea {
+  box-sizing: border-box;
+  width: 220px;
+  padding: 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  color: $text-color;
+  font-style: normal;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,19 @@
+.emailfield {
+  padding-right: 65px;
+  padding-left: 24px;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: $main-font;
+    color: $text-color;
+    font-style: normal;
+
+    opacity: 0.3;
+  }
+}

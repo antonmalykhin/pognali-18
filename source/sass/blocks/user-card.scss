@@ -1,0 +1,252 @@
+.user-card {
+  position: relative;
+
+  background-color: $white-color;
+}
+
+.user-card__level-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.user-card__scores {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $main-font;
+  color: $white-color;
+  font-style: normal;
+}
+
+.user-card__level {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $main-font;
+  color: $white-color;
+  font-style: normal;
+}
+
+.user-card__flags {
+  @include list-reset;
+}
+
+.user-card__user-name {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  font-style: normal;
+}
+
+.user-card__rating {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $main-font;
+  color: #161c35;
+  font-style: normal;
+}
+
+.user-card__tags {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $main-font;
+  color: $text-color;
+  font-style: normal;
+}
+
+.user-card__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $main-font;
+  color: $text-color;
+  text-transform: lowercase;
+  font-style: normal;
+}
+
+.user-cart__country-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.user-card__transport-list {
+  @include list-reset;
+}
+
+.user-card__transport-type {
+  position: relative;
+
+  width: 24px;
+  height: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 24px;
+    height: 21px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.user-card__transport-item:nth-of-type(1) {
+  .user-card__transport-type {
+    &::before {
+      background-image: url("../img/plane.svg");
+    }
+  }
+}
+
+.user-card__transport-item:nth-of-type(2) {
+  .user-card__transport-type {
+    &::before {
+      background-image: url("../img/bus.svg");
+    }
+  }
+}
+
+.user-card__transport-item:nth-of-type(3) {
+  .user-card__transport-type {
+    &::before {
+      background-image: url("../img/bike.svg");
+    }
+  }
+}
+
+.user-card__transport-item:nth-of-type(4) {
+  .user-card__transport-type {
+    &::before {
+      background-image: url("../img/run.svg");
+    }
+  }
+}
+
+.user-card__like-btn {
+  position: relative;
+
+  width: 31px;
+  height: 31px;
+
+  background-color: #edeff6;
+  border: none;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 9px;
+
+    width: 13px;
+    height: 11px;
+
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.user-card__like-btn--selected {
+  background-color: #f9eaea;
+
+  &::after {
+    background-image: url("../img/heart-active.svg");
+    opacity: 1;
+  }
+}
+
+.user-card__btn {
+  width: 230px;
+  padding: 13px 79px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: $main-font;
+  color: #161c35;
+  text-transform: uppercase;
+  font-style: normal;
+
+  background-color: #ffd74b;
+  border-radius: 20px;
+}
+
+.travelmates-cards__show-more-btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.user-card__change-photo-btn {
+  padding: 13px 75px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: $main-font;
+  color: #161c35;
+  text-transform: uppercase;
+  font-style: normal;
+
+  background-color: #dfe3f0;
+  border-radius: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.user-card__fieldset {
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+
+.user-card__legend {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.user-card__textarea {
+  width: 270px;
+
+  background-color: transparent;
+  border: none;
+}

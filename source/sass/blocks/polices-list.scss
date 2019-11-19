@@ -1,0 +1,19 @@
+.polices-list {
+  @include list-reset;
+}
+
+.polices-list__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  color: #192144;
+  text-transform: uppercase;
+  font-style: normal;
+
+  opacity: 0.3;
+}
+
+.plan-add__btn--current {
+  opacity: 1;
+}

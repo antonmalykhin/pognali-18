@@ -4,23 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="libs/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сервиса «Погнали»">
-    </a>
     <nav class="main-nav">
+      <a class="main-nav__logo page-header__logo" href="#">
+        <img class="main-nav__logo-image page-header__logo-image" src="img/logo-mobile-white@1x.png" width="100"
+          height="19" alt="Логотип сервиса «Погнали»">
+      </a>
       <button class="main-nav__toggle open-close-btn" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">О сервисе</a></li>
-          <li class="site-list__item"><a href="#">Направления</a></li>
-          <li class="site-list__item"><a href="#">Попутчики</a></li>
+          <li class="site-list__item"><a href=" index.html">О сервисе</a></li>
+          <li class="site-list__item"><a href=" form.html">Направления</a></li>
+          <li class="site-list__item"><a>Попутчики</a></li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <ul class=" main-nav__list user-list">
           <li class="user-list__item">
             <a class="btn user-list__login" href="#">авторизация</a>
           </li>
@@ -35,13 +37,13 @@
         </ul>
         <ul class="main-nav__list social-list">
           <li class="social-list__item">
-            <a class="social-list__facebook" href="#">facebook</a>
+            <a class="social-list__facebook" href="#" aria-label="facebook"></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__vk" href="#">vk</a>
+            <a class="social-list__vk" href="#" aria-label="вконтакте"></a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__instagram" href="#">instagram</a>
+            <a class="social-list__instagram" href="#" aria-label="instagram"></a>
           </li>
         </ul>
       </div>
@@ -49,32 +51,31 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Каталог попутчиков</h1>
-
+    <h1 class="page-main__title">Попутчики</h1>
     <section class="countries-filter">
-      <a href="#" class="btn countries-filter__btn">
+      <a href="#">
         <h2 class="countries-filter__title">Фильтрация по странам</h2>
       </a>
 
       <ul class="countries-filter__list polices-list">
         <li class="polices-list__item">
-          <a class="countries-filter__link" href="#">Европа</a>
+          <a class="polices-list__link polices-list__link--current" href="#">Европа</a>
         </li>
         <li class="polices-list__item">
-          <a class="countries-filter__link" href="#">Азия</a>
+          <a class="polices-list__link" href="#">Азия</a>
         </li>
         <li class="polices-list__item">
-          <a class="countries-filter__link" href="#">Америка</a>
+          <a class="polices-list__link" href="#">Америка</a>
         </li>
         <li class="polices-list__item">
-          <a class="countries-filter__link" href="#">Острова</a>
+          <a class="polices-list__link" href="#">Острова</a>
         </li>
       </ul>
 
       <table class="countries-filter__table table">
         <tr>
           <td>
-            <a class="countries-filter__link table__link" href="#">а</a>
+            <a class="countries-filter__link table__link table__link--current" href="#">а</a>
           </td>
           <td>
             <a class="countries-filter__link table__link" href="#">б</a>
@@ -161,128 +162,137 @@
 
       <ul class="countries-filter__list countries-list">
         <li class="countries-list__item">
-          <a class="countries-filter__link" href="#">Афганистан</a>
+          <a class="countries-list__link" href="#">Афганистан</a>
         </li>
         <li class="countries-list__item">
-          <a class="countries-filter__link" href="#">Албания</a>
+          <a class="countries-list__link" href="#">Албания</a>
         </li>
         <li class="countries-list__item">
-          <a class="countries-filter__link" href="#">Албания</a>
+          <a class="countries-list__link" href="#">Албания</a>
         </li>
         <li class="countries-list__item">
-          <a class="countries-filter__link" href="#">Андорра</a>
+          <a class="countries-list__link" href="#">Андорра</a>
         </li>
         <li class="countries-list__item">
-          <a class="countries-filter__link" href="#">Аргентина</a>
+          <a class="countries-list__link" href="#">Аргентина</a>
         </li>
         <li class="countries-list__item">
-          <a class="countries-filter__link" href="#">Армения</a>
+          <a class="countries-list__link" href="#">Армения</a>
         </li>
         <li class="countries-list__item">
-          <a class="countries-filter__link" href="#">Австралия</a>
+          <a class="countries-list__link" href="#">Австралия</a>
         </li>
         <li class="countries-list__item">
-          <a class="countries-filter__link" href="#">Австрия</a>
+          <a class="countries-list__link" href="#">Австрия</a>
         </li>
         <li class="countries-list__item">
-          <a class="countries-filter__link" href="#">Азербайджан</a>
+          <a class="countries-list__link" href="#">Азербайджан</a>
         </li>
       </ul>
 
-      <button class="btn countries-filter__btn">Свернуть</button>
+      <button class="countries-filter__btn">Свернуть</button>
     </section>
 
     <section class="travelmates-filter">
-      <h2 class="visually-hidden">Форма фильтрации попутчиков</h2>
-      <p class="travelmates-filter__title">Подберите идеального
-        попутчика</p>
-      <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="travelmates-filter__fieldset fieldset">
-          <legend class="travelmates-filter__legend">Хобби</legend>
-        </fieldset>
-        <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
-          <legend class="travelmates-filter__legend">Музыка</legend>
-          <ul class="travelmates-filter__list">
-            <li class="travelmates-filter__item">
-              <label>
-                <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="тяжелый рок">
-                <span class="travelmates-filter__label">Тяжелый рок</span>
-              </label>
-            </li>
-            <li class="travelmates-filter__item">
-              <label>
-                <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="русский рэп">
-                <span class="travelmates-filter__label">Русский рэп</span>
-              </label>
-            </li>
-            <li class="travelmates-filter__item">
-              <label>
-                <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="евроденс">
-                <span class="travelmates-filter__label">Евроденс</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
 
-        <fieldset class="travelmates-filter__fieldset fieldset">
-          <legend class="travelmates-filter__legend">Еда</legend>
-        </fieldset>
+      <div class="travelmates-filter__wrapper">
+        <h2 class="visually-hidden">Форма фильтрации попутчиков</h2>
+        <p class="travelmates-filter__title">Подберите идеального
+          попутчика</p>
+        <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="travelmates-filter__fieldset fieldset">
+            <h3 class="travelmates-filter__legend">Хобби</h3>
+          </fieldset>
+          <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
+            <h3 class="travelmates-filter__legend">Музыка</h3>
+            <ul class="travelmates-filter__list">
+              <li class="travelmates-filter__item">
+                <label>
+                  <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="тяжелый рок">
+                  <span class="travelmates-filter__label">Тяжелый рок</span>
+                </label>
+              </li>
+              <li class="travelmates-filter__item">
+                <label>
+                  <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="русский рэп">
+                  <span class="travelmates-filter__label">Русский рэп</span>
+                </label>
+              </li>
+              <li class="travelmates-filter__item">
+                <label>
+                  <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="евроденс">
+                  <span class="travelmates-filter__label">Евроденс</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
-          <legend class="travelmates-filter__legend">Транспорт</legend>
-          <ul class="travelmates-filter__list transport-list">
-            <li class="transport-list__item">
-              <label>
-                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
-                <span class="travelmates-filter__label" aria-label="авиаперелет">Авиаперелет</span>
-              </label>
-            </li>
-            <li class="transport-list__item">
-              <label>
-                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
-                <span class="travelmates-filter__label" aria-label="автотранспорт">Автотранспорт</span>
-              </label>
-            </li>
-            <li class="transport-list__item">
-              <label>
-                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
-                <span class="travelmates-filter__label" aria-label="велосипед">Велосипед</span>
-              </label>
-            </li>
-            <li class="transport-list__item">
-              <label>
-                <input class="travelmates-filter__input radiobutton" type="radio" name="transport" value="авиаперелет">
-                <span class="travelmates-filter__label" aria-label="пешком">Пешком</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="travelmates-filter__fieldset fieldset">
+            <h3 class="travelmates-filter__legend">Еда</h3>
+          </fieldset>
 
-        <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
-          <legend class="travelmates-filter__legend">Левел</legend>
-          <input class="textfield travelmates__text" type="text" value="30" aria-label="минимальное значение уровня">
-          <input class="textfield travelmates__text" type="text" value="100" aria-label="максимальное значение уровня">
-          <div class="travelmates-filter__slider slider">
-            <div class="line">
-              <div class="rang-line"></div>
+          <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
+            <h3 class="travelmates-filter__legend">Транспорт</h3>
+            <ul class="travelmates-filter__list transport-list">
+              <li class="transport-list__item">
+                <label>
+                  <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
+                    value="авиаперелет">
+                  <span class="transport-list__transport-type" aria-label="авиаперелет"></span>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <label>
+                  <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
+                    value="авиаперелет">
+                  <span class="transport-list__transport-type" aria-label="автотранспорт"></span>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <label>
+                  <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
+                    value="авиаперелет">
+                  <span class="transport-list__transport-type" aria-label="велосипед"></span>
+                </label>
+              </li>
+              <li class="transport-list__item">
+                <label>
+                  <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
+                    value="авиаперелет">
+                  <span class="transport-list__transport-type" aria-label="пешком"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
+            <h3 class="travelmates-filter__legend">Левел</h3>
+            <input class="textfield travelmates-filter__text" type="text" value="30"
+              aria-label="минимальное значение уровня">
+            <input class="textfield travelmates-filter__text" type="text" value="100"
+              aria-label="максимальное значение уровня">
+            <div class="travelmates-filter__slider slider">
+              <div class="line">
+                <div class="slider__rang-line"></div>
+              </div>
+              <div class="slider__handler"></div>
+              <div class="slider__handler"></div>
             </div>
-            <div class="handler"></div>
-            <div class="handler"></div>
-          </div>
-        </fieldset>
+          </fieldset>
 
-        <button class="btn travelmates-form__button" type="button">Показать</button>
-      </form>
+          <button class="travelmates-filter__button" type="button">Показать</button>
+        </form>
+      </div>
     </section>
 
-    <section class="travelmates">
+    <section class="travelmates-cards">
       <h2 class="visually-hidden">Карточки путешественников</h2>
-      <ul class="travelmates__list">
-        <li class="travelmates__item">
+      <ul class="travelmates-cards__list">
+        <li class="travelmates-cards__item">
           <div class="user-card">
-            <img class="user-card__photo user-card__photo--small" src="https://via.placeholder.com/150x150"
+            <img class="user-card__photo user-card__photo--small" src="img/firsova-mobile@1x.jpg" width="70" height="70"
               alt="Фотография пользователя Таня Фирсова">
-            <button class="btn user-card-btn user-card--selected" aria-label="Поставить лайк"></button>
+            <button class="user-card__like-btn user-card__like-btn--selected" aria-label="Поставить лайк"></button>
             <a class="user-card__user-name" href="#">Таня
               Фирсова</a>
             <p class="user-card__rating">1,5 М</p>
@@ -291,181 +301,178 @@
             <p class="user-card__text">хочет посетить:</p>
             <ul class="user-card__flags">
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Шри-Ланка" title="Шри-Ланка"><span>Шри-Ланка</span>
+                  alt="Шри-Ланка" title="Шри-Ланка"><span class="user-cart__country-name">Шри-Ланка</span>
               </li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Тайланд" title="Тайланд"><span>Тайланд</span></li>
+                  alt="Тайланд" title="Тайланд"><span class="user-cart__country-name">Тайланд</span></li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Сейшелы" title="Сейшелы"><span>Сейшелы</span></li>
+                  alt="Сейшелы" title="Сейшелы"><span class="user-cart__country-name">Сейшелы</span></li>
             </ul>
             <p class="user-card__text">транспорт:</p>
             <ul class="user-card__transport-list">
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
-                  Авиаперелет</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Автотранспорт">
-                  Автотранспорт</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
-                  Велосипед</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
-                <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">Пешком
+                <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">
                 </p>
               </li>
             </ul>
             <p class="user-card__text">левел:</p>
             <div class="user-card__level-label">
               <p class="user-card__scores">99</p>
-              <p class="user-card__level">level</p>
             </div>
             <a href="#" class="btn user-card__btn travelmates__btn">Позвать!</a>
           </div>
         </li>
 
-        <li class="user-card travelmates__item">
+        <li class="travelmates-cards__item">
           <div class="user-card">
-            <img class="user-card__photo user-card__photo--small" src="https://via.placeholder.com/150x150"
+            <img class="user-card__photo user-card__photo--small" src="img/demin-mobile@1x.jpg" width="70" height="70"
               alt="Фотография пользователя Петя Демин">
-            <button class="btn user-card-btn user-card--selected" aria-label="Поставить лайк"></button>
+            <button class="user-card__like-btn" aria-label="Поставить лайк"></button>
             <a class="user-card__user-name" href="#">Петя Демин</a>
             <p class="user-card__rating">150</p>
             <p class="user-card__tags">#бургер #бар #футбол #концерт #крафт</p>
             <p class="user-card__text">хочет посетить:</p>
             <ul class="user-card__flags">
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Бельгия" title="Бельгия"><span>Бельгия</span>
+                  alt="Бельгия" title="Бельгия"><span class="user-cart__country-name">Бельгия</span>
               </li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Чехия" title="Чехия"><span>Чехия</span></li>
+                  alt="Чехия" title="Чехия"><span class="user-cart__country-name">Чехия</span></li>
             </ul>
             <p class="user-card__text">транспорт:</p>
             <ul class="user-card__transport-list">
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
-                  Авиаперелет</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Автотранспорт">
-                  Автотранспорт</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
-                  Велосипед</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
-                <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Пешком">Пешком
+                <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Пешком">
                 </p>
               </li>
             </ul>
             <p class="user-card__text">левел:</p>
             <div class="user-card__level-label">
               <p class="user-card__scores">80</p>
-              <p class="user-card__level">level</p>
             </div>
             <a href="#" class="btn user-card__btn travelmates__btn">Позвать!</a>
           </div>
         </li>
 
-        <li class="user-card travelmates__item">
+        <li class="travelmates-cards__item">
           <div class="user-card">
-            <img class="user-card__photo user-card__photo--small" src="https://via.placeholder.com/150x150"
+            <img class="user-card__photo user-card__photo--small" src="img/smolov-mobile@1x.jpg" width="70" height="70"
               alt="Фотография пользователя Марк Смолов">
-            <button class="btn user-card-btn user-card--selected" aria-label="Поставить лайк"></button>
+            <button class="user-card__like-btn" aria-label="Поставить лайк"></button>
             <a class="user-card__user-name" href="#">Марк Смолов</a>
             <p class="user-card__rating">1700</p>
             <p class="user-card__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
             <p class="user-card__text">хочет посетить:</p>
             <ul class="user-card__flags">
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="США" title="США"><span>США</span>
+                  alt="США" title="США"><span class="user-cart__country-name">США</span>
               </li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Австралия" title="Австралия"><span>Австралия</span></li>
+                  alt="Австралия" title="Австралия"><span class="user-cart__country-name">Австралия</span></li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Доминикана" title="Доминикана"><span>Доминикана</span></li>
+                  alt="Доминикана" title="Доминикана"><span class="user-cart__country-name">Доминикана</span></li>
             </ul>
             <p class="user-card__text">транспорт:</p>
             <ul class="user-card__transport-list">
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
-                  Авиаперелет</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Автотранспорт">
-                  Автотранспорт</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Велосипед">
-                  Велосипед</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
-                <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">Пешком
+                <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">
                 </p>
               </li>
             </ul>
             <p class="user-card__text">левел:</p>
             <div class="user-card__level-label">
               <p class="user-card__scores">25</p>
-              <p class="user-card__level">level</p>
             </div>
             <a href="#" class="btn user-card__btn travelmates__btn">Позвать!</a>
           </div>
         </li>
 
-        <li class="user-card travelmates__item">
+        <li class="travelmates-cards__item">
           <div class="user-card">
-            <img class="user-card__photo user-card__photo--small" src="https://via.placeholder.com/150x150"
-              alt="Фотография пользователя Лариса Роговая">
-            <button class="btn user-card-btn user-card--selected" aria-label="Поставить лайк"></button>
+            <img class="user-card__photo user-card__photo--small" src="img/rogovaya-mobile@1x.jpg" width="70"
+              height="70" alt="Фотография пользователя Лариса Роговая">
+            <button class="user-card__like-btn" aria-label="Поставить лайк"></button>
             <a class="user-card__user-name" href="#">Лариса Роговая</a>
             <p class="user-card__rating">23</p>
             <p class="user-card__tags">#образование #карьера #учеба #линкедин</p>
             <p class="user-card__text">хочет посетить:</p>
             <ul class="user-card__flags">
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Великобритания" title="Великобритания"><span>Великобритания</span>
+                  alt="Великобритания" title="Великобритания"><span
+                  class="user-cart__country-name">Великобритания</span>
               </li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                  alt="Германия" title="Германия"><span>Германия</span></li>
+                  alt="Германия" title="Германия"><span class="user-cart__country-name">Германия</span></li>
             </ul>
             <p class="user-card__text">транспорт:</p>
             <ul class="user-card__transport-list">
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
-                  Авиаперелет</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Автотранспорт">
-                  Автотранспорт</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
-                  Велосипед</p>
+                </p>
               </li>
               <li class="user-card__transport-item">
-                <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">Пешком
+                <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">
                 </p>
               </li>
             </ul>
             <p class="user-card__text">левел:</p>
             <div class="user-card__level-label">
               <p class="user-card__scores">50</p>
-              <p class="user-card__level">level</p>
             </div>
             <a href="#" class="btn user-card__btn travelmates__btn">Позвать!</a>
           </div>
         </li>
       </ul>
-      <a href="#" class="btn travelmates__btn travelmates__btn--bg-transparent">Показать еще</a>
-      <ul class="travelmates__pagination pagination">
-        <li class="travelmates__pagination-item"><a class="btn pagination__btn pagination__btn--back" href="#"
-            aria-label="Назад">Назад</a></li>
-        <li class="travelmates__pagination-item"><a class="btn pagination__btn pagination__btn--front" href="#"
-            aria-label="Вперед">Вперед</a>
+      <a href="#" class="travelmates-cards__show-more-btn">Показать еще</a>
+      <ul class="travelmates-cards__pagination pagination">
+        <li class="travelmates-cards__pagination-item"><a class="pagination__btn pagination__btn--back" href="#"
+            aria-label="Назад"></a></li>
+        <li class="travelmates-cards__pagination-item"><a class="pagination__btn pagination__btn--front" href="#"
+            aria-label="Вперед"></a>
         </li>
       </ul>
     </section>
@@ -473,25 +480,26 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="#">
-      <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сервиса «Погнали»">
+      <img class="page-footer__logo-image" src="img/logo-mobile-blue@1x.png" width="96" height="15"
+        alt="Логотип сервиса «Погнали»">
     </a>
 
     <ul class="page-footer__list social-list">
       <li class="social-list__item">
-        <a class="social-list__facebook" href="#">facebook</a>
+        <a class="social-list__facebook" href="#" aria-label="facebook"></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__vk" href="#">vk</a>
+        <a class="social-list__vk" href="#" aria-label="вконтакте"></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__instagram" href="#">instagram</a>
+        <a class="social-list__instagram" href="#" aria-label="instagram"></a>
       </li>
     </ul>
 
     <div class="developer">
       <p class="developer__text">Разработано</p>
       <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="developer__logo" src="https://via.placeholder.com/150x150" alt="HTMLAcademy">
+        <img class="developer__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">
       </a>
     </div>
   </footer>

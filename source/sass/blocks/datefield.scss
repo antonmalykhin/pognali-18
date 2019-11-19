@@ -1,0 +1,18 @@
+.datefield {
+  box-sizing: border-box;
+  width: 220px;
+  height: 43px;
+  padding: 0 43px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $main-font;
+  text-align: center;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+}

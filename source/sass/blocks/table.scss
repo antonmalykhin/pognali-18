@@ -1,0 +1,37 @@
+.table {
+  border-collapse: collapse;
+}
+
+.table td {
+  width: 45px;
+  height: 42px;
+  padding: 0;
+
+  vertical-align: middle;
+  text-align: center;
+
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+}
+
+.table__link {
+  display: block;
+  box-sizing: border-box;
+  width: inherit;
+  height: inherit;
+  padding-top: 14px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.table__link--current {
+  color: $white-color;
+
+  background-color: #1d2e5b;
+}

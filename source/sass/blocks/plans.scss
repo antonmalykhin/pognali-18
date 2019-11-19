@@ -1,0 +1,88 @@
+.plans {
+  background-color: #dfe3f0;
+}
+
+.plans__list {
+  list-style: none;
+}
+
+.plans__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  &:nth-of-type(1) {
+    &::before {
+      content: "1.";
+    }
+  }
+
+  &:nth-of-type(2) {
+    &::before {
+      content: "2.";
+    }
+  }
+}
+
+.plans__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.plans__country {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.plans__travelmates {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.plans__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.plans__btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $main-font;
+  color: #000000;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+
+  opacity: 0.3;
+}

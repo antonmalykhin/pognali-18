@@ -1,0 +1,32 @@
+.map {
+  background-color: #ffd74b;
+}
+
+.map__address {
+  position: relative;
+
+  padding-left: 55px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  color: #192144;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.map__btn {
+  width: 270px;
+  padding-left: 24px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: $main-font;
+  color: #1d2e5b;
+  font-style: normal;
+
+  border: 3px solid #192144;
+  border-radius: 10px;
+}

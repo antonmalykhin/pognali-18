@@ -1,0 +1,13 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item a {
+  font-family: $main-font;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #192144;
+  text-decoration: none;
+}

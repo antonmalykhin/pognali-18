@@ -1,0 +1,21 @@
+.social-list {
+  @include list-reset;
+}
+
+.social-list__facebook {
+  background-image: url("../img/facebook.svg");
+
+  @include social-link;
+}
+
+.social-list__vk {
+  background-image: url("../img/vk.svg");
+
+  @include social-link;
+}
+
+.social-list__instagram {
+  background-image: url("../img/instagram.svg");
+
+  @include social-link;
+}

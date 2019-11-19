@@ -1,0 +1,21 @@
+.feedback__item {
+  margin: 0;
+}
+
+.feedback__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  color: $white-color;
+  font-style: italic;
+}
+
+.feedback__author {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  color: $white-color;
+  font-style: normal;
+}

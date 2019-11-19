@@ -1,0 +1,42 @@
+.travelmates {
+  background-color: #192144;
+}
+
+.travelmates__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $main-font;
+  color: #ff8d30;
+  font-style: normal;
+}
+
+.travelmates__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  color: $white-color;
+  font-style: normal;
+}
+
+.travelmates__slogan {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  color: $white-color;
+  font-style: normal;
+}
+
+.travelmates__list {
+  @include list-reset;
+}
+
+.travelmates__btn {
+  padding: 24px 132px 24px 24px;
+
+  color: #1d2e5b;
+
+  border-radius: 10px;
+}
