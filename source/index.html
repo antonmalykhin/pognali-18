@@ -16,7 +16,7 @@
           height="19" alt="Логотип сервиса «Погнали»">
       </a>
       <button class="main-nav__toggle open-close-btn" type="button" aria-label="Открыть меню">Открыть меню</button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper visually-hidden">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a>О сервисе</a></li>
           <li class="site-list__item"><a href="form.html">Направления</a></li>
@@ -57,14 +57,16 @@
       <section class="intro-title">
         <h3 class="visually-hidden">Вступительная часть</h3>
         <p class="intro-title__slogan">В путешествие с крутыми попутчиками!</p>
-        <ul class="intro-title__list contacts-list">
-          <li class="contacts-list__item"><a class="contacts-list__phone contacts-list__phone--theme-orange-icon"
-              href="tel:8-800-555-86-28" aria-label="Телефон: 8 800 555-86-28"></a></li>
-          <li class="contacts-list__item"><a class="contacts-list__email contacts-list__email--theme-yellow-icon"
-              href="mailto:mail@htmlacademy.ru" aria-label="Адрес электронной почты: mail@htmlacademy.ru"></a>
-          </li>
-        </ul>
-        <a class="btn login-btn intro-title__login" href="#">авторизация</a>
+        <div class="intro-title__btns-container">
+          <ul class="intro-title__list contacts-list">
+            <li class="contacts-list__item"><a class="contacts-list__phone contacts-list__phone--theme-orange-icon"
+                href="tel:8-800-555-86-28" aria-label="Телефон: 8 800 555-86-28"></a></li>
+            <li class="contacts-list__item"><a class="contacts-list__email contacts-list__email--theme-yellow-icon"
+                href="mailto:mail@htmlacademy.ru" aria-label="Адрес электронной почты: mail@htmlacademy.ru"></a>
+            </li>
+          </ul>
+          <a class="btn login-btn intro-title__login" href="#">авторизация</a>
+        </div>
       </section>
 
       <section class="feedback">
@@ -102,23 +104,35 @@
       <ul class="countries__list">
         <li class="countries__item">
           <img class="countries__img" src="img/thailand-mobile@1x.jpg" width="210" height="110" alt="Таиланд">
-          <h3 class="countries__country">Таиланд</h3>
-          <p class="countries__slogan">Джунгли зовут!</p>
-          <p class="countries__users">18321</p>
+          <div class="countries__bg">
+            <div class="countries__text">
+              <h3 class="countries__country">Таиланд</h3>
+              <p class="countries__slogan">Джунгли зовут!</p>
+            </div>
+            <p class="countries__users">18321</p>
+          </div>
         </li>
 
         <li class="countries__item">
           <img class="countries__img" src="img/france-mobile@1x.jpg" width="210" height="110" alt="Франция">
-          <h3 class="countries__country">Франция</h3>
-          <p class="countries__slogan">Трэ бьен, манифик!</p>
-          <p class="countries__users">12518</p>
+          <div class="countries__bg">
+            <div class="countries__text">
+              <h3 class="countries__country">Франция</h3>
+              <p class="countries__slogan">Трэ бьен, манифик!</p>
+            </div>
+            <p class="countries__users">12518</p>
+          </div>
         </li>
 
         <li class="countries__item">
           <img class="countries__img" src="img/czech-mobile@1x.jpg" width="210" height="110" alt="Чехия">
-          <h3 class="countries__country">Чехия</h3>
-          <p class="countries__slogan">Закоулки старой Европы</p>
-          <p class="countries__users">5326</p>
+          <div class="countries__bg">
+            <div class="countries__text">
+              <h3 class="countries__country">Чехия</h3>
+              <p class="countries__slogan">Закоулки старой Европы</p>
+              <p class="countries__users">5326</p>
+            </div>
+          </div>
         </li>
       </ul>
 
@@ -133,13 +147,14 @@
       <ul class="travelmates__list">
         <li class="travelmates__item">
           <div class="user-card">
-            <img class="user-card__photo" src="img/firsova-desktop@1x.jpg" width="270" height="270"
+            <img class="travelmates__photo user-card__photo" src="img/firsova-desktop@1x.jpg" width="270" height="270"
               alt="Фотография пользователя">
-            <div class="user-card__level-label">
-              <p class="user-card__scores">99</p>
-              <p class="user-card__level">level</p>
+            <div class=" travelmates__level-label user-card__level-label">
+              <div class="user-card__circle"></div>
+              <p class="travelmates__scores user-card__scores">99</p>
+              <p class="travelmates__level user-card__level">level</p>
             </div>
-            <ul class="user-card__flags">
+            <ul class="travelmates__flags user-card__flags">
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                   alt="Шри-Ланка" title="Шри-Ланка"></li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
@@ -147,10 +162,10 @@
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                   alt="Сейшелы" title="Сейшелы"></li>
             </ul>
-            <a class="user-card__user-name" href="#">Таня Фирсова</a>
-            <p class="user-card__tags">#ЗОЖ #ПП #Фитнес #пляж
+            <a class="travelmates__name user-card__user-name" href="#">Таня Фирсова</a>
+            <p class="travelmates__tags user-card__tags">#ЗОЖ #ПП #Фитнес #пляж
               #авокадо #смузи</p>
-            <ul class="user-card__transport-list">
+            <ul class="travelmates__transport-list user-card__transport-list">
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
                 </p>
@@ -174,22 +189,23 @@
         <li class="travelmates__item travelmates__item--online">
 
           <div class="user-card">
-            <img class="user-card__photo" src="img/demin-desktop@1x.jpg" width="270" height="270"
+            <img class="travelmates__photo user-card__photo" src="img/demin-desktop@1x.jpg" width="270" height="270"
               alt="Фотография пользователя">
-            <div class="user-card__level-label">
-              <p class="user-card__scores">80</p>
-              <p class="user-card__level">level</p>
+            <div class=" travelmates__level-label user-card__level-label">
+              <div class="user-card__circle"></div>
+              <p class="travelmates__scores user-card__scores">80</p>
+              <p class="travelmates__level user-card__level">level</p>
             </div>
-            <ul class="user-card__flags">
+            <ul class="travelmates__flags user-card__flags">
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                   alt="Бельгия" title="Бельгия"></li>
               <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                   alt="Чехия" title="Чехия"></li>
             </ul>
-            <a class="user-card__user-name" href="#">Петя Демин</a>
-            <p class="user-card__tags">#бургер #бар #футбол
+            <a class="travelmates__name user-card__user-name" href="#">Петя Демин</a>
+            <p class="travelmates__tags user-card__tags">#бургер #бар #футбол
               #концерт #крафт</p>
-            <ul class="user-card__transport-list">
+            <ul class="travelmates__transport-list user-card__transport-list">
               <li class="user-card__transport-item">
                 <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
                 </p>
@@ -248,12 +264,13 @@
       <p class="cta-form__text">Остались вопросы?
         Мы с радостью на них ответим!</p>
       <ul class="cta-form__list contacts-list">
-        <li class="contacts-list__item">
-          <a class="contacts-list__phone contacts-list__phone--theme-yellow-text" href="tel:8-800-555-86-28">8 800
+        <li class="cta-form__item contacts-list__item">
+          <a class="cta-form__link contacts-list__phone contacts-list__phone--theme-yellow-text"
+            href="tel:8-800-555-86-28">8 800
             555-86-28</a>
         </li>
-        <li class="contacts-list__item">
-          <a class="contacts-list__email
+        <li class="cta-form__item contacts-list__item">
+          <a class="cta-form__link contacts-list__email
           contacts-list__email--theme-yellow-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
       </ul>
@@ -261,31 +278,32 @@
 
     <section class="map">
       <h2 class="visually-hidden">Контакты</h2>
-      <p class="map__address">ул. Большая
-        Конюшенная, 19/8</p>
-      <a class="btn map__btn" href="#">Проложить маршрут</a>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533198!2d30.320858716361723!3d59.93871648187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573580370300!5m2!1sru!2sru"
-        width="600" height="450" style="border:0;" allowfullscreen="" aria-label="Офис по адресу: Санкт-Петербург,
-    ул. Большая Конюшенная, 19/8"></iframe>
+      <div class="map__wrapper">
+        <p class="map__address">ул. Большая
+          Конюшенная, 19/8</p>
+        <a class="btn map__btn" href="#">Проложить маршрут</a>
+      </div>
+      <div class="map__map-block" id="map"></div>
     </section>
+
+
   </main>
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="#">
-      <img class="page-footer__logo-image" src="img/logo-mobile-blue@1x.png" width="96" height="15"
+      <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" width="96" height="15"
         alt="Логотип сервиса «Погнали»">
     </a>
 
     <ul class="page-footer__list social-list">
-      <li class="social-list__item">
-        <a class="social-list__facebook" href="#" aria-label="facebook"></a>
+      <li class="page-footer__item social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="#" aria-label="facebook"></a>
       </li>
-      <li class="social-list__item">
-        <a class="social-list__vk" href="#" aria-label="вконтакте"></a>
+      <li class="page-footer__item social-list__item">
+        <a class="social-list__link social-list__link--vk" href="#" aria-label="вконтакте"></a>
       </li>
-      <li class="social-list__item">
-        <a class="social-list__instagram" href="#" aria-label="instagram"></a>
+      <li class="page-footer__item social-list__item">
+        <a class="social-list__link social-list__link--instagram" href="#" aria-label="instagram"></a>
       </li>
     </ul>
 
@@ -319,6 +337,21 @@
     </ul>
     <button class="btn rates__btn rates__btn--close">Закрыть окно</button>
   </section>
+
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=66fdd484-cc3a-4f53-b7a9-2bc0f8e158eb&lang=ru_RU"></script>
+
+  <script>
+    ymaps.ready(init);
+    function init() {
+      var myMap = new ymaps.Map("map", {
+        center: [59.938631, 30.323055],
+        controls: [],
+        zoom: 17,
+      }, { suppressMapOpenBlock: true });
+    }
+  </script>
+
 </body>
 
 </html>
