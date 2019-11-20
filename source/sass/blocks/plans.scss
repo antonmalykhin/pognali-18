@@ -19,16 +19,12 @@
   background-color: #ffffff;
   border-radius: 10px;
 
-  &:nth-of-type(1) {
-    &::before {
-      content: "1.";
-    }
+  &:nth-of-type(1)::before {
+    content: "1.";
   }
 
-  &:nth-of-type(2) {
-    &::before {
-      content: "2.";
-    }
+  &:nth-of-type(2)::before {
+    content: "2.";
   }
 }
 
