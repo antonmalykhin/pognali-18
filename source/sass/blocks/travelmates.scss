@@ -1,5 +1,14 @@
 .travelmates {
+  margin-top: -30px;
+  padding: 0 25px;
+  padding-top: 105px;
+  padding-bottom: 30px;
+
   background-color: #192144;
+  background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 100px, 100px 50px;
+  border-radius: 20px;
 }
 
 .travelmates__title {
@@ -21,6 +30,9 @@
 }
 
 .travelmates__slogan {
+  display: block;
+  margin-bottom: 60px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -33,7 +45,58 @@
   @include list-reset;
 }
 
+.travelmates__item {
+  margin-bottom: 10px;
+  padding-bottom: 23px;
+
+  background-color: $white-color;
+  border-radius: 10px;
+}
+
+.travelmates__photo {
+  border-radius: 10px 10px 0 0;
+}
+
+.travelmates__level-label {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+.travelmates__scores {
+  position: absolute;
+  top: -11px;
+  left: 16px;
+}
+
+.travelmates__level {
+  position: absolute;
+  top: 25px;
+  left: 17px;
+}
+
+.travelmates__flags {
+  display: flex;
+  justify-content: space-around;
+}
+
+.travelmates__name {
+  display: block;
+
+  text-align: center;
+}
+
+.travelmates__tags {
+  text-align: center;
+}
+
+.travelmates__transport-list {
+  display: flex;
+  justify-content: space-around;
+}
+
 .travelmates__btn {
+  margin-top: 20px;
   padding: 24px 132px 24px 24px;
 
   color: #1d2e5b;

@@ -2,20 +2,26 @@
   @include list-reset;
 }
 
-.social-list__facebook {
+.social-list__link {
+  display: block;
+  width: 23px;
+  height: 23px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-list__link--facebook {
   background-image: url("../img/facebook.svg");
-
-  @include social-link;
+  background-size: 25%;
 }
 
-.social-list__vk {
+.social-list__link--vk {
   background-image: url("../img/vk.svg");
-
-  @include social-link;
+  background-size: 50%;
 }
 
-.social-list__instagram {
+.social-list__link--instagram {
   background-image: url("../img/instagram.svg");
-
-  @include social-link;
+  background-size: 40%;
 }

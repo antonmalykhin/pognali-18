@@ -1,13 +1,9 @@
 .user-card {
   position: relative;
-
-  background-color: $white-color;
 }
 
-.user-card__level-label {
-  position: absolute;
-  top: 0;
-  left: 0;
+.user-card__circle {
+  // position: absolute;
 
   width: 60px;
   height: 60px;
