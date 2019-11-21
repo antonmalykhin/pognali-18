@@ -1,14 +1,55 @@
 .plan-add {
+  position: relative;
+
+  margin-top: -30px;
+  padding: 0 25px;
+  padding-top: 15px;
+  padding-bottom: 65px;
+
   background-color: #d4d9eb;
+  border-radius: 30px 30px 0 0;
 }
 
 .plan-add__part-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   font-family: $main-font;
   color: #1d2e5b;
   font-style: normal;
+}
+
+.plan-add__pagination {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+}
+
+.plan-add__pagination-list {
+  display: flex;
+}
+
+.plan-add__pagination-item {
+  margin-right: 15px;
+}
+
+.plan-add__pagination-item a::after {
+  border-radius: 50%;
+}
+
+.plan-add__step {
+  display: block;
+}
+
+.plan-add__number {
+  width: 100%;
+}
+
+.plan-add__text {
+  display: block;
 }
 
 .plan-add__description {
@@ -21,8 +62,16 @@
 }
 
 .plan-add__fieldset {
+  margin-bottom: 10px;
+  padding: 25px;
+
   background-color: $white-color;
   border-radius: 10px;
+}
+
+.plan-add__label-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .plan-add__label {
@@ -36,7 +85,22 @@
   letter-spacing: 0.1em;
 }
 
+.plan-add__label--lowercase {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d2e5b;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 .plan-add__label--checkbox-label {
+  display: block;
+  margin-bottom: 20px;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 15px;
@@ -63,16 +127,18 @@
 .plan-add__field-wrapper {
   position: relative;
 
-  width: 220px;
+  margin-bottom: 20px;
 }
 
 .plan-add__date {
+  width: 100%;
+
   border-right: none;
   border-left: none;
 }
 
 .plan-add__btn {
-  position: relative;
+  position: absolute;
 
   display: inline-block;
   width: 43px;
@@ -137,20 +203,64 @@
   }
 }
 
+
+.plan-add__table {
+  margin: 0 auto;
+}
+
+.plan-add__table tr {
+  padding: 0;
+}
+
+.plan-add__table th {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  color: #444444;
+}
+
+.plan-add__table td {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  vertical-align: middle;
+  text-align: center;
+  color: $text-color;
+}
+
 .plan-add__btn-next {
   display: block;
   box-sizing: border-box;
-  width: 230px;
-  padding: 5px 45px;
+  width: 100%;
+  padding: 12px;
+
+  text-align: center;
+
+  border-radius: 20px;
 }
 
 .plan-add__btn-prew {
+  margin-top: 20px;
+  padding: 0;
+
+  text-align: center;
+
   background-color: transparent;
 }
 
 .plan-add__btn-add-country {
-  width: 220px;
-  padding: 16px 12px;
+  width: 100%;
+  padding: 16px;
 
   font-weight: 500;
   font-size: 14px;
@@ -170,9 +280,18 @@
   @include list-reset;
 }
 
+.plan-add__item {
+  margin-bottom: 22px;
+}
+
+.plan-add__textarea__wrapper {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .plan-add__textarea {
   box-sizing: border-box;
-  width: 220px;
+  width: 100%;
   padding: 15px;
 
   font-weight: 400;
