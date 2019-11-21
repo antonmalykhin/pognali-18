@@ -1,20 +1,55 @@
 .countries-filter {
+  margin-top: -35px;
+  margin-bottom: 25px;
+  padding: 0 25px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+
   background-color: #e2e5f2;
+  border-radius: 0 0 20px 20px;
 }
 
 .countries-filter__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   font-family: $main-font;
+  text-align: center;
   color: #192144;
   text-transform: uppercase;
   font-style: normal;
 }
 
+.countries-filter__container {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.countries-filter__wrapper {
+  width: 220px;
+  margin: 0 auto;
+}
+
+.countries-filter__list {
+  margin-bottom: 30px;
+}
+
+.countries-filter__item {
+  margin-bottom: 5px;
+}
+
+.countries-filter__table {
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
 .countries-filter__btn {
-  width: 270px;
-  padding: 14px 84px 13px 109px;
+  width: 100%;
+  margin-top: 45px;
+  padding: 13px;
 
   background-color: #d6daed;
   border: none;

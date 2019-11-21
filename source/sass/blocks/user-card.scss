@@ -4,7 +4,6 @@
 
 .user-card__circle {
   // position: absolute;
-
   width: 60px;
   height: 60px;
 
@@ -152,8 +151,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 9px;
+    top: 11px;
+    left: 10px;
 
     width: 13px;
     height: 11px;
@@ -186,16 +185,6 @@
 
   background-color: #ffd74b;
   border-radius: 20px;
-}
-
-.travelmates-cards__show-more-btn {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 30px;
-  font-family: $main-font;
-  color: #1d2e5b;
-  text-transform: uppercase;
-  font-style: normal;
 }
 
 .user-card__change-photo-btn {

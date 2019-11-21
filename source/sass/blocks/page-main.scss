@@ -3,6 +3,12 @@
 }
 
 .page-main__title {
+  position: relative;
+
+  display: block;
+  padding: 0 25px;
+  padding-bottom: 20px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -11,4 +17,18 @@
   font-style: normal;
 
   background-color: #161c35;
+  border-radius: 0 0 20px 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 25px;
+
+    width: 173px;
+    height: 5px;
+
+    background-color: #ff8d30;
+    border-radius: 2px;
+  }
 }
