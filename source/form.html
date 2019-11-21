@@ -20,8 +20,8 @@
     <nav class="main-nav">
 
       <ul class="main-nav__list site-list">
-        <li class="main-nav__item site-list__item"><a>О сервисе</a></li>
-        <li class="main-nav__item site-list__item"><a href="form.html">Направления</a></li>
+        <li class="main-nav__item site-list__item"><a href="index.html">О сервисе</a></li>
+        <li class="main-nav__item site-list__item"><a>Направления</a></li>
         <li class="main-nav__item site-list__item"><a href="catalog.html">Попутчики</a></li>
       </ul>
       <ul class="main-nav__list user-list">
@@ -56,7 +56,7 @@
   <main class="page-main">
 
     <section class="plan-creation">
-      <h1 class="page-main__title">Направления</h1>
+      <h1 class="page-main__title"><span class="page-main__title-text">Направления</span></h1>
 
       <form class="plan-creation__form" action="https://echo.htmlacademy.ru" method="post"
         enctype="multipart/form-data">
@@ -65,54 +65,61 @@
 
           <h2 class="visually-hidden">Карточка путешественника</h2>
 
-          <div class="user-card__level-label">
-            <p class="user-card__scores">80</p>
-            <p class="user-card__level">level</p>
-          </div>
+          <span class="plan-creation__wrapper">
+            <div class="plan-creation__level-label user-card__level-label">
+              <p class="plan-creation__scores user-card__scores">80</p>
+              <p class="plan-creation__level user-card__level">level</p>
+            </div>
 
-          <img class="user-card__photo user-card__photo--small" src="img/demin-tablet@1x.jpg" width="100" height="100"
-            alt="Фотография пользователя Петя Демин">
+            <img class="plan-creation__photo user-card__photo user-card__photo--small" src="img/demin-tablet@1x.jpg"
+              width="100" height="100" alt="Фотография пользователя Петя Демин">
+          </span>
+
           <label>
-            <span class="user-card__change-photo-btn">Сменить фото</span>
+            <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Сменить фото</span>
             <input class="user-card__file-field filefield visually-hidden" type="file" name="changePhoto"
               id="changePhoto">
           </label>
-          <fieldset class="user-card__fieldset fieldset">
-            <legend class="user-card__legend">тэги</legend>
+
+          <fieldset class="plan-creation__fieldset user-card__fieldset fieldset">
+            <legend class="plan-creation__legend user-card__legend">тэги</legend>
             <textarea
-              class="user-card__tags user-card__textarea textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+              class="plan-creation__tags user-card__tags user-card__textarea textarea">#бургер #бар #футбол #концерт #крафт</textarea>
           </fieldset>
 
 
-          <fieldset class="user-card__fieldset fieldset">
-            <legend class="user-card__legend">транспорт</legend>
-            <ul class="user-card__transport-list transport-list">
-              <li class="transport-list__item">
+          <fieldset class="plan-creation__fieldset user-card__fieldset fieldset">
+            <legend class="plan-creation__legend user-card__legend">транспорт</legend>
+            <ul class="plan-creation__transport-list user-card__transport-list transport-list">
+              <li class="plan-creation__item transport-list__item">
                 <label>
-                  <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
+                  <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
                     value="авиаперелет">
-                  <span class="transport-list__transport-type" aria-label="авиаперелет"></span>
+                  <span class="plan-creation__transport-type transport-list__transport-type"
+                    aria-label="авиаперелет"></span>
                 </label>
               </li>
-              <li class="transport-list__item">
+              <li class="plan-creation__item transport-list__item">
                 <label>
-                  <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
+                  <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
                     value="авиаперелет">
-                  <span class="transport-list__transport-type" aria-label="автотранспорт"></span>
+                  <span class="plan-creation__transport-type transport-list__transport-type"
+                    aria-label="автотранспорт"></span>
                 </label>
               </li>
-              <li class="transport-list__item">
+              <li class="plan-creation__item transport-list__item">
                 <label>
-                  <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
+                  <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
                     value="авиаперелет">
-                  <span class="transport-list__transport-type" aria-label="велосипед"></span>
+                  <span class="plan-creation__transport-type transport-list__transport-type"
+                    aria-label="велосипед"></span>
                 </label>
               </li>
-              <li class="transport-list__item">
+              <li class="plan-creation__item transport-list__item">
                 <label>
-                  <input class="travelmates-filter__input radiobutton" type="radio" name="transport"
+                  <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
                     value="авиаперелет">
-                  <span class="transport-list__transport-type" aria-label="пешком"></span>
+                  <span class="plan-creation__transport-type transport-list__transport-type" aria-label="пешком"></span>
                 </label>
               </li>
             </ul>
@@ -146,10 +153,10 @@
           <p class="plan-creation__title plan-add__title">Добавить план:</p>
 
           <div class="plan-add__pagination pagination">
-            <ul class="pagination__list">
-              <li class="pagination__item"><a></a></li>
-              <li class="pagination__item"><a href="#"></a></li>
-              <li class="pagination__item"><a href="#"></a></li>
+            <ul class="plan-add__pagination-list pagination__list">
+              <li class="plan-add__pagination-item pagination__item"><a></a></li>
+              <li class="plan-add__pagination-item pagination__item"><a href="#"></a></li>
+              <li class="plan-add__pagination-item pagination__item"><a href="#"></a></li>
             </ul>
           </div>
 
@@ -161,10 +168,11 @@
               вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
 
-            <label for="numOfPeople">
+            <label class="plan-add__label-wrapper" for="numOfPeople">
               <span class="plan-add__label">ищу попутчиков:</span>
               <span class="plan-add__unit">чел.</span>
             </label>
+
             <div class="plan-add__field-wrapper">
               <button class="btn plan-add__btn plan-add__btn--minus"></button>
               <input class="plan-add__number numberfield" type="text" name="numOfPeople" id="numOfPeople" value="2"
@@ -174,10 +182,11 @@
 
 
 
-            <label for="numOfDays">
+            <label class="plan-add__label-wrapper" for="numOfDays">
               <span class="plan-add__label">длительность:</span>
               <span class="plan-add__unit">дн.</span>
             </label>
+
             <div class="plan-add__field-wrapper">
               <button class="btn plan-add__btn plan-add__btn--minus"></button>
               <input class="plan-add__number numberfield" type="text" name="numOfDays" id="numOfDays" value="2"
@@ -186,7 +195,7 @@
             </div>
 
 
-            <label>
+            <label class="plan-add__label-wrapper">
               <input class="plan-add__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren" required>
               <span class="plan-add__label plan-add__label--checkbox-label">Можно с
                 детьми</span>
@@ -198,6 +207,78 @@
               </button>
               <input class="plan-add__date datefield" type="text" name="date" id="date" required value="март 2019">
               <button class="btn plan-add__btn plan-add__btn--front"></button>
+            </div>
+
+            <div class="plan-add__field-wrapper">
+              <table class="plan-add__table table">
+                <thead>
+                  <tr>
+                    <th>П</th>
+                    <th>В</th>
+                    <th>С</th>
+                    <th>Ч</th>
+                    <th>П</th>
+                    <th>С</th>
+                    <th>В</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                  </tr>
+                  <tr>
+                    <td>30</td>
+                    <td>31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
             <a class="btn plan-add__btn-next" href="#">Следующий шаг</a>
@@ -236,17 +317,22 @@
 
             <p class="plan-add__description">Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.</p>
-            <label>
-              <span class="plan-add__label">Босния и Герцеговина</span>
-              <textarea class="plan-add__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
-                placeholder="План действий"></textarea>
-            </label>
 
-            <label>
-              <span class="plan-add__label">Чехия</span>
-              <textarea class="plan-add__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
-                placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-            </label>
+            <div class="plan-add__textarea__wrapper">
+              <label class="plan-add__textarea__wrapper">
+                <span class="plan-add__label plan-add__label--lowercase">Босния и Герцеговина</span>
+                <textarea class="plan-add__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
+                  placeholder="План действий"></textarea>
+              </label>
+            </div>
+
+            <div class="plan-add__textarea__wrapper">
+              <label>
+                <span class="plan-add__label plan-add__label--lowercase">Чехия</span>
+                <textarea class="plan-add__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
+                  placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              </label>
+            </div>
 
             <button class="btn plan-add__btn-next" type="button">Отправить</button>
             <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
@@ -257,7 +343,7 @@
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo" href="#">
+    <a class="page-footer__logo" href="index.html">
       <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" width="96" height="15"
         alt="Логотип сервиса «Погнали»">
     </a>
