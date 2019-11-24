@@ -1,5 +1,81 @@
 .plan-creation__user {
+  padding: 0 25px;
+
   background-color: transparent;
+}
+
+.plan-creation__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.plan-creation__level-label {
+  position: relative;
+
+  width: 100px;
+  height: 100px;
+
+  border: 3px solid #ff8c40;
+  border-radius: 50%;
+}
+
+.plan-creation__scores {
+  top: -20px;
+  left: 30px;
+
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 38px;
+  color: #161c35;
+}
+
+.plan-creation__level {
+  top: 45px;
+  right: 34px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $text-color;
+}
+
+.plan-creation__photo {
+  border-radius: 50%;
+}
+
+.plan-creation__change-photo-btn {
+  display: block;
+  margin-bottom: 25px;
+  padding: 13px;
+
+  text-align: center;
+}
+
+.plan-creation__fieldset {
+  margin-bottom: 20px;
+}
+
+.plan-creation__legend {
+  text-align: center;
+}
+
+.plan-creation__tags {
+  width: 100%;
+}
+
+.plan-creation__transport-list {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.plan-creation__item {
+  margin-right: 20px;
+}
+
+.plan-creation__transport-type {
+  top: -30px;
 }
 
 .plan-creation__title {

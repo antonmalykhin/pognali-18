@@ -1,3 +1,108 @@
+.travelmates-cards {
+  padding: 0 25px;
+  padding-bottom: 80px;
+}
+
 .travelmates-cards__list {
   @include list-reset;
+}
+
+.travelmates-cards__item {
+  margin-bottom: 10px;
+  padding: 20px 25px;
+
+  background-color: $white-color;
+  border-radius: 20px;
+}
+
+.travelmates-cards__container {
+  display: flex;
+}
+
+.travelmates-cards__column--left {
+  margin-right: 20px;
+}
+
+.travelmates-cards__photo {
+  border-radius: 50%;
+}
+
+.travelmates-cards__like-btn {
+  position: absolute;
+  top: 40px;
+  left: 45px;
+}
+
+.travelmates-cards__tags {
+  margin-left: 10px;
+}
+
+.travelmates-cards__text {
+  margin-left: 10px;
+}
+
+.travelmates-cards__transport-list {
+  display: flex;
+}
+
+.travelmates-cards__transport-type {
+  width: 33px;
+  height: 33px;
+
+  background-color: #edeff5;
+  border-radius: 50%;
+}
+
+.travelmates-cards__transport-type::before {
+  top: 5px;
+  right: 5px;
+
+  background-size: 70%;
+}
+
+.travelmates-cards__btn {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+
+  text-align: center;
+}
+
+
+.travelmates-cards__show-more-btn {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 30px;
+
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: $main-font;
+  text-align: center;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.travelmates-cards__container--bottom {
+  justify-content: space-between;
+}
+
+.travelmates-cards__scores {
+  position: relative;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  text-align: center;
+  color: #1d2e5b;
+}
+
+.travelmates-cards__pagination {
+  display: flex;
+}
+
+.travelmates-cards__pagination-item {
+  flex-grow: 1;
 }

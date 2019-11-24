@@ -1,21 +1,42 @@
 .intro-title {
-  background-image: url("../img/traveller-illustration-mobile@1x.png"),
-    url("../img/globe-back-mobile@1x.jpg");
+  padding: 0 25px;
+
+  background-color: #141c35;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom center, center;
-  background-size: contain, contain;
+  background-size: 30%, contain;
 }
 
 .intro-title__slogan {
+  margin: 0 auto;
+  margin-bottom: 255px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   font-family: $main-font;
+  text-align: center;
   color: $white-color;
   font-style: normal;
 }
 
+.intro-title__btns-container {
+  position: relative;
+  top: 17px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.intro-title__list {
+  display: flex;
+
+  @include list-reset;
+}
+
 .intro-title__login {
-  width: 189px;
-  padding: 13px 40px;
+  align-self: center;
+  // width: 189px;
+  padding: 11px 40px;
 }

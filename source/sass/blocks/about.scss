@@ -1,20 +1,28 @@
 .about {
+  padding: 0 25px;
+  padding-top: 40px;
+  padding-bottom: 85px;
+
+  background-color: #141c35;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  border-radius: 0 0 20px 20px;
 }
 
 .about__title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 32px;
   font-family: $main-font;
   color: #ff8d30;
   font-style: normal;
 }
 
 .about__text {
+  margin-bottom: 30px;
+
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;

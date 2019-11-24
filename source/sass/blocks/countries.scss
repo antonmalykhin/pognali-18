@@ -1,5 +1,12 @@
 .countries {
+  position: relative;
+  padding: 0 25px;
+  padding-top: 75px;
+  padding-bottom: 30px;
+
   background-color: #edeff6;
+  border-radius: 0 0 20px 20px;
+  z-index: 10;
 }
 
 .countries__title {
@@ -12,6 +19,8 @@
 }
 
 .countries__description {
+  margin-bottom: 65px;
+
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -25,10 +34,27 @@
 }
 
 .countries__item {
+  margin-bottom: 10px;
+
   background-color: $white-color;
+  border-radius: 10px;
+}
+
+.countries__img {
+  border-radius: 10px 10px 0 0;
+}
+
+.countries__bg {
+  display: flex;
+  padding: 25px;
+
+  background-color: $white-color;
+  border-radius: 10px;
 }
 
 .countries__country {
+  margin-bottom: 12px;
+
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
@@ -38,6 +64,8 @@
 }
 
 .countries__slogan {
+  margin-top: 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -56,6 +84,7 @@
 }
 
 .countries__btn {
+  margin-top: 25px;
   padding: 24px 132px 24px 24px;
 
   color: #1d2e5b;
