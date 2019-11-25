@@ -38,3 +38,62 @@
   width: 46px;
   height: 46px;
 }
+
+.page-footer__developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 10px;
+}
+
+@media (min-width: $tablet) {
+  .page-footer {
+    padding: 48px 40px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+
+  .page-footer__item {
+    width: 61px;
+    height: 61px;
+  }
+
+  .page-footer__developer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__dev-text {
+    margin-right: 25px;
+  }
+
+
+  .page-footer__item a {
+    width: 61px;
+    height: 61px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+  .page-footer__item a {
+    width: 61px;
+    height: 61px;
+  }
+}

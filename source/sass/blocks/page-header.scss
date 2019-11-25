@@ -1,6 +1,5 @@
 .page-header {
   margin-bottom: 60px;
-  padding-top: 30px;
 
   background-color: $darkblue-color;
 }
@@ -8,5 +7,25 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 25px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+@media (min-width: $tablet) {
+  .page-header__wrapper {
+    order: -1;
+    width: 60%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    margin-bottom: 0;
+  }
+
+  .page-header__wrapper {
+    order: -1;
+    width: 20%;
+    margin-bottom: 0;
+  }
 }
