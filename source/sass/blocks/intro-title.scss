@@ -9,6 +9,7 @@
 }
 
 .intro-title__slogan {
+  width: 270px;
   margin: 0 auto;
   margin-bottom: 255px;
 
@@ -39,4 +40,25 @@
   align-self: center;
   // width: 189px;
   padding: 11px 40px;
+}
+
+
+@media (min-width: $tablet) {
+  .intro-title {
+    min-height: 880px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .intro-title__slogan {
+    width: 400px;
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .intro-title__btns-container {
+    display: none;
+  }
 }

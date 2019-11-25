@@ -78,3 +78,78 @@
   color: #161c35;
   font-style: normal;
 }
+
+@media (min-width: $tablet) {
+  .instruction {
+    margin-top: 140px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    background-image: linear-gradient(#141c34 0%, #141c34 47%, #172143 47%, #172143 100%);
+  }
+
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instruction__item {
+    box-sizing: border-box;
+    width: 50%;
+    min-height: 140px;
+
+    &::after {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .instruction__item:nth-of-type(1) {
+    border-radius: 20px 0 0 0;
+  }
+
+  .instruction__item:nth-of-type(2) {
+    top: 0;
+
+    border-radius: 0 20px 0 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+
+      width: 20px;
+      min-height: inherit;
+
+      background-color: #ffa530;
+      border-radius: 20px 0 0 0;
+    }
+  }
+
+  .instruction__item:nth-of-type(3) {
+    top: 0;
+
+    border-radius: 0 0 0 20px;
+  }
+
+  .instruction__item:nth-of-type(4) {
+    top: 0;
+
+    border-radius: 0 0 20px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+
+      width: 20px;
+      min-height: inherit;
+
+      background-color: #ffd74b;
+      border-radius: 0 0 0 20px;
+    }
+  }
+}

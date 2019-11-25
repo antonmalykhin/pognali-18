@@ -16,14 +16,48 @@
   line-height: 22px;
   font-family: $main-font;
   color: $white-color;
-  font-style: italic;
 }
 
 .feedback__author {
+  display: block;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   font-family: $main-font;
   color: $white-color;
   font-style: normal;
+}
+
+@media (min-width: $tablet) {
+  .feedback {
+    display: flex;
+    // justify-content: flex-end;
+    width: 50%;
+    margin-top: -660px;
+    padding-left: 80px;
+
+    background-color: transparent;
+  }
+
+  .feedback__text {
+    width: 295px;
+
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    font-family: $main-font;
+    color: $white-color;
+  }
+
+  .feedback__author {
+    max-width: 245px;
+
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    font-family: $main-font;
+    color: $white-color;
+    font-style: normal;
+  }
 }
