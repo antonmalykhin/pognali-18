@@ -61,3 +61,15 @@
     font-style: normal;
   }
 }
+
+@media (min-width: $desktop) {
+  .feedback {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .feedback__text {
+    margin-top: 15px;
+  }
+}

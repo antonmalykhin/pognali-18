@@ -1,3 +1,15 @@
 .intro {
-  // background-color: $darkblue-color;
+  background-color: $darkblue-color;
+  border-radius: 0 0 60px 60px;
+}
+
+@media (min-width: $desktop) {
+  .intro__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 130px;
+  }
 }
