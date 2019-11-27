@@ -1,7 +1,7 @@
 .about {
-  padding: 0 25px;
-  padding-top: 40px;
-  padding-bottom: 85px;
+  padding: 0 49px;
+  padding-top: 5px;
+  padding-bottom: 62px;
 
   background-color: #141c35;
   background-image: url("../img/about-mobile@1x.png");
@@ -11,7 +11,10 @@
   border-radius: 0 0 20px 20px;
 }
 
+
 .about__title {
+  margin-bottom: 15px;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -21,7 +24,9 @@
 }
 
 .about__text {
-  margin-bottom: 30px;
+  width: 96%;
+  margin-top: 0;
+  margin-bottom: 19px;
 
   font-weight: 300;
   font-size: 16px;
@@ -32,5 +37,106 @@
 }
 
 .about__text--bold {
+  display: block;
+
   font-weight: 700;
+}
+
+.about__btn {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .about {
+    padding: 0 40px;
+    padding-top: 40px;
+    padding-bottom: 85px;
+    padding-left: 75px;
+
+    background-color: #141c35;
+    background-image: url("../../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .about__title {
+    margin-top: 3px;
+    margin-bottom: 40px;
+
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .about__text {
+    width: 46%;
+    margin-top: 0;
+    margin-bottom: 31px;
+
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .about__text--bold {
+    width: 47.5%;
+
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .about__btn {
+    display: block;
+    box-sizing: border-box;
+    width: 274px;
+    margin-top: 52px;
+    padding: 29px 33px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: capitalize;
+
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .about {
+    min-height: 515px;
+    padding: 0;
+
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: right bottom;
+    background-size: contain;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .about__wrapper {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 163px;
+    padding-left: 140px;
+  }
+
+  .about__title {
+    margin-bottom: 58px;
+  }
+
+  .about__text {
+    width: 48%;
+  }
+
+  .about__text--bold {
+    width: 36%;
+    margin-top: 38px;
+  }
+
+  .about__btn {
+    margin-top: 83px;
+  }
 }

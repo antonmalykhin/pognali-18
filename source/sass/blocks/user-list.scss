@@ -24,3 +24,17 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $desktop) {
+  .user-list__login {
+    display: block;
+    padding: 15px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    border-radius: 25px;
+  }
+}
