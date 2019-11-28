@@ -286,36 +286,41 @@
     </section>
 
     <section class="cta-form">
-      <h2 class="visually-hidden">Форма связи</h2>
-      <p class="cta-form__title">Заинтересовались?</p>
-      <p class="cta-form__text">Зарегистрируйтесь,
-        это быстро и бесплатно!
-        Уже зарегистрированы? Тогда скорее <a class="cta-form__link" href="#">авторизуйтесь</a>.</p>
-      <form class="cta-form__form" action="https://echo.htmlacademy.ru" method="POST">
-        <input class="cta-form__field emailfield" type="email" placeholder="E-mail">
-        <button class="btn cta-form__btn" type="button" aria-label="Отправить"></button>
-      </form>
-      <p class="cta-form__text">Остались вопросы?
-        Мы с радостью на них ответим!</p>
-      <ul class="cta-form__list contacts-list">
-        <li class="cta-form__item contacts-list__item">
-          <a class="cta-form__link contacts-list__phone contacts-list__phone--theme-yellow-text"
-            href="tel:8-800-555-86-28">8 800
-            555-86-28</a>
-        </li>
-        <li class="cta-form__item contacts-list__item">
-          <a class="cta-form__link contacts-list__email
-          contacts-list__email--theme-yellow-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
+      <div class="cta-form__wrapper">
+        <h2 class="visually-hidden">Форма связи</h2>
+        <p class="cta-form__title">Заинтересовались?</p>
+        <p class="cta-form__text">Зарегистрируйтесь,
+          это быстро и бесплатно!
+          Уже зарегистрированы? Тогда скорее <a class="cta-form__link" href="#">авторизуйтесь</a>.</p>
+        <form class="cta-form__form" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="cta-form__field emailfield" type="email" placeholder="E-mail">
+          <button class="btn cta-form__btn" type="button" aria-label="Зарегистрироваться"><span
+              class="cta-form__btn-text">Регистрация</span></button>
+        </form>
+        <p class="cta-form__text">Остались вопросы?
+          Мы с радостью на них ответим!</p>
+        <ul class="cta-form__list contacts-list">
+          <li class="cta-form__item contacts-list__item">
+            <a class="cta-form__phone contacts-list__phone contacts-list__phone--theme-yellow-text"
+              href="tel:8-800-555-86-28">8 800
+              555-86-28</a>
+          </li>
+          <li class="cta-form__item contacts-list__item">
+            <a class="cta-form__email contacts-list__email
+            contacts-list__email--theme-yellow-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="map__wrapper">
-        <p class="map__address">ул. Большая
-          Конюшенная, 19/8</p>
-        <a class="btn map__btn" href="#">Проложить маршрут</a>
+        <div class="map__address-container">
+          <p class="map__address">ул. Большая
+            Конюшенная, 19/8</p>
+          <a class="btn map__btn" href="#">Проложить маршрут</a>
+        </div>
       </div>
       <div class="map__map-block" id="map"></div>
     </section>
