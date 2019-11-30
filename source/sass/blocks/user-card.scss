@@ -227,3 +227,10 @@
   background-color: transparent;
   border: none;
 }
+
+
+@media (min-width: $tablet) {
+  .user-card {
+    display: flex;
+  }
+}
