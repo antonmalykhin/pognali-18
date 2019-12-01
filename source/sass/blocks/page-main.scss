@@ -1,4 +1,6 @@
 .page-main {
+  padding-bottom: 84px;
+
   background-color: #edeff6;
 }
 
@@ -42,7 +44,16 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .page-main {
+    padding-bottom: 117px;
+  }
+}
+
 @media (min-width: $desktop) {
+  .page-main {
+    padding-bottom: 132px;
+  }
   .page-main__wrapper {
     width: 1320px;
     margin: 0 auto;
@@ -56,5 +67,9 @@
   .page-main__container {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 101px;
   }
 }

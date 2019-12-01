@@ -135,3 +135,19 @@
   border: none;
   border-radius: 20px;
 }
+
+@media (min-width: $tablet) {
+  .travelmates-filter {
+    margin-bottom: 28px;
+    padding: 0 40px;
+
+    background-color: #edeff6;
+  }
+}
+
+@media (min-width: $desktop) {
+  .travelmates-filter {
+    width: 285px;
+    padding: 0;
+  }
+}

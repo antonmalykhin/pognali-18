@@ -57,7 +57,10 @@
 
 @media (min-width: $tablet) {
   .page-footer {
+    margin-top: -55px;
     padding: 48px 40px;
+
+    border-radius: 60px 60px 0 0;
   }
 
   .page-footer__wrapper {

@@ -172,7 +172,6 @@
 }
 
 .user-card__btn {
-  width: 230px;
   padding: 13px 79px;
 
   font-weight: 700;
@@ -226,11 +225,4 @@
 
   background-color: transparent;
   border: none;
-}
-
-
-@media (min-width: $tablet) {
-  .user-card {
-    display: flex;
-  }
 }
