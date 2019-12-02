@@ -3,16 +3,23 @@
 
   margin-top: -30px;
   padding: 0 25px;
-  padding-top: 15px;
+  padding-top: 31px;
   padding-bottom: 65px;
 
   background-color: #d4d9eb;
   border-radius: 30px 30px 0 0;
 }
 
+.plan-add__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
 .plan-add__part-title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 
   font-weight: 700;
   font-size: 20px;
@@ -24,8 +31,10 @@
 
 .plan-add__pagination {
   position: absolute;
-  top: 45px;
-  right: 10px;
+  top: 39px;
+  right: 30px;
+
+  background-color: transparent;
 }
 
 .plan-add__pagination-list {
@@ -53,6 +62,8 @@
 }
 
 .plan-add__description {
+  margin-top: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -62,8 +73,10 @@
 }
 
 .plan-add__fieldset {
+  margin: 0;
   margin-bottom: 10px;
   padding: 25px;
+  padding-bottom: 0;
 
   background-color: $white-color;
   border-radius: 10px;
@@ -72,6 +85,7 @@
 .plan-add__label-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3px;
 }
 
 .plan-add__label {
@@ -87,7 +101,8 @@
 
 .plan-add__label--lowercase {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+  padding-left: 10px;
 
   font-weight: 500;
   font-size: 18px;
@@ -99,7 +114,9 @@
 
 .plan-add__label--checkbox-label {
   display: block;
-  margin-bottom: 20px;
+  margin-top: 13px;
+  margin-bottom: 21px;
+  padding-left: 39px;
 
   font-weight: 400;
   font-size: 15px;
@@ -127,11 +144,13 @@
 .plan-add__field-wrapper {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .plan-add__date {
   width: 100%;
+
+  text-transform: capitalize;
 
   border-right: none;
   border-left: none;
@@ -206,6 +225,7 @@
 
 .plan-add__table {
   margin: 0 auto;
+  margin-top: 18px;
 }
 
 .plan-add__table tr {
@@ -242,6 +262,8 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
+  margin-top: 22px;
+  margin-bottom: 17px;
   padding: 12px;
 
   text-align: center;
@@ -250,17 +272,37 @@
 }
 
 .plan-add__btn-prew {
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 14px;
   padding: 0;
 
   text-align: center;
+  text-transform: uppercase;
 
   background-color: transparent;
 }
 
+.plan-add__btn-select-country {
+  width: 100%;
+  padding: 12px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $main-font;
+  text-align: left;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+
+  background-color: #edeff6;
+  border-radius: 4px;
+}
+
 .plan-add__btn-add-country {
   width: 100%;
-  padding: 16px;
+  padding: 12px;
 
   font-weight: 500;
   font-size: 14px;
@@ -277,7 +319,11 @@
 }
 
 .plan-add__list {
-  @include list-reset;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .plan-add__item {
@@ -285,14 +331,16 @@
 }
 
 .plan-add__textarea__wrapper {
-  margin-top: 30px;
+  margin-top: 23px;
   margin-bottom: 20px;
 }
 
 .plan-add__textarea {
   box-sizing: border-box;
   width: 100%;
+  height: 220px;
   padding: 15px;
+  padding-top: 10px;
 
   font-weight: 400;
   font-size: 16px;
@@ -302,6 +350,16 @@
   font-style: normal;
 
   &::placeholder {
+    margin-top: 0;
+
     opacity: 0.3;
   }
+}
+
+.plan-add__textarea__wrapper:last-of-type {
+  margin-bottom: 0;
+}
+
+.plan-add__select {
+  margin-top: 21px;
 }
