@@ -9,26 +9,10 @@
   background-color: transparent;
 }
 
-// .plan-creation__level-photo {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   width: 100%;
-//   margin-bottom: 17px;
-// }
-
-// .plan-creation__wrapper {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-around;
-//   margin-bottom: 24px;
-// }
-
 .plan-creation__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  // width: 100%;
 }
 
 
@@ -73,11 +57,17 @@
 
 .plan-creation__change-photo-btn {
   display: block;
-  margin-top: 19px;
-  margin-bottom: 26px;
-  padding: 11px;
+  margin-top: 48px;
+  margin-bottom: 44px;
+  padding: 20px;
 
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
   text-align: center;
+  letter-spacing: 1.8px;
+
+  border-radius: 10px;
 }
 
 .plan-creation__fieldset {
@@ -127,7 +117,15 @@
     padding-top: 62px;
   }
 
+  .plan-creation__title {
+    margin-bottom: 38px;
+
+    font-size: 36px;
+    line-height: 1.5;
+  }
+
   .plan-creation__user {
+    margin-bottom: 39px;
     padding-right: 75px;
     padding-left: 75px;
   }
@@ -142,6 +140,11 @@
 
   .plan-creation__fieldset--tags {
     order: 4;
+    margin-bottom: 16px;
+    padding-top: 23px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 35px;
   }
 
   .plan-creation__fieldset--transport {
@@ -164,8 +167,17 @@
     height: 43px;
   }
 
+  .plan-creation__tags {
+    font-size: 20px;
+    line-height: 1;
+  }
+
   .plan-creation__item {
     margin-right: 40px;
+  }
+
+  .plan-creation__file {
+    border-radius: 10px;
   }
 }
 

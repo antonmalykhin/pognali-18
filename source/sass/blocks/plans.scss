@@ -105,3 +105,65 @@
 
   opacity: 0.3;
 }
+
+@media (min-width: $tablet) {
+  .plans {
+    padding-top: 47px;
+    padding-right: 70px;
+    padding-bottom: 95px;
+    padding-left: 70px;
+  }
+
+  .plans__item {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-top: 42px;
+    padding-right: 35px;
+    padding-bottom: 14px;
+    padding-left: 42px;
+
+    border-radius: 10px;
+
+    &::before {
+      position: absolute;
+      top: 45px;
+      right: 26px;
+
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: 2px;
+    }
+  }
+
+  .plans__country {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 54px;
+
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .plans__date,
+  .plans__travelmates {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+
+  .plans__btn {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1;
+    color: #000000;
+    letter-spacing: 2px;
+  }
+}

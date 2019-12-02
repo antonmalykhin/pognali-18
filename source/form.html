@@ -87,8 +87,8 @@
 
             <label class="plan-creation__btn-wrapper">
               <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Сменить фото</span>
-              <input class="user-card__file-field filefield visually-hidden" type="file" name="changePhoto"
-                id="changePhoto">
+              <input class="plan-creation__file user-card__file-field filefield visually-hidden" type="file"
+                name="changePhoto" id="changePhoto">
             </label>
 
             <fieldset class="plan-creation__fieldset plan-creation__fieldset--tags user-card__fieldset fieldset">
@@ -174,126 +174,132 @@
 
 
           <fieldset class="plan-add__fieldset plan-add__fieldset--step-one fieldset">
-            <p class="plan-add__part-title"><span class="plan-add__step">Шаг 1.</span>
-              <span class="plan-add__text">Даты пребывания</span></p>
-            <p class="plan-add__description">Укажите предпочтительное количество попутчиков, которых
-              вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <div class="plan-add__flex-container">
+              <p class="plan-add__part-title"><span class="plan-add__step">Шаг 1.</span>
+                <span class="plan-add__text">Даты пребывания</span></p>
+              <p class="plan-add__description">Укажите предпочтительное количество попутчиков, которых
+                вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
 
-            <label class="plan-add__label-wrapper" for="numOfPeople">
-              <span class="plan-add__label">ищу попутчиков:</span>
-              <span class="plan-add__unit">чел.</span>
-            </label>
+              <div class="plan-add__container plan-add__container--travelmates">
+                <label class="plan-add__label-wrapper" for="numOfPeople">
+                  <span class="plan-add__label">ищу попутчиков:</span>
+                  <span class="plan-add__unit">чел.</span>
+                </label>
 
-            <div class="plan-add__field-wrapper">
-              <button class="btn plan-add__btn plan-add__btn--minus"></button>
-              <input class="plan-add__number numberfield" type="text" name="numOfPeople" id="numOfPeople" value="2"
-                pattern="[1-9]{1,2}" required>
-              <button class="btn plan-add__btn plan-add__btn--plus"></button>
+                <div class="plan-add__field-wrapper">
+                  <button class="btn plan-add__btn plan-add__btn--minus"></button>
+                  <input class="plan-add__number numberfield" type="text" name="numOfPeople" id="numOfPeople" value="2"
+                    pattern="[1-9]{1,2}" required>
+                  <button class="btn plan-add__btn plan-add__btn--plus"></button>
+                </div>
+              </div>
+
+
+              <div class="plan-add__container plan-add__container--duration">
+                <label class="plan-add__label-wrapper" for="numOfDays">
+                  <span class="plan-add__label">длительность:</span>
+                  <span class="plan-add__unit">дн.</span>
+                </label>
+
+                <div class="plan-add__field-wrapper">
+                  <button class="btn plan-add__btn plan-add__btn--minus"></button>
+                  <input class="plan-add__number numberfield" type="text" name="numOfDays" id="numOfDays" value="2"
+                    pattern="[1-9]{1,3}" required>
+                  <button class="btn plan-add__btn plan-add__btn--plus"></button>
+                </div>
+              </div>
+
+
+              <label class="plan-add__label-wrapper plan-add__label-wrapper--with-children">
+                <input class="plan-add__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren"
+                  required>
+                <span class="plan-add__label plan-add__label--checkbox-label">Можно с
+                  детьми</span>
+              </label>
+
+
+              <div class="plan-add__field-wrapper">
+                <button class="btn plan-add__btn plan-add__btn--back">
+                </button>
+                <input class="plan-add__date datefield" type="text" name="date" id="date" required value="март 2019">
+                <button class="btn plan-add__btn plan-add__btn--front"></button>
+              </div>
+
+              <div class="plan-add__field-wrapper">
+                <table class="plan-add__table table">
+                  <thead>
+                    <tr>
+                      <th>П</th>
+                      <th>В</th>
+                      <th>С</th>
+                      <th>Ч</th>
+                      <th>П</th>
+                      <th>С</th>
+                      <th>В</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>23</td>
+                      <td>24</td>
+                      <td>25</td>
+                      <td>26</td>
+                      <td>27</td>
+                      <td>28</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>12</td>
+                      <td>13</td>
+                      <td>14</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>17</td>
+                      <td>18</td>
+                      <td>19</td>
+                      <td>20</td>
+                      <td>21</td>
+                      <td>22</td>
+                    </tr>
+                    <tr>
+                      <td>23</td>
+                      <td>24</td>
+                      <td>25</td>
+                      <td>26</td>
+                      <td>27</td>
+                      <td>28</td>
+                      <td>29</td>
+                    </tr>
+                    <tr>
+                      <td>30</td>
+                      <td>31</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <a class="btn plan-add__btn-next" href="#">Следующий шаг</a>
             </div>
-
-
-
-            <label class="plan-add__label-wrapper" for="numOfDays">
-              <span class="plan-add__label">длительность:</span>
-              <span class="plan-add__unit">дн.</span>
-            </label>
-
-            <div class="plan-add__field-wrapper">
-              <button class="btn plan-add__btn plan-add__btn--minus"></button>
-              <input class="plan-add__number numberfield" type="text" name="numOfDays" id="numOfDays" value="2"
-                pattern="[1-9]{1,3}" required>
-              <button class="btn plan-add__btn plan-add__btn--plus"></button>
-            </div>
-
-
-            <label class="plan-add__label-wrapper">
-              <input class="plan-add__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren" required>
-              <span class="plan-add__label plan-add__label--checkbox-label">Можно с
-                детьми</span>
-            </label>
-
-
-            <div class="plan-add__field-wrapper">
-              <button class="btn plan-add__btn plan-add__btn--back">
-              </button>
-              <input class="plan-add__date datefield" type="text" name="date" id="date" required value="март 2019">
-              <button class="btn plan-add__btn plan-add__btn--front"></button>
-            </div>
-
-            <div class="plan-add__field-wrapper">
-              <table class="plan-add__table table">
-                <thead>
-                  <tr>
-                    <th>П</th>
-                    <th>В</th>
-                    <th>С</th>
-                    <th>Ч</th>
-                    <th>П</th>
-                    <th>С</th>
-                    <th>В</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                  </tr>
-                  <tr>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                  </tr>
-                  <tr>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                  </tr>
-                  <tr>
-                    <td>30</td>
-                    <td>31</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <a class="btn plan-add__btn-next" href="#">Следующий шаг</a>
           </fieldset>
 
           <fieldset class="plan-add__fieldset plan-add__fieldset--step-two fieldset">
@@ -325,8 +331,9 @@
                   страну</button>
               </li>
             </ul>
-            <a class="btn plan-add__btn-next" href="#">Следующий шаг</a>
-            <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
+            <div class="plan-creation__btn-wrapper">
+              <a class="btn plan-add__btn-next" href="#">Следующий шаг</a>
+              <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a></div>
           </fieldset>
 
           <fieldset class="plan-add__fieldset plan-add__fieldset--step-three fieldset">
@@ -344,7 +351,7 @@
               </label>
             </div>
 
-            <div class="plan-add__textarea__wrapper">
+            <div class="plan-add__textarea__wrapper plan-add__textarea__wrapper--last">
               <label>
                 <span class="plan-add__label plan-add__label--lowercase">Чехия</span>
                 <textarea class="plan-add__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
@@ -352,8 +359,10 @@
               </label>
             </div>
 
-            <button class="btn plan-add__btn-next" type="button">Отправить</button>
-            <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
+            <div class="plan-creation__btn-wrapper">
+              <button class="btn plan-add__btn-next" type="button">Отправить</button>
+              <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
+            </div>
           </fieldset>
         </section>
       </form>
