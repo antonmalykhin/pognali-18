@@ -110,6 +110,11 @@
   text-align: center;
 }
 
+.travelmates-cards__btn--tablet {
+  display: none;
+}
+
+
 .travelmates-cards__show-more-btn {
   display: block;
   margin-top: 31px;
@@ -224,6 +229,13 @@
 
   .travelmates-cards__btn--mobile {
     display: none;
+  }
+
+  .travelmates-cards__btn--tablet {
+    display: block;
+    order: 1;
+    width: 105px;
+    margin: 0;
   }
 
   .travelmates-cards__transport-level .travelmates-cards__text {
