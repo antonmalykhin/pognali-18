@@ -3,26 +3,34 @@
 }
 
 .plan-creation__user {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   padding: 0 25px;
 
   background-color: transparent;
 }
 
-.plan-creation__level-photo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 17px;
-}
+// .plan-creation__level-photo {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   width: 100%;
+//   margin-bottom: 17px;
+// }
 
-.plan-creation__wrapper {
+// .plan-creation__wrapper {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+//   margin-bottom: 24px;
+// }
+
+.plan-creation__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 24px;
+  // width: 100%;
 }
+
 
 .plan-creation__level-label {
   position: relative;
@@ -65,13 +73,15 @@
 
 .plan-creation__change-photo-btn {
   display: block;
-  margin: 0;
-  padding: 13px;
+  margin-top: 19px;
+  margin-bottom: 26px;
+  padding: 11px;
 
   text-align: center;
 }
 
 .plan-creation__fieldset {
+  width: 100%;
   margin-bottom: 16px;
   padding-top: 12px;
   padding-right: 20px;
@@ -111,6 +121,54 @@
   font-family: $main-font;
 }
 
+
+@media (min-width: $tablet) {
+  .plan-creation {
+    padding-top: 62px;
+  }
+
+  .plan-creation__user {
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  .plan-creation__container {
+    justify-content: space-between;
+  }
+
+  .plan-creation__btn-wrapper {
+    order: 3;
+  }
+
+  .plan-creation__fieldset--tags {
+    order: 4;
+  }
+
+  .plan-creation__fieldset--transport {
+    order: 1;
+    width: 50%;
+    margin: 0;
+  }
+
+  .plan-creation__photo {
+    order: 2;
+    width: 94px;
+    height: 94px;
+
+    border-radius: 10px;
+  }
+
+
+  .plan-creation__transport-type::before {
+    width: 43px;
+    height: 43px;
+  }
+
+  .plan-creation__item {
+    margin-right: 40px;
+  }
+}
+
 @media (min-width: $desktop) {
   .plan-creation__user {
     z-index: 10;
@@ -121,23 +179,23 @@
     padding: 0;
   }
 
-  .plan-creation__wrapper {
-    justify-content: flex-end;
-    width: 100%;
-    padding-right: 90px;
-  }
+  // .plan-creation__wrapper {
+  //   justify-content: flex-end;
+  //   width: 100%;
+  //   padding-right: 90px;
+  // }
 
 
-  .plan-creation__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-  }
+  // .plan-creation__container {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // justify-content: space-between;
+  // width: 100%;
+  // }
 
-  .plan-creation__level-photo {
-    justify-content: flex-end;
-  }
+  // .plan-creation__level-photo {
+  //   justify-content: flex-end;
+  // }
 
   .plan-creation__photo {
     width: 190px;
