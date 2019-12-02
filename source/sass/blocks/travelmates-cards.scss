@@ -1,5 +1,6 @@
 .travelmates-cards {
   padding: 0 25px;
+  padding-bottom: 55px;
 }
 
 .travelmates-cards__list {
@@ -123,6 +124,7 @@
 
 .travelmates-cards__pagination {
   margin-top: 26px;
+  margin-bottom: 20px;
 
   border-radius: 20px;
 }
@@ -145,6 +147,7 @@
 @media (min-width: $tablet) {
   .travelmates-cards {
     padding: 0 40px;
+    padding-bottom: 97px;
   }
 
   .travelmates-cards__photo {
@@ -256,6 +259,7 @@
   .travelmates-cards {
     width: 950px;
     padding: 0;
+    padding-bottom: 113px;
   }
 
   .travelmates-cards__item {

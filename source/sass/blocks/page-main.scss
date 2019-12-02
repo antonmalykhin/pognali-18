@@ -1,5 +1,5 @@
 .page-main {
-  padding-bottom: 84px;
+  // padding-bottom: 84px;
 
   background-color: #edeff6;
 }
@@ -44,16 +44,16 @@
   }
 }
 
-@media (min-width: $tablet) {
-  .page-main {
-    padding-bottom: 117px;
-  }
-}
+// @media (min-width: $tablet) {
+//   .page-main {
+//     padding-bottom: 117px;
+//   }
+// }
 
 @media (min-width: $desktop) {
-  .page-main {
-    padding-bottom: 132px;
-  }
+  // .page-main {
+  //   padding-bottom: 132px;
+  // }
   .page-main__wrapper {
     width: 1320px;
     margin: 0 auto;
