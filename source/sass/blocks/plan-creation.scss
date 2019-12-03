@@ -18,6 +18,10 @@
 
 .plan-creation__level-label {
   position: relative;
+}
+
+.plan-creation__diagram {
+  position: relative;
 
   width: 94px;
   height: 94px;
@@ -27,9 +31,6 @@
 }
 
 .plan-creation__scores {
-  top: -20px;
-  left: 30px;
-
   font-weight: 700;
   font-size: 38px;
   line-height: 38px;
@@ -69,6 +70,11 @@
 
   border-radius: 10px;
 }
+
+.plan-creation__btn-wrapper--small {
+  display: none;
+}
+
 
 .plan-creation__fieldset {
   width: 100%;
@@ -153,8 +159,11 @@
     margin: 0;
   }
 
-  .plan-creation__photo {
+  .plan-creation__photo-wrapper {
     order: 2;
+  }
+
+  .plan-creation__photo {
     width: 94px;
     height: 94px;
 
@@ -187,39 +196,37 @@
 
     width: 1320px;
     margin: 0 auto;
-    margin-top: -214px;
+    margin-top: -252px;
     padding: 0;
   }
 
-  // .plan-creation__wrapper {
-  //   justify-content: flex-end;
-  //   width: 100%;
-  //   padding-right: 90px;
-  // }
+  .plan-creation__container {
+    margin-bottom: 46px;
+    padding: 0 25px;
+  }
 
-
-  // .plan-creation__container {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // justify-content: space-between;
-  // width: 100%;
-  // }
-
-  // .plan-creation__level-photo {
-  //   justify-content: flex-end;
-  // }
+  .plan-creation__photo-wrapper {
+    margin-right: auto;
+    margin-bottom: 18px;
+    margin-left: 43px;
+  }
 
   .plan-creation__photo {
     width: 190px;
     height: 190px;
-    margin-left: 45px;
 
     border-radius: 0;
   }
 
   .plan-creation__level-label {
-    width: 95px;
-    height: 95px;
+    display: flex;
+    justify-content: flex-end;
+    width: 73.8%;
+  }
+
+  .plan-creation__diagram {
+    align-self: flex-start;
+    margin-top: 39px;
   }
 
   .plan-creation__scores {
@@ -230,8 +237,22 @@
     color: $white-color;
   }
 
-  .plan-creation__btn-wrapper {
-    width: 190px;
+  .plan-creation__title {
+    margin-left: 6px;
+  }
+
+  .plan-creation__btn-wrapper--small {
+    display: block;
+  }
+
+  .plan-creation__btn-wrapper--small .plan-creation__change-photo-btn {
+    margin-top: -7px;
+    margin-bottom: 0;
+    padding: 13px;
+  }
+
+  .plan-creation__btn-wrapper--big {
+    display: none;
   }
 
   .plan-creation__fieldset {
@@ -245,10 +266,13 @@
   }
 
   .plan-creation__fieldset--tags {
-    width: 730px;
+    width: 670px;
+    margin-left: 47px;
   }
 
   .plan-creation__fieldset--transport {
-    width: 385px;
+    order: 4;
+    width: 344px;
+    margin-right: 17px;
   }
 }
