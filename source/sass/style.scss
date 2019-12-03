@@ -15,6 +15,7 @@
 @import "blocks/numberfield";
 @import "blocks/checkbox";
 @import "blocks/selectfield";
+@import "blocks/pagination";
 // ----------------------------
 @import "blocks/page-header";
 @import "blocks/site-list";
@@ -35,8 +36,8 @@
 @import "blocks/rates";
 @import "blocks/cta-form";
 @import "blocks/map";
-@import "blocks/page-footer";
 @import "blocks/developer";
+@import "blocks/page-footer";
 @import "blocks/modal";
 @import "blocks/open-close-btn";
 // -------------------------
@@ -46,8 +47,8 @@
 @import "blocks/countries-list";
 @import "blocks/travelmates-filter";
 @import "blocks/travelmates-cards";
-@import "blocks/pagination";
+
 // ------------------------
-@import "blocks/plan-creation";
 @import "blocks/plans";
+@import "blocks/plan-creation";
 @import "blocks/plan-add";

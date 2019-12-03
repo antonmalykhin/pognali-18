@@ -1,4 +1,8 @@
 .pagination {
+  background-color: $white-color;
+}
+
+.pagination-directions {
   @include list-reset;
 }
 
@@ -8,7 +12,6 @@
   display: block;
   height: 50px;
 
-  background-color: $white-color;
   border: none;
 
 
@@ -68,4 +71,25 @@
 
     background-color: #1d2e5b;
   }
+}
+
+.pagination__number {
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  &--current {
+    background-color: #ffd65c;
+    border-radius: 50%;
+  }
+}
+
+.pagination__number a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2.7;
+  color: #161c35;
 }

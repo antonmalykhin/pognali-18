@@ -3,7 +3,6 @@
 }
 
 .user-card__circle {
-  // position: absolute;
   width: 60px;
   height: 60px;
 
@@ -98,6 +97,7 @@
 
   width: 24px;
   height: 21px;
+  margin: 0;
 
   &::before {
     content: "";
@@ -172,8 +172,7 @@
 }
 
 .user-card__btn {
-  width: 230px;
-  padding: 13px 79px;
+  padding: 13px;
 
   font-weight: 700;
   font-size: 17px;

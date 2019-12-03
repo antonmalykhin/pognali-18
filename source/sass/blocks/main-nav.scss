@@ -1,20 +1,30 @@
 .main-nav {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 40px;
 
   background-color: $white-color;
 }
 
 .main-nav__list {
+  width: 100%;
+}
+
+.main-nav__site-list {
   margin-bottom: 60px;
 }
 
-.main-nav__item a {
+.main-nav__site-list a {
   display: block;
 
   text-align: center;
+}
+
+.main-nav__user-list {
+  margin-bottom: 60px;
 }
 
 .main-nav__contacts {
@@ -49,7 +59,107 @@
   }
 }
 
-
 .main-nav__social-link {
   background-size: contain;
+}
+
+@media (min-width: $tablet) {
+  .main-nav {
+    padding: 40px;
+  }
+
+  .main-nav__list {
+    padding-left: 60px;
+  }
+
+  .main-nav__user-list {
+    order: -1;
+    width: 40%;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .main-nav__social-items {
+    justify-content: flex-start;
+  }
+
+  .main-nav__site-item a {
+    text-align: left;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .main-nav {
+    align-items: center;
+    width: 1320px;
+    padding: 0;
+    padding-top: 50px;
+
+    // background-color: $darkblue-color;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .main-nav__site-list {
+    display: flex;
+    flex-wrap: wrap;
+    order: -1;
+    width: 48%;
+  }
+
+  .main-nav__site-item {
+    margin-right: 34px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .main-nav__site-item a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    // color: $white-color;
+  }
+
+  .main-nav__user-list {
+    order: 4;
+    width: 14.5%;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .main-nav__contacts {
+    display: flex;
+    width: 100px;
+    min-height: 50px;
+    margin-left: auto;
+  }
+
+  .main-nav__contact {
+    width: 50%;
+  }
+
+  .main-nav__link span {
+    display: none;
+  }
+
+  .main-nav__link::before {
+    top: 0;
+
+    width: 51px;
+    height: 51px;
+  }
+
+  .main-nav__social-items {
+    display: none;
+  }
 }

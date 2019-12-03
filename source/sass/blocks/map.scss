@@ -1,22 +1,27 @@
 .map {
-  margin-top: -35px;
-  padding-top: 70px;
+  position: relative;
+  z-index: 0;
 
-  background-color: #ffd74b;
+  margin-top: -30px;
 }
 
 .map__wrapper {
+  position: relative;
+  z-index: 1;
+
   padding: 0 25px;
+  padding-top: 48px;
   padding-bottom: 35px;
 
-  border-radius: 0 0 20px 20px;
+  background-color: #ffd74b;
+  border-radius: 0 0 30px 30px;
 }
 
 .map__address {
   position: relative;
 
-  margin-bottom: 40px;
-  padding-left: 55px;
+  width: 55%;
+  padding-left: 61px;
 
   font-weight: 700;
   font-size: 16px;
@@ -25,10 +30,27 @@
   color: #192144;
   text-transform: uppercase;
   font-style: normal;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    width: 46px;
+    height: 46px;
+
+    background-color: #101835;
+    border-radius: 50%;
+  }
 }
 
 .map__btn {
-  padding-left: 24px;
+  position: relative;
+
+  margin-top: 31px;
+  padding: 19px 0;
+  padding-left: 20px;
 
   font-weight: 700;
   font-size: 18px;
@@ -39,9 +61,117 @@
 
   border: 3px solid #192144;
   border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 20px;
+
+    width: 10px;
+    height: 14px;
+
+    background-image: url("../../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .map__map-block {
+  position: relative;
+
   width: 100%;
   height: 340px;
+  margin-top: -30px;
+}
+
+@media (min-width: $tablet) {
+  .map {
+    margin-top: -60px;
+  }
+
+  .map__wrapper {
+    padding: 0 75px;
+    padding-top: 116px;
+    padding-bottom: 84px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .map__address {
+    width: auto;
+    margin-top: 14px;
+    padding-left: 94px;
+
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      top: -23px;
+
+      width: 69px;
+      height: 69px;
+    }
+  }
+
+  .map__btn {
+    margin-top: 61px;
+    padding: 26px 33px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px;
+
+    &::after {
+      top: 31px;
+      right: 36px;
+    }
+  }
+
+  .map__map-block {
+    height: 576px;
+    margin-top: -60px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .map__wrapper {
+    padding: 0;
+    padding-top: 119px;
+    padding-bottom: 59px;
+  }
+
+  .map__address-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+  .map__address {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 232px;
+
+    &::before {
+      top: -32px;
+      left: -28px;
+
+      width: 91px;
+      height: 91px;
+    }
+  }
+
+  .map__btn {
+    width: 252px;
+    margin-top: 0;
+    margin-right: 93px;
+  }
+
+  .map__map-block {
+    height: 510px;
+  }
 }

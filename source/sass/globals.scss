@@ -1,6 +1,9 @@
 body {
+  min-width: 320px;
+
   font-family: $main-font;
   color: $text-color;
+
   background-color: $darkblue-color;
 }
 
@@ -25,4 +28,17 @@ a {
   border: 0;
 
   clip: rect(0 0 0 0);
+}
+
+@media (min-width: $tablet) {
+  body {
+    background-color: #152043;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  body {
+    background-color: #141c33;
+  }
 }

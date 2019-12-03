@@ -1,29 +1,36 @@
+.plan-creation {
+  padding-top: 23px;
+}
+
 .plan-creation__user {
+  margin-bottom: 20px;
   padding: 0 25px;
 
   background-color: transparent;
 }
 
-.plan-creation__wrapper {
+.plan-creation__container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 20px;
 }
+
 
 .plan-creation__level-label {
   position: relative;
+}
 
-  width: 100px;
-  height: 100px;
+.plan-creation__diagram {
+  position: relative;
+
+  width: 94px;
+  height: 94px;
 
   border: 3px solid #ff8c40;
   border-radius: 50%;
 }
 
 .plan-creation__scores {
-  top: -20px;
-  left: 30px;
-
   font-weight: 700;
   font-size: 38px;
   line-height: 38px;
@@ -44,16 +51,38 @@
   border-radius: 50%;
 }
 
-.plan-creation__change-photo-btn {
+.plan-creation__btn-wrapper {
   display: block;
-  margin-bottom: 25px;
-  padding: 13px;
-
-  text-align: center;
+  width: 100%;
 }
 
+.plan-creation__change-photo-btn {
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 44px;
+  padding: 20px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 1.8px;
+
+  border-radius: 10px;
+}
+
+.plan-creation__btn-wrapper--small {
+  display: none;
+}
+
+
 .plan-creation__fieldset {
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 16px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 20px;
 }
 
 .plan-creation__legend {
@@ -62,12 +91,13 @@
 
 .plan-creation__tags {
   width: 100%;
+
+  line-height: 1.4;
 }
 
 .plan-creation__transport-list {
   display: flex;
   justify-content: center;
-  padding: 10px;
 }
 
 .plan-creation__item {
@@ -79,11 +109,170 @@
 }
 
 .plan-creation__title {
-  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 28px;
+
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   font-family: $main-font;
-  color: #1d2e5b;
-  text-transform: uppercase;
-  font-style: normal;
+}
+
+
+@media (min-width: $tablet) {
+  .plan-creation {
+    padding-top: 62px;
+  }
+
+  .plan-creation__title {
+    margin-bottom: 38px;
+
+    font-size: 36px;
+    line-height: 1.5;
+  }
+
+  .plan-creation__user {
+    margin-bottom: 39px;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  .plan-creation__container {
+    justify-content: space-between;
+  }
+
+  .plan-creation__btn-wrapper {
+    order: 3;
+  }
+
+  .plan-creation__fieldset--tags {
+    order: 4;
+    margin-bottom: 16px;
+    padding-top: 23px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 35px;
+  }
+
+  .plan-creation__fieldset--transport {
+    order: 1;
+    width: 50%;
+    margin: 0;
+  }
+
+  .plan-creation__photo-wrapper {
+    order: 2;
+  }
+
+  .plan-creation__photo {
+    width: 94px;
+    height: 94px;
+
+    border-radius: 10px;
+  }
+
+
+  .plan-creation__transport-type::before {
+    width: 43px;
+    height: 43px;
+  }
+
+  .plan-creation__tags {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .plan-creation__item {
+    margin-right: 40px;
+  }
+
+  .plan-creation__file {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .plan-creation__user {
+    z-index: 10;
+
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: -252px;
+    padding: 0;
+  }
+
+  .plan-creation__container {
+    margin-bottom: 46px;
+    padding: 0 25px;
+  }
+
+  .plan-creation__photo-wrapper {
+    margin-right: auto;
+    margin-bottom: 18px;
+    margin-left: 43px;
+  }
+
+  .plan-creation__photo {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 0;
+  }
+
+  .plan-creation__level-label {
+    display: flex;
+    justify-content: flex-end;
+    width: 73.8%;
+  }
+
+  .plan-creation__diagram {
+    align-self: flex-start;
+    margin-top: 39px;
+  }
+
+  .plan-creation__scores {
+    color: $white-color;
+  }
+
+  .plan-creation__level {
+    color: $white-color;
+  }
+
+  .plan-creation__title {
+    margin-left: 6px;
+  }
+
+  .plan-creation__btn-wrapper--small {
+    display: block;
+  }
+
+  .plan-creation__btn-wrapper--small .plan-creation__change-photo-btn {
+    margin-top: -7px;
+    margin-bottom: 0;
+    padding: 13px;
+  }
+
+  .plan-creation__btn-wrapper--big {
+    display: none;
+  }
+
+  .plan-creation__fieldset {
+    width: 45%;
+  }
+
+  .plan-creation__change-photo-btn {
+    margin-top: 0;
+
+    border-radius: 0 0 10px 10px;
+  }
+
+  .plan-creation__fieldset--tags {
+    width: 670px;
+    margin-left: 47px;
+  }
+
+  .plan-creation__fieldset--transport {
+    order: 4;
+    width: 344px;
+    margin-right: 17px;
+  }
 }

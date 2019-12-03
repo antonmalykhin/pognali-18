@@ -7,7 +7,7 @@
 
 .travelmates-filter__wrapper {
   padding: 0 25px;
-  padding-top: 30px;
+  padding-top: 4px;
   padding-bottom: 20px;
 
   background-color: #ffd65b;
@@ -15,7 +15,7 @@
 }
 
 .travelmates-filter__title {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   font-weight: 700;
   font-size: 22px;
@@ -32,9 +32,12 @@
 }
 
 .travelmates-filter__legend {
+  margin-top: 13px;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 16px;
   font-family: $main-font;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -42,16 +45,32 @@
 }
 
 .travelmates-filter__list {
-  @include list-reset;
-}
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 16px;
+  padding: 0;
 
-.travelmates-filter__transport-list {
-  display: flex;
-  margin-bottom: 20px;
+  list-style: none;
 }
 
 .travelmates-filter__item {
-  margin-right: 20px;
+  padding-left: 6px;
+}
+
+.travelmates-filter__list--transport {
+  display: flex;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.travelmates-filter__item--music {
+  margin-right: 0;
+  margin-bottom: 7px;
+}
+
+.travelmates-filter__item--transport {
+  margin-right: 19px;
+  padding: 0;
 }
 
 .travelmates-filter__transport-type {
@@ -68,7 +87,7 @@
 }
 
 .travelmates-filter__text {
-  width: 111px;
+  width: 49%;
   height: 35px;
 
   font-weight: 500;
@@ -81,6 +100,8 @@
   letter-spacing: 0.1em;
 
   &:nth-of-type(1) {
+    margin-right: -5.5px;
+
     border-right: none;
     border-radius: 4px 0 0 4px;
   }
@@ -92,6 +113,7 @@
 }
 
 .travelmates-filter__slider {
+  margin-top: 22px;
   margin-bottom: 25px;
 }
 
@@ -112,4 +134,20 @@
   background-color: #ffffff;
   border: none;
   border-radius: 20px;
+}
+
+@media (min-width: $tablet) {
+  .travelmates-filter {
+    margin-bottom: 28px;
+    padding: 0 40px;
+
+    background-color: #edeff6;
+  }
+}
+
+@media (min-width: $desktop) {
+  .travelmates-filter {
+    width: 285px;
+    padding: 0;
+  }
 }

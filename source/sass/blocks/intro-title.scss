@@ -1,16 +1,16 @@
 .intro-title {
   padding: 0 25px;
 
-  background-color: #141c35;
-  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: bottom center, center;
-  background-size: 30%, contain;
+  background-position: center, center;
+  background-size: contain, cover;
 }
 
 .intro-title__slogan {
+  width: 260px;
   margin: 0 auto;
-  margin-bottom: 255px;
+  margin-bottom: 227px;
 
   font-weight: 700;
   font-size: 36px;
@@ -37,6 +37,48 @@
 
 .intro-title__login {
   align-self: center;
-  // width: 189px;
   padding: 11px 40px;
+}
+
+
+@media (min-width: $tablet) {
+  .intro-title {
+    margin-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    background-image: none;
+  }
+
+  .intro-title__slogan {
+    width: 400px;
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .intro-title__btns-container {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro-title {
+    padding: 0;
+
+    background-image: none;
+  }
+
+  .intro-title__slogan {
+    width: 400px;
+    margin: 0;
+    margin-left: 67px;
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: left;
+  }
 }
