@@ -18,6 +18,9 @@
   opacity: 1;
 }
 
-// .plan-add__btn--current {
-//   opacity: 1;
-// }
+@media (min-width: $tablet) {
+  .polices-list__link {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
