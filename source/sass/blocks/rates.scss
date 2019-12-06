@@ -171,9 +171,12 @@
   .rates__title {
     width: 100%;
     margin-left: 0;
+
+    text-align: center;
   }
 
   .rates__list {
+    width: 220px;
     padding: 0;
   }
 
@@ -292,6 +295,76 @@
       border-radius: 50%;
     }
   }
+
+
+  .rates__business-plans {
+    position: absolute;
+    bottom: 332px;
+
+    padding: 0;
+    padding-top: 37px;
+    padding-bottom: 0;
+
+    background-color: $white-color;
+    border-radius: 30px;
+    box-shadow: 0 20px 25px 0 rgba(29, 46, 91, 0.1);
+
+    &::after {
+      display: none;
+    }
+
+    .rates__wrapper {
+      padding: 0 90px;
+    }
+
+    .rates__title {
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 48px;
+    }
+
+    .rates__list {
+      width: 509px;
+    }
+
+    .rates__item {
+      padding-top: 11px;
+      padding-bottom: 16px;
+    }
+
+
+    .rates__item::after {
+      display: none;
+    }
+
+    .rates__btn::after {
+      display: none;
+    }
+
+    .rates__btn--close {
+      width: 100%;
+      padding: 34px 0;
+
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: none;
+    }
+
+    .rates__plan {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 28px;
+      color: #444444;
+    }
+
+    .rates__price {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 28px;
+      color: #444444;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -324,5 +397,73 @@
 
   .rates__btn {
     margin-left: 53px;
+  }
+
+  .rates__business-plans {
+    position: absolute;
+    bottom: 332px;
+
+    padding: 0;
+    padding-top: 37px;
+    padding-bottom: 0;
+
+    background-color: $white-color;
+    border-radius: 30px;
+    box-shadow: 0 20px 25px 0 rgba(29, 46, 91, 0.1);
+
+    .rates__wrapper {
+      width: auto;
+      padding: 0 90px;
+    }
+
+    .rates__title {
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 48px;
+    }
+
+    .rates__list {
+      width: 630px;
+      margin-left: 0;
+    }
+
+    .rates__item {
+      padding-top: 11px;
+      padding-bottom: 16px;
+    }
+
+
+    .rates__item::after {
+      display: none;
+    }
+
+    .rates__btn::after {
+      display: none;
+    }
+
+    .rates__btn--close {
+      width: 100%;
+      margin: 0;
+      padding: 34px 0;
+
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: none;
+    }
+
+    .rates__plan {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 28px;
+      color: #444444;
+    }
+
+    .rates__price {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 28px;
+      color: #444444;
+    }
   }
 }
