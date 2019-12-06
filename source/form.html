@@ -172,7 +172,7 @@
           </div>
         </section>
 
-        <section class="plan-add">
+        <div class="plan-add">
 
           <h2 class="visually-hidden">Форма создания плана путешествия</h2>
 
@@ -337,9 +337,62 @@
                   <option class="plan-add__option selectfield__item" value="Czech">Чехия</option>
                 </select>
               </li>
-              <li class="plan-add__item">
+              <li class="plan-add__item plan-add__item--drop">
                 <button class="btn plan-add__btn-select-country" type="button">Выберите
                   страну</button>
+                <div class="plan-add__dropdown dropdown">
+                  <table class="plan-add__dropdown-table table">
+                    <tbody>
+                      <tr>
+                        <td><a class="plan-add__dropdown-link plan-add__dropdown-link--selected" href="#">а</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">б</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">в</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">г</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">д</a></td>
+                      </tr>
+                      <tr>
+                        <td><a class="plan-add__dropdown-link" href="#">е</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">з</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">и</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">к</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">л</a></td>
+                      </tr>
+                      <tr>
+                        <td><a class="plan-add__dropdown-link" href="#">м</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">н</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">о</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">п</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">р</a></td>
+                      </tr>
+                      <tr>
+                        <td><a class="plan-add__dropdown-link" href="#">с</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">т</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">у</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">ф</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">х</a></td>
+                      </tr>
+                      <tr>
+                        <td><a class="plan-add__dropdown-link" href="#">ч</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">ш</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">э</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">ю</a></td>
+                        <td><a class="plan-add__dropdown-link" href="#">я</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <ul class="plan-add__dropdown-list countries-list">
+                    <li class="plan-add__dropdown-item"><a href="#">Афганистан</a></li>
+                    <li class="plan-add__dropdown-item"><a href="#">Албания</a></li>
+                    <li class="plan-add__dropdown-item"><a href="#">Алжир</a></li>
+                    <li class="plan-add__dropdown-item"><a href="#">Андорра</a></li>
+                    <li class="plan-add__dropdown-item"><a href="#">Аргентина</a></li>
+                    <li class="plan-add__dropdown-item"><a href="#">Армения</a></li>
+                    <li class="plan-add__dropdown-item"><a href="#">Австралия</a></li>
+                    <li class="plan-add__dropdown-item"><a href="#">Австрия</a></li>
+                    <li class="plan-add__dropdown-item"><a href="#">Азербайджанм</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="plan-add__item">
                 <button class="btn plan-add__btn-add-country" type="button">Добавить
@@ -379,8 +432,8 @@
               <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
             </div>
           </fieldset>
-        </section>
-      </form>
+    </section>
+    </form>
     </section>
   </main>
 
