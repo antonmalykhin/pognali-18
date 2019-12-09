@@ -2,13 +2,6 @@
   background-color: #152043;
 }
 
-// .intro__wrapper {
-//   background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
-//   background-repeat: no-repeat;
-//   background-position: center, center;
-//   background-size: contain;
-// }
-
 @media (min-width: $tablet) {
   .intro__wrapper {
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
