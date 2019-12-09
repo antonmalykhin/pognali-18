@@ -152,7 +152,6 @@
 .rates__business-plans {
   // position: absolute;
   // bottom: 332px;
-
   padding: 0;
   padding-top: 52px;
 
@@ -300,7 +299,6 @@
   .rates__business-plans {
     // position: absolute;
     // bottom: 332px;
-
     padding: 0;
     padding-top: 37px;
     padding-bottom: 0;
@@ -369,6 +367,7 @@
 
 @media (min-width: $desktop) {
   .rates {
+    padding: 0;
     padding-top: 108px;
     padding-bottom: 187px;
 
@@ -382,6 +381,7 @@
   }
 
   .rates__wrapper {
+    box-sizing: border-box;
     width: 1320px;
     margin: 0 auto;
   }

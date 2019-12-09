@@ -98,15 +98,16 @@
 
 @media (min-width: $desktop) {
   .page-footer {
+    padding-right: 0;
     padding-bottom: 45px;
+    padding-left: 0;
   }
 
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1320px;
-    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .page-footer__item a {

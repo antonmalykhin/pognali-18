@@ -116,8 +116,7 @@
   }
 
   .about__wrapper {
-    width: 1320px;
-    margin: 0 auto;
+    box-sizing: border-box;
     padding-top: 130px;
     padding-bottom: 163px;
     padding-left: 140px;

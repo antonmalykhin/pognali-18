@@ -157,7 +157,6 @@
   }
 
   .travelmates__wrapper {
-    width: 86%;
     margin: 0 auto;
   }
 
@@ -238,14 +237,14 @@
 @media (min-width: $desktop) {
   .travelmates {
     padding-top: 153px;
+    padding-right: 0;
     padding-bottom: 123px;
+    padding-left: 0;
   }
 
   .travelmates__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 1320px;
-    margin: 0 auto;
   }
 
   .travelmates__text-container {
