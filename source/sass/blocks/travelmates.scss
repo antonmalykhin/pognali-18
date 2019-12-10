@@ -154,12 +154,29 @@
 }
 
 .travelmates__btn {
+  position: relative;
+
   margin-top: 20px;
-  padding: 22px 132px 22px 24px;
+  padding: 22px 34px 22px 24px;
 
   color: #1d2e5b;
 
   border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 13px;
+
+    width: 5px;
+    height: 0;
+
+    border: 7px solid #1d2e5b;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
 }
 
 .travelmates__btn--top {

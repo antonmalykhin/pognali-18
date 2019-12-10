@@ -53,22 +53,26 @@
 
 @media (min-width: $tablet) {
   .about {
-    padding: 0 40px;
+    padding: 0 35px;
     padding-top: 40px;
-    padding-bottom: 85px;
-    padding-left: 75px;
+    padding-bottom: 88px;
+    // padding-left: 75px;
 
     background-color: #141c35;
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+    background-position: 100% 35.4%;
+    background-size: 50.1%;
     border-radius: 0 0 60px 60px;
   }
 
+  .about__wrapper {
+    padding: 0 32px;
+  }
+
   .about__title {
-    margin-top: 3px;
-    margin-bottom: 40px;
+    margin-top: 2px;
+    margin-bottom: 39px;
 
     font-weight: 700;
     font-size: 45px;
@@ -78,7 +82,8 @@
   .about__text {
     width: 46%;
     margin-top: 0;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
+    margin-left: 1px;
 
     font-weight: 300;
     font-size: 28px;
@@ -94,11 +99,13 @@
   }
 
   .about__btn {
+    position: relative;
+
     display: block;
     box-sizing: border-box;
     width: 274px;
     margin-top: 52px;
-    padding: 29px 33px;
+    padding: 28px 33px;
 
     font-weight: 700;
     font-size: 24px;
@@ -106,6 +113,21 @@
     text-transform: capitalize;
 
     border-radius: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      right: 29px;
+
+      width: 0;
+      height: 0;
+
+      border: 8px solid #182d59;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
   }
 }
 

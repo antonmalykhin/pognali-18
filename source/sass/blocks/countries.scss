@@ -121,9 +121,9 @@
 
 @media (min-width: $tablet) {
   .countries {
-    padding-right: 62px;
+    padding-right: 67px;
     padding-bottom: 80px;
-    padding-left: 70px;
+    padding-left: 63px;
 
     border-radius: 60px;
   }
@@ -131,7 +131,7 @@
   .countries__title {
     margin-top: 22px;
     margin-bottom: 58px;
-    margin-left: 2px;
+    margin-left: 3px;
 
     font-weight: 700;
     font-size: 45px;
@@ -174,8 +174,45 @@
 
   .countries__bg {
     flex-direction: column;
+    width: 50%;
+    padding-top: 21px;
+    padding-left: 30px;
 
     border-radius: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .countries__country {
+    margin-bottom: 5px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #161c35;
+  }
+
+  .countries__slogan {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: $text-color;
+
+    opacity: 0.3;
+  }
+
+  .countries__users {
+    margin-bottom: 0;
+    padding-left: 29px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: $text-color;
+
+    opacity: 0.3;
   }
 
   .countries__btn {
@@ -187,6 +224,13 @@
     line-height: 24px;
 
     border-radius: 20px;
+
+    &::after {
+      top: 33px;
+      right: 24px;
+
+      border-width: 8px;
+    }
   }
 }
 
