@@ -50,15 +50,16 @@
 .rates__item {
   position: relative;
 
+  width: 95%;
   padding-top: 11px;
 
-  border-top: 1px solid #e0e1e9;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 
   &::after {
     content: "";
     position: absolute;
     top: 3px;
-    right: -34px;
+    right: -44px;
 
     box-sizing: border-box;
     width: 34px;
@@ -92,7 +93,7 @@
 }
 
 .rates__item:last-of-type {
-  border-bottom: 1px solid #e0e1e9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .rates__plan {
@@ -198,13 +199,20 @@
 
     &::after {
       top: 408px;
-      right: 71px;
+      right: 78px;
+      z-index: 2;
     }
+  }
+
+  .rates__wrapper {
+    padding: 0;
   }
 
   .rates__title {
     width: auto;
+    margin-top: 1px;
     margin-bottom: 68px;
+    margin-left: 3px;
 
     font-weight: 700;
     font-size: 45px;
@@ -214,20 +222,40 @@
   }
 
   .rates__list {
-    padding-right: 20px;
-    padding-left: 91px;
+    position: relative;
+
+    padding-right: 26px;
+    padding-left: 83px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -37px;
+      right: -8px;
+      z-index: 1;
+
+      width: 198px;
+      height: 285px;
+
+      background-color: #e1e5f2;
+      border-radius: 20px;
+    }
   }
 
   .rates__item {
+    position: relative;
+    z-index: 2;
+
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding-top: 19px;
     padding-bottom: 18px;
 
     &::after {
       top: 3px;
       right: 0;
-      left: -92px;
+      left: -91px;
 
       width: 69px;
       height: 69px;
@@ -269,7 +297,7 @@
     position: relative;
 
     margin-top: 59px;
-    padding-left: 89px;
+    padding-left: 82px;
 
     font-weight: 700;
     font-size: 20px;
@@ -280,7 +308,7 @@
       content: "";
       position: absolute;
       top: -26px;
-      left: -1px;
+      left: -8px;
 
       width: 69px;
       height: 69px;

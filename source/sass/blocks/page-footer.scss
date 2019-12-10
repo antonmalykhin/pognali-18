@@ -57,7 +57,7 @@
 @media (min-width: $tablet) {
   .page-footer {
     margin-top: -55px;
-    padding: 48px 40px;
+    padding: 48px 0;
 
     border-radius: 60px 60px 0 0;
   }
@@ -66,6 +66,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 32px;
+    padding-left: 31px;
   }
 
   .page-footer__logo {
@@ -84,6 +86,9 @@
   }
 
   .page-footer__dev-text {
+    margin-top: 17px;
+    margin-left: 3px;
+
     font-size: 20px;
     line-height: 24px;
   }

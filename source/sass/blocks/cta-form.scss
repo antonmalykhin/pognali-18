@@ -3,7 +3,6 @@
   z-index: 1;
 
   margin-top: -30px;
-
   padding-top: 102px;
   padding-bottom: 39px;
 
@@ -129,7 +128,7 @@
   }
 
   .cta-form__title {
-    margin-bottom: 63px;
+    margin-bottom: 57px;
 
     font-size: 45px;
     line-height: 45px;
@@ -137,7 +136,7 @@
 
   .cta-form__text {
     width: 100%;
-    margin-bottom: 57px;
+    margin-bottom: 63px;
 
     font-size: 28px;
     line-height: 33px;
@@ -148,7 +147,7 @@
   }
 
   .cta-form__form {
-    width: 86.5%;
+    width: 91.9%;
     margin: 0 auto;
   }
 
@@ -177,7 +176,7 @@
 
     &::after {
       top: 34px;
-      left: 40px;
+      left: 35px;
 
       width: 10px;
       height: 14px;
@@ -191,8 +190,9 @@
 
   .cta-form__item {
     margin-bottom: 38px;
-    padding-left: 68px;
+    padding-left: 48px;
   }
+
 
   .cta-form__item:last-of-type {
     margin-bottom: 0;
