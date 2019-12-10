@@ -3,6 +3,44 @@
   padding-left: 25px;
 }
 
+.countries__bg {
+  position: relative;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 0;
+
+    width: 100%;
+    height: 11px;
+
+    background-color: $white-color;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.countries__btn {
+  position: relative;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 13px;
+
+    width: 5px;
+    height: 0;
+
+    border: 7px solid #1d2e5b;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+}
+
 @media (min-width: $desktop) {
   .container {
     box-sizing: border-box;

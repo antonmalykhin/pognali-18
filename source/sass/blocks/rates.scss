@@ -2,7 +2,6 @@
   position: relative;
   z-index: 10;
 
-  padding: 0 25px;
   padding-top: 52px;
   padding-bottom: 38px;
 
@@ -12,8 +11,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 36px;
-    right: 25px;
+    top: 37px;
+    right: 26px;
 
     width: 100px;
     height: 100px;
@@ -59,11 +58,11 @@
     content: "";
     position: absolute;
     top: 3px;
-    right: -35px;
+    right: -34px;
 
     box-sizing: border-box;
-    width: 35px;
-    height: 35px;
+    width: 34px;
+    height: 34px;
     padding: 8px 0;
 
     text-align: center;
@@ -402,7 +401,6 @@
   .rates__business-plans {
     // position: absolute;
     // bottom: 332px;
-
     padding: 0;
     padding-top: 37px;
     padding-bottom: 0;

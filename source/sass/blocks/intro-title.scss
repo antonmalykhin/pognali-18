@@ -3,7 +3,7 @@
 
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom, center;
+  background-position: 61% bottom, center;
   background-size: 194px, cover;
 }
 
@@ -37,7 +37,10 @@
 
 .intro-title__login {
   align-self: center;
-  padding: 11px 40px;
+  padding: 11px 38px;
+
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
 }
 
 

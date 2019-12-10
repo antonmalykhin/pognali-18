@@ -1,19 +1,24 @@
 .about {
   padding: 0 49px;
   padding-top: 5px;
-  padding-bottom: 62px;
+  padding-bottom: 63px;
 
   background-color: #141c35;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 65% center;
   background-size: contain;
   border-radius: 0 0 30px 30px;
 }
 
+.about__wrapper {
+  padding: 0;
+}
+
 
 .about__title {
-  margin-bottom: 15px;
+  margin-top: 24px;
+  margin-bottom: 14px;
 
   font-weight: 700;
   font-size: 24px;

@@ -1,29 +1,51 @@
 .travelmates {
+  position: relative;
+
   margin-top: -30px;
   padding-top: 81px;
-  padding-right: 25px;
   padding-bottom: 30px;
-  padding-left: 25px;
 
   background-color: #192144;
   background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 100px, 100px 50px;
+  background-position: -10px 341px, 152px 69px;
   border-radius: 0 0 30px 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 69px;
+    left: -19px;
+    z-index: 1;
+
+    width: 132px;
+    height: 132px;
+
+    background-color: #141b3b;
+    border-radius: 20px;
+  }
 }
 
 .travelmates__title {
-  margin-left: 25px;
+  position: relative;
+  z-index: 2;
+
+  margin-top: 21px;
+  margin-bottom: 19px;
+  margin-left: 24px;
 
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  font-family: $main-font;
   color: #ff8d30;
   font-style: normal;
+  letter-spacing: -0.2px;
 }
 
 .travelmates__description {
+  position: relative;
+  z-index: 2;
+
   width: 80%;
   margin-bottom: 21px;
   margin-left: 25px;
