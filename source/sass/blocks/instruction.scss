@@ -2,7 +2,7 @@
   padding: 0 25px;
   padding-bottom: 39px;
 
-  background-image: linear-gradient(transparent 0%, transparent 23%, #172143 23%, #172143 100%);
+  background-image: linear-gradient(#141c34 0%, #141c34 23%, #172143 23%, #172143 100%);
 }
 
 .instruction__list {
@@ -94,7 +94,7 @@
 
 .instruction__item:nth-of-type(4) {
   padding-top: 15px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
 
   background-color: #ffd74b;
   border-bottom-right-radius: 10px;
@@ -239,6 +239,8 @@
   }
 
   .instruction__item a {
+    width: 69%;
+
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;

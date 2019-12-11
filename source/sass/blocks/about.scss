@@ -1,14 +1,31 @@
 .about {
-  padding: 0 49px;
+  position: relative;
 
-  background-color: #141c35;
+  background-color: #172143;
   border-radius: 0 0 30px 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+
+    width: 132px;
+    height: 132px;
+
+    background-color: #141b3b;
+    border-radius: 20px;
+  }
 }
 
 .about__wrapper {
-  padding: 0;
+  position: relative;
+  z-index: 2;
+
+  padding: 0 49px;
   padding-top: 5px;
-  padding-bottom: 63px;
+  padding-bottom: 64px;
 
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
@@ -18,8 +35,11 @@
 
 
 .about__title {
+  position: relative;
+  z-index: 1;
+
   margin-top: 24px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   font-weight: 700;
   font-size: 24px;
@@ -30,13 +50,16 @@
 }
 
 .about__text {
+  position: relative;
+  z-index: 1;
+
   width: 96%;
   margin-top: 0;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.4;
   font-family: $main-font;
   color: $white-color;
   font-style: normal;
@@ -54,14 +77,20 @@
 
 @media (min-width: $tablet) {
   .about {
-    padding: 0 35px;
-
-    background-color: #141c35;
+    background-color: #192144;
     border-radius: 0 0 60px 60px;
+
+    &::before {
+      top: 1px;
+      left: 33px;
+
+      width: 688px;
+      height: 213px;
+    }
   }
 
   .about__wrapper {
-    padding: 0 32px;
+    padding: 0 67px;
     padding-top: 40px;
     padding-bottom: 88px;
 
@@ -88,7 +117,7 @@
 
     font-weight: 300;
     font-size: 28px;
-    line-height: 33px;
+    line-height: 1.2;
   }
 
   .about__text--bold {
@@ -138,20 +167,24 @@
     padding: 0;
 
     border-radius: 0 0 60px 60px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .about__wrapper {
     position: relative;
 
     box-sizing: border-box;
-    padding-top: 132px;
+    padding-top: 126px;
     padding-right: 70px;
     padding-bottom: 164px;
     padding-left: 70px;
 
     background-image: url("../img/about-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 100% bottom;
+    background-position: 100% 85px;
     background-size: 630px;
 
     &::after {
@@ -173,7 +206,7 @@
     position: relative;
     z-index: 2;
 
-    margin-top: 3px;
+    margin-top: 6px;
     margin-bottom: 58px;
   }
 
@@ -186,13 +219,13 @@
 
   .about__text--bold {
     width: 36%;
-    margin-top: 42px;
+    margin-top: 38px;
   }
 
   .about__btn {
     position: relative;
     z-index: 2;
 
-    margin-top: 83px;
+    margin-top: 84px;
   }
 }

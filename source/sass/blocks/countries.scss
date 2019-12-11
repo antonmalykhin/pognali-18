@@ -26,7 +26,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: -18px;
+    top: -17px;
     left: 0;
 
     width: 100%;
@@ -40,7 +40,7 @@
 .countries__btn {
   position: relative;
 
-  margin-top: 25px;
+  margin-top: 23px;
   padding: 23px 24px;
 
   color: #1d2e5b;
@@ -81,14 +81,14 @@
 
 .countries__description {
   width: 74%;
-  margin-bottom: 59px;
+  margin-bottom: 58px;
   margin-left: 25px;
 
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.4;
   font-family: $main-font;
-  color: #444444;
+  color: $text-color;
   font-style: normal;
 }
 
@@ -103,6 +103,22 @@
   border-radius: 10px;
 }
 
+.countries__item:last-of-type {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50%;
+
+    background-image: linear-gradient(transparent,#edeff6);
+  }
+}
+
 .countries__img--mobile {
   width: 100%;
 
@@ -113,19 +129,8 @@
   display: none;
 }
 
-// .countries__bg {
-//   display: flex;
-//   justify-content: space-between;
-//   padding-right: 25px;
-//   padding-bottom: 22px;
-//   padding-left: 25px;
-
-//   background-color: $white-color;
-//   border-radius: 10px;
-// }
-
 .countries__country {
-  margin-top: 9px;
+  margin-top: 12px;
   margin-bottom: 2px;
 
   font-weight: 700;
@@ -204,10 +209,29 @@
   }
 
   .countries__list {
+    position: relative;
+
     padding-left: 5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: -30px;
+      z-index: 1;
+
+      width: 141px;
+      height: 141px;
+
+      background-color: #e1e5f2;
+      border-radius: 20px;
+    }
   }
 
   .countries__item {
+    position: relative;
+    z-index: 2;
+
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -239,6 +263,7 @@
   }
 
   .countries__country {
+    margin-top: 9px;
     margin-bottom: 5px;
 
     font-weight: 700;
@@ -305,19 +330,19 @@
     padding-top: 161px;
     padding-bottom: 139px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 89px;
-      left: 0;
-      z-index: 1;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 89px;
+    //   left: 0;
+    //   z-index: 1;
 
-      width: 141px;
-      height: 141px;
+    //   width: 141px;
+    //   height: 141px;
 
-      background-color: #e1e5f2;
-      border-radius: 20px;
-    }
+    //   background-color: #e1e5f2;
+    //   border-radius: 20px;
+    // }
   }
 
   .countries__text-container {
@@ -359,6 +384,11 @@
     order: -1;
     width: 42.4%;
     margin-left: 65px;
+
+    &::after {
+      top: -72px;
+      left: -65px;
+    }
   }
 
   .countries__country {

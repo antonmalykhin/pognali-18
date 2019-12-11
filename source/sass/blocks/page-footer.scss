@@ -112,14 +112,11 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    padding: 0;
   }
 
   .page-footer__item a {
     width: 61px;
     height: 61px;
-  }
-
-  .page-footer__developer {
-    margin-right: 19px;
   }
 }

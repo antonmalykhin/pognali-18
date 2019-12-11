@@ -2,14 +2,18 @@
   position: relative;
 
   margin-top: -30px;
+
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+}
+
+.travelmates__wrapper {
   padding-top: 81px;
   padding-bottom: 30px;
 
-  background-color: #192144;
   background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: -10px 341px, 152px 69px;
-  border-radius: 0 0 30px 30px;
 
   &::before {
     content: "";
@@ -30,8 +34,8 @@
   position: relative;
   z-index: 2;
 
-  margin-top: 21px;
-  margin-bottom: 19px;
+  margin-top: 22px;
+  margin-bottom: 20px;
   margin-left: 24px;
 
   font-weight: 700;
@@ -47,12 +51,12 @@
   z-index: 2;
 
   width: 80%;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   margin-left: 25px;
 
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.4;
   font-family: $main-font;
   color: $white-color;
   font-style: normal;
@@ -60,7 +64,7 @@
 
 .travelmates__slogan {
   display: block;
-  margin-bottom: 56px;
+  margin-bottom: 58px;
   margin-left: 25px;
 
   font-weight: 700;
@@ -132,7 +136,7 @@
 
 .travelmates__name {
   display: block;
-  margin-top: 7px;
+  margin-top: 11px;
   margin-bottom: 15px;
 
   text-align: center;
@@ -156,7 +160,7 @@
 .travelmates__btn {
   position: relative;
 
-  margin-top: 20px;
+  margin-top: 21px;
   padding: 22px 34px 22px 24px;
 
   color: #1d2e5b;
@@ -186,16 +190,21 @@
 @media (min-width: $tablet) {
   .travelmates {
     margin-top: -60px;
-    padding-top: 164px;
-    padding-right: 25px;
-    padding-bottom: 87px;
-    padding-left: 25px;
 
     background-color: #192144;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .travelmates__wrapper {
+    margin: 0 auto;
+    padding-top: 164px;
+    padding-right: 65px;
+    padding-bottom: 87px;
+    padding-left: 65px;
+
     background-image: url("../../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 401px 139px, 33px 485px;
-    border-radius: 0 0 60px 60px;
 
     &::before {
       top: 138px;
@@ -205,10 +214,6 @@
       width: 214px;
       height: 214px;
     }
-  }
-
-  .travelmates__wrapper {
-    margin: 0 auto;
   }
 
   .travelmates__title {
@@ -297,38 +302,58 @@
 
 
 @media (min-width: $desktop) {
-  .travelmates {
+  // .travelmates {
+  // }
+
+  .travelmates__wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
     padding-top: 153px;
     padding-right: 0;
-    padding-bottom: 123px;
+    padding-bottom: 124px;
     padding-left: 0;
 
-    background-position: 177px 445px, 533px 193px;
+    background-position: 130px 445px, 486px 193px;
+
     &::before {
       top: 128px;
-      left: 46px;
+      left: -1px;
     }
   }
 
-  .travelmates__wrapper {
-    display: flex;
-    justify-content: space-between;
+  .travelmates__text-container {
+    margin-left: 68px;
   }
 
-  .travelmates__text-container {
-    margin-left: 49px;
+  .travelmates__description {
+    width: 430px;
+    margin-bottom: 39px;
   }
 
   .travelmates__list {
-    width: 47.7%;
-    margin-top: 39px;
-    margin-right: 20px;
+    width: 47.8%;
+    margin-top: 40px;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .travelmates__item {
+    width: 286px;
+    padding-bottom: 28px;
+  }
+
+  .travelmates__name {
+    margin-top: 12px;
+    margin-bottom: 20px;
   }
 
   .travelmates__btn--top {
     display: block;
-    width: 218px;
+    width: 210px;
     margin-top: 83px;
+    margin-left: 2px;
   }
 
   .travelmates__btn--bottom {

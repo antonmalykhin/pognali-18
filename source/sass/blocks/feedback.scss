@@ -1,8 +1,10 @@
 .feedback {
   padding: 0 25px;
   padding-top: 27px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   padding-left: 50px;
+
+  background-color: #141c34;
 }
 
 .feedback__item {
@@ -12,7 +14,7 @@
 .feedback__text {
   width: 65%;
   margin-top: 17px;
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 
   font-weight: 300;
   font-size: 16px;
@@ -43,7 +45,7 @@
   .feedback {
     display: flex;
     width: 50%;
-    margin-bottom: 181px;
+    margin-bottom: 179px;
     padding-top: 29px;
     padding-left: 67px;
 
@@ -53,7 +55,7 @@
   .feedback__text {
     width: 295px;
     margin-top: 48px;
-    margin-bottom: 43px;
+    margin-bottom: 42px;
 
     font-weight: 300;
     font-size: 28px;
@@ -83,6 +85,6 @@
 
   .feedback__text {
     margin-top: 11px;
-    margin-bottom: 47px;
+    margin-bottom: 43px;
   }
 }

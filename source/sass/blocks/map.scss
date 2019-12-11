@@ -8,8 +8,8 @@
 .map__wrapper {
   position: relative;
   z-index: 1;
+  // padding: 0 25px;
 
-  padding: 0 25px;
   padding-top: 48px;
   padding-bottom: 35px;
 
@@ -90,11 +90,15 @@
   }
 
   .map__wrapper {
-    padding: 0 67px;
     padding-top: 116px;
     padding-bottom: 84px;
 
     border-radius: 0 0 60px 60px;
+  }
+
+  .map__address-container {
+    padding-right: 67px;
+    padding-left: 67px;
   }
 
   .map__address {
@@ -138,7 +142,7 @@
   .map__wrapper {
     padding: 0;
     padding-top: 119px;
-    padding-bottom: 59px;
+    padding-bottom: 60px;
   }
 
   .map__address-container {
@@ -148,13 +152,14 @@
     align-items: center;
     width: 1320px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .map__address {
     width: auto;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 232px;
+    margin-left: 249px;
 
     &::before {
       top: -32px;
@@ -168,7 +173,7 @@
   .map__btn {
     width: 252px;
     margin-top: 0;
-    margin-right: 93px;
+    margin-right: 75px;
   }
 
   .map__map-block {
