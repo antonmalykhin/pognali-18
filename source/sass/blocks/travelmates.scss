@@ -302,6 +302,12 @@
     padding-right: 0;
     padding-bottom: 123px;
     padding-left: 0;
+
+    background-position: 177px 445px, 533px 193px;
+    &::before {
+      top: 128px;
+      left: 46px;
+    }
   }
 
   .travelmates__wrapper {

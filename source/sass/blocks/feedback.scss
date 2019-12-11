@@ -11,12 +11,12 @@
 
 .feedback__text {
   width: 65%;
-  margin-top: 15px;
+  margin-top: 17px;
   margin-bottom: 18px;
 
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21px;
   font-family: $main-font;
   color: $white-color;
 }
@@ -83,5 +83,6 @@
 
   .feedback__text {
     margin-top: 11px;
+    margin-bottom: 47px;
   }
 }
