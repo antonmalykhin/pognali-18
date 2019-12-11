@@ -26,7 +26,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: -17px;
+    top: -18px;
     left: 0;
 
     width: 100%;
@@ -40,7 +40,7 @@
 .countries__btn {
   position: relative;
 
-  margin-top: 23px;
+  margin-top: 25px;
   padding: 23px 24px;
 
   color: #1d2e5b;
@@ -81,7 +81,7 @@
 
 .countries__description {
   width: 74%;
-  margin-bottom: 58px;
+  margin-bottom: 60px;
   margin-left: 25px;
 
   font-weight: 300;
@@ -130,7 +130,7 @@
 }
 
 .countries__country {
-  margin-top: 12px;
+  margin-top: 9px;
   margin-bottom: 2px;
 
   font-weight: 700;
@@ -200,7 +200,7 @@
   .countries__description {
     width: 55%;
     margin-top: 0;
-    margin-bottom: 104px;
+    margin-bottom: 103px;
     margin-left: 5px;
 
     font-weight: 300;

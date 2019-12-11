@@ -10,7 +10,8 @@
   position: relative;
 
   padding-top: 52px;
-  padding-bottom: 38px;
+  padding-bottom: 39px;
+
 
   &::after {
     content: "";
@@ -31,7 +32,7 @@
 .rates__title {
   width: 150px;
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
   margin-left: 25px;
 
   font-weight: 700;
@@ -55,7 +56,7 @@
   position: relative;
 
   width: 95%;
-  padding-top: 13px;
+  padding-top: 11px;
 
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 
@@ -154,8 +155,6 @@
 
 
 .rates__business-plans {
-  // position: absolute;
-  // bottom: 332px;
   padding: 0;
   padding-top: 52px;
 
@@ -163,12 +162,13 @@
   border-radius: 20px;
   box-shadow: 0 20px 25px 0 rgba(29, 46, 91, 0.1);
 
-  &::after {
-    display: none;
-  }
 
   .rates__wrapper {
     padding: 0 25px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .rates__title {
@@ -258,11 +258,11 @@
     &::after {
       top: 3px;
       right: 0;
-      left: -91px;
+      left: -90px;
 
-      width: 69px;
-      height: 69px;
-      padding: 24px 0;
+      width: 67px;
+      height: 67px;
+      padding: 20px 0;
 
       font-weight: 400;
       font-size: 28px;
@@ -271,15 +271,15 @@
   }
 
   .rates__item:nth-of-type(1)::after {
-    top: -3px;
+    top: -4px;
   }
 
   .rates__item:nth-of-type(2)::after {
-    top: -1px;
+    top: -2px;
   }
 
   .rates__item:nth-of-type(3)::after {
-    top: 1px;
+    top: 0;
   }
 
   .rates__plan {
@@ -327,8 +327,6 @@
 
 
   .rates__business-plans {
-    // position: absolute;
-    // bottom: 332px;
     padding: 0;
     padding-top: 37px;
     padding-bottom: 0;
@@ -353,6 +351,10 @@
 
     .rates__list {
       width: 509px;
+
+      &::after {
+        display: none;
+      }
     }
 
     .rates__item {
