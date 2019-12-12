@@ -50,10 +50,36 @@
 }
 
 .travelmates-cards__text {
+  position: relative;
+
   margin-top: 0;
   margin-left: 6px;
 
   letter-spacing: -0.5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -26px;
+
+    width: 15px;
+    height: 1px;
+
+    background-color: #edeff6;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 100px;
+
+    width: 150px;
+    height: 1px;
+
+    background-color: #edeff6;
+  }
 }
 
 .travelmates-cards__flags {
