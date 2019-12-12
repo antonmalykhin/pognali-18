@@ -821,86 +821,147 @@
             попутчика</p>
           <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="travelmates-filter__fieldset fieldset">
-              <h3 class="travelmates-filter__legend">Хобби</h3>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Хобби</h3>
+                <ul class="travelmates-filter__list travelmates-filter__list--hobby">
+                  <li class="travelmates-filter__item travelmates-filter__item--hobby">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="hobby"
+                        value="спортзал">
+                      <span class="travelmates-filter__label">Спортзал</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--hobby">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="hobby"
+                        value="кальян">
+                      <span class="travelmates-filter__label">Кальян</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--hobby">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="hobby"
+                        value="диван">
+                      <span class="travelmates-filter__label">Диван</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
             <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
-              <h3 class="travelmates-filter__legend">Музыка</h3>
-              <ul class="travelmates-filter__list travelmates-filter__list--music">
-                <li class="travelmates-filter__item travelmates-filter__item--music">
-                  <label>
-                    <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="тяжелый рок">
-                    <span class="travelmates-filter__label">Тяжелый рок</span>
-                  </label>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--music">
-                  <label>
-                    <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="русский рэп">
-                    <span class="travelmates-filter__label">Русский рэп</span>
-                  </label>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--music">
-                  <label>
-                    <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="евроденс">
-                    <span class="travelmates-filter__label">Евроденс</span>
-                  </label>
-                </li>
-              </ul>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Музыка</h3>
+                <ul class="travelmates-filter__list travelmates-filter__list--music">
+                  <li class="travelmates-filter__item travelmates-filter__item--music">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="music"
+                        value="тяжелый рок">
+                      <span class="travelmates-filter__label">Тяжелый рок</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--music">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="music"
+                        value="русский рэп">
+                      <span class="travelmates-filter__label">Русский рэп</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--music">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="music"
+                        value="евроденс">
+                      <span class="travelmates-filter__label">Евроденс</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
 
             <fieldset class="travelmates-filter__fieldset fieldset">
-              <h3 class="travelmates-filter__legend">Еда</h3>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Еда</h3>
+                <ul class="travelmates-filter__list travelmates-filter__list--food">
+                  <li class="travelmates-filter__item travelmates-filter__item--food">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="food"
+                        value="мясоед">
+                      <span class="travelmates-filter__label">Мясоед</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--food">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="food"
+                        value="сидит на пп">
+                      <span class="travelmates-filter__label">Сидит на ПП</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--food">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="food"
+                        value="веган-сыроед">
+                      <span class="travelmates-filter__label">Веган-сыроед</span>
+                    </label>
+                  </li>
+                </ul>
+                </divcl>
             </fieldset>
 
             <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
-              <h3 class="travelmates-filter__legend">Транспорт</h3>
-              <ul class="travelmates-filter__list travelmates-filter__list--transport transport-list">
-                <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
-                  <span>
-                    <input class="transport-list__input travelmates-filter__input radiobutton" type="radio"
-                      name="transport" value="авиаперелет">
-                    <span class="travelmates-filter__transport-type transport-list__transport-type"
-                      aria-label="авиаперелет"></span>
-                  </span>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
-                  <label>
-                    <input class="transport-list__input travelmates-filter__input radiobutton" type="radio"
-                      name="transport" value="автотранспорт">
-                    <span class="travelmates-filter__transport-type transport-list__transport-type"
-                      aria-label="автотранспорт"></span>
-                  </label>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
-                  <label>
-                    <input class="transport-list__input travelmates-filter__input radiobutton" type="radio"
-                      name="transport" value="велосипед">
-                    <span class="travelmates-filter__transport-type transport-list__transport-type"
-                      aria-label="велосипед"></span>
-                  </label>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
-                  <label>
-                    <input class="transport-list__input travelmates-filter__input radiobutton" type="radio"
-                      name="transport" value="пешком">
-                    <span class="travelmates-filter__transport-type transport-list__transport-type"
-                      aria-label="пешком"></span>
-                  </label>
-                </li>
-              </ul>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Транспорт</h3>
+                <ul class="travelmates-filter__list travelmates-filter__list--transport transport-list">
+                  <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
+                    <span>
+                      <input class="transport-list__input travelmates-filter__input radiobutton visually-hidden"
+                        type="radio" name="transport" value="авиаперелет">
+                      <span class="travelmates-filter__transport-type transport-list__transport-type"
+                        aria-label="авиаперелет"></span>
+                    </span>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
+                    <label>
+                      <input class="transport-list__input travelmates-filter__input radiobutton visually-hidden"
+                        type="radio" name="transport" value="автотранспорт">
+                      <span class="travelmates-filter__transport-type transport-list__transport-type"
+                        aria-label="автотранспорт"></span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
+                    <label>
+                      <input class="transport-list__input travelmates-filter__input radiobutton visually-hidden"
+                        type="radio" name="transport" value="велосипед">
+                      <span class="travelmates-filter__transport-type transport-list__transport-type"
+                        aria-label="велосипед"></span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
+                    <label>
+                      <input class="transport-list__input travelmates-filter__input radiobutton visually-hidden"
+                        type="radio" name="transport" value="пешком">
+                      <span class="travelmates-filter__transport-type transport-list__transport-type"
+                        aria-label="пешком"></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
 
             <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
-              <h3 class="travelmates-filter__legend">Левел</h3>
-              <input class="textfield travelmates-filter__text" type="text" value="30"
-                aria-label="минимальное значение уровня">
-              <input class="textfield travelmates-filter__text" type="text" value="100"
-                aria-label="максимальное значение уровня">
-              <div class="travelmates-filter__slider slider">
-                <div class="line">
-                  <div class="slider__rang-line"></div>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Левел</h3>
+                <div class="travelmates-filter__level-container">
+                  <input class="textfield travelmates-filter__text" type="text" value="30"
+                    aria-label="минимальное значение уровня">
+                  <input class="textfield travelmates-filter__text" type="text" value="100"
+                    aria-label="максимальное значение уровня">
                 </div>
-                <div class="slider__handler"></div>
-                <div class="slider__handler"></div>
+                <div class="travelmates-filter__slider slider">
+                  <div class="line">
+                    <div class="slider__rang-line"></div>
+                  </div>
+                  <div class="slider__handle"></div>
+                  <div class="slider__handle"></div>
+                </div>
               </div>
             </fieldset>
 

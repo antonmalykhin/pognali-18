@@ -1,6 +1,6 @@
 .countries-filter {
   margin-top: -20px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding: 0 25px;
   padding-top: 37px;
   padding-bottom: 20px;
@@ -102,6 +102,7 @@
 @media (min-width: $tablet) {
   .countries-filter {
     margin-top: -70px;
+    margin-bottom: 46px;
     padding-top: 106px;
     padding-right: 70px;
     padding-bottom: 70px;
@@ -214,11 +215,6 @@
   .countries-filter {
     margin-bottom: 0;
     padding-top: 107px;
-  }
-
-  .page-main__container {
-    padding-top: 77px;
-    padding-left: 17px;
   }
 
   .countries-filter__wrapper {
