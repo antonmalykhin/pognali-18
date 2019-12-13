@@ -26,7 +26,7 @@
 .travelmates-cards__online-status {
   position: absolute;
   top: 8px;
-  right: 2px;
+  right: -24%;
 
   width: 6px;
   height: 6px;
@@ -41,8 +41,11 @@
 }
 
 .travelmates-cards__user-name {
+  position: relative;
+
   display: block;
-  width: 190px;
+  // width: 190px;
+  width: 80%;
   margin-top: 0;
 
   letter-spacing: -0.6px;
@@ -311,18 +314,20 @@
   }
 
   .travelmates-cards__container {
+    position: relative;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     order: 0;
     align-self: flex-start;
-    width: 255px;
+    width: 41%;
   }
 
   .travelmates-cards__visit {
     order: 1;
     width: 100%;
-    margin-top: 23px;
+    margin-top: 17px;
   }
 
   .travelmates-cards__flags {
@@ -542,8 +547,8 @@
 
   .travelmates-cards__online-status {
     position: absolute;
-    top: 8px;
-    right: 2px;
+    top: 10px;
+    right: -29px;
   }
 }
 
