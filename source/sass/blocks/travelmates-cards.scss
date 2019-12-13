@@ -125,6 +125,21 @@
   }
 }
 
+.travelmates-cards__level-label {
+  position: relative;
+
+  width: 41px;
+  height: 41px;
+  margin-left: 3px;
+
+  border: 2px solid #ff8c40;
+  border-radius: 50%;
+}
+
+.travelmates-cards__level-word {
+  display: none;
+}
+
 .travelmates-cards__flags {
   margin-top: 19px;
 }
@@ -184,19 +199,13 @@
 }
 
 .travelmates-cards__scores {
-  position: relative;
-
-  width: 41px;
-  height: 41px;
-  margin: 0;
-  margin-left: 3px;
+  position: absolute;
+  top: -25px;
+  left: 8px;
 
   line-height: 2;
   text-align: center;
   color: #1d2e5b;
-
-  border: 2px solid #ff8c40;
-  border-radius: 50%;
 }
 
 
@@ -207,7 +216,7 @@
 }
 
 .travelmates-cards__btn {
-  margin-top: 16px;
+  margin-top: 12px;
 
   text-align: center;
 }
@@ -255,26 +264,42 @@
 
 @media (min-width: $tablet) {
   .travelmates-cards {
-    padding: 0 40px;
+    // padding: 0 40px;
     padding-bottom: 97px;
   }
 
   .travelmates-cards__photo {
     width: 190px;
     height: 190px;
-    margin-right: 14px;
+    margin-right: 34px;
 
     border-radius: 20px;
   }
 
   .travelmates-cards__user-name {
     width: auto;
+
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .travelmates-cards__tags {
+    width: 95.1%;
+    margin-top: 17px;
+    margin-bottom: 45px;
+    margin-left: 3px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0;
   }
 
   .travelmates-cards__item {
     margin-bottom: 39px;
     padding: 34px;
-    padding-bottom: 34px;
+    padding-right: 24px;
+    padding-bottom: 7px;
 
     background-color: $white-color;
     border-radius: 20px;
@@ -291,26 +316,46 @@
     flex-wrap: wrap;
     order: 0;
     align-self: flex-start;
-    width: 200px;
+    width: 255px;
   }
 
   .travelmates-cards__visit {
     order: 1;
     width: 100%;
+    margin-top: 23px;
   }
 
   .travelmates-cards__flags {
     display: flex;
     flex-grow: 1;
+    margin-top: 17px;
+  }
+
+  .travelmates-cards__flag {
+    margin-right: 31px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .travelmates-cards__transport-level {
     flex-direction: column;
+    margin-top: 3px;
     margin-left: auto;
   }
 
   .travelmates-cards__transport-list {
     flex-direction: column;
+  }
+
+  .travelmates-cards__transport-type {
+    width: 41px;
+
+    background-color: transparent;
+  }
+
+  .travelmates-cards__transport-type::before {
+    top: 1px;
   }
 
   .travelmates-cards__like-btn {
@@ -319,10 +364,30 @@
     left: 0;
 
     order: 1;
+    width: 50px;
+    height: 50px;
+
+    &::after {
+      top: 18px;
+      left: 14px;
+
+      width: 21px;
+      height: 17px;
+    }
+  }
+
+  .travelmates-cards__text--level {
+    display: none;
   }
 
   .travelmates-cards__rating {
     order: 2;
+    margin-top: 17px;
+    margin-bottom: 0;
+    margin-left: 6px;
+
+    font-size: 20px;
+    line-height: 1;
   }
 
   .travelmates-cards__show-more-btn {
@@ -338,11 +403,67 @@
   .travelmates-cards__btn--tablet {
     display: block;
     order: 1;
-    width: 105px;
+    width: 120px;
     margin: 0;
+    padding: 14px 0;
+    padding-right: 15px;
+    padding-left: 11px;
+
+    font-size: 20px;
+    line-height: 1.1;
+
+    border-radius: 25px;
   }
 
-  .travelmates-cards__transport-level .travelmates-cards__text {
+  .travelmates-cards__text--flags {
+    margin-left: 49px;
+    padding: 0;
+
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+
+    &::before {
+      top: 8px;
+      left: -83px;
+
+      width: 70px;
+    }
+
+    &::after {
+      top: 8px;
+      right: -33px;
+
+      width: calc(100% - 72px);
+    }
+  }
+
+  .user-card__transport-item:nth-of-type(1) .user-card__transport-type::before {
+    background-size: 18px;
+  }
+
+  .user-card__transport-item:nth-of-type(2) .user-card__transport-type::before {
+    top: 0;
+    left: 15px;
+
+    background-size: 16px;
+  }
+
+  .user-card__transport-item:nth-of-type(3) .user-card__transport-type::before {
+    top: -2px;
+    left: 15px;
+
+    background-size: 23px;
+  }
+
+  .user-card__transport-item:nth-of-type(4) .user-card__transport-type::before {
+    top: -2px;
+    left: 15px;
+
+    background-size: 19px;
+  }
+
+  .travelmates-cards__text--transport {
     display: none;
   }
 
@@ -368,6 +489,61 @@
 
   .travelmates-cards__pagination-item {
     width: 50%;
+  }
+
+  .travelmates-cards__level-label {
+    position: relative;
+
+    width: 53px;
+    height: 53px;
+    margin-left: 0;
+
+    border: 4px solid #ff8c40;
+    border-radius: 50%;
+  }
+
+  .travelmates-cards__scores {
+    position: absolute;
+    top: -3px;
+    left: 11px;
+
+    margin: 0;
+    margin-left: 3px;
+
+    line-height: 2;
+    text-align: center;
+    color: #1d2e5b;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 34px;
+      left: -2px;
+
+      width: 29px;
+      height: 1px;
+
+      background-color: $text-color;
+    }
+  }
+
+  .travelmates-cards__level-word {
+    position: absolute;
+    top: 20px;
+    left: 14px;
+
+    display: block;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: $text-color;
+  }
+
+  .travelmates-cards__online-status {
+    position: absolute;
+    top: 8px;
+    right: 2px;
   }
 }
 
