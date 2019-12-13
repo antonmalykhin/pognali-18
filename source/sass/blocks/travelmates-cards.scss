@@ -299,7 +299,7 @@
   }
 
   .travelmates-cards__item {
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     padding: 34px;
     padding-right: 24px;
     padding-bottom: 7px;
@@ -397,8 +397,10 @@
 
   .travelmates-cards__show-more-btn {
     margin-top: 50px;
+    padding-left: 41px;
 
     font-size: 21px;
+    letter-spacing: -0.5px;
   }
 
   .travelmates-cards__btn--mobile {
@@ -489,7 +491,22 @@
   }
 
   .travelmates-cards__pagination-directions {
-    width: 30%;
+    width: 12%;
+    margin-right: 21px;
+  }
+
+  .pagination__btn--back {
+    border: none;
+  }
+
+  .pagination__btn--back::after {
+    top: 14px;
+    left: 15px;
+  }
+
+  .pagination__btn--front::after {
+    top: 14px;
+    right: 15px;
   }
 
   .travelmates-cards__pagination-item {
@@ -547,8 +564,8 @@
 
   .travelmates-cards__online-status {
     position: absolute;
-    top: 10px;
-    right: -29px;
+    top: 11px;
+    right: -28px;
   }
 }
 
