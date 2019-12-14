@@ -11,7 +11,7 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav container">
 
       <div class="page-header__wrapper">
         <a class="main-nav__logo page-header__logo" href="index.html">
@@ -61,10 +61,11 @@
   <main class="page-main">
 
     <div class="page-main__title-bg">
-      <div class="page-main__wrapper">
+      <div class="page-main__title-wrapper container">
         <h1 class="page-main__title">
           <span class="page-main__title-text">Направления</span>
         </h1>
+        <a class="page-main__return-link" href="index.html">На главную</a>
       </div>
     </div>
 
@@ -73,8 +74,7 @@
         enctype="multipart/form-data">
 
         <section class="plan-creation__user user-card">
-
-          <div class="plan-creation__container page-main__wrapper">
+          <div class="plan-creation__container page-main__wrapper container">
             <h2 class="visually-hidden">Карточка путешественника</h2>
 
             <div class="plan-creation__level-label user-card__level-label">
@@ -115,32 +115,32 @@
               <ul class="plan-creation__transport-list user-card__transport-list transport-list">
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
-                      value="авиаперелет">
+                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden type=" radio"
+                      name="transport" value="авиаперелет">
                     <span class="plan-creation__transport-type transport-list__transport-type"
                       aria-label="авиаперелет"></span>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
-                      value="авиаперелет">
+                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                      name="transport" value="авиаперелет">
                     <span class="plan-creation__transport-type transport-list__transport-type"
                       aria-label="автотранспорт"></span>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
-                      value="авиаперелет">
+                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                      name="transport" value="авиаперелет">
                     <span class="plan-creation__transport-type transport-list__transport-type"
                       aria-label="велосипед"></span>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
-                      value="авиаперелет">
+                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                      name="transport" value="авиаперелет">
                     <span class="plan-creation__transport-type transport-list__transport-type"
                       aria-label="пешком"></span>
                   </label>
@@ -152,7 +152,7 @@
 
         <section class="plans">
 
-          <div class="plans__container">
+          <div class="plans__container container">
             <h2 class="plans__title plan-creation__title">Мои планы:</h2>
 
             <ol class="plans__list">
@@ -432,13 +432,13 @@
               <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
             </div>
           </fieldset>
-    </section>
-    </form>
+
+      </form>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" width="96" height="15"
           alt="Логотип сервиса «Погнали»">

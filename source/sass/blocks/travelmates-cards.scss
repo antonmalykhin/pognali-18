@@ -577,7 +577,7 @@
   }
 
   .travelmates-cards__item {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     padding: 0;
 
     border-radius: 20px;
@@ -589,18 +589,101 @@
   }
 
   .travelmates-cards__photo {
-    width: 533px;
+    width: 30%;
     height: 100%;
+    margin-right: 59px;
 
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
+  .travelmates-cards__container {
+    width: 30%;
+  }
+
+  .travelmates-cards__user-name {
+    margin-top: 47px;
+  }
+
+  .travelmates-cards__online-status {
+    left: -25px;
+  }
+
+  .travelmates-cards__tags {
+    width: 80%;
+  }
+
   .travelmates-cards__show-more-btn {
     margin-top: 70px;
+    padding-right: 25px;
+    padding-left: 0;
   }
 
   .travelmates-cards__pagination {
     margin-top: 70px;
+  }
+
+  .travelmates-cards__visit {
+    width: 30%;
+    height: 150px;
+    margin-top: 32px;
+    overflow: overlay;
+  }
+
+  .travelmates-cards__flags {
+    flex-direction: column;
+    margin-left: 54px;
+  }
+
+  .travelmates-cards__text--flags {
+    display: none;
+  }
+
+  .travelmates-cards__flag {
+    margin-bottom: 6px;
+  }
+
+  .travelmates-cards__transport-level {
+    position: absolute;
+    right: 45px;
+    bottom: 42px;
+
+    flex-direction: row;
+    // justify-content: flex-start;
+    align-items: center;
+    width: 248px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .travelmates-cards__transport-list {
+    flex-direction: row;
+  }
+
+  .user-card__transport-item:nth-of-type(1) .user-card__transport-type::before {
+    top: 7px;
+    left: 10px;
+  }
+
+  .user-card__transport-item:nth-of-type(2) .user-card__transport-type::before {
+    top: 7px;
+    left: 4px;
+  }
+
+  .user-card__transport-item:nth-of-type(3) .user-card__transport-type::before {
+    top: 7px;
+    left: -3px;
+  }
+
+  .user-card__transport-item:nth-of-type(4) .user-card__transport-type::before {
+    top: 7px;
+    left: -12px;
+  }
+
+  .travelmates-cards__pagination-directions {
+    width: 9%;
+    margin-right: 27px;
   }
 }
