@@ -4,7 +4,7 @@
   margin-top: -30px;
   padding: 0 25px;
   padding-top: 29px;
-  padding-bottom: 65px;
+  padding-bottom: 72px;
 
   background-color: #d4d9eb;
   border-radius: 30px 30px 0 0;
@@ -119,6 +119,7 @@
 
 .plan-add__label--lowercase {
   display: block;
+  width: 78%;
   margin-bottom: 16px;
   padding-left: 10px;
 
@@ -128,6 +129,7 @@
   color: #1d2e5b;
   text-transform: none;
   letter-spacing: 0;
+  white-space: nowrap;
 }
 
 .plan-add__label--checkbox-label {
@@ -169,6 +171,7 @@
 
 .plan-add__date {
   width: 100%;
+  height: 44px;
 
   text-transform: capitalize;
 
@@ -190,7 +193,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 15px;
     left: 14px;
 
     width: 14px;
@@ -228,6 +231,8 @@
   left: 0;
 
   &::after {
+    left: -3px;
+
     background-image: url("../img/month-arrow-left.svg");
   }
 }
@@ -238,6 +243,8 @@
   right: 0;
 
   &::after {
+    left: 32px;
+
     background-image: url("../img/month-arrow-right.svg");
   }
 }
@@ -246,6 +253,18 @@
 .plan-add__table {
   margin: 0 auto;
   margin-top: 18px;
+}
+
+.plan-add__day-of-week {
+  display: none;
+}
+
+.plan-add__day-of-week--mobile {
+  display: block;
+}
+
+.plan-add__day-of-week--weekend {
+  color: #ff5c23;
 }
 
 .plan-add__table tr {
@@ -266,23 +285,59 @@
 }
 
 .plan-add__table td {
-  width: 30px;
+  width: 31px;
   height: 30px;
+  margin: 0;
   padding: 0;
+}
+
+.plan-add__day {
+  display: block;
+  height: inherit;
+  margin: 0;
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
-  vertical-align: middle;
+  line-height: 2.5;
   text-align: center;
   color: $text-color;
+
+  background-color: #edeff6;
+}
+
+.plan-add__day--passed {
+  background-color: $white-color;
+  opacity: 30%;
+}
+
+.plan-add__day--selected {
+  color: $white-color;
+
+  background-color: #1d2e5b;
+}
+
+.plan-add__day--current {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+
+    width: 28px;
+    height: 27.5px;
+
+    border: 2px solid #ff5c23;
+    border-radius: 1px;
+  }
 }
 
 .plan-add__btn-next {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  margin-top: 22px;
+  margin-top: 20px;
   margin-bottom: 17px;
   padding: 12px;
 
@@ -349,6 +404,8 @@
 }
 
 .plan-add__item {
+  display: flex;
+  margin-top: 21px;
   margin-bottom: 22px;
 }
 
@@ -356,7 +413,7 @@
   position: relative;
 }
 
-.plan-add__item--drop .plan-add__btn-select-country {
+.plan-add__item--drop-show .plan-add__btn-select-country {
   color: $white-color;
 
   background-color: #182d59;
@@ -365,14 +422,14 @@
 }
 
 .plan-add__textarea__wrapper {
-  margin-top: 23px;
-  margin-bottom: 20px;
+  margin-top: 21px;
+  margin-bottom: 15px;
 }
 
 .plan-add__dropdown {
   position: absolute;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 99.5%;
   padding-bottom: 30px;
@@ -382,6 +439,11 @@
   border-radius: 0 0 25px 25px;
   box-shadow: 0 20px 25px rgba(29, 46, 91, 0.102);
 }
+
+.plan-add__dropdown--show {
+  display: flex;
+}
+
 
 .plan-add__dropdown-link {
   display: block;
@@ -458,8 +520,16 @@
 }
 
 .plan-add__select {
-  margin-top: 21px;
+  width: 76.5%;
   padding: 12px 6px;
+}
+
+.plan-add__flag {
+  flex-grow: 1;
+
+  border: 1px solid #cbced9;
+  border-left: none;
+  border-radius: 4px;
 }
 
 .plan-add__fieldset--step-three {
