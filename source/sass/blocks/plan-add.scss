@@ -144,7 +144,7 @@
     height: 6px;
 
     background-color: #1d2d5b;
-    border-radius: 50%;;
+    border-radius: 50%;
   }
 }
 
@@ -538,6 +538,7 @@
 
 .plan-add__textarea-wrapper--first {
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
