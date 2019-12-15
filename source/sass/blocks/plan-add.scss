@@ -118,18 +118,34 @@
 }
 
 .plan-add__label--lowercase {
-  display: block;
-  width: 78%;
-  margin-bottom: 16px;
+  position: relative;
+
+  display: inline-block;
+  width: 76%;
+  margin-bottom: 0;
   padding-left: 10px;
 
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
+  vertical-align: middle;
   color: #1d2e5b;
   text-transform: none;
   letter-spacing: 0;
   white-space: nowrap;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -2px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: #1d2d5b;
+    border-radius: 50%;;
+  }
 }
 
 .plan-add__label--checkbox-label {
@@ -421,9 +437,9 @@
   border-bottom-left-radius: 0;
 }
 
-.plan-add__textarea__wrapper {
-  margin-top: 21px;
-  margin-bottom: 15px;
+.plan-add__textarea-wrapper {
+  margin-top: 19px;
+  margin-bottom: 16px;
 }
 
 .plan-add__dropdown {
@@ -495,6 +511,7 @@
 
 .plan-add__textarea {
   box-sizing: border-box;
+  margin-top: 12px;
   width: 100%;
   height: 220px;
   padding: 15px;
@@ -514,9 +531,25 @@
   }
 }
 
-.plan-add__textarea__wrapper:last-of-type {
+.plan-add__textarea-wrapper:last-of-type {
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.plan-add__textarea-wrapper--first {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -14px;
+
+    width: 12px;
+    height: 278px;
+
+    border: 3px solid #1d2d5b;
+    border-right: none;
+  }
 }
 
 .plan-add__select {
@@ -532,8 +565,33 @@
   border-radius: 4px;
 }
 
+.plan-add__textarea-wrapper .plan-add__flag {
+  display: block;
+  float: right;
+  width: 35px;
+  height: 24px;
+
+  background-color: tomato;
+  border: none;
+}
+
 .plan-add__fieldset--step-three {
-  padding-bottom: 2px;
+  position: relative;
+
+  padding-bottom: 1px;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 197px;
+  //   left: 10px;
+
+  //   width: 12px;
+  //   height: 278px;
+
+  //   border: 3px solid #1d2d5b;
+  //   border-right: none;
+  // }
 }
 
 .plan-add__fieldset--step-three .plan-add__btn-next {
@@ -821,13 +879,14 @@
   .plan-add__textarea {
     width: 92.6%;
     height: 142px;
+    // margin-top: 12px;
     padding: 16px 19px;
 
     font-size: 20px;
     line-height: 24px;
   }
 
-  .plan-add__textarea__wrapper {
+  .plan-add__textarea-wrapper {
     margin-top: 45px;
     margin-bottom: 0;
   }
@@ -1126,7 +1185,7 @@
     padding-left: 8px;
   }
 
-  .plan-add__textarea__wrapper:first-of-type {
+  .plan-add__textarea-wrapper:first-of-type {
     margin-top: 124px;
   }
 
@@ -1136,7 +1195,7 @@
     padding: 26px 25px;
   }
 
-  .plan-add__textarea__wrapper--last {
+  .plan-add__textarea-wrapper--last {
     margin-top: 35px;
   }
 

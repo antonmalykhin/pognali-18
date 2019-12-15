@@ -170,11 +170,20 @@
 
 @media (min-width: $tablet) {
   .countries {
-    padding-right: 67px;
+    padding-right: 0;
     padding-bottom: 79px;
-    padding-left: 63px;
+    padding-left: 0;
 
     border-radius: 60px;
+  }
+
+  .countries__wrapper {
+    padding-right: 67px;
+    padding-left: 63px;
+
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: 93% 6px;
   }
 
   .countries__title {
@@ -309,6 +318,8 @@
 
     margin: 0;
     padding: 0;
+
+    background-position: 1077px 88px;
   }
 
   .countries__wrapper {
@@ -319,7 +330,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 161px;
+    padding-right: 0;
     padding-bottom: 139px;
+    padding-left: 0;
+
+    background-position: 1030px 88px;
 
     // &::after {
     //   content: "";
