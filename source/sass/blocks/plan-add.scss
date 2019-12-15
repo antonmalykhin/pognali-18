@@ -511,9 +511,9 @@
 
 .plan-add__textarea {
   box-sizing: border-box;
-  margin-top: 12px;
   width: 100%;
   height: 220px;
+  margin-top: 12px;
   padding: 15px;
   padding-top: 10px;
 
@@ -602,7 +602,7 @@
 
 @media (min-width: $tablet) {
   .plan-add {
-    padding: 0 74px;
+    padding: 0 75px;
     padding-top: 53px;
     padding-bottom: 118px;
   }
@@ -615,9 +615,12 @@
   }
 
   .plan-add__fieldset {
-    margin-bottom: 37px;
+    margin-bottom: 40px;
     padding: 40px;
     padding-top: 48px;
+    padding-right: 44px;
+    padding-left: 44px;
+    padding-bottom: 38px;
 
     border-radius: 30px;
   }
@@ -627,9 +630,15 @@
     flex-direction: column;
   }
 
+  .plan-add__fields-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
   .plan-add__pagination {
     top: 66px;
-    right: 39px;
+    right: 45px;
   }
 
   .plan-add__pagination-item {
@@ -649,14 +658,16 @@
   .plan-add__text {
     font-size: 36px;
     line-height: 1;
+    letter-spacing: -0.2px;
   }
 
   .plan-add__description {
     order: 0;
-    margin-bottom: 64px;
+    width: 99%;
+    margin-bottom: 38px;
 
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.27;
   }
 
   .plan-add__container--travelmates {
@@ -664,11 +675,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     order: 1;
+    margin-bottom: 2px;
+    padding-top: 25px;
+
+    border-top: 1px solid #d6d9e6;
   }
 
   .plan-add__container--duration {
     order: 2;
-    margin-bottom: 43px;
+    margin-bottom: 44px;
+    padding-top: 25px;
+
+    border-top: 1px solid #d6d9e6;
   }
 
   .plan-add__label-wrapper {
@@ -681,6 +699,7 @@
 
   .plan-add__label-wrapper--with-children {
     order: 1;
+    margin-bottom: 0;
   }
 
   .plan-add__label {
@@ -691,8 +710,8 @@
 
   .plan-add__label--checkbox-label {
     margin-top: 18px;
-    margin-bottom: 37px;
-    padding-left: 65px;
+    margin-bottom: 34px;
+    padding-left: 60px;
 
     font-size: 20px;
     line-height: 18px;
@@ -736,7 +755,7 @@
 
   .plan-add__btn--front::after {
     top: 17px;
-    left: 35px;
+    left: 32px;
 
     width: 25px;
     height: 34px;
@@ -744,7 +763,7 @@
 
   .plan-add__btn--back::after {
     top: 17px;
-    left: 18px;
+    left: 14px;
 
     width: 25px;
     height: 34px;
@@ -764,6 +783,34 @@
     letter-spacing: 2px;
   }
 
+
+  .plan-add__day-of-week {
+    display: block;
+  }
+
+  .plan-add__day-of-week--mobile {
+    display: none;
+  }
+
+  .plan-add__day {
+    font-size: 20px;
+    line-height: 3.6;
+  }
+
+  .plan-add__day--current {
+    &::after {
+      top: -1px;
+      left: -1px;
+
+      width: 70px;
+      height: 63px;
+
+      border: 3px solid #ff5c23;
+      border-radius: 1px;
+    }
+  }
+
+
   .plan-add__table td {
     width: 75px;
     height: 68px;
@@ -777,9 +824,10 @@
 
   .plan-add__btn-next {
     order: 3;
-    width: 53%;
+    width: 53.9%;
     margin-top: 30px;
     padding: 29px 10px;
+    padding-right: 54px;
 
     font-size: 24px;
     line-height: 1;
