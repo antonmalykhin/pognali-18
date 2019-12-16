@@ -31,10 +31,18 @@
 
 .plan-add__pagination {
   position: absolute;
-  top: 39px;
+  top: 37px;
   right: 30px;
 
   background-color: transparent;
+}
+
+.plan-add__fieldset--step-two .plan-add__pagination {
+  display: none;
+}
+
+.plan-add__fieldset--step-three .plan-add__pagination {
+  display: none;
 }
 
 .plan-add__pagination-text {
@@ -51,6 +59,11 @@
 
 .plan-add__pagination-item::after {
   border-radius: 50%;
+  opacity: 30%;
+}
+
+.plan-add__pagination-item--current::after {
+  opacity: 100%;
 }
 
 .plan-add__step {
@@ -101,6 +114,8 @@
 }
 
 .plan-add__fieldset--step-two {
+  position: relative;
+
   padding-bottom: 2px;
 }
 
@@ -1040,7 +1055,7 @@
     &::after {
       position: absolute;
       top: 47px;
-      right: 2px;
+      right: 0;
       left: auto;
 
       width: 0;
@@ -1409,6 +1424,8 @@
   .plan-add__fieldset--step-two .plan-add__pagination {
     top: 108px;
     right: 354px;
+
+    display: block;
   }
 
 
@@ -1465,6 +1482,8 @@
   .plan-add__fieldset--step-three .plan-add__pagination {
     top: 108px;
     right: 354px;
+
+    display: block;
   }
 
   .plan-add__fieldset--step-three .plan-add__description {
