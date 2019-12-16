@@ -37,6 +37,10 @@
   background-color: transparent;
 }
 
+.plan-add__pagination-text {
+  display: none;
+}
+
 .plan-add__pagination-list {
   display: flex;
 }
@@ -45,7 +49,7 @@
   margin-right: 15px;
 }
 
-.plan-add__pagination-item a::after {
+.plan-add__pagination-item::after {
   border-radius: 50%;
 }
 
@@ -347,6 +351,18 @@
     border: 2px solid #ff5c23;
     border-radius: 1px;
   }
+}
+
+.plan_add__first-day {
+  display: none;
+}
+
+.plan-add__start {
+  display: none;
+}
+
+.plan-add__finish {
+  display: none;
 }
 
 .plan-add__btn-next {
@@ -1141,7 +1157,7 @@
 
 @media (min-width: $desktop) {
   .plan-add {
-    padding: 0 61px;
+    padding: 0;
     padding-top: 56px;
     padding-bottom: 81px;
 
@@ -1149,10 +1165,45 @@
   }
 
   .plan-add__title {
-    width: 1320px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 130px;
+    padding-left: 109px;
+  }
+
+  .plan-add__pagination {
+    top: 255px;
+    right: 392px;
+  }
+
+  .plan-add__pagination-list {
+    flex-direction: column;
+  }
+
+  .plan-add__pagination-item {
+    margin-bottom: 39px;
+
+    &::after {
+      opacity: 30%;
+    }
+  }
+
+  .plan-add__pagination-text {
+    display: block;
+    margin-left: 42px;
+
+    opacity: 60%;
+  }
+
+  .plan-add__pagination-item--current {
+    opacity: 100%;
+
+    &::after {
+      opacity: 100%;
+    }
+
+    .plan-add__pagination-text {
+      opacity: 100%;
+    }
   }
 
   .plan-add__fieldset {
@@ -1162,7 +1213,7 @@
     margin-bottom: 45px;
     padding: 150px;
     padding-top: 99px;
-    padding-bottom: 87px;
+    padding-bottom: 88px;
 
     border-radius: 60px;
   }
@@ -1179,7 +1230,7 @@
 
   .plan-add__description {
     width: 55%;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     margin-left: 10px;
   }
 
@@ -1187,7 +1238,7 @@
     display: flex;
     flex-wrap: wrap;
     order: 1;
-    padding-top: 31px;
+    padding-top: 6px;
 
     border-top: 1px solid #d6d9e6;
   }
@@ -1203,6 +1254,8 @@
     width: 47.5%;
     margin-bottom: 13px;
     margin-left: 10px;
+
+    border-top: none;
   }
 
   .plan-add__container--duration {
@@ -1214,6 +1267,9 @@
     width: 47.5%;
     margin-bottom: 0;
     margin-left: 10px;
+    padding-top: 1px;
+
+    border-top: none;
   }
 
   .plan-add__field-wrapper {
@@ -1249,6 +1305,7 @@
 
   .plan-add__label--checkbox-label {
     width: 100%;
+    margin-top: 46px;
   }
 
   .plan-add__label-wrapper--with-children {
@@ -1265,6 +1322,14 @@
     margin-bottom: 0;
   }
 
+  .plan-add__btn--back::after {
+    left: 6px;
+  }
+
+  .plan-add__btn--front::after {
+    left: 37px;
+  }
+
   .plan-add__field-wrapper--calendar {
     width: 100%;
   }
@@ -1276,8 +1341,7 @@
   .plan-add__table td {
     box-sizing: border-box;
     width: 143px;
-    height: 71px;
-    padding: 8px 15px;
+    height: 70px;
 
     font-weight: 400;
     font-size: 18px;
@@ -1303,16 +1367,65 @@
     letter-spacing: 2px;
   }
 
+  .plan-add__day {
+    padding-left: 18px;
+
+    font-size: 17px;
+    line-height: 2.7;
+    text-align: left;
+  }
+
+  .plan_add__first-day {
+    display: inline;
+    margin-left: 8px;
+  }
+
+
+  .plan-add__start {
+    display: block;
+
+    line-height: 1;
+  }
+
+  .plan-add__finish {
+    display: block;
+
+    line-height: 1;
+  }
+
+  .plan-add__day--current::after {
+    width: 139px;
+    height: 66px;
+  }
+
   .plan-add__fieldset--step-two {
+    position: relative;
+
     padding-right: 162px;
     padding-bottom: 105px;
     padding-left: 162px;
+  }
+
+  .plan-add__fieldset--step-two .plan-add__pagination {
+    top: 108px;
+    right: 354px;
   }
 
 
   .plan-add__list {
     margin: 0;
     padding-top: 62px;
+
+    &::after {
+      right: 22.3%;
+
+      height: 135%;
+    }
+  }
+
+  .plan-add__item::after {
+    top: 25px;
+    right: 21.7%;
   }
 
   .plan-add__fieldset--step-two .plan-add__part-title {
@@ -1320,7 +1433,8 @@
   }
 
   .plan-add__fieldset--step-two .plan-add__description {
-    width: 43%;
+    width: 40%;
+    margin-bottom: 54px;
     margin-left: 0;
   }
 
@@ -1348,9 +1462,14 @@
     text-align: right;
   }
 
+  .plan-add__fieldset--step-three .plan-add__pagination {
+    top: 108px;
+    right: 354px;
+  }
+
   .plan-add__fieldset--step-three .plan-add__description {
     width: 50%;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .plan-add__fieldset--step-three .plan-add__label {
@@ -1366,11 +1485,36 @@
   .plan-add__fieldset--step-three .plan-add__textarea {
     width: 71.6%;
     margin-left: 10px;
-    padding: 26px 25px;
+    padding: 24px 25px;
+    padding-right: 10px;
+  }
+
+  .plan-add__textarea-wrapper {
+    padding-top: 66px;
   }
 
   .plan-add__textarea-wrapper--last {
-    margin-top: 35px;
+    margin-top: 22px;
+    padding-top: 10px;
+  }
+
+  .plan-add__textarea-wrapper .plan-add__flag {
+    margin-top: 7px;
+    margin-right: 125px;
+  }
+
+  .plan-add__label--lowercase::before {
+    top: 17px;
+    right: -52.9%;
+  }
+
+  .plan-add__textarea-wrapper--first::after {
+    top: 93px;
+    right: 233px;
+
+    height: 90%;
+
+    border-width: 4px;
   }
 
   .plan-add__fieldset--step-three .plan-creation__btn-wrapper {
