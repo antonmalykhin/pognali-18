@@ -840,19 +840,61 @@
   }
 
   .plan-add__list {
+    position: relative;
+
     margin-top: 0;
     padding-top: 41px;
 
     border-top: 1px solid #d6d9e6;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: calc(24% + 7px);
+      z-index: 0;
+
+      height: 115%;
+
+      border: 1px solid #d6d9e6;
+    }
   }
 
   .plan-add__item {
+    position: relative;
+
     margin-top: 0;
     margin-bottom: 4px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 27px;
+      right: 24%;
+      z-index: 1;
+
+      width: 15px;
+      height: 15px;
+
+      background-color: #1d2d5b;
+      border-radius: 50%;
+    }
+  }
+
+  .plan-add__item--drop {
+    &::after {
+      background-color: #ffffff;
+      border: 1px solid #cbced9;
+    }
   }
 
   .plan-add__item:last-of-type {
     margin-top: 14px;
+
+    &::after {
+      background-color: #edeff5;
+      border: 1px solid #cbced9;
+    }
   }
 
   .plan-add__select {
@@ -944,6 +986,14 @@
     font-size: 30px;
     line-height: 1;
     letter-spacing: -0.1px;
+
+    &::before {
+      right: -32.5%;
+      left: auto;
+
+      width: 15px;
+      height: 15px;
+    }
   }
 
   .plan-add__fieldset--step-three .plan-add__description {
@@ -968,6 +1018,24 @@
 
     border-top: 1px solid #d6d9e6;
   }
+
+  .plan-add__textarea-wrapper--first {
+    &::after {
+      position: absolute;
+      top: 47px;
+      left: auto;
+      right: 2px;
+
+      width: 0;
+      height: 100%;
+
+      border: 3px solid #1d2d5b;
+      border-top: none;
+      border-right: none;
+      border-bottom: none;
+    }
+  }
+
 
   .plan-add__textarea-wrapper--last {
     border: none;
