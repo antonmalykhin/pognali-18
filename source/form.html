@@ -11,7 +11,7 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav container">
 
       <div class="page-header__wrapper">
         <a class="main-nav__logo page-header__logo" href="index.html">
@@ -61,10 +61,11 @@
   <main class="page-main">
 
     <div class="page-main__title-bg">
-      <div class="page-main__wrapper">
+      <div class="page-main__title-wrapper container">
         <h1 class="page-main__title">
           <span class="page-main__title-text">Направления</span>
         </h1>
+        <a class="page-main__return-link" href="index.html">На главную</a>
       </div>
     </div>
 
@@ -73,8 +74,7 @@
         enctype="multipart/form-data">
 
         <section class="plan-creation__user user-card">
-
-          <div class="plan-creation__container page-main__wrapper">
+          <div class="plan-creation__container page-main__wrapper container">
             <h2 class="visually-hidden">Карточка путешественника</h2>
 
             <div class="plan-creation__level-label user-card__level-label">
@@ -115,32 +115,32 @@
               <ul class="plan-creation__transport-list user-card__transport-list transport-list">
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
-                      value="авиаперелет">
+                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                      name="transport" value="авиаперелет">
                     <span class="plan-creation__transport-type transport-list__transport-type"
                       aria-label="авиаперелет"></span>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
-                      value="авиаперелет">
+                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                      name="transport" value="авиаперелет">
                     <span class="plan-creation__transport-type transport-list__transport-type"
                       aria-label="автотранспорт"></span>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
-                      value="авиаперелет">
+                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                      name="transport" value="авиаперелет">
                     <span class="plan-creation__transport-type transport-list__transport-type"
                       aria-label="велосипед"></span>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton" type="radio" name="transport"
-                      value="авиаперелет">
+                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                      name="transport" value="авиаперелет">
                     <span class="plan-creation__transport-type transport-list__transport-type"
                       aria-label="пешком"></span>
                   </label>
@@ -152,7 +152,7 @@
 
         <section class="plans">
 
-          <div class="plans__container">
+          <div class="plans__container container">
             <h2 class="plans__title plan-creation__title">Мои планы:</h2>
 
             <ol class="plans__list">
@@ -172,22 +172,26 @@
           </div>
         </section>
 
-        <div class="plan-add">
+        <section class="plan-add">
 
           <h2 class="visually-hidden">Форма создания плана путешествия</h2>
 
           <p class="plan-creation__title plan-add__title">Добавить план:</p>
 
-          <div class="plan-add__pagination pagination">
-            <ul class="plan-add__pagination-list pagination__list">
-              <li class="plan-add__pagination-item pagination__item"><a></a></li>
-              <li class="plan-add__pagination-item pagination__item"><a href="#"></a></li>
-              <li class="plan-add__pagination-item pagination__item"><a href="#"></a></li>
-            </ul>
-          </div>
-
-
           <fieldset class="plan-add__fieldset plan-add__fieldset--step-one fieldset">
+            <div class="plan-add__pagination pagination">
+              <ul class="plan-add__pagination-list pagination__list">
+                <li class="plan-add__pagination-item plan-add__pagination-item--current pagination__item">
+                  <span class="plan-add__pagination-text pagination__text">Даты</span>
+                </li>
+                <li class="plan-add__pagination-item pagination__item">
+                  <span class="plan-add__pagination-text pagination__text">Маршрут</span>
+                </li>
+                <li class="plan-add__pagination-item pagination__item">
+                  <span class="plan-add__pagination-text pagination__text">Развлечения</span>
+                </li>
+              </ul>
+            </div>
             <div class="plan-add__flex-container">
               <p class="plan-add__part-title"><span class="plan-add__step">Шаг 1.</span>
                 <span class="plan-add__text">Даты пребывания</span></p>
@@ -209,17 +213,14 @@
                   <span class="plan-add__unit">чел.</span>
                 </div>
 
-
-
-
                 <div class="plan-add__container plan-add__container--duration">
                   <label class="plan-add__label-wrapper" for="numOfDays">
                     <span class="plan-add__label">длительность:</span>
                   </label>
                   <div class="plan-add__field-wrapper plan-add__field-wrapper--half">
                     <button class="btn plan-add__btn plan-add__btn--minus"></button>
-                    <input class="plan-add__number numberfield" type="text" name="numOfPeople" id="numOfPeople"
-                      value="2" pattern="[1-9]{1,3}" required>
+                    <input class="plan-add__number numberfield" type="text" name="numOfDays" id="numOfDays" value="2"
+                      pattern="[1-9]{1,3}" required>
                     <button class="btn plan-add__btn plan-add__btn--plus"></button>
                   </div>
                   <span class="plan-add__unit">дн.</span>
@@ -244,69 +245,101 @@
                   <table class="plan-add__table table">
                     <thead>
                       <tr>
-                        <th>Пн</th>
-                        <th>Вт</th>
-                        <th>Ср</th>
-                        <th>Чт</th>
-                        <th>Пт</th>
-                        <th>Сб</th>
-                        <th>Вс</th>
+                        <th>
+                          <span class="plan-add__day-of-week">Пн</span>
+                          <span class="plan-add__day-of-week plan-add__day-of-week--mobile">П</span>
+                        </th>
+                        <th>
+                          <span class="plan-add__day-of-week">Вт</span>
+                          <span class="plan-add__day-of-week plan-add__day-of-week--mobile">В</span>
+                        </th>
+                        <th>
+                          <span class="plan-add__day-of-week">Ср</span>
+                          <span class="plan-add__day-of-week plan-add__day-of-week--mobile">С</span>
+                        </th>
+                        <th>
+                          <span class="plan-add__day-of-week">Чт</span>
+                          <span class="plan-add__day-of-week plan-add__day-of-week--mobile">Ч</span>
+                        </th>
+                        <th>
+                          <span class="plan-add__day-of-week">Пт</span>
+                          <span class="plan-add__day-of-week plan-add__day-of-week--mobile">П</span>
+                        </th>
+                        <th>
+                          <span class="plan-add__day-of-week plan-add__day-of-week--weekend">Сб</span>
+                          <span
+                            class="plan-add__day-of-week plan-add__day-of-week--mobile plan-add__day-of-week--weekend">С</span>
+                        </th>
+                        <th>
+                          <span class="plan-add__day-of-week plan-add__day-of-week--weekend">Вс</span>
+                          <span
+                            class="plan-add__day-of-week plan-add__day-of-week--mobile plan-add__day-of-week--weekend">В</span>
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>1</td>
+                        <td><span class="plan-add__day plan-add__day--passed">23</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">24</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">25</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">26</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">27</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">28</span></td>
+                        <td>
+                          <span class="plan-add__day plan-add__day--passed">1<span
+                              class="plan_add__first-day">мар</span></span>
+
+                        </td>
                       </tr>
                       <tr>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
+                        <td><span class="plan-add__day plan-add__day--passed">2</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">3</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">4</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">5</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">6</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">7</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">8</span></td>
                       </tr>
                       <tr>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
+                        <td><span class="plan-add__day plan-add__day--passed">9</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">10</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">11</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">12</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">13</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">14</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">15</span></td>
                       </tr>
                       <tr>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                        <td>22</td>
+                        <td><span class="plan-add__day plan-add__day--passed">16</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">17</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">18</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">19</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">20</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">21</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">22</span></td>
                       </tr>
                       <tr>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
+                        <td><span class="plan-add__day plan-add__day--passed">23</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">24</span></td>
+                        <td><span class="plan-add__day plan-add__day--passed">25</span></td>
+                        <td><span class="plan-add__day plan-add__day--selected plan-add__day--current">26<span
+                              class="plan-add__start">Заезд</span></span></td>
+                        <td><span class="plan-add__day plan-add__day--selected">27</span></td>
+                        <td><span class="plan-add__day plan-add__day--selected">28<span
+                              class="plan-add__finish">Выезд</span></span></td>
+                        <td><span class="plan-add__day">29</span></td>
                       </tr>
                       <tr>
-                        <td>30</td>
-                        <td>31</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
+                        <td><span class="plan-add__day">30</span></td>
+                        <td><span class="plan-add__day">31</span></td>
+                        <td>
+                          <span class="plan-add__day">1<span class="plan_add__first-day">апр</span></span>
+
+                        </td>
+                        <td><span class="plan-add__day">2</span></td>
+                        <td><span class="plan-add__day">3</span></td>
+                        <td><span class="plan-add__day">4</span></td>
+                        <td><span class="plan-add__day">5</span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -318,10 +351,25 @@
           </fieldset>
 
           <fieldset class="plan-add__fieldset plan-add__fieldset--step-two fieldset">
+
+            <div class="plan-add__pagination pagination">
+              <ul class="plan-add__pagination-list pagination__list">
+                <li class="plan-add__pagination-item pagination__item">
+                  <span class="plan-add__pagination-text pagination__text">Даты</span>
+                </li>
+                <li class="plan-add__pagination-item plan-add__pagination-item--current pagination__item">
+                  <span class="plan-add__pagination-text pagination__text">Маршрут</span>
+                </li>
+                <li class="plan-add__pagination-item pagination__item">
+                  <span class="plan-add__pagination-text pagination__text">Развлечения</span>
+                </li>
+              </ul>
+            </div>
+
             <p class="plan-add__part-title"><span class="plan-add__step">Шаг 2.</span>
               <span class="plan-add__text">Маршрут</span></p>
 
-            <p class="plan-add__description">Укажите страны, которые вы хотели по посетить. Это может быть
+            <p class="plan-add__description">Укажите страны, которые вы хотели посетить. Это может быть
               одна или
               сразу несколько.</p>
             <ul class="plan-add__list">
@@ -331,11 +379,13 @@
                     и
                     Герцеговина</option>
                 </select>
+                <div class="plan-add__flag"></div>
               </li>
               <li class="plan-add__item">
                 <select class="plan-add__select selectfield" name="secondCountry" id="secondCountry">
                   <option class="plan-add__option selectfield__item" value="Czech">Чехия</option>
                 </select>
+                <div class="plan-add__flag"></div>
               </li>
               <li class="plan-add__item plan-add__item--drop">
                 <button class="btn plan-add__btn-select-country" type="button">Выберите
@@ -405,23 +455,38 @@
           </fieldset>
 
           <fieldset class="plan-add__fieldset plan-add__fieldset--step-three fieldset">
+            <div class="plan-add__pagination pagination">
+              <ul class="plan-add__pagination-list pagination__list">
+                <li class="plan-add__pagination-item pagination__item">
+                  <span class="plan-add__pagination-text pagination__text">Даты</span>
+                </li>
+                <li class="plan-add__pagination-item  pagination__item">
+                  <span class="plan-add__pagination-text pagination__text">Маршрут</span>
+                </li>
+                <li class="plan-add__pagination-item plan-add__pagination-item--current pagination__item">
+                  <span class="plan-add__pagination-text pagination__text">Развлечения</span>
+                </li>
+              </ul>
+            </div>
             <p class="plan-add__part-title"><span class="plan-add__step">Шаг 3.</span>
               <span class="plan-add__text">Развлечения</span></p>
 
             <p class="plan-add__description">Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.</p>
 
-            <div class="plan-add__textarea__wrapper">
-              <label class="plan-add__textarea__wrapper">
+            <div class="plan-add__textarea-wrapper plan-add__textarea-wrapper--first">
+              <label>
                 <span class="plan-add__label plan-add__label--lowercase">Босния и Герцеговина</span>
+                <span class="plan-add__flag"></span>
                 <textarea class="plan-add__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
                   placeholder="План действий"></textarea>
               </label>
             </div>
 
-            <div class="plan-add__textarea__wrapper plan-add__textarea__wrapper--last">
+            <div class="plan-add__textarea-wrapper plan-add__textarea-wrapper--last">
               <label>
                 <span class="plan-add__label plan-add__label--lowercase">Чехия</span>
+                <span class="plan-add__flag"></span>
                 <textarea class="plan-add__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
                   placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </label>
@@ -432,13 +497,13 @@
               <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
             </div>
           </fieldset>
-    </section>
-    </form>
+        </section>
+      </form>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" width="96" height="15"
           alt="Логотип сервиса «Погнали»">
@@ -464,6 +529,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>

@@ -2,6 +2,18 @@
   position: relative;
 }
 
+.user-card__online-status {
+  border-radius: 50%;
+}
+
+.user-card__online-status--offline {
+  background-color: #f97676;
+}
+
+.user-card__online-status--online {
+  background-color: #80e31e;
+}
+
 .user-card__circle {
   width: 60px;
   height: 60px;

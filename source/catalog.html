@@ -11,8 +11,7 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-
+    <nav class="main-nav container">
       <div class="page-header__wrapper">
         <a class="main-nav__logo page-header__logo" href="index.html">
           <img class="main-nav__logo-image page-header__logo-image" src="img/logo-mobile-blue@1x.png" width="100"
@@ -61,15 +60,16 @@
   <main class="page-main">
 
     <div class="page-main__title-bg">
-      <div class="page-main__wrapper">
+      <div class="page-main__title-wrapper container">
         <h1 class="page-main__title">
           <span class="page-main__title-text">Попутчики</span>
         </h1>
+        <a class="page-main__return-link" href="index.html">На главную</a>
       </div>
     </div>
 
     <section class="countries-filter">
-      <div class="page-main__wrapper">
+      <div class="page-main__wrapper container">
 
         <div class="countries-filter__container">
           <div class="countries-filter__wrapper">
@@ -813,95 +813,155 @@
       </div>
     </section>
 
-    <div class="page-main__container">
+    <div class="page-main__container container">
       <section class="travelmates-filter">
-
         <div class="travelmates-filter__wrapper">
           <h2 class="visually-hidden">Форма фильтрации попутчиков</h2>
           <p class="travelmates-filter__title">Подберите идеального
             попутчика</p>
           <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="travelmates-filter__fieldset fieldset">
-              <h3 class="travelmates-filter__legend">Хобби</h3>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Хобби</h3>
+                <ul class="travelmates-filter__list travelmates-filter__list--hobby">
+                  <li class="travelmates-filter__item travelmates-filter__item--hobby">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="hobby"
+                        value="спортзал">
+                      <span class="travelmates-filter__label">Спортзал</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--hobby">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="hobby"
+                        value="кальян">
+                      <span class="travelmates-filter__label">Кальян</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--hobby">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="hobby"
+                        value="диван">
+                      <span class="travelmates-filter__label">Диван</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
             <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
-              <h3 class="travelmates-filter__legend">Музыка</h3>
-              <ul class="travelmates-filter__list travelmates-filter__list--music">
-                <li class="travelmates-filter__item travelmates-filter__item--music">
-                  <label>
-                    <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="тяжелый рок">
-                    <span class="travelmates-filter__label">Тяжелый рок</span>
-                  </label>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--music">
-                  <label>
-                    <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="русский рэп">
-                    <span class="travelmates-filter__label">Русский рэп</span>
-                  </label>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--music">
-                  <label>
-                    <input class="travelmates-filter__input radiobutton" type="radio" name="music" value="евроденс">
-                    <span class="travelmates-filter__label">Евроденс</span>
-                  </label>
-                </li>
-              </ul>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Музыка</h3>
+                <ul class="travelmates-filter__list travelmates-filter__list--music">
+                  <li class="travelmates-filter__item travelmates-filter__item--music">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="music"
+                        value="тяжелый рок">
+                      <span class="travelmates-filter__label">Тяжелый рок</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--music">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="music"
+                        value="русский рэп">
+                      <span class="travelmates-filter__label">Русский рэп</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--music">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="music"
+                        value="евроденс">
+                      <span class="travelmates-filter__label">Евроденс</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
 
             <fieldset class="travelmates-filter__fieldset fieldset">
-              <h3 class="travelmates-filter__legend">Еда</h3>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Еда</h3>
+                <ul class="travelmates-filter__list travelmates-filter__list--food">
+                  <li class="travelmates-filter__item travelmates-filter__item--food">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="food"
+                        value="мясоед">
+                      <span class="travelmates-filter__label">Мясоед</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--food">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="food"
+                        value="сидит на пп">
+                      <span class="travelmates-filter__label">Сидит на ПП</span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--food">
+                    <label>
+                      <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="food"
+                        value="веган-сыроед">
+                      <span class="travelmates-filter__label">Веган-сыроед</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
 
             <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
-              <h3 class="travelmates-filter__legend">Транспорт</h3>
-              <ul class="travelmates-filter__list travelmates-filter__list--transport transport-list">
-                <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
-                  <span>
-                    <input class="transport-list__input travelmates-filter__input radiobutton" type="radio"
-                      name="transport" value="авиаперелет">
-                    <span class="travelmates-filter__transport-type transport-list__transport-type"
-                      aria-label="авиаперелет"></span>
-                  </span>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
-                  <label>
-                    <input class="transport-list__input travelmates-filter__input radiobutton" type="radio"
-                      name="transport" value="автотранспорт">
-                    <span class="travelmates-filter__transport-type transport-list__transport-type"
-                      aria-label="автотранспорт"></span>
-                  </label>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
-                  <label>
-                    <input class="transport-list__input travelmates-filter__input radiobutton" type="radio"
-                      name="transport" value="велосипед">
-                    <span class="travelmates-filter__transport-type transport-list__transport-type"
-                      aria-label="велосипед"></span>
-                  </label>
-                </li>
-                <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
-                  <label>
-                    <input class="transport-list__input travelmates-filter__input radiobutton" type="radio"
-                      name="transport" value="пешком">
-                    <span class="travelmates-filter__transport-type transport-list__transport-type"
-                      aria-label="пешком"></span>
-                  </label>
-                </li>
-              </ul>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Транспорт</h3>
+                <ul class="travelmates-filter__list travelmates-filter__list--transport transport-list">
+                  <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
+                    <span>
+                      <input class="transport-list__input travelmates-filter__input radiobutton visually-hidden"
+                        type="radio" name="transport" value="авиаперелет">
+                      <span class="travelmates-filter__transport-type transport-list__transport-type"
+                        aria-label="авиаперелет"></span>
+                    </span>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
+                    <label>
+                      <input class="transport-list__input travelmates-filter__input radiobutton visually-hidden"
+                        type="radio" name="transport" value="автотранспорт">
+                      <span class="travelmates-filter__transport-type transport-list__transport-type"
+                        aria-label="автотранспорт"></span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
+                    <label>
+                      <input class="transport-list__input travelmates-filter__input radiobutton visually-hidden"
+                        type="radio" name="transport" value="велосипед">
+                      <span class="travelmates-filter__transport-type transport-list__transport-type"
+                        aria-label="велосипед"></span>
+                    </label>
+                  </li>
+                  <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
+                    <label>
+                      <input class="transport-list__input travelmates-filter__input radiobutton visually-hidden"
+                        type="radio" name="transport" value="пешком">
+                      <span class="travelmates-filter__transport-type transport-list__transport-type"
+                        aria-label="пешком"></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
 
             <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
-              <h3 class="travelmates-filter__legend">Левел</h3>
-              <input class="textfield travelmates-filter__text" type="text" value="30"
-                aria-label="минимальное значение уровня">
-              <input class="textfield travelmates-filter__text" type="text" value="100"
-                aria-label="максимальное значение уровня">
-              <div class="travelmates-filter__slider slider">
-                <div class="line">
-                  <div class="slider__rang-line"></div>
+              <div class="travelmates-filter__fieldcontainer">
+                <h3 class="travelmates-filter__legend">Левел</h3>
+                <div class="travelmates-filter__level-container">
+                  <input class="textfield travelmates-filter__text" type="text" value="30"
+                    aria-label="минимальное значение уровня">
+                  <input class="textfield travelmates-filter__text" type="text" value="100"
+                    aria-label="максимальное значение уровня">
                 </div>
-                <div class="slider__handler"></div>
-                <div class="slider__handler"></div>
+                <div class="travelmates-filter__slider slider">
+                  <div class="line">
+                    <div class="slider__rang-line"></div>
+                  </div>
+                  <div class="slider__handle"></div>
+                  <div class="slider__handle"></div>
+                </div>
               </div>
             </fieldset>
 
@@ -918,7 +978,7 @@
           <li class="travelmates-cards__item">
             <div class="travelmates-cards__user user-card">
 
-              <img class="travelmates-cards__photo user-card__photo user-card__photo--small"
+              <img class=" travelmates-cards__photo user-card__photo user-card__photo--small"
                 src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Фотография пользователя Таня Фирсова">
 
               <div class="travelmates-cards__container">
@@ -928,7 +988,11 @@
                   aria-label="Поставить лайк"></button>
 
                 <a class="travelmates-cards__user-name user-card__user-name" href="#">Таня
-                  Фирсова</a>
+                  Фирсова<span
+                    class="travelmates-cards__online-status user-card__online-status user-card__online-status--offline">
+                  </span></a>
+
+
 
                 <p class="travelmates-cards__rating user-card__rating">1,5 М</p>
 
@@ -937,7 +1001,7 @@
               </div>
 
               <div class="travelmates-cards__visit">
-                <p class="travelmates-cards__text user-card__text">хочет посетить:</p>
+                <p class="travelmates-cards__text travelmates-cards__text--flags user-card__text">хочет посетить:</p>
                 <ul class="travelmates-cards__flags user-card__flags">
                   <li class="travelmates-cards__flag user-card__flag">Шри-Ланка</li>
                   <li class="travelmates-cards__flag user-card__flag">Тайланд</li>
@@ -947,7 +1011,7 @@
 
               <div class="travelmates-cards__transport-level">
                 <div class="travelmates-cards__column travelmates-cards__column--left">
-                  <p class="travelmates-cards__text user-card__text">транспорт:</p>
+                  <p class="travelmates-cards__text travelmates-cards__text--transport user-card__text">транспорт:</p>
                   <ul class="travelmates-cards__transport-list user-card__transport-list">
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--enable"
@@ -972,9 +1036,10 @@
                   </ul>
                 </div>
                 <div class="travelmates-cards__column travelmates-cards__column--right">
-                  <p class="travelmates-cards__text user-card__text">левел:</p>
+                  <p class="travelmates-cards__text travelmates-cards__text--level user-card__text">левел:</p>
                   <div class="travelmates-cards__level-label user-card__level-label">
                     <p class="travelmates-cards__scores user-card__scores">99</p>
+                    <p class="travelmates-cards__level-word user-card__level">level</p>
                   </div>
                 </div>
               </div>
@@ -995,7 +1060,9 @@
                 <button class="travelmates-cards__like-btn user-card__like-btn user-card__like-btn--selected"
                   aria-label="Поставить лайк"></button>
 
-                <a class="travelmates-cards__user-name user-card__user-name" href="#">Петя Демин</a>
+                <a class="travelmates-cards__user-name user-card__user-name" href="#">Петя Демин<span
+                    class="travelmates-cards__online-status user-card__online-status user-card__online-status--online">
+                  </span></a>
 
                 <p class="travelmates-cards__rating user-card__rating">150</p>
 
@@ -1003,7 +1070,7 @@
               </div>
 
               <div class="travelmates-cards__visit">
-                <p class="travelmates-cards__text user-card__text">хочет посетить:</p>
+                <p class="travelmates-cards__text travelmates-cards__text--flags user-card__text">хочет посетить:</p>
                 <ul class="travelmates-cards__flags user-card__flags">
                   <li class="travelmates-cards__flag user-card__flag">Бельгия</li>
                   <li class="travelmates-cards__flag user-card__flag">Чехия</li>
@@ -1012,7 +1079,7 @@
 
               <div class="travelmates-cards__transport-level">
                 <div class="travelmates-cards__column travelmates-cards__column--left">
-                  <p class="travelmates-cards__text user-card__text">транспорт:</p>
+                  <p class="travelmates-cards__text travelmates-cards__text--transport user-card__text">транспорт:</p>
                   <ul class="travelmates-cards__transport-list user-card__transport-list">
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--enable"
@@ -1037,9 +1104,10 @@
                   </ul>
                 </div>
                 <div class="travelmates-cards__column travelmates-cards__column--right">
-                  <p class="travelmates-cards__text user-card__text">левел:</p>
+                  <p class="travelmates-cards__text travelmates-cards__text--level  user-card__text">левел:</p>
                   <div class="travelmates-cards__level-label user-card__level-label">
                     <p class="travelmates-cards__scores user-card__scores">80</p>
+                    <p class="travelmates-cards__level-word user-card__level">level</p>
                   </div>
                 </div>
               </div>
@@ -1060,15 +1128,17 @@
                 <button class="travelmates-cards__like-btn user-card__like-btn user-card__like-btn--selected"
                   aria-label="Поставить лайк"></button>
 
-                <a class="travelmates-cards__user-name user-card__user-name" href="#">Марк Смолов</a>
+                <a class="travelmates-cards__user-name user-card__user-name" href="#">Марк Смолов<span
+                    class="travelmates-cards__online-status user-card__online-status user-card__online-status--offline">
+                  </span></a>
 
                 <p class="travelmates-cards__rating user-card__rating">1700</p>
 
-                <p class="travelmates-cards__tags user-card__tags">рэп #тату #хайпбист #кроссовки #суприм</p>
+                <p class="travelmates-cards__tags user-card__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
               </div>
 
               <div class="travelmates-cards__visit">
-                <p class="travelmates-cards__text user-card__text">хочет посетить:</p>
+                <p class="travelmates-cards__text travelmates-cards__text--flags user-card__text">хочет посетить:</p>
                 <ul class="travelmates-cards__flags user-card__flags">
                   <li class="travelmates-cards__flag user-card__flag">США</li>
                   <li class="travelmates-cards__flag user-card__flag">Австралия</li>
@@ -1078,7 +1148,7 @@
 
               <div class="travelmates-cards__transport-level">
                 <div class="travelmates-cards__column travelmates-cards__column--left">
-                  <p class="travelmates-cards__text user-card__text">транспорт:</p>
+                  <p class="travelmates-cards__text travelmates-cards__text--transport user-card__text">транспорт:</p>
                   <ul class="travelmates-cards__transport-list user-card__transport-list">
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--enable"
@@ -1103,9 +1173,10 @@
                   </ul>
                 </div>
                 <div class="travelmates-cards__column travelmates-cards__column--right">
-                  <p class="travelmates-cards__text user-card__text">левел:</p>
+                  <p class="travelmates-cards__text travelmates-cards__text--level user-card__text">левел:</p>
                   <div class="travelmates-cards__level-label user-card__level-label">
                     <p class="travelmates-cards__scores user-card__scores">25</p>
+                    <p class="travelmates-cards__level-word user-card__level">level</p>
                   </div>
                 </div>
               </div>
@@ -1126,7 +1197,11 @@
                 <button class="travelmates-cards__like-btn user-card__like-btn user-card__like-btn--selected"
                   aria-label="Поставить лайк"></button>
 
-                <a class="travelmates-cards__user-name user-card__user-name" href="#">Лариса Роговая</a>
+                <a class="travelmates-cards__user-name user-card__user-name" href="#">Лариса Роговая<span
+                    class="travelmates-cards__online-status user-card__online-status user-card__online-status--online">
+                  </span>
+                </a>
+
 
                 <p class="travelmates-cards__rating user-card__rating">23</p>
 
@@ -1134,7 +1209,7 @@
               </div>
 
               <div class="travelmates-cards__visit">
-                <p class="travelmates-cards__text user-card__text">хочет посетить:</p>
+                <p class="travelmates-cards__text travelmates-cards__text--flags user-card__text">хочет посетить:</p>
                 <ul class="travelmates-cards__flags user-card__flags">
                   <li class="travelmates-cards__flag user-card__flag">Великобритания</li>
                   <li class="travelmates-cards__flag user-card__flag">Германия</li>
@@ -1143,7 +1218,7 @@
 
               <div class="travelmates-cards__transport-level">
                 <div class="travelmates-cards__column travelmates-cards__column--left">
-                  <p class="travelmates-cards__text user-card__text">транспорт:</p>
+                  <p class="travelmates-cards__text travelmates-cards__text--transport user-card__text">транспорт:</p>
                   <ul class="travelmates-cards__transport-list user-card__transport-list">
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--enable"
@@ -1168,9 +1243,10 @@
                   </ul>
                 </div>
                 <div class="travelmates-cards__column travelmates-cards__column--right">
-                  <p class="travelmates-cards__text user-card__text">левел:</p>
+                  <p class="travelmates-cards__text travelmates-cards__text--level user-card__text">левел:</p>
                   <div class="travelmates-cards__level-label user-card__level-label">
                     <p class="travelmates-cards__scores user-card__scores">50</p>
+                    <p class="travelmates-cards__level-word user-card__level">level</p>
                   </div>
                 </div>
               </div>
@@ -1206,7 +1282,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" width="96" height="15"
           alt="Логотип сервиса «Погнали»">

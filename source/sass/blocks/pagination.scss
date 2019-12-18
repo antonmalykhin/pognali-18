@@ -53,7 +53,7 @@
   @include list-reset;
 }
 
-.pagination__item a {
+.pagination__item {
   position: relative;
 
   display: block;
@@ -71,6 +71,15 @@
 
     background-color: #1d2e5b;
   }
+}
+
+.pagination__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .pagination__number {

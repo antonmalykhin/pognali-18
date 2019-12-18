@@ -9,7 +9,7 @@
 
   &::before {
     top: -17px;
-    left: 0;
+    left: 1px;
 
     background-image: url("../img/contacts-phone.svg");
   }
@@ -28,8 +28,8 @@
 
 .contacts-list__phone--theme-orange-icon {
   display: block;
-  width: 41px;
-  height: 41px;
+  width: 42px;
+  height: 42px;
   padding: 0;
 
   &::before {

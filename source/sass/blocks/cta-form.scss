@@ -3,17 +3,19 @@
   z-index: 1;
 
   margin-top: -30px;
-  padding: 0 25px;
-  padding-top: 102px;
-  padding-bottom: 39px;
 
   background-color: #192144;
   border-radius: 0 0 30px 30px;
 }
 
+.cta-form__wrapper {
+  padding-top: 102px;
+  padding-bottom: 39px;
+}
+
 .cta-form__title {
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 24px;
@@ -28,7 +30,7 @@
   width: 85%;
   margin: 0 auto;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-weight: 300;
   font-size: 16px;
@@ -56,6 +58,10 @@
   height: 62px;
 
   border-radius: 10px;
+}
+
+.cta-form__list {
+  margin-top: 30px;
 }
 
 .cta-form__btn {
@@ -122,14 +128,17 @@
 @media (min-width: $tablet) {
   .cta-form {
     margin-top: -60px;
-    padding-top: 136px;
-    padding-bottom: 79px;
 
     border-radius: 0 0 60px 60px;
   }
 
+  .cta-form__wrapper {
+    padding-top: 136px;
+    padding-bottom: 79px;
+  }
+
   .cta-form__title {
-    margin-bottom: 63px;
+    margin-bottom: 57px;
 
     font-size: 45px;
     line-height: 45px;
@@ -137,7 +146,7 @@
 
   .cta-form__text {
     width: 100%;
-    margin-bottom: 57px;
+    margin-bottom: 63px;
 
     font-size: 28px;
     line-height: 33px;
@@ -148,7 +157,7 @@
   }
 
   .cta-form__form {
-    width: 86.5%;
+    width: 91.9%;
     margin: 0 auto;
   }
 
@@ -177,7 +186,7 @@
 
     &::after {
       top: 34px;
-      left: 40px;
+      left: 35px;
 
       width: 10px;
       height: 14px;
@@ -191,8 +200,9 @@
 
   .cta-form__item {
     margin-bottom: 38px;
-    padding-left: 68px;
+    padding-left: 48px;
   }
+
 
   .cta-form__item:last-of-type {
     margin-bottom: 0;
@@ -233,13 +243,13 @@
 
 @media (min-width: $desktop) {
   .cta-form {
-    padding-top: 167px;
-    padding-bottom: 95px;
+    padding: 0;
   }
 
   .cta-form__wrapper {
-    width: 1320px;
-    margin: 0 auto;
+    padding: 0;
+    padding-top: 168px;
+    padding-bottom: 93px;
   }
 
   .cta-form__title {
@@ -248,24 +258,31 @@
 
   .cta-form__text {
     width: 60%;
+    margin-bottom: 56px;
+  }
+
+  .cta-form__form {
+    width: 88.9%;
   }
 
   .cta-form__field {
     margin-bottom: 69px;
+    padding-left: 32px;
   }
 
   .cta-form__btn {
     width: 325px;
 
     &::after {
-      left: 270px;
+      top: 34px;
+      left: 277px;
     }
   }
 
   .cta-form__btn-text {
     display: block;
     width: auto;
-    margin-left: 24px;
+    margin-left: 36px;
 
     font-weight: 700;
     font-size: 24px;
@@ -278,8 +295,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
-    margin-top: 74px;
+    margin-top: 76px;
+  }
+
+  .cta-form__email {
+    &::before {
+      top: -33px;
+      left: -58px;
+
+      width: 88px;
+      height: 88px;
+    }
+  }
+
+
+  .cta-form__phone {
+    margin-left: 4px;
+
+    &::before {
+      top: -33px;
+      left: -58px;
+
+      width: 88px;
+      height: 88px;
+    }
   }
 }

@@ -2,37 +2,34 @@
   background-color: #152043;
 }
 
-// .intro__wrapper {
-//   background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
-//   background-repeat: no-repeat;
-//   background-position: center, center;
-//   background-size: contain;
-// }
+.intro__wrapper {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 @media (min-width: $tablet) {
   .intro__wrapper {
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center, center;
-    background-size: 50%, cover;
+    background-position: 72.8% 240px, 49.7% 48.3%;
+    background-size: 372px, 196.3%;
   }
 }
+
 
 @media (min-width: $desktop) {
   .intro {
     background-color: #141c33;
     background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center, center;
-    background-size: contain;
+    background-position: 60.2% 10px, center -104px;
+    background-size: 431px, 1810px;
   }
 
   .intro__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1320px;
-    margin: 0 auto;
     padding-top: 110px;
     padding-bottom: 122px;
 

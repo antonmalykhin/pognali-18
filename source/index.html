@@ -11,7 +11,7 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav container">
 
       <div class="page-header__wrapper">
         <a class="main-nav__logo page-header__logo">
@@ -61,7 +61,7 @@
   <main class="page-main">
     <h1 class="visually-hidden">Сервис для поиска попутчиков для путешествий «Погнали»</h1>
     <section class="intro">
-      <div class="intro__wrapper">
+      <div class="intro__wrapper container">
         <h2 class="visually-hidden">Интро</h2>
         <section class="intro-title">
           <h3 class="visually-hidden">Вступительная часть</h3>
@@ -100,7 +100,7 @@
       </div>
     </section>
     <section class="about">
-      <div class="about__wrapper">
+      <div class="about__wrapper container">
         <h3 class="about__title">О сервисе</h3>
         <p class="about__text">Любое путешествие веселее
           с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
@@ -111,7 +111,7 @@
       </div>
     </section>
     <section class="countries">
-      <div class="countries__wrapper">
+      <div class="countries__wrapper container">
         <div class="countries__text-container">
           <h2 class="countries__title">Направления</h2>
           <p class="countries__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
@@ -166,7 +166,7 @@
     </section>
 
     <section class="travelmates">
-      <div class="travelmates__wrapper">
+      <div class="travelmates__wrapper container">
         <div class="travelmates__text-container">
           <h2 class="travelmates__title">Попутчики</h2>
           <p class="travelmates__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
@@ -193,7 +193,11 @@
                 <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                     alt="Сейшелы" title="Сейшелы"></li>
               </ul>
-              <a class="travelmates__name user-card__user-name" href="#">Таня Фирсова</a>
+
+              <a class="travelmates__name user-card__user-name" href="#">
+                <span
+                  class="travelmates__online-status user-card__online-status user-card__online-status--offline"></span>Таня
+                Фирсова</a>
               <p class="travelmates__tags user-card__tags">#ЗОЖ #ПП #Фитнес #пляж
                 #авокадо #смузи</p>
               <ul class="travelmates__transport-list user-card__transport-list">
@@ -233,7 +237,10 @@
                 <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
                     alt="Чехия" title="Чехия"></li>
               </ul>
-              <a class="travelmates__name user-card__user-name" href="#">Петя Демин</a>
+
+              <a class="travelmates__name user-card__user-name" href="#"><span
+                  class="travelmates__online-status user-card__online-status user-card__online-status--online"></span>Петя
+                Демин</a>
               <p class="travelmates__tags user-card__tags">#бургер #бар #футбол
                 #концерт #крафт</p>
               <ul class="travelmates__transport-list user-card__transport-list">
@@ -263,7 +270,7 @@
     </section>
 
     <section class="rates">
-      <div class="rates__wrapper">
+      <div class="rates__wrapper container">
         <h2 class="visually-hidden">Тарифы</h2>
 
         <p class="rates__title">Добавьте свой профиль</p>
@@ -286,7 +293,7 @@
     </section>
 
     <section class="cta-form">
-      <div class="cta-form__wrapper">
+      <div class="cta-form__wrapper container">
         <h2 class="visually-hidden">Форма связи</h2>
         <p class="cta-form__title">Заинтересовались?</p>
         <p class="cta-form__text">Зарегистрируйтесь,
@@ -316,7 +323,7 @@
     <section class="map">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="map__wrapper">
-        <div class="map__address-container">
+        <div class="map__address-container container">
           <p class="map__address">ул. Большая
             Конюшенная, 19/8</p>
           <a class="btn map__btn" href="#">Проложить маршрут</a>
@@ -329,7 +336,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
         <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" width="96" height="15"
           alt="Логотип сервиса «Погнали»">
@@ -357,7 +364,7 @@
   </footer>
 
   <section class="rates rates__business-plans modal">
-    <div class="rates__wrapper">
+    <div class="rates__wrapper container">
       <h2 class="rates__title">Бизнес-тарифы</h2>
       <ul class="rates__list">
         <li class="rates__item">

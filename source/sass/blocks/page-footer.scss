@@ -2,8 +2,7 @@
   position: relative;
   z-index: 50;
 
-  margin-top: -31px;
-  padding: 0 25px;
+  margin-top: -38px;
   padding-top: 40px;
   padding-bottom: 5px;
 
@@ -58,7 +57,7 @@
 @media (min-width: $tablet) {
   .page-footer {
     margin-top: -55px;
-    padding: 48px 40px;
+    padding: 48px 0;
 
     border-radius: 60px 60px 0 0;
   }
@@ -67,6 +66,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 32px;
+    padding-left: 31px;
   }
 
   .page-footer__logo {
@@ -85,6 +86,9 @@
   }
 
   .page-footer__dev-text {
+    margin-top: 17px;
+    margin-left: 3px;
+
     font-size: 20px;
     line-height: 24px;
   }
@@ -98,23 +102,21 @@
 
 @media (min-width: $desktop) {
   .page-footer {
+    padding-right: 0;
     padding-bottom: 45px;
+    padding-left: 0;
   }
 
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1320px;
-    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
   }
 
   .page-footer__item a {
     width: 61px;
     height: 61px;
-  }
-
-  .page-footer__developer {
-    margin-right: 19px;
   }
 }

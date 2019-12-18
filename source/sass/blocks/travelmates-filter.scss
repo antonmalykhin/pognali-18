@@ -1,6 +1,5 @@
 .travelmates-filter {
   margin-bottom: 28px;
-  padding: 0 25px;
 
   background-color: #edeff6;
 }
@@ -19,10 +18,11 @@
 
   font-weight: 700;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 1;
   font-family: $main-font;
   color: #1d2e5b;
   font-style: normal;
+  letter-spacing: 0.4px;
 }
 
 .travelmates-filter__fieldset {
@@ -59,9 +59,10 @@
 
 .travelmates-filter__list--transport {
   display: flex;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 16px;
+  margin-bottom: 28px;
 }
+
 
 .travelmates-filter__item--music {
   margin-right: 0;
@@ -74,10 +75,14 @@
 }
 
 .travelmates-filter__transport-type {
-  top: -30px;
+  top: 0;
+
+  margin-right: 13px;
 }
 
 .travelmates-filter__label {
+  padding-left: 19px;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 15px;
@@ -86,8 +91,30 @@
   font-style: normal;
 }
 
+.travelmates-filter__level-container {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 36%;
+    right: calc(50% - 8px);
+
+    width: 16px;
+    height: 11px;
+
+    background-color: tomato;
+    background-image: linear-gradient(#ffffff 0, #ffffff 5px, #cbced8 5px, #cbced8 6px, #ffffff 6px, #ffffff 11px);
+  }
+}
+
 .travelmates-filter__text {
-  width: 49%;
+  flex-grow: 1;
+  width: 40%;
   height: 35px;
 
   font-weight: 500;
@@ -99,20 +126,31 @@
   font-style: normal;
   letter-spacing: 0.1em;
 
+  border: 1px solid #cbced9;
+
   &:nth-of-type(1) {
-    margin-right: -5.5px;
+    // margin-right: -5.5px;
+    margin-right: -0.5px;
 
     border-right: none;
     border-radius: 4px 0 0 4px;
   }
 
   &:nth-of-type(2) {
-    border-left: none;
     border-radius: 0 4px 4px 0;
   }
 }
 
+.travelmates-filter__list--hobby {
+  display: none;
+}
+
+.travelmates-filter__list--food {
+  display: none;
+}
+
 .travelmates-filter__slider {
+  width: 100%;
   margin-top: 22px;
   margin-bottom: 25px;
 }
@@ -138,10 +176,130 @@
 
 @media (min-width: $tablet) {
   .travelmates-filter {
-    margin-bottom: 28px;
-    padding: 0 40px;
+    margin-bottom: 40px;
 
     background-color: #edeff6;
+  }
+
+  .travelmates-filter__wrapper {
+    padding: 0 35px;
+    padding-top: 6px;
+  }
+
+  .travelmates-filter__form {
+    padding-top: 36px;
+    padding-bottom: 40px;
+
+    border-top: 1px solid #f3c72b;
+  }
+
+  .travelmates-filter__fieldset {
+    margin-right: 0;
+    margin-bottom: 28px;
+    margin-left: 0;
+
+    border: none;
+  }
+
+  .travelmates-filter__fieldset:last-of-type {
+    padding-bottom: 31px;
+
+    border-bottom: 1px solid #f3c72b;
+  }
+
+  .travelmates-filter__fieldcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .travelmates-filter__title {
+    margin-bottom: 37px;
+
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+
+  .travelmates-filter__legend {
+    width: 17%;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.4px;
+  }
+
+  .travelmates-filter__list {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: 3.1%;
+  }
+
+  .travelmates-filter__item {
+    width: 23.7%;
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 37px;
+  }
+
+  .travelmates-filter__fieldset:nth-of-type(4) {
+    margin-top: 33px;
+    margin-bottom: 22px;
+  }
+
+  .travelmates-filter__list--transport {
+    flex-grow: 0;
+    justify-content: flex-start;
+    margin-left: 2px;
+  }
+
+  .travelmates-filter__item--transport {
+    width: auto;
+    margin-left: 12px;
+    padding: 0;
+  }
+
+  .transport-list__transport-type::before {
+    top: -15px;
+
+    width: 45px;
+    height: 45px;
+  }
+
+  .travelmates-filter__label {
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .travelmates-filter__level-container {
+    order: 1;
+    width: 24.1%;
+    margin-left: auto;
+  }
+
+  .travelmates-filter__text {
+    padding: 5px 0;
+
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .travelmates-filter__slider {
+    width: 48%;
+    margin-right: 36px;
+  }
+
+  .travelmates-filter__button {
+    margin-top: 38px;
+
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
@@ -149,5 +307,86 @@
   .travelmates-filter {
     width: 285px;
     padding: 0;
+  }
+
+  .travelmates-filter__wrapper {
+    padding: 0 48px;
+    padding-top: 17px;
+    padding-bottom: 50px;
+  }
+
+  .travelmates-filter__form {
+    padding: 0;
+
+    border: none;
+  }
+
+  .travelmates-filter__fieldset {
+    margin-bottom: 18px;
+  }
+
+  .travelmates-filter__fieldset:nth-of-type(4) {
+    margin-top: 0;
+  }
+
+  .travelmates-filter__fieldcontainer {
+    display: block;
+  }
+
+  .travelmates-filter__legend {
+    width: auto;
+  }
+
+  .travelmates-filter__list {
+    display: block;
+    width: auto;
+    margin-top: 26px;
+    margin-left: 0;
+  }
+
+
+  .travelmates-filter__item {
+    width: auto;
+    margin-bottom: 18px;
+  }
+
+  .travelmates-filter__list--hobby {
+    display: none;
+  }
+
+  .travelmates-filter__list--food {
+    display: none;
+  }
+
+  .travelmates-filter__list--transport {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .travelmates-filter__item--transport {
+    margin-right: 34px;
+    margin-left: -3px;
+  }
+
+  .travelmates-filter__level-container {
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .travelmates-filter__slider {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .travelmates-filter__fieldset:last-of-type {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+  }
+
+  .travelmates-filter__button {
+    margin-top: 18px;
   }
 }

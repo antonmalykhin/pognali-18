@@ -1,10 +1,10 @@
 .intro-title {
   padding: 0 25px;
 
-  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center, center;
-  background-size: contain, cover;
+  background-position: 61.8% 96.8%, center;
+  background-size: 193px, cover;
 }
 
 .intro-title__slogan {
@@ -37,7 +37,10 @@
 
 .intro-title__login {
   align-self: center;
-  padding: 11px 40px;
+  padding: 11px 38px;
+
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
 }
 
 
