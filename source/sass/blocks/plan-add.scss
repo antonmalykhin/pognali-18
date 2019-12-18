@@ -1172,22 +1172,24 @@
 
 @media (min-width: $desktop) {
   .plan-add {
+    margin-top: -36px;
     padding: 0;
     padding-top: 56px;
-    padding-bottom: 81px;
+    padding-bottom: 82px;
 
     border-radius: 60px 60px 0 0;
   }
 
   .plan-add__title {
+    width: 1320px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 109px;
+    padding-left: 141px;
   }
 
   .plan-add__pagination {
-    top: 255px;
-    right: 392px;
+    top: 108px;
+    right: 354px;
   }
 
   .plan-add__pagination-list {
@@ -1198,6 +1200,8 @@
     margin-bottom: 39px;
 
     &::after {
+      top: 8px;
+
       opacity: 30%;
     }
   }
@@ -1413,12 +1417,24 @@
     height: 66px;
   }
 
+  .plan-add__fieldset--step-one {
+    position: relative;
+
+    margin-bottom: 44px;
+    padding-bottom: 86px;
+  }
+
+
   .plan-add__fieldset--step-two {
     position: relative;
 
     padding-right: 162px;
-    padding-bottom: 105px;
+    padding-bottom: 102px;
     padding-left: 162px;
+  }
+
+  .plan-add__fieldset--step-three {
+    padding-bottom: 86px;
   }
 
   .plan-add__fieldset--step-two .plan-add__pagination {
