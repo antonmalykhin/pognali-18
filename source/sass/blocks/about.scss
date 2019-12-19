@@ -31,6 +31,10 @@
   background-repeat: no-repeat;
   background-position: 65% center;
   background-size: contain;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/about-mobile@2x.png");
+  }
 }
 
 
@@ -98,6 +102,10 @@
     background-repeat: no-repeat;
     background-position: 100% 35.4%;
     background-size: 376px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/about-tablet@2x.png");
+    }
   }
 
   .about__title {
@@ -199,6 +207,10 @@
 
       background-color: #141b3b;
       border-radius: 20px;
+    }
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/about-desktop@2x.png");
     }
   }
 

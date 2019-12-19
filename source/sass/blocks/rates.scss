@@ -26,6 +26,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/rates@2x.png");
+    }
   }
 }
 

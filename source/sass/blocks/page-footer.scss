@@ -17,6 +17,8 @@
 
 .page-footer__logo-img {
   display: block;
+  width: 96px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -74,6 +76,11 @@
     margin: 0;
   }
 
+  .page-footer__logo-img {
+    width: 164px;
+    height: 42px;
+  }
+
   .page-footer__item {
     width: 61px;
     height: 61px;
@@ -118,5 +125,10 @@
   .page-footer__item a {
     width: 61px;
     height: 61px;
+  }
+
+  .page-footer__logo-img {
+    width: 198px;
+    height: 52px;
   }
 }

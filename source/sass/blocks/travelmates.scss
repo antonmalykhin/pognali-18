@@ -28,6 +28,11 @@
     background-color: #141b3b;
     border-radius: 20px;
   }
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/rogovaya-back-mobile@2x.png"), url("../img/smolov-back-desktop@2x.png");
+    background-size: 71px, 143px;
+  }
 }
 
 .travelmates__title {
@@ -228,6 +233,11 @@
       width: 214px;
       height: 214px;
     }
+
+    @media (min-resolution: $retina) {
+      background-image: url("../../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png");
+      background-size: 285px, 143px;
+    }
   }
 
   .travelmates__title {
@@ -321,9 +331,6 @@
 
 
 @media (min-width: $desktop) {
-  // .travelmates {
-  // }
-
   .travelmates__wrapper {
     position: relative;
 
