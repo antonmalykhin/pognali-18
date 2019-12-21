@@ -110,7 +110,12 @@
   .plans {
     // padding: 0 35px;
     padding-top: 47px;
-    padding-bottom: 98px;
+    padding-bottom: 97px;
+  }
+
+  .plans__list {
+    padding-right: 34px;
+    padding-left: 34px;
   }
 
   .plans__item {
@@ -171,8 +176,8 @@
 
 @media (min-width: $desktop) {
   .plans {
-    padding-top: 49px;
-    padding-bottom: 82px;
+    padding-top: 47px;
+    padding-bottom: 100px;
 
     border-radius: 60px 60px 0 0;
   }
@@ -180,6 +185,10 @@
   .plans__container {
     padding-right: 2px;
     padding-left: 62px;
+  }
+
+  .plans__list {
+    padding: 0;
   }
 
   .plans__item {

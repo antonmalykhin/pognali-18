@@ -10,6 +10,10 @@
   border-radius: 30px 30px 0 0;
 }
 
+.plan-add__container {
+  padding: 0;
+}
+
 .plan-add__title {
   font-weight: 700;
   font-size: 24px;
@@ -611,19 +615,6 @@
   position: relative;
 
   padding-bottom: 1px;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 197px;
-  //   left: 10px;
-
-  //   width: 12px;
-  //   height: 278px;
-
-  //   border: 3px solid #1d2d5b;
-  //   border-right: none;
-  // }
 }
 
 .plan-add__fieldset--step-three .plan-add__btn-next {
@@ -640,6 +631,7 @@
 
   .plan-add__title {
     margin-bottom: 56px;
+    padding-left: 0;
 
     font-size: 36px;
     line-height: 1;
@@ -695,7 +687,7 @@
   .plan-add__description {
     order: 0;
     width: 99%;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
 
     font-size: 20px;
     line-height: 1.27;
@@ -716,7 +708,7 @@
   .plan-add__container--duration {
     order: 2;
     width: 100%;
-    margin-bottom: 44px;
+    margin-bottom: 43px;
     padding-top: 25px;
 
     border-top: 1px solid #d6d9e6;
@@ -744,7 +736,7 @@
 
   .plan-add__label--checkbox-label {
     margin-top: 18px;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
     padding-left: 60px;
 
     font-size: 20px;
@@ -760,7 +752,6 @@
   }
 
   .plan-add__number {
-    // width: 100%;
     height: 70px;
     padding: 0 70px;
 
@@ -968,13 +959,13 @@
   }
 
   .plan-add__fieldset--step-two {
-    margin-bottom: 52px;
+    margin-bottom: 51px;
     padding-bottom: 51px;
   }
 
   .plan-add__fieldset--step-two .plan-add__description {
     width: 75%;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
 
   .plan-add__fieldset--step-three {
@@ -1029,13 +1020,12 @@
   }
 
   .plan-add__fieldset--step-three .plan-add__description {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
   }
 
   .plan-add__textarea {
     width: 94.3%;
     height: 142px;
-    // margin-top: 12px;
     padding: 16px 19px;
     padding-right: 30px;
 
@@ -1045,7 +1035,7 @@
 
   .plan-add__textarea-wrapper {
     margin-top: 0;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     padding-top: 31px;
 
     border-top: 1px solid #d6d9e6;
@@ -1172,7 +1162,7 @@
 
 @media (min-width: $desktop) {
   .plan-add {
-    margin-top: -36px;
+    margin-top: -52px;
     padding: 0;
     padding-top: 56px;
     padding-bottom: 82px;
@@ -1181,9 +1171,9 @@
   }
 
   .plan-add__title {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 141px;
+    box-sizing: border-box;
+    margin-left: 0;
+    padding-left: 70px;
   }
 
   .plan-add__pagination {
@@ -1248,7 +1238,7 @@
 
   .plan-add__description {
     width: 55%;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
     margin-left: 10px;
   }
 
@@ -1336,7 +1326,7 @@
 
   .plan-add__field-wrapper--date {
     width: 100%;
-    margin-top: 32px;
+    margin-top: 31px;
     margin-bottom: 0;
   }
 
@@ -1420,7 +1410,7 @@
     position: relative;
 
     margin-bottom: 44px;
-    padding-bottom: 86px;
+    padding-bottom: 88px;
   }
 
 
@@ -1428,7 +1418,7 @@
     position: relative;
 
     padding-right: 162px;
-    padding-bottom: 102px;
+    padding-bottom: 104px;
     padding-left: 162px;
   }
 
@@ -1466,7 +1456,7 @@
 
   .plan-add__fieldset--step-two .plan-add__description {
     width: 40%;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
     margin-left: 0;
   }
 
