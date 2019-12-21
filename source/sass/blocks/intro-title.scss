@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-position: 61.8% 96.8%, center;
   background-size: 193px, cover;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
+  }
 }
 
 .intro-title__slogan {

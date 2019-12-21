@@ -14,6 +14,11 @@
     order: -1;
     width: 60%;
   }
+
+  .page-header__logo-image {
+    width: 164px;
+    height: auto;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -25,5 +30,10 @@
     order: -1;
     width: 26.1%;
     margin-bottom: 0;
+  }
+
+  .page-header__logo-image {
+    width: 200px;
+    height: auto;
   }
 }

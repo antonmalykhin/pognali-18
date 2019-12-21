@@ -119,14 +119,11 @@
   }
 }
 
-.countries__img--mobile {
+.countries__img {
   width: 100%;
+  height: auto;
 
   border-radius: 10px 10px 0 0;
-}
-
-.countries__img--desktop {
-  display: none;
 }
 
 .countries__country {
@@ -184,6 +181,11 @@
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: 93% 6px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 288px;
+    }
   }
 
   .countries__title {
@@ -200,7 +202,7 @@
   .countries__description {
     width: 55%;
     margin-top: 0;
-    margin-bottom: 103px;
+    margin-bottom: 104px;
     margin-left: 5px;
 
     font-weight: 300;
@@ -239,11 +241,7 @@
     border-radius: 20px;
   }
 
-  .countries__img--mobile {
-    display: none;
-  }
-
-  .countries__img--desktop {
+  .countries__img {
     display: block;
 
     border-radius: 0 20px 20px 0;
@@ -263,7 +261,7 @@
   }
 
   .countries__country {
-    margin-top: 9px;
+    margin-top: 10px;
     margin-bottom: 5px;
 
     font-weight: 700;
@@ -336,19 +334,10 @@
 
     background-position: 1030px 88px;
 
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 89px;
-    //   left: 0;
-    //   z-index: 1;
-
-    //   width: 141px;
-    //   height: 141px;
-
-    //   background-color: #e1e5f2;
-    //   border-radius: 20px;
-    // }
+    @media (min-resolution: $retina) {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 288px;
+    }
   }
 
   .countries__text-container {
