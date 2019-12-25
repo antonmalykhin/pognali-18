@@ -10,6 +10,8 @@
   display: block;
 
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
 
   border-radius: 25px;
 }
@@ -22,6 +24,12 @@
   .user-list__item {
     width: 190px;
     margin-left: auto;
+  }
+
+  .user-list__login {
+    padding-bottom: 12px;
+
+    font-size: 21px;
   }
 }
 

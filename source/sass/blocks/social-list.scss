@@ -4,24 +4,34 @@
 
 .social-list__link {
   display: block;
-  width: 23px;
-  height: 23px;
 
   background-repeat: no-repeat;
   background-position: center;
+
+  svg {
+    fill: #cccccc;
+  }
 }
 
-.social-list__link--facebook {
-  background-image: url("../img/facebook.svg");
-  background-size: 25%;
-}
+@media (min-width: $tablet) {
+  .social-list__link--facebook {
+    svg {
+      width: 14px;
+      height: 28px;
+    }
+  }
 
-.social-list__link--vk {
-  background-image: url("../img/vk.svg");
-  background-size: 50%;
-}
+  .social-list__link--vk {
+    svg {
+      width: 31px;
+      height: 16px;
+    }
+  }
 
-.social-list__link--instagram {
-  background-image: url("../img/instagram.svg");
-  background-size: 40%;
+  .social-list__link--instagram {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 }

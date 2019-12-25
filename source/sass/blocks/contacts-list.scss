@@ -3,27 +3,51 @@
 }
 
 .contacts-list__phone {
-  padding-left: 55px;
+  padding-left: 61px;
 
   @include links;
+}
 
-  &::before {
-    top: -17px;
-    left: 1px;
+.contacts-list__phone svg {
+  position: absolute;
+  top: -13px;
+  left: 0;
 
-    background-image: url("../img/contacts-phone.svg");
-  }
+  padding: 13.5px;
+  overflow: visible;
+
+  background-color: #121836;
+  border-radius: 50%;
+
+  fill: #ffd74b;
 }
 
 .contacts-list__email {
+  padding-left: 61px;
+
   @include links;
+}
 
-  &::before {
-    top: -17px;
-    left: 0;
+.contacts-list__email svg {
+  position: absolute;
+  top: -13px;
+  left: 0;
 
-    background-image: url("../img/contacts-mail.svg");
-  }
+  padding: 13.5px;
+  overflow: visible;
+
+  background-color: #121836;
+  border-radius: 50%;
+
+  fill: #ffd74b;
+}
+
+.contact-list__phone-icon--desktop {
+  display: none;
+}
+
+.contact-list__email-icon--desktop {
+  display: none;
 }
 
 .contacts-list__phone--theme-orange-icon {
@@ -55,4 +79,72 @@
 .contacts-list__email--theme-yellow-text,
 .contacts-list__phone--theme-yellow-text {
   color: #ffd74b;
+}
+
+@media (min-width: $tablet) {
+  .contacts-list__phone {
+    font-size: 28px;
+    line-height: 1;
+
+    svg {
+      top: -25px;
+      left: -29px;
+
+      width: 27px;
+      height: 27px;
+      padding: 20.3px;
+    }
+  }
+
+  .contacts-list__email {
+    font-size: 28px;
+    line-height: 1;
+
+    svg {
+      top: -23px;
+      left: -29px;
+
+      width: 27px;
+      height: 27px;
+      padding: 20.3px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .contact-list__phone-icon--mobile {
+    display: none;
+  }
+
+  .contact-list__email-icon--mobile {
+    display: none;
+  }
+
+  .contacts-list__phone .contact-list__phone-icon--desktop {
+    top: 0;
+    left: 27px;
+
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding: 16px;
+
+    background-color: #ff8c30;
+
+    fill: #161c35;
+  }
+
+  .contacts-list__email .contact-list__email-icon--desktop {
+    top: 0;
+    left: 27px;
+
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding: 16px;
+
+    background-color: #ffbd2f;
+
+    fill: #161c35;
+  }
 }

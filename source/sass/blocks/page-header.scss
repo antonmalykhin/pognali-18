@@ -6,13 +6,16 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 }
 
 @media (min-width: $tablet) {
   .page-header__wrapper {
+    align-items: center;
     order: -1;
-    width: 60%;
+    width: 51.8%;
+    margin-bottom: 90px;
+    padding-top: 5px;
   }
 
   .page-header__logo-image {
@@ -28,7 +31,7 @@
 
   .page-header__wrapper {
     order: -1;
-    width: 26.1%;
+    width: 15.2%;
     margin-bottom: 0;
   }
 

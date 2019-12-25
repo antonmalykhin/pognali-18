@@ -22,13 +22,23 @@
       <div class="page-header__wrapper">
         <a class="main-nav__logo page-header__logo">
           <picture>
-            <source media="(min-width: 1350px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+            <source type="image/webp" media="(min-width: 1350px)"
+              srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1350px)"
+              srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
             <img class="main-nav__logo-image page-header__logo-image" src="img/logo-mobile-blue@1x.png"
               srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип сервиса «Погнали»">
           </picture>
         </a>
-        <button class="main-nav__toggle open-close-btn" type="button" aria-label="Открыть меню">Открыть меню</button>
+        <button class="main-nav__toggle open-close-btn" type="button" aria-label="Открыть меню">
+          <svg aria-hidden="true" focusable="false" width="19" height="19">
+            <use xlink:href="#menu-close"></use>
+          </svg>
+        </button>
       </div>
 
       <ul class="main-nav__list main-nav__site-list site-list">
@@ -44,25 +54,54 @@
 
       <ul class="main-nav__list main-nav__contacts contacts-list">
         <li class="main-nav__contact contacts-list__item">
-          <a class="main-nav__link contacts-list__phone" href="tel:8-800-555-86-28"><span>8 800 555-86-28</span></a>
+          <a class="main-nav__link contacts-list__phone" href="tel:8-800-555-86-28">
+            <svg class="contact-list__phone-icon contact-list__phone-icon--mobile" aria-hidden="true" focusable="false"
+              width="18" height="18">
+              <use xlink:href="#contacts-phone"></use>
+            </svg>
+            <svg class="contact-list__phone-icon contact-list__phone-icon--desktop" aria-hidden="true" focusable="false"
+              width="18" height="18">
+              <use xlink:href="#topmenu-phone"></use>
+            </svg>
+            <span>8 800 555-86-28</span>
+          </a>
         </li>
         <li class="main-nav__contact contacts-list__item">
-          <a class="main-nav__link contacts-list__email"
-            href="mailto:mail@htmlacademy.ru"><span>mail@htmlacademy.ru</span></a>
+          <a class="main-nav__link contacts-list__email" href="mailto:mail@htmlacademy.ru">
+            <svg class="contact-list__email-icon contact-list__email-icon--mobile" aria-hidden="true" focusable="false"
+              width="18" height="18">
+              <use xlink:href="#contacts-mail"></use>
+            </svg>
+            <svg class="contact-list__email-icon contact-list__email-icon--desktop" aria-hidden="true" focusable="false"
+              width="18" height="18">
+              <use xlink:href="#topmenu-mail"></use>
+            </svg>
+            <span>mail@htmlacademy.ru</span>
+          </a>
         </li>
       </ul>
 
       <ul class="main-nav__list main-nav__social-items social-list">
         <li class="main-nav__social-item social-list__item">
-          <a class="main-nav__social-link social-list__link social-list__link--facebook" href="#"
-            aria-label="facebook"></a>
+          <a class="main-nav__social-link social-list__link social-list__link--facebook" href="#" aria-label="facebook">
+            <svg aria-hidden="true" focusable="false" width="11" height="21">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
         </li>
         <li class="main-nav__social-item social-list__item">
-          <a class="main-nav__social-link social-list__link social-list__link--vk" href="#" aria-label="вконтакте"></a>
+          <a class="main-nav__social-link social-list__link social-list__link--vk" href="#" aria-label="вконтакте">
+            <svg aria-hidden="true" focusable="false" width="23" height="12">
+              <use xlink:href="#vk"></use>
+            </svg>
+          </a>
         </li>
         <li class="main-nav__social-item social-list__item">
           <a class="main-nav__social-link social-list__link social-list__link--instagram" href="#"
-            aria-label="instagram"></a>
+            aria-label="instagram">
+            <svg aria-hidden="true" focusable="false" width="18" height="18">
+              <use xlink:href="#instagram"></use>
+            </svg></a>
         </li>
       </ul>
     </nav>
@@ -78,10 +117,21 @@
           <p class="intro-title__slogan">В путешествие с крутыми попутчиками!</p>
           <div class="intro-title__btns-container">
             <ul class="intro-title__list contacts-list">
-              <li class="contacts-list__item"><a class="contacts-list__phone contacts-list__phone--theme-orange-icon"
-                  href="tel:8-800-555-86-28" aria-label="Телефон: 8 800 555-86-28"></a></li>
-              <li class="contacts-list__item"><a class="contacts-list__email contacts-list__email--theme-yellow-icon"
-                  href="mailto:mail@htmlacademy.ru" aria-label="Адрес электронной почты: mail@htmlacademy.ru"></a>
+              <li class="intro-title__item contacts-list__item">
+                <a class="intro-title__phone contacts-list__phone" href="tel:8-800-555-86-28"
+                  aria-label="Телефон: 8 800 555-86-28">
+                  <svg aria-hidden="true" focusable="false" width="18" height="18">
+                    <use xlink:href="#topmenu-phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="intro-title__item contacts-list__item">
+                <a class="intro-title__email contacts-list__email" href="mailto:mail@htmlacademy.ru"
+                  aria-label="Адрес электронной почты: mail@htmlacademy.ru">
+                  <svg aria-hidden="true" focusable="false" width="18" height="18">
+                    <use xlink:href="#topmenu-mail"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
             <a class="btn login-btn intro-title__login" href="#">авторизация</a>
@@ -135,12 +185,20 @@
               <img class="countries__img" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x"
                 width="210" height="110" alt="Таиланд">
             </picture>
+            <svg class="countries__flag-icon" width="35" height="24">
+              <use xlink:href="#flag-thailand"></use>
+            </svg>
             <div class="countries__bg">
               <div class="countries__text">
                 <h3 class="countries__country">Таиланд</h3>
                 <p class="countries__slogan">Джунгли зовут!</p>
               </div>
-              <p class="countries__users">18321</p>
+              <p class="countries__users">
+                <svg class="countries__user-icon" width="11" height="11">
+                  <use xlink:href="#user"></use>
+                </svg>
+                18321
+              </p>
             </div>
           </li>
 
@@ -150,13 +208,20 @@
               <img class="countries__img" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x"
                 width="210" height="110" alt="Франция">
             </picture>
-
+            <svg class="countries__flag-icon" width="35" height="24">
+              <use xlink:href="#flag-france"></use>
+            </svg>
             <div class="countries__bg">
               <div class="countries__text">
                 <h3 class="countries__country">Франция</h3>
                 <p class="countries__slogan">Трэ бьен, манифик!</p>
               </div>
-              <p class="countries__users">12518</p>
+              <p class="countries__users">
+                <svg class="countries__user-icon" width="11" height="11">
+                  <use xlink:href="#user"></use>
+                </svg>
+                12518
+              </p>
             </div>
           </li>
 
@@ -166,12 +231,20 @@
               <img class="countries__img" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="210"
                 height="110" alt="Чехия">
             </picture>
+            <svg class="countries__flag-icon" width="35" height="24">
+              <use xlink:href="#flag-czech"></use>
+            </svg>
             <div class="countries__bg">
               <div class="countries__text">
                 <h3 class="countries__country">Чехия</h3>
                 <p class="countries__slogan">Закоулки старой Европы</p>
               </div>
-              <p class="countries__users">5326</p>
+              <p class="countries__users">
+                <svg class="countries__user-icon" width="11" height="11">
+                  <use xlink:href="#user"></use>
+                </svg>
+                5326
+              </p>
             </div>
           </li>
         </ul>
