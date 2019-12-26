@@ -120,9 +120,19 @@
         <div class="countries-filter__container">
           <div class="countries-filter__wrapper">
             <a href="#">
-              <h2 class="countries-filter__title">Фильтрация по странам</h2>
+              <h2 class="countries-filter__title">
+                <svg class="countries-filter__icon-filter" width="15" height="10 ">
+                  <use xlink:href="#filter"></use>
+                </svg>
+                <span>Фильтрация по странам</span>
+                <svg class="countries-filter__icon-filter-close" width="12" height="12">
+                  <use xlink:href="#filter-close"></use>
+                </svg>
+              </h2>
             </a>
-            <button class="countries-filter__btn countries-filter__btn--top" type="button">Свернуть</button>
+            <button class="countries-filter__btn countries-filter__btn--top" type="button">
+              <span>Свернуть</span>
+            </button>
             <ul class="countries-filter__polises polices-list">
               <li class="countries-filter__polis polices-list__item">
                 <a class="polices-list__link polices-list__link--current" href="#">Европа</a>
@@ -853,7 +863,12 @@
               </li>
             </ul>
           </div>
-          <button class="countries-filter__btn countries-filter__btn--bottom">Свернуть</button>
+          <button class="countries-filter__btn countries-filter__btn--bottom">
+            <svg class="countries-filter__icon-filter-close" width="12" height="12">
+              <use xlink:href="#filter-close"></use>
+            </svg>
+            <span>Свернуть</span>
+          </button>
         </div>
 
       </div>
@@ -868,7 +883,12 @@
           <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="travelmates-filter__fieldset fieldset">
               <div class="travelmates-filter__fieldcontainer">
-                <h3 class="travelmates-filter__legend">Хобби</h3>
+                <button class="travelmates-filter__legend" type="button">
+                  <span>Хобби</span>
+                  <svg class="travelmates-filter__icon-dropdown" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </button>
                 <ul class="travelmates-filter__list travelmates-filter__list--hobby">
                   <li class="travelmates-filter__item travelmates-filter__item--hobby">
                     <label>
@@ -896,12 +916,23 @@
             </fieldset>
             <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
               <div class="travelmates-filter__fieldcontainer">
-                <h3 class="travelmates-filter__legend">Музыка</h3>
+                <button class="travelmates-filter__legend" type="button">
+                  <span>Музыка</span>
+                  <svg class="travelmates-filter__icon-dropdown travelmates-filter__icon-dropdown--open" width="8"
+                    height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </button>
                 <ul class="travelmates-filter__list travelmates-filter__list--music">
                   <li class="travelmates-filter__item travelmates-filter__item--music">
                     <label>
                       <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="music"
                         value="тяжелый рок">
+                      <span class="travelmates-filter__tick-field">
+                        <svg width="9" height="9">
+                          <use xlink:href="#tick"></use>
+                        </svg>
+                      </span>
                       <span class="travelmates-filter__label">Тяжелый рок</span>
                     </label>
                   </li>
@@ -909,6 +940,11 @@
                     <label>
                       <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="music"
                         value="русский рэп">
+                      <span class="travelmates-filter__tick-field travelmates-filter__tick-field--unchecked">
+                        <svg width="9" height="9">
+                          <use xlink:href="#tick"></use>
+                        </svg>
+                      </span>
                       <span class="travelmates-filter__label">Русский рэп</span>
                     </label>
                   </li>
@@ -916,6 +952,11 @@
                     <label>
                       <input class="travelmates-filter__input radiobutton visually-hidden" type="radio" name="music"
                         value="евроденс">
+                      <span class="travelmates-filter__tick-field travelmates-filter__tick-field--unchecked">
+                        <svg width="9" height="9">
+                          <use xlink:href="#tick"></use>
+                        </svg>
+                      </span>
                       <span class="travelmates-filter__label">Евроденс</span>
                     </label>
                   </li>
@@ -925,7 +966,12 @@
 
             <fieldset class="travelmates-filter__fieldset fieldset">
               <div class="travelmates-filter__fieldcontainer">
-                <h3 class="travelmates-filter__legend">Еда</h3>
+                <button class="travelmates-filter__legend" type="button">
+                  <span>Еда</span>
+                  <svg class="travelmates-filter__icon-dropdown" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </button>
                 <ul class="travelmates-filter__list travelmates-filter__list--food">
                   <li class="travelmates-filter__item travelmates-filter__item--food">
                     <label>
@@ -954,7 +1000,13 @@
 
             <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
               <div class="travelmates-filter__fieldcontainer">
-                <h3 class="travelmates-filter__legend">Транспорт</h3>
+                <button class="travelmates-filter__legend" type="button">
+                  <span>Транспорт</span>
+                  <svg class="travelmates-filter__icon-dropdown travelmates-filter__icon-dropdown--open" width="8"
+                    height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </button>
                 <ul class="travelmates-filter__list travelmates-filter__list--transport transport-list">
                   <li class="travelmates-filter__item travelmates-filter__item--transport transport-list__item">
                     <span>
@@ -994,7 +1046,13 @@
 
             <fieldset class="travelmates-filter__fieldset fieldset travelmates-filter__fieldset--active">
               <div class="travelmates-filter__fieldcontainer">
-                <h3 class="travelmates-filter__legend">Левел</h3>
+                <button class="travelmates-filter__legend" type="button">
+                  <span>Левел</span>
+                  <svg class="travelmates-filter__icon-dropdown travelmates-filter__icon-dropdown--open" width="8"
+                    height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </button>
                 <div class="travelmates-filter__level-container">
                   <input class="textfield travelmates-filter__text" type="text" value="30"
                     aria-label="минимальное значение уровня">

@@ -325,10 +325,18 @@
     line-height: 24px;
   }
 
-  .travelmates__online-status {
+  .travelmates__name span::before {
+    top: 8px;
+    left: -22px;
+
     width: 7px;
     height: 7px;
   }
+
+  // .travelmates__online-status {
+  //   width: 7px;
+  //   height: 7px;
+  // }
 
   .travelmates__tags {
     margin-bottom: 25px;

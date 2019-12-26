@@ -32,21 +32,41 @@
 }
 
 .travelmates-filter__legend {
+  position: relative;
+
+  width: 100%;
   margin-top: 13px;
   margin-bottom: 10px;
+  padding: 0;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   font-family: $main-font;
+  text-align: left;
   color: #1d2e5b;
   text-transform: uppercase;
   font-style: normal;
+
+  background-color: transparent;
+  border: none;
+}
+
+.travelmates-filter__icon-dropdown {
+  position: absolute;
+  top: 5px;
+  right: -2px;
+
+  fill: #192144;
+}
+
+.travelmates-filter__icon-dropdown--open {
+  transform: rotateZ(180deg);
 }
 
 .travelmates-filter__list {
   margin: 0;
-  margin-top: 13px;
+  margin-top: 3px;
   margin-bottom: 16px;
   padding: 0;
 
@@ -55,6 +75,32 @@
 
 .travelmates-filter__item {
   padding-left: 6px;
+
+  label {
+    position: relative;
+  }
+}
+
+.travelmates-filter__tick-field {
+  position: absolute;
+  top: 0;
+  left: -8px;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: $white-color;
+  border-radius: 4px;
+
+  svg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+.travelmates-filter__tick-field--unchecked svg {
+  display: none;
 }
 
 .travelmates-filter__list--transport {

@@ -10,6 +10,8 @@
 }
 
 .countries-filter__title {
+  position: relative;
+
   margin-top: 0;
   margin-bottom: 29px;
   padding-left: 27px;
@@ -22,6 +24,18 @@
   color: #192144;
   text-transform: uppercase;
   font-style: normal;
+}
+
+.countries-filter__icon-filter {
+  position: absolute;
+  top: 5px;
+  left: -1px;
+}
+
+.countries-filter__icon-filter-close {
+  position: absolute;
+  top: 3px;
+  right: 8px;
 }
 
 .countries-filter__container {
@@ -71,6 +85,8 @@
 }
 
 .countries-filter__btn {
+  position: relative;
+
   width: 100%;
   margin-top: 25px;
   padding: 11px 13px;
@@ -86,6 +102,11 @@
   background-color: #d6daed;
   border: none;
   border-radius: 20px;
+
+  .countries-filter__icon-filter-close {
+    top: 13px;
+    left: 85px;
+  }
 }
 
 .countries-filter__btn--top {
