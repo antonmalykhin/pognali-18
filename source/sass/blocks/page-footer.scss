@@ -3,7 +3,7 @@
   z-index: 50;
 
   margin-top: -38px;
-  padding-top: 40px;
+  padding-top: 39px;
   padding-bottom: 5px;
 
   background-color: $white-color;
@@ -35,10 +35,34 @@
   border-radius: 50%;
 }
 
-.page-footer__item a {
+.page-footer__link {
+  position: relative;
+
   width: 46px;
   height: 46px;
+
+  svg {
+    position: absolute;
+
+    fill: #1d2e5b;
+  }
 }
+
+.page-footer__link--facebook svg {
+  top: 13px;
+  left: 18px;
+}
+
+.page-footer__link--vk svg {
+  top: 17px;
+  left: 12px;
+}
+
+.page-footer__link--instagram svg {
+  top: 14px;
+  left: 14px;
+}
+
 
 .page-footer__developer {
   display: flex;
@@ -49,11 +73,15 @@
 }
 
 .page-footer__dev-text {
-  margin-top: 11px;
+  margin-top: 12px;
 }
 
 .page-footer__dev-link {
   margin-top: 5px;
+
+  svg {
+    fill: #192144;
+  }
 }
 
 @media (min-width: $tablet) {

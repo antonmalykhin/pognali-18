@@ -31,17 +31,18 @@
   text-transform: uppercase;
   font-style: normal;
 
-  &::before {
-    content: "";
+  svg {
     position: absolute;
     top: -2px;
     left: 0;
 
-    width: 46px;
-    height: 46px;
+    padding: 12px 16px;
+    overflow: visible;
 
-    background-color: #101835;
+    background-color: #121836;
     border-radius: 50%;
+
+    fill: #ffd74b;
   }
 }
 

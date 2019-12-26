@@ -12,7 +12,7 @@
 
 <body>
 
-  <div style="display:none">
+  <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
 
@@ -181,6 +181,9 @@
         <ul class="countries__list">
           <li class="countries__item">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/thailand-desktop@1x.webp, img/thailand-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/thailand-mobile@1x.webp, img/thailand-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg, img/thailand-desktop@2x.jpg 2x">
               <img class="countries__img" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x"
                 width="210" height="110" alt="Таиланд">
@@ -204,6 +207,9 @@
 
           <li class="countries__item">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/france-desktop@1x.webp, img/france-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/france-mobile@1x.webp, img/france-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg, img/france-desktop@2x.jpg 2x">
               <img class="countries__img" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x"
                 width="210" height="110" alt="Франция">
@@ -227,6 +233,9 @@
 
           <li class="countries__item">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/czech-desktop@1x.webp, img/czech-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/czech-mobile@1x.webp, img/czech-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg, img/czech-desktop@2x.jpg 2x">
               <img class="countries__img" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="210"
                 height="110" alt="Чехия">
@@ -265,9 +274,11 @@
         <ul class="travelmates__list">
           <li class="travelmates__item">
             <div class="user-card">
-
-              <img class="travelmates__photo user-card__photo" src="img/firsova-desktop@1x.jpg"
-                srcset="img/firsova-desktop@2x.jpg 2x" width="270" height="270" alt="Фотография пользователя">
+              <picture>
+                <source type="image/webp" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp 2x">
+                <img class="travelmates__photo user-card__photo" src="img/firsova-desktop@1x.jpg"
+                  srcset="img/firsova-desktop@2x.jpg 2x" width="270" height="270" alt="Фотография пользователя">
+              </picture>
 
               <div class=" travelmates__level-label user-card__level-label">
                 <div class="user-card__circle"></div>
@@ -275,36 +286,60 @@
                 <p class="travelmates__level user-card__level">level</p>
               </div>
               <ul class="travelmates__flags user-card__flags">
-                <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                    alt="Шри-Ланка" title="Шри-Ланка"></li>
-                <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                    alt="Тайланд" title="Тайланд"></li>
-                <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                    alt="Сейшелы" title="Сейшелы"></li>
+                <li class="user-card__flag">
+                  <svg width="35" height="24" role="img" focusable="false" aria-label="Шри-Ланка">
+                    <use xlink:href="#flag-sri-lanka"></use>
+                  </svg>
+                </li>
+                <li class="user-card__flag">
+                  <svg width="35" height="24" role="img" focusable="false" aria-label="Тайланд">
+                    <use xlink:href="#flag-thailand"></use>
+                  </svg>
+                </li>
+                <li class="user-card__flag">
+                  <svg width="35" height="24" role="img" focusable="false" aria-label="Сейшелы">
+                    <use xlink:href="#flag-seychelles"></use>
+                  </svg>
+                </li>
               </ul>
 
-              <a class="travelmates__name user-card__user-name" href="#">
-                <span
-                  class="travelmates__online-status user-card__online-status user-card__online-status--offline"></span>Таня
-                Фирсова</a>
+              <a class="travelmates__name travelmates__name--offline user-card__user-name" href="#">
+                <span>Таня Фирсова</span>
+              </a>
               <p class="travelmates__tags user-card__tags">#ЗОЖ #ПП #Фитнес #пляж
                 #авокадо #смузи</p>
               <ul class="travelmates__transport-list user-card__transport-list">
                 <li class="user-card__transport-item">
-                  <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
-                  </p>
+                  <svg class="user-card__transport-icon" width="19" height="21" role="img" focusable="false"
+                    aria-label="Авиаперелет">
+                    <use xlink:href="#plane"></use>
+                  </svg>
+                  <!-- <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
+                  </p> -->
                 </li>
                 <li class="user-card__transport-item">
-                  <p class=" user-card__transport-type user-card__transport-type--disable" aria-label="Автотранспорт">
-                  </p>
+                  <svg class="user-card__transport-icon user-card__transport-icon--disable" width="17" height="21"
+                    role="img" focusable="false" aria-label="Автотранспорт">
+                    <use xlink:href="#bus"></use>
+                  </svg>
+                  <!-- <p class=" user-card__transport-type user-card__transport-type--disable" aria-label="Автотранспорт">
+                  </p> -->
                 </li>
                 <li class="user-card__transport-item">
-                  <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
-                  </p>
+                  <svg class="user-card__transport-icon user-card__transport-icon--disable" width="24" height="21"
+                    role="img" focusable="false" aria-label="Велосипед">
+                    <use xlink:href="#bike"></use>
+                  </svg>
+                  <!-- <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
+                  </p> -->
                 </li>
                 <li class="user-card__transport-item">
-                  <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">
-                  </p>
+                  <svg class="user-card__transport-icon user-card__transport-icon--disable" width="20" height="21"
+                    role="img" focusable="false" aria-label="Пешком">
+                    <use xlink:href="#run"></use>
+                  </svg>
+                  <!-- <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">
+                  </p> -->
                 </li>
               </ul>
             </div>
@@ -313,41 +348,66 @@
           <li class="travelmates__item travelmates__item--online">
 
             <div class="user-card">
-              <img class="travelmates__photo user-card__photo" src="img/demin-desktop@1x.jpg"
-                srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270" alt="Фотография пользователя">
+              <picture>
+                <source type="image/webp" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+                <img class="travelmates__photo user-card__photo" src="img/demin-desktop@1x.jpg"
+                  srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270" alt="Фотография пользователя">
+              </picture>
               <div class=" travelmates__level-label user-card__level-label">
                 <div class="user-card__circle"></div>
                 <p class="travelmates__scores user-card__scores">80</p>
                 <p class="travelmates__level user-card__level">level</p>
               </div>
               <ul class="travelmates__flags user-card__flags">
-                <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                    alt="Бельгия" title="Бельгия"></li>
-                <li class="user-card__flag"><img class="user-card__flag-image" src="https://via.placeholder.com/150x150"
-                    alt="Чехия" title="Чехия"></li>
+                <li class="user-card__flag">
+                  <svg width="35" height="24" role="img" focusable="false" aria-label="Бельгия">
+                    <use xlink:href="#flag-belgium"></use>
+                  </svg>
+                </li>
+                <li class="user-card__flag">
+                  <svg width="35" height="24" role="img" focusable="false" aria-label="Чехия">
+                    <use xlink:href="#flag-czech"></use>
+                  </svg>
+                </li>
               </ul>
 
-              <a class="travelmates__name user-card__user-name" href="#"><span
-                  class="travelmates__online-status user-card__online-status user-card__online-status--online"></span>Петя
-                Демин</a>
+              <a class="travelmates__name travelmates__name--online user-card__user-name" href="#">
+                <span>Петя Демин</span>
+              </a>
               <p class="travelmates__tags user-card__tags">#бургер #бар #футбол
                 #концерт #крафт</p>
               <ul class="travelmates__transport-list user-card__transport-list">
                 <li class="user-card__transport-item">
-                  <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
-                  </p>
+                  <svg class="user-card__transport-icon" width="19" height="21" role="img" focusable="false"
+                    aria-label="Авиаперелет">
+                    <use xlink:href="#plane"></use>
+                  </svg>
+                  <!-- <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Авиаперелет">
+                                </p> -->
                 </li>
                 <li class="user-card__transport-item">
-                  <p class=" user-card__transport-type user-card__transport-type--enable" aria-label="Автотранспорт">
-                  </p>
+                  <svg class="user-card__transport-icon" width="17" height="21" role="img" focusable="false"
+                    aria-label="Автотранспорт">
+                    <use xlink:href="#bus"></use>
+                  </svg>
+                  <!-- <p class=" user-card__transport-type user-card__transport-type--disable" aria-label="Автотранспорт">
+                                </p> -->
                 </li>
                 <li class="user-card__transport-item">
-                  <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
-                  </p>
+                  <svg class="user-card__transport-icon user-card__transport-icon--disable" width="24" height="21"
+                    role="img" focusable="false" aria-label="Велосипед">
+                    <use xlink:href="#bike"></use>
+                  </svg>
+                  <!-- <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Велосипед">
+                                </p> -->
                 </li>
                 <li class="user-card__transport-item">
-                  <p class="user-card__transport-type user-card__transport-type--enable" aria-label="Пешком">
-                  </p>
+                  <svg class="user-card__transport-icon" width="20" height="21" role="img" focusable="false"
+                    aria-label="Пешком">
+                    <use xlink:href="#run"></use>
+                  </svg>
+                  <!-- <p class="user-card__transport-type user-card__transport-type--disable" aria-label="Пешком">
+                                </p> -->
                 </li>
               </ul>
             </div>
@@ -398,12 +458,21 @@
         <ul class="cta-form__list contacts-list">
           <li class="cta-form__item contacts-list__item">
             <a class="cta-form__phone contacts-list__phone contacts-list__phone--theme-yellow-text"
-              href="tel:8-800-555-86-28">8 800
-              555-86-28</a>
+              href="tel:8-800-555-86-28">
+              <svg aria-hidden="true" focusable="false" width="18" height="18">
+                <use xlink:href="#contacts-phone"></use>
+              </svg>
+              <span>8 800 555-86-28</span>
+            </a>
           </li>
           <li class="cta-form__item contacts-list__item">
             <a class="cta-form__email contacts-list__email
-            contacts-list__email--theme-yellow-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            contacts-list__email--theme-yellow-text" href="mailto:mail@htmlacademy.ru">
+              <svg aria-hidden="true" focusable="false" width="18" height="18">
+                <use xlink:href="#contacts-mail"></use>
+              </svg>
+              <span>mail@htmlacademy.ru</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -413,8 +482,12 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="map__wrapper">
         <div class="map__address-container container">
-          <p class="map__address">ул. Большая
-            Конюшенная, 19/8</p>
+          <p class="map__address">
+            <svg aria-hidden="true" focusable="false" width="14" height="22">
+              <use xlink:href="#contacts-location"></use>
+            </svg>
+            <span>ул. Большая Конюшенная, 19/8</span>
+          </p>
           <a class="btn map__btn" href="#">Проложить маршрут</a>
         </div>
       </div>
@@ -428,6 +501,11 @@
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
         <picture>
+          <source type="image/webp" media="(min-width: 1350px)"
+            srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1350px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
           <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
@@ -437,20 +515,38 @@
 
       <ul class="page-footer__list social-list">
         <li class="page-footer__item social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="#" aria-label="facebook"></a>
+          <a class="page-footer__link page-footer__link--facebook social-list__link social-list__link--facebook"
+            href="#" aria-label="facebook">
+            <svg aria-hidden="true" focusable="false" width="11" height="21">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
         </li>
         <li class="page-footer__item social-list__item">
-          <a class="social-list__link social-list__link--vk" href="#" aria-label="вконтакте"></a>
+          <a class="page-footer__link page-footer__link--vk social-list__link social-list__link--vk" href="#"
+            aria-label="вконтакте">
+            <svg aria-hidden="true" focusable="false" width="23" height="12">
+              <use xlink:href="#vk"></use>
+            </svg>
+          </a>
         </li>
         <li class="page-footer__item social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="#" aria-label="instagram"></a>
+          <a class="page-footer__link page-footer__link--instagram social-list__link social-list__link--instagram"
+            href="#" aria-label="instagram">
+            <svg aria-hidden="true" focusable="false" width="18" height="18">
+              <use xlink:href="#instagram"></use>
+            </svg></a>
         </li>
       </ul>
 
       <div class="page-footer__developer developer">
         <p class="page-footer__dev-text developer__text">Разработано</p>
-        <a class="page-footer__dev-link developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="developer__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTMLAcademy">
+        <a class="page-footer__dev-link developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+          aria-label="сайт HTMLAcademy">
+          <!-- <img class="developer__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTMLAcademy"> -->
+          <svg aria-hidden="true" focusable="false" width="27" height="34">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>

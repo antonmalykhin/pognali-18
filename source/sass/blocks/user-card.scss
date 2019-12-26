@@ -126,6 +126,16 @@
   }
 }
 
+.user-card__transport-icon {
+  fill: #1d2e5b;
+}
+
+.user-card__transport-icon--disable {
+  fill: #cccccc;
+}
+
+
+// -----------------Удалить-------------------
 .user-card__transport-item:nth-of-type(1) {
   .user-card__transport-type::before {
     background-image: url("../img/plane.svg");
@@ -149,6 +159,7 @@
     background-image: url("../img/run.svg");
   }
 }
+// --------------------------------------------------
 
 .user-card__like-btn {
   position: relative;

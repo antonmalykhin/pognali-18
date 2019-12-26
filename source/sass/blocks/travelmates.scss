@@ -86,7 +86,7 @@
 
 .travelmates__item {
   margin-bottom: 10px;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
 
   background-color: $white-color;
   border-radius: 10px;
@@ -139,14 +139,15 @@
   height: 24px;
 }
 
-.travelmates__online-status {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  margin-right: 10px;
+// .travelmates__online-status {
+//   // position: absolute;
 
-  vertical-align: middle;
-}
+//   display: inline-block;
+//   width: 5px;
+//   height: 5px;
+//   margin-left: 10px;
+//   vertical-align: middle;
+// }
 
 .travelmates__name {
   position: relative;
@@ -159,6 +160,31 @@
   margin-left: auto;
 
   text-align: center;
+}
+
+.travelmates__name span {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -16px;
+
+    width: 5px;
+    height: 5px;
+
+    background-color: #cccccc;
+    border-radius: 50%;
+  }
+}
+
+.travelmates__name--offline span::before {
+  background-color: #f97676;
+}
+
+.travelmates__name--online span::before {
+  background-color: #80e31e;
 }
 
 .travelmates__tags {
