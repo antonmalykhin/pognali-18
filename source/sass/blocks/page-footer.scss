@@ -87,7 +87,9 @@
 @media (min-width: $tablet) {
   .page-footer {
     margin-top: -55px;
-    padding: 48px 0;
+    padding: 0;
+    padding-top: 46px;
+    padding-bottom: 47px;
 
     border-radius: 60px 60px 0 0;
   }
@@ -96,8 +98,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 32px;
-    padding-left: 31px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .page-footer__logo {
@@ -121,17 +123,35 @@
   }
 
   .page-footer__dev-text {
-    margin-top: 17px;
+    margin-top: 19px;
     margin-left: 3px;
 
     font-size: 20px;
     line-height: 24px;
   }
 
+  .page-footer__dev-link {
+    margin-top: 10px;
+  }
 
   .page-footer__item a {
     width: 61px;
     height: 61px;
+  }
+
+  .page-footer__link--facebook svg {
+    top: 17px;
+    left: 23px;
+  }
+
+  .page-footer__link--vk svg {
+    top: 24px;
+    left: 14px;
+  }
+
+  .page-footer__link--instagram svg {
+    top: 19px;
+    left: 19px;
   }
 }
 

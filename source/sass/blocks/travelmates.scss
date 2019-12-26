@@ -243,22 +243,23 @@
   .travelmates__wrapper {
     margin: 0 auto;
     padding-top: 164px;
-    padding-right: 65px;
-    padding-bottom: 87px;
-    padding-left: 65px;
+    padding-right: 73px;
+    padding-bottom: 88px;
+    padding-left: 72px;
 
     background-image: url("../../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 401px 139px, 33px 485px;
+    background-position: 408px 140px, 40px 486px;
 
     &::before {
-      top: 138px;
-      left: 32px;
+      top: 140px;
+      left: 40px;
       z-index: 1;
 
-      width: 214px;
+      width: 213px;
       height: 214px;
     }
+
 
     @media (min-resolution: $retina) {
       background-image: url("../../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png");
@@ -268,7 +269,7 @@
 
   .travelmates__title {
     margin-top: 37px;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
     margin-left: 0;
 
     font-weight: 700;
@@ -289,7 +290,7 @@
 
   .travelmates__slogan {
     width: 260px;
-    margin-bottom: 59px;
+    margin-bottom: 57px;
     margin-left: 3px;
 
     font-weight: 700;
@@ -307,7 +308,7 @@
 
   .travelmates__item {
     width: 285px;
-    padding-bottom: 26px;
+    padding-bottom: 21px;
 
     border-radius: 20px;
   }
@@ -317,8 +318,8 @@
   }
 
   .travelmates__name {
-    margin-top: 13px;
-    margin-bottom: 22px;
+    margin-top: 12px;
+    margin-bottom: 21px;
 
     font-size: 24px;
     line-height: 24px;
@@ -336,9 +337,14 @@
     line-height: 24px;
   }
 
+  .travelmates__transport-list {
+    width: 46.8%;
+  }
+
   .travelmates__btn {
     margin-top: 70px;
     padding: 29px 35px;
+    padding-bottom: 28px;
 
     font-weight: 700;
     font-size: 24px;

@@ -203,14 +203,15 @@
   }
 
   .rates__wrapper {
-    padding: 0 40px;
     padding-top: 73px;
-    padding-bottom: 87px;
+    padding-right: 48px;
+    padding-bottom: 86px;
+    padding-left: 47px;
 
 
     &::after {
-      top: 408px;
-      right: 78px;
+      top: 409px;
+      right: 85px;
       z-index: 2;
     }
   }
@@ -303,7 +304,7 @@
   .rates__btn {
     position: relative;
 
-    margin-top: 59px;
+    margin-top: 60px;
     padding-left: 82px;
 
     font-weight: 700;
@@ -311,21 +312,35 @@
     line-height: 20px;
     text-align: left;
 
-    &::after {
-      content: "";
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: -26px;
+    //   left: -8px;
+
+    //   width: 69px;
+    //   height: 69px;
+
+    //   background-color: #e0e5f0;
+    //   background-image: url("../img/business.svg");
+    //   background-repeat: no-repeat;
+    //   background-position: center;
+    //   background-size: 26%;
+    //   border-radius: 50%;
+    // }
+
+    svg {
       position: absolute;
-      top: -26px;
+      top: -25px;
       left: -8px;
 
-      width: 69px;
-      height: 69px;
+      padding: 23px 26px;
+      overflow: visible;
 
-      background-color: #e0e5f0;
-      background-image: url("../img/business.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 26%;
+      background-color: #e1e5f1;
       border-radius: 50%;
+
+      fill: #132576;
     }
   }
 
