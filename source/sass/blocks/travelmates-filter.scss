@@ -97,6 +97,8 @@
     position: absolute;
     top: 5px;
     left: 5px;
+
+    fill: #192144;
   }
 }
 
@@ -307,6 +309,12 @@
     letter-spacing: -0.4px;
   }
 
+  .travelmates-filter__legend span {
+    &::after {
+      content: ":";
+    }
+  }
+
   .travelmates-filter__list {
     display: flex;
     flex-grow: 1;
@@ -323,22 +331,83 @@
     padding-left: 37px;
   }
 
+  .travelmates-filter__fieldset:nth-of-type(3) {
+    margin-bottom: 20px;
+  }
+
   .travelmates-filter__fieldset:nth-of-type(4) {
-    margin-top: 33px;
-    margin-bottom: 22px;
+    // margin-top: 33px;
+    margin-bottom: 6px;
+  }
+
+  .travelmates-filter__icon-dropdown {
+    display: none;
+  }
+
+  .travelmates-filter__tick-field {
+    top: -3px;
+    left: -35px;
+
+    width: 24px;
+    height: 24px;
+
+    svg {
+      top: 6px;
+      left: 6px;
+
+      width: 12px;
+      height: 12px;
+    }
   }
 
   .travelmates-filter__list--transport {
     flex-grow: 0;
     justify-content: flex-start;
-    margin-left: 2px;
+    margin-left: 15px;
   }
 
   .travelmates-filter__item--transport {
     width: auto;
-    margin-left: 12px;
+    // margin-left: 12px;
     padding: 0;
   }
+
+  .travelmates-filter__transport-icon--plane {
+    width: 19px;
+    height: 21px;
+    padding-top: 12px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+  }
+
+  .travelmates-filter__transport-icon--bus {
+    width: 17px;
+    height: 21px;
+    padding-top: 12px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+  }
+
+  .travelmates-filter__transport-icon--bike {
+    width: 24px;
+    height: 21px;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    padding-left: 11px;
+  }
+
+  .travelmates-filter__transport-icon--run {
+    width: 20px;
+    height: 21px;
+    padding-top: 12px;
+    padding-right: 13px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+  }
+
 
   .transport-list__transport-type::before {
     top: -15px;

@@ -92,6 +92,8 @@
   }
 
   .page-main__return-link {
+    position: relative;
+
     display: block;
     margin-right: 33px;
     margin-left: auto;
@@ -102,6 +104,14 @@
     line-height: 24px;
     color: #ffffff;
     text-transform: uppercase;
+
+    svg {
+      position: absolute;
+      top: 3px;
+      right: 2px;
+
+      fill: $white-color;
+    }
   }
 }
 

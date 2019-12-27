@@ -146,6 +146,13 @@
     display: none;
   }
 
+  .countries-filter__icon-filter-close {
+    width: 18px;
+    height: 18px;
+
+    fill: #192144;
+  }
+
   .countries-filter__btn--top {
     display: block;
     order: 2;
@@ -160,6 +167,12 @@
     line-height: 1;
 
     background-color: transparent;
+
+    .countries-filter__icon-filter-close {
+      top: 0;
+      right: 8px;
+      left: auto;
+    }
   }
 
   .countries-filter__polises {
@@ -229,6 +242,11 @@
 
     font-size: 20px;
     line-height: 1;
+
+    .countries-filter__icon-filter-close {
+      top: 39px;
+      left: 247px;
+    }
   }
 }
 
