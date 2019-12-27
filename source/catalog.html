@@ -1089,8 +1089,12 @@
         <ul class="travelmates-cards__list">
           <li class="travelmates-cards__item">
             <div class="travelmates-cards__user user-card">
-
               <picture>
+                <source type="image/webp" media="(min-width: 1350px)"
+                  srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp 2x">
                 <source media="(min-width: 1350px)" srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg 2x">
                 <img class=" travelmates-cards__photo user-card__photo user-card__photo--small"
@@ -1102,14 +1106,19 @@
                 <a href="#"
                   class="btn user-card__btn travelmates-cards__btn travelmates-cards__btn--tablet">Позвать!</a>
                 <button class="travelmates-cards__like-btn user-card__like-btn user-card__like-btn--selected"
-                  aria-label="Поставить лайк"></button>
+                  aria-label="Поставить лайк">
+                  <svg class="user-card__icon user-card__icon--active" width="13" height="11">
+                    <use xlink:href="#heart-active"></use>
+                  </svg>
+                  <svg class="user-card__icon user-card__icon--not-active" width="13" height="11">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </button>
 
                 <a class="travelmates-cards__user-name user-card__user-name" href="#">Таня
                   Фирсова<span
                     class="travelmates-cards__online-status user-card__online-status user-card__online-status--offline">
                   </span></a>
-
-
 
                 <p class="travelmates-cards__rating user-card__rating">1,5 М</p>
 
@@ -1120,9 +1129,24 @@
               <div class="travelmates-cards__visit">
                 <p class="travelmates-cards__text travelmates-cards__text--flags user-card__text">хочет посетить:</p>
                 <ul class="travelmates-cards__flags user-card__flags">
-                  <li class="travelmates-cards__flag user-card__flag">Шри-Ланка</li>
-                  <li class="travelmates-cards__flag user-card__flag">Тайланд</li>
-                  <li class="travelmates-cards__flag user-card__flag">Сейшелы</li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-sri-lanka"></use>
+                    </svg>
+                    <span>Шри-Ланка</span>
+                  </li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-thailand"></use>
+                    </svg>
+                    <span>Тайланд</span>
+                  </li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-seychelles"></use>
+                    </svg>
+                    <span>Сейшелы</span>
+                  </li>
                 </ul>
               </div>
 
@@ -1166,8 +1190,12 @@
 
           <li class="travelmates-cards__item">
             <div class="travelmates-cards__user user-card">
-
               <picture>
+                <source type="image/webp" media="(min-width: 1350px)"
+                  srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp 2x">
                 <source media="(min-width: 1350px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
                 <img class="travelmates-cards__photo user-card__photo user-card__photo--small"
@@ -1178,8 +1206,14 @@
               <div class="travelmates-cards__container">
                 <a href="#"
                   class="btn user-card__btn travelmates-cards__btn travelmates-cards__btn--tablet">Позвать!</a>
-                <button class="travelmates-cards__like-btn user-card__like-btn user-card__like-btn--selected"
-                  aria-label="Поставить лайк"></button>
+                <button class="travelmates-cards__like-btn user-card__like-btn" aria-label="Поставить лайк">
+                  <svg class="user-card__icon user-card__icon--active" width="13" height="11">
+                    <use xlink:href="#heart-active"></use>
+                  </svg>
+                  <svg class="user-card__icon user-card__icon--not-active" width="13" height="11">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </button>
 
                 <a class="travelmates-cards__user-name user-card__user-name" href="#">Петя Демин<span
                     class="travelmates-cards__online-status user-card__online-status user-card__online-status--online">
@@ -1193,8 +1227,18 @@
               <div class="travelmates-cards__visit">
                 <p class="travelmates-cards__text travelmates-cards__text--flags user-card__text">хочет посетить:</p>
                 <ul class="travelmates-cards__flags user-card__flags">
-                  <li class="travelmates-cards__flag user-card__flag">Бельгия</li>
-                  <li class="travelmates-cards__flag user-card__flag">Чехия</li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-belgium"></use>
+                    </svg>
+                    <span>Бельгия</span>
+                  </li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-czech"></use>
+                    </svg>
+                    <span>Чехия</span>
+                  </li>
                 </ul>
               </div>
 
@@ -1240,6 +1284,11 @@
             <div class="travelmates-cards__user user-card">
 
               <picture>
+                <source type="image/webp" media="(min-width: 1350px)"
+                  srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp 2x">
                 <source media="(min-width: 1350px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg 2x">
                 <img class="travelmates-cards__photo user-card__photo user-card__photo--small"
@@ -1250,8 +1299,14 @@
               <div class="travelmates-cards__container">
                 <a href="#"
                   class="btn user-card__btn travelmates-cards__btn travelmates-cards__btn--tablet">Позвать!</a>
-                <button class="travelmates-cards__like-btn user-card__like-btn user-card__like-btn--selected"
-                  aria-label="Поставить лайк"></button>
+                <button class="travelmates-cards__like-btn user-card__like-btn" aria-label="Поставить лайк">
+                  <svg class="user-card__icon user-card__icon--active" width="13" height="11">
+                    <use xlink:href="#heart-active"></use>
+                  </svg>
+                  <svg class="user-card__icon user-card__icon--not-active" width="13" height="11">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </button>
 
                 <a class="travelmates-cards__user-name user-card__user-name" href="#">Марк Смолов<span
                     class="travelmates-cards__online-status user-card__online-status user-card__online-status--offline">
@@ -1265,9 +1320,24 @@
               <div class="travelmates-cards__visit">
                 <p class="travelmates-cards__text travelmates-cards__text--flags user-card__text">хочет посетить:</p>
                 <ul class="travelmates-cards__flags user-card__flags">
-                  <li class="travelmates-cards__flag user-card__flag">США</li>
-                  <li class="travelmates-cards__flag user-card__flag">Австралия</li>
-                  <li class="travelmates-cards__flag user-card__flag">Доминикана</li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-usa"></use>
+                    </svg>
+                    <span>США</span>
+                  </li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-australia"></use>
+                    </svg>
+                    <span>Австралия</span>
+                  </li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-dominica"></use>
+                    </svg>
+                    <span>Доминикана</span>
+                  </li>
                 </ul>
               </div>
 
@@ -1314,6 +1384,11 @@
             <div class="travelmates-cards__user user-card">
 
               <picture>
+                <source type="image/webp" media="(min-width: 1350px)"
+                  srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp 2x">
                 <source media="(min-width: 1350px)"
                   srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg 2x">
@@ -1325,8 +1400,14 @@
               <div class="travelmates-cards__container">
                 <a href="#"
                   class="btn user-card__btn travelmates-cards__btn travelmates-cards__btn--tablet">Позвать!</a>
-                <button class="travelmates-cards__like-btn user-card__like-btn user-card__like-btn--selected"
-                  aria-label="Поставить лайк"></button>
+                <button class="travelmates-cards__like-btn user-card__like-btn" aria-label="Поставить лайк">
+                  <svg class="user-card__icon user-card__icon--active" width="13" height="11">
+                    <use xlink:href="#heart-active"></use>
+                  </svg>
+                  <svg class="user-card__icon user-card__icon--not-active" width="13" height="11">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </button>
 
                 <a class="travelmates-cards__user-name user-card__user-name" href="#">Лариса Роговая<span
                     class="travelmates-cards__online-status user-card__online-status user-card__online-status--online">
@@ -1342,8 +1423,18 @@
               <div class="travelmates-cards__visit">
                 <p class="travelmates-cards__text travelmates-cards__text--flags user-card__text">хочет посетить:</p>
                 <ul class="travelmates-cards__flags user-card__flags">
-                  <li class="travelmates-cards__flag user-card__flag">Великобритания</li>
-                  <li class="travelmates-cards__flag user-card__flag">Германия</li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-united-kingdom"></use>
+                    </svg>
+                    <span>Великобритания</span>
+                  </li>
+                  <li class="travelmates-cards__flag user-card__flag">
+                    <svg width="26" height="18">
+                      <use xlink:href="#flag-germany"></use>
+                    </svg>
+                    <span>Германия</span>
+                  </li>
                 </ul>
               </div>
 

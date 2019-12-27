@@ -148,6 +148,7 @@
 }
 
 .travelmates-cards__flag {
+  position: relative;
   margin-bottom: 13px;
   padding-left: 45px;
 
@@ -158,6 +159,13 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  svg {
+    position: absolute;
+
+    top: -4px;
+    left: 5px;
   }
 }
 

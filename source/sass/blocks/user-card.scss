@@ -167,30 +167,40 @@
   width: 31px;
   height: 31px;
 
-  background-color: #edeff6;
+  background-color: #edeff5;
   border: none;
   border-radius: 50%;
 
-  &::after {
-    content: "";
+  .user-card__icon {
     position: absolute;
     top: 11px;
-    left: 10px;
+    left: 9px;
+  }
 
-    width: 13px;
-    height: 11px;
+  .user-card__icon--active {
+    display: none;
+  }
 
-    background-image: url("../img/heart.svg");
-    background-repeat: no-repeat;
+  .user-card__icon--not-active {
+    display: block;
+
+    opacity: 0.3;
+
+    fill: #192144;
   }
 }
 
 .user-card__like-btn--selected {
   background-color: #f9eaea;
 
-  &::after {
-    background-image: url("../img/heart-active.svg");
-    opacity: 1;
+  .user-card__icon--active {
+    display: block;
+
+    fill: #f02323;
+  }
+
+  .user-card__icon--not-active {
+    display: none;
   }
 }
 
