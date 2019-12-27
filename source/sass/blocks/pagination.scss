@@ -15,14 +15,10 @@
   border: none;
 
 
-  &::after {
-    content: "";
+  svg {
     position: absolute;
 
-    width: 10px;
-    height: 20px;
-
-    background-repeat: no-repeat;
+    fill: #192144;
   }
 }
 
@@ -30,22 +26,18 @@
   border-right: 1px solid #edeff6;
   border-radius: 20px 0 0 20px;
 
-  &::after {
-    top: 17px;
-    left: 63px;
-
-    background-image: url("../img/triangle-arrow-left.svg");
+  svg {
+    top: 16px;
+    left: 62px;
   }
 }
 
 .pagination__btn--front {
   border-radius: 0 20px 20px 0;
 
-  &::after {
-    top: 17px;
-    right: 63px;
-
-    background-image: url("../img/triangle-arrow-right.svg");
+  svg {
+    top: 16px;
+    right: 62px;
   }
 }
 
@@ -101,4 +93,22 @@
   font-size: 20px;
   line-height: 2.7;
   color: #161c35;
+}
+
+@media (min-width: $tablet) {
+  .pagination__btn--back svg {
+    top: 12px;
+    left: 14px;
+
+    width: 10px;
+    height: 20px;
+  }
+
+  .pagination__btn--front svg {
+    top: 12px;
+    right: 14px;
+
+    width: 10px;
+    height: 20px;
+  }
 }

@@ -124,37 +124,35 @@
 
         <div class="countries-filter__container">
           <div class="countries-filter__wrapper">
-            <a href="#">
+            <div class="countries-filter__header">
               <h2 class="countries-filter__title">
                 <svg class="countries-filter__icon-filter" width="15" height="10 ">
                   <use xlink:href="#filter"></use>
                 </svg>
                 <span>Фильтрация по странам</span>
+              </h2>
+              <ul class="countries-filter__polises polices-list">
+                <li class="countries-filter__polis polices-list__item">
+                  <a class="polices-list__link polices-list__link--current" href="#">Европа</a>
+                </li>
+                <li class="countries-filter__polis polices-list__item">
+                  <a class="polices-list__link" href="#">Азия</a>
+                </li>
+                <li class="countries-filter__polis polices-list__item">
+                  <a class="polices-list__link" href="#">Америка</a>
+                </li>
+                <li class="countries-filter__polis polices-list__item">
+                  <a class="polices-list__link" href="#">Острова</a>
+                </li>
+              </ul>
+              <a class="countries-filter__btn countries-filter__btn--top" href="#">
+
+                <span>Свернуть</span>
                 <svg class="countries-filter__icon-filter-close" width="12" height="12">
                   <use xlink:href="#filter-close"></use>
                 </svg>
-              </h2>
-            </a>
-            <button class="countries-filter__btn countries-filter__btn--top" type="button">
-              <span>Свернуть</span>
-              <svg class="countries-filter__icon-filter-close" width="12" height="12">
-                <use xlink:href="#filter-close"></use>
-              </svg>
-            </button>
-            <ul class="countries-filter__polises polices-list">
-              <li class="countries-filter__polis polices-list__item">
-                <a class="polices-list__link polices-list__link--current" href="#">Европа</a>
-              </li>
-              <li class="countries-filter__polis polices-list__item">
-                <a class="polices-list__link" href="#">Азия</a>
-              </li>
-              <li class="countries-filter__polis polices-list__item">
-                <a class="polices-list__link" href="#">Америка</a>
-              </li>
-              <li class="countries-filter__polis polices-list__item">
-                <a class="polices-list__link" href="#">Острова</a>
-              </li>
-            </ul>
+              </a>
+            </div>
 
             <table class="countries-filter__table table">
               <tr>
@@ -871,14 +869,15 @@
               </li>
             </ul>
           </div>
-          <button class="countries-filter__btn countries-filter__btn--bottom">
+        </div>
+        <button class="countries-filter__btn countries-filter__btn--bottom">
+          <span class="countries-filter__btn-text">
             <svg class="countries-filter__icon-filter-close" width="12" height="12">
               <use xlink:href="#filter-close"></use>
             </svg>
-            <span>Свернуть</span>
-          </button>
-        </div>
-
+            Свернуть
+          </span>
+        </button>
       </div>
     </section>
 
@@ -1193,23 +1192,32 @@
                   <p class="travelmates-cards__text travelmates-cards__text--transport user-card__text">транспорт:</p>
                   <ul class="travelmates-cards__transport-list user-card__transport-list">
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--enable"
-                        aria-label="Авиаперелет"></p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--plane user-card__transport-icon"
+                        width="14" height="16" role="img" focusable="false" aria-label="Авиаперелет">
+                        <use xlink:href="#plane"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Автотранспорт">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bus user-card__transport-icon  user-card__transport-icon--disable"
+                        width="13" height="16" role="img" focusable="false" aria-label="Автотранспорт">
+                        <use xlink:href="#bus"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Велосипед">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bike user-card__transport-icon user-card__transport-icon--disable"
+                        width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
+                        <use xlink:href="#bike"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Пешком">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--run user-card__transport-icon user-card__transport-icon--disable"
+                        width="15" height="17" role="img" focusable="false" aria-label="Пешком">
+                        <use xlink:href="#run"></use>
+                      </svg>
                     </li>
                   </ul>
                 </div>
@@ -1285,23 +1293,32 @@
                   <p class="travelmates-cards__text travelmates-cards__text--transport user-card__text">транспорт:</p>
                   <ul class="travelmates-cards__transport-list user-card__transport-list">
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--enable"
-                        aria-label="Авиаперелет">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--plane user-card__transport-icon"
+                        width="14" height="16" role="img" focusable="false" aria-label="Авиаперелет">
+                        <use xlink:href="#plane"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Автотранспорт"></p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bus user-card__transport-icon"
+                        width="13" height="16" role="img" focusable="false" aria-label="Автотранспорт">
+                        <use xlink:href="#bus"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Велосипед">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bike user-card__transport-icon user-card__transport-icon--disable"
+                        width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
+                        <use xlink:href="#bike"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Пешком">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--run user-card__transport-icon"
+                        width="15" height="17" role="img" focusable="false" aria-label="Пешком">
+                        <use xlink:href="#run"></use>
+                      </svg>
                     </li>
                   </ul>
                 </div>
@@ -1384,24 +1401,32 @@
                   <p class="travelmates-cards__text travelmates-cards__text--transport user-card__text">транспорт:</p>
                   <ul class="travelmates-cards__transport-list user-card__transport-list">
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--enable"
-                        aria-label="Авиаперелет">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--plane user-card__transport-icon"
+                        width="14" height="16" role="img" focusable="false" aria-label="Авиаперелет">
+                        <use xlink:href="#plane"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Автотранспорт">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bus user-card__transport-icon  user-card__transport-icon--disable"
+                        width="13" height="16" role="img" focusable="false" aria-label="Автотранспорт">
+                        <use xlink:href="#bus"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Велосипед">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bike user-card__transport-icon"
+                        width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
+                        <use xlink:href="#bike"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Пешком">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--run user-card__transport-icon user-card__transport-icon--disable"
+                        width="15" height="17" role="img" focusable="false" aria-label="Пешком">
+                        <use xlink:href="#run"></use>
+                      </svg>
                     </li>
                   </ul>
                 </div>
@@ -1481,23 +1506,32 @@
                   <p class="travelmates-cards__text travelmates-cards__text--transport user-card__text">транспорт:</p>
                   <ul class="travelmates-cards__transport-list user-card__transport-list">
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--enable"
-                        aria-label="Авиаперелет"></p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--plane user-card__transport-icon"
+                        width="14" height="16" role="img" focusable="false" aria-label="Авиаперелет">
+                        <use xlink:href="#plane"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Автотранспорт">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bus user-card__transport-icon"
+                        width="13" height="16" role="img" focusable="false" aria-label="Автотранспорт">
+                        <use xlink:href="#bus"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Велосипед">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bike user-card__transport-icon user-card__transport-icon--disable"
+                        width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
+                        <use xlink:href="#bike"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
-                      <p class="travelmates-cards__transport-type user-card__transport-type user-card__transport-type--disable"
-                        aria-label="Пешком">
-                      </p>
+                      <svg
+                        class="travelmates-cards__transport-icon travelmates-cards__transport-icon--run user-card__transport-icon user-card__transport-icon--disable"
+                        width="15" height="17" role="img" focusable="false" aria-label="Пешком">
+                        <use xlink:href="#run"></use>
+                      </svg>
                     </li>
                   </ul>
                 </div>
@@ -1514,7 +1548,15 @@
             </div>
           </li>
         </ul>
-        <a href="#" class="travelmates-cards__show-more-btn">Показать еще</a>
+        <a href="#" class="travelmates-cards__show-more-btn">
+
+          <span class="travelmates-cards__btn-text">
+            <svg width="18" height="18">
+              <use xlink:href="#show-more-plus"></use>
+            </svg>
+            Показать еще
+          </span>
+        </a>
 
         <div class="travelmates-cards__pagination pagination">
           <ul class="travelmates-cards__pagination-numbers pagination__numbers">
@@ -1526,10 +1568,19 @@
           </ul>
 
           <ul class="travelmates-cards__pagination-directions pagination-directions">
-            <li class="travelmates-cards__pagination-item"><a class="pagination__btn pagination__btn--back" href="#"
-                aria-label="Назад"></a></li>
-            <li class="travelmates-cards__pagination-item"><a class="pagination__btn pagination__btn--front" href="#"
-                aria-label="Вперед"></a>
+            <li class="travelmates-cards__pagination-item">
+              <a class="pagination__btn pagination__btn--back" href="#" aria-label="Назад">
+                <svg width="10" height="20">
+                  <use xlink:href="#triangle-arrow-left"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="travelmates-cards__pagination-item">
+              <a class="pagination__btn pagination__btn--front" href="#" aria-label="Вперед">
+                <svg width="10" height="20">
+                  <use xlink:href="#triangle-arrow-right"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

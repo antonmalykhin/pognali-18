@@ -259,3 +259,13 @@
   background-color: transparent;
   border: none;
 }
+
+@media (min-width: $tablet) {
+  .user-card__like-btn .user-card__icon {
+    top: 18px;
+    left: 14px;
+
+    width: 20px;
+    height: 17px;
+  }
+}
