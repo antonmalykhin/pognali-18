@@ -105,6 +105,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   order: 2;
+  margin-bottom: 5px;
 }
 
 .plan-add__fieldset {
@@ -140,6 +141,11 @@
   letter-spacing: 0.1em;
 }
 
+.plan-add__label-wrapper--with-children {
+  display: block;
+  margin-bottom: 21px;
+}
+
 .plan-add__label--lowercase {
   position: relative;
 
@@ -172,11 +178,6 @@
 }
 
 .plan-add__label--checkbox-label {
-  display: block;
-  margin-top: 13px;
-  margin-bottom: 21px;
-  padding-left: 39px;
-
   font-weight: 400;
   font-size: 15px;
   line-height: 15px;
@@ -185,6 +186,28 @@
   text-transform: inherit;
   font-style: normal;
   letter-spacing: 0;
+}
+
+.plan-add__tick-field {
+  position: relative;
+
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+
+  vertical-align: middle;
+
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  svg {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+
+    fill: #192144;
+  }
 }
 
 .plan-add__unit {
@@ -229,18 +252,12 @@
   background-color: transparent;
   border-radius: 4px;
 
-  &::after {
-    content: "";
+  svg {
     position: absolute;
-    top: 15px;
-    left: 14px;
 
-    width: 14px;
-    height: 14px;
-
-    background-repeat: no-repeat;
-    background-position: center;
     opacity: 0.3;
+
+    fill: #606161;
   }
 }
 
@@ -249,8 +266,9 @@
   top: 0;
   left: 0;
 
-  &::after {
-    background-image: url("../img/qty-minus-mobile.svg");
+  svg {
+    top: 21px;
+    left: 14px;
   }
 }
 
@@ -259,8 +277,9 @@
   top: 0;
   right: 0;
 
-  &::after {
-    background-image: url("../img/qty-plus-mobile.svg");
+  svg {
+    top: 15px;
+    right: 15px;
   }
 }
 
@@ -269,10 +288,9 @@
   top: 0;
   left: 0;
 
-  &::after {
-    left: -3px;
-
-    background-image: url("../img/month-arrow-left.svg");
+  svg {
+    top: 13px;
+    left: 0;
   }
 }
 
@@ -281,10 +299,9 @@
   top: 0;
   right: 0;
 
-  &::after {
-    left: 32px;
-
-    background-image: url("../img/month-arrow-right.svg");
+  svg {
+    top: 13px;
+    right: 0;
   }
 }
 
@@ -588,17 +605,79 @@
   }
 }
 
+.plan-add__select-wrapper {
+  position: relative;
+
+  flex-grow: 1;
+  width: auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 50px;
+
+    width: 55px;
+    height: 40px;
+
+    background-image: linear-gradient(to right, transparent 0, $white-color 30%);
+    border-right: 1px solid #cbced9;
+    border-radius: 4px;
+  }
+}
+
 .plan-add__select {
-  width: 76.5%;
   padding: 12px 6px;
 }
 
 .plan-add__flag {
-  flex-grow: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
 
+  box-sizing: border-box;
+  width: 51px;
+  height: 100%;
+
+  background-color: #ffffff;
   border: 1px solid #cbced9;
-  border-left: none;
   border-radius: 4px;
+
+  svg {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: -5px;
+    z-index: 10;
+
+    width: 9px;
+    height: 9px;
+
+    background-color: #1d2d5b;
+    border-radius: 50%;
+  }
+}
+
+.plan-add__reset-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  padding: 6px;
+  overflow: visible;
+
+  background-color: #edeff5;
+  border-radius: 50%;
+
+  use {
+    opacity: 0.3;
+  }
 }
 
 .plan-add__textarea-wrapper .plan-add__flag {

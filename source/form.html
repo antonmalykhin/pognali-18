@@ -130,6 +130,9 @@
 
             <div class="plan-creation__photo-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/demin-tablet@1x.webp" srcset="img/demin-tablet@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
                 <img class="plan-creation__photo user-card__photo user-card__photo--small" src="img/demin-tablet@1x.jpg"
                   srcset="img/demin-tablet@2x.jpg 2x" width="100" height="100" alt="Фотография пользователя Петя Демин">
@@ -142,7 +145,6 @@
               </label>
 
             </div>
-
             <label class="plan-creation__btn-wrapper plan-creation__btn-wrapper--big">
               <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Сменить фото</span>
               <input class="plan-creation__file user-card__file-field filefield visually-hidden" type="file"
@@ -163,32 +165,41 @@
                   <label>
                     <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
                       name="transport" value="авиаперелет">
-                    <span class="plan-creation__transport-type transport-list__transport-type"
-                      aria-label="авиаперелет"></span>
+                    <svg class="plan-creation__icon plan-creation__icon--plane user-card__transport-icon" width="14"
+                      height="16" role="img" focusable="false" aria-label="Авиаперелет">
+                      <use xlink:href="#plane"></use>
+                    </svg>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
                     <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
-                      name="transport" value="авиаперелет">
-                    <span class="plan-creation__transport-type transport-list__transport-type"
-                      aria-label="автотранспорт"></span>
+                      name="transport" value="автотранспорт">
+                    <svg class="plan-creation__icon plan-creation__icon--bus user-card__transport-icon" width="13"
+                      height="16" role="img" focusable="false" aria-label="Автотранспорт">
+                      <use xlink:href="#bus"></use>
+                    </svg>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
                     <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
-                      name="transport" value="авиаперелет">
-                    <span class="plan-creation__transport-type transport-list__transport-type"
-                      aria-label="велосипед"></span>
+                      name="transport" value="велосипед">
+                    <svg
+                      class="plan-creation__icon plan-creation__icon--bike user-card__transport-icon user-card__transport-icon--disable"
+                      width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
+                      <use xlink:href="#bike"></use>
+                    </svg>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
                     <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
-                      name="transport" value="авиаперелет">
-                    <span class="plan-creation__transport-type transport-list__transport-type"
-                      aria-label="пешком"></span>
+                      name="transport" value="пешком">
+                    <svg class="plan-creation__icon plan-creation__icon--run user-card__transport-icon" width="15"
+                      height="17" role="img" focusable="false" aria-label="Пешком">
+                      <use xlink:href="#run"></use>
+                    </svg>
                   </label>
                 </li>
               </ul>
@@ -253,10 +264,18 @@
                     <span class="plan-add__label">ищу попутчиков:</span>
                   </label>
                   <div class="plan-add__field-wrapper plan-add__field-wrapper--half">
-                    <button class="btn plan-add__btn plan-add__btn--minus"></button>
+                    <button class="btn plan-add__btn plan-add__btn--minus">
+                      <svg width="14" height="2">
+                        <use xlink:href="#qty-minus-mobile"></use>
+                      </svg>
+                    </button>
                     <input class="plan-add__number numberfield" type="text" name="numOfPeople" id="numOfPeople"
                       value="2" pattern="[1-9]{1,2}" required>
-                    <button class="btn plan-add__btn plan-add__btn--plus"></button>
+                    <button class="btn plan-add__btn plan-add__btn--plus">
+                      <svg width="14" height="14">
+                        <use xlink:href="#qty-plus-mobile"></use>
+                      </svg>
+                    </button>
                   </div>
                   <span class="plan-add__unit">чел.</span>
                 </div>
@@ -266,10 +285,18 @@
                     <span class="plan-add__label">длительность:</span>
                   </label>
                   <div class="plan-add__field-wrapper plan-add__field-wrapper--half">
-                    <button class="btn plan-add__btn plan-add__btn--minus"></button>
+                    <button class="btn plan-add__btn plan-add__btn--minus">
+                      <svg width="14" height="2">
+                        <use xlink:href="#qty-minus-mobile"></use>
+                      </svg>
+                    </button>
                     <input class="plan-add__number numberfield" type="text" name="numOfDays" id="numOfDays" value="2"
                       pattern="[1-9]{1,3}" required>
-                    <button class="btn plan-add__btn plan-add__btn--plus"></button>
+                    <button class="btn plan-add__btn plan-add__btn--plus">
+                      <svg width="14" height="14">
+                        <use xlink:href="#qty-plus-mobile"></use>
+                      </svg>
+                    </button>
                   </div>
                   <span class="plan-add__unit">дн.</span>
                 </div>
@@ -277,6 +304,11 @@
                 <label class="plan-add__label-wrapper plan-add__label-wrapper--with-children">
                   <input class="plan-add__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren"
                     required>
+                  <span class="plan-add__tick-field">
+                    <svg width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   <span class="plan-add__label plan-add__label--checkbox-label">Можно с
                     детьми</span>
                 </label>
@@ -284,9 +316,16 @@
 
                 <div class="plan-add__field-wrapper plan-add__field-wrapper--date">
                   <button class="btn plan-add__btn plan-add__btn--back">
+                    <svg width="9" height="18">
+                      <use xlink:href="#month-arrow-left"></use>
+                    </svg>
                   </button>
                   <input class="plan-add__date datefield" type="text" name="date" id="date" required value="март 2019">
-                  <button class="btn plan-add__btn plan-add__btn--front"></button>
+                  <button class="btn plan-add__btn plan-add__btn--front">
+                    <svg width="9" height="18">
+                      <use xlink:href="#month-arrow-right"></use>
+                    </svg>
+                  </button>
                 </div>
 
                 <div class="plan-add__field-wrapper plan-add__field-wrapper--calendar">
@@ -422,18 +461,37 @@
               сразу несколько.</p>
             <ul class="plan-add__list">
               <li class="plan-add__item">
-                <select class="plan-add__select selectfield" name="firstCountry" id="firstCountry">
-                  <option class="plan-add__option selectfield__item" value="Bosnia and Herzegovina">Босния
-                    и
-                    Герцеговина</option>
-                </select>
-                <div class="plan-add__flag"></div>
+                <div class="plan-add__select-wrapper">
+                  <select class="plan-add__select selectfield" name="firstCountry" id="firstCountry">
+                    <option class="plan-add__option selectfield__item" value="Bosnia and Herzegovina">Босния
+                      и
+                      Герцеговина</option>
+                  </select>
+                  <div class="plan-add__flag">
+                    <svg width="35" height="24">
+                      <use xlink:href="#flag-bosnia"></use>
+                    </svg>
+                  </div>
+                  <svg class="plan-add__reset-btn" width="9" height="9">
+                    <use xlink:href="#small-cross"></use>
+                  </svg>
+                </div>
               </li>
               <li class="plan-add__item">
-                <select class="plan-add__select selectfield" name="secondCountry" id="secondCountry">
-                  <option class="plan-add__option selectfield__item" value="Czech">Чехия</option>
-                </select>
-                <div class="plan-add__flag"></div>
+                <div class="plan-add__select-wrapper">
+                  <select class="plan-add__select selectfield" name="secondCountry" id="secondCountry">
+                    <option class="plan-add__option selectfield__item" value="Czech">Чехия</option>
+                  </select>
+                  <div class="plan-add__flag">
+                    <svg width="35" height="24">
+                      <use xlink:href="#flag-czech"></use>
+                    </svg>
+                  </div>
+                  <svg class="plan-add__reset-btn" width="9" height="9">
+                    <use xlink:href="#small-cross"></use>
+                  </svg>
+                </div>
+
               </li>
               <li class="plan-add__item plan-add__item--drop">
                 <button class="btn plan-add__btn-select-country" type="button">Выберите
