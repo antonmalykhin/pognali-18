@@ -133,9 +133,10 @@
 }
 
 .plan-creation__icon {
+  overflow: visible;
+
   background-color: $white-color;
   border-radius: 50%;
-  overflow: visible;
 }
 
 .plan-creation__icon--plane {
@@ -209,7 +210,7 @@
     margin-bottom: 21px;
     padding-top: 34px;
     padding-right: 20px;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
     padding-left: 37px;
 
     .plan-creation__legend {
@@ -233,8 +234,8 @@
     align-self: flex-start;
     width: 42.8%;
     margin: 0;
-    padding-top: 29px;
-    padding-bottom: 42px;
+    padding-top: 24px;
+    padding-bottom: 20px;
 
     .plan-creation__legend {
       position: absolute;
@@ -273,7 +274,35 @@
   }
 
   .plan-creation__item {
-    margin-right: 28px;
+    margin-right: 12px;
+  }
+
+  .plan-creation__item:last-of-type {
+    margin-right: 0;
+  }
+
+  .plan-creation__icon--plane {
+    width: 19px;
+    height: 21px;
+    padding: 11px 13px 11px 11px;
+  }
+
+  .plan-creation__icon--bus {
+    width: 17px;
+    height: 21px;
+    padding: 11px 13px 11px 13px;
+  }
+
+  .plan-creation__icon--bike {
+    width: 24px;
+    height: 21px;
+    padding: 11px 9px 11px 10px;
+  }
+
+  .plan-creation__icon--run {
+    width: 20px;
+    height: 21px;
+    padding: 11px 11px 11px 12px;
   }
 
   .plan-creation__file {
@@ -281,7 +310,7 @@
   }
 
   .plan-creation__change-photo-btn {
-    margin-top: 45px;
+    margin-top: 46px;
     margin-bottom: 51px;
     padding-top: 21px;
     padding-bottom: 19px;

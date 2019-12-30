@@ -126,9 +126,9 @@
     justify-content: space-between;
     margin-bottom: 10px;
     padding-top: 40px;
-    padding-right: 33px;
+    padding-right: 0;
     padding-bottom: 14px;
-    padding-left: 32px;
+    padding-left: 0;
 
     border-radius: 10px;
 
@@ -147,16 +147,28 @@
   .plans__country {
     width: 100%;
     margin: 0;
-    margin-bottom: 54px;
-    margin-left: 4px;
+    // margin-bottom: 54px;
+    // margin-left: 4px;
+    margin-bottom: 20px;
+    padding: 0 55px 33px 36px;
 
     font-size: 24px;
     line-height: 1;
+
+    border-bottom: 1px solid #eff0f3;
   }
 
-  .plans__date,
+  .plans__date {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+
   .plans__travelmates {
     margin: 0;
+    margin-left: 33px;
 
     font-size: 20px;
     line-height: 1;
@@ -165,7 +177,8 @@
 
   .plans__btn {
     margin: 0;
-    margin-left: 25px;
+    margin-right: 34px;
+    margin-left: 20px;
 
     font-size: 20px;
     line-height: 1;
