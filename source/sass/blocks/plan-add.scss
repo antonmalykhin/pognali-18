@@ -93,6 +93,10 @@
   font-style: normal;
 }
 
+.plan-add__fieldset--step-three .plan-add__description {
+  margin-bottom: 23px;
+}
+
 .plan-add__container--travelmates {
   display: flex;
   flex-wrap: wrap;
@@ -167,7 +171,7 @@
     content: "";
     position: absolute;
     top: 6px;
-    left: -2px;
+    left: -3px;
 
     width: 6px;
     height: 6px;
@@ -427,8 +431,11 @@
 }
 
 .plan-add__btn-select-country {
+  position: relative;
+
   width: 100%;
   padding: 12px;
+  padding-bottom: 10px;
 
   font-weight: 500;
   font-size: 14px;
@@ -443,9 +450,29 @@
   background-color: #ffffff;
   border: 1px solid #cbced9;
   border-radius: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 48px;
+
+    width: 6px;
+    height: 6px;
+
+    border: 1px solid #cbced9;
+    border-radius: 50%;
+  }
+
+  .plan-add__reset-btn {
+    top: -11px;
+    right: -11px;
+  }
 }
 
 .plan-add__btn-add-country {
+  position: relative;
+
   width: 100%;
   padding: 12px;
 
@@ -461,6 +488,27 @@
 
   background-color: #edeff6;
   border-radius: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 48px;
+
+    width: 6px;
+    height: 6px;
+
+    border: 1px solid #cbced9;
+    border-radius: 50%;
+  }
+
+  .plan-add__icon-plus {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    opacity: 0.2;
+  }
 }
 
 .plan-add__list {
@@ -472,9 +520,19 @@
 }
 
 .plan-add__item {
+  position: relative;
+
   display: flex;
   margin-top: 21px;
   margin-bottom: 22px;
+
+  .plan-add__arrow {
+    position: absolute;
+    right: 48px;
+    bottom: -16px;
+
+    fill: #cbced9;
+  }
 }
 
 .plan-add__item--drop {
@@ -511,7 +569,6 @@
 .plan-add__dropdown--show {
   display: flex;
 }
-
 
 .plan-add__dropdown-link {
   display: block;
@@ -565,7 +622,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 220px;
-  margin-top: 12px;
+  margin-top: 16px;
   padding: 15px;
   padding-top: 10px;
 
@@ -591,16 +648,18 @@
 .plan-add__textarea-wrapper--first {
   position: relative;
 
+  margin-bottom: 22px;
+
   &::after {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: -14px;
 
     width: 12px;
-    height: 278px;
+    height: 279px;
 
-    border: 3px solid #1d2d5b;
+    border: 2px solid #1d2d5b;
     border-right: none;
   }
 }
@@ -681,25 +740,43 @@
 }
 
 .plan-add__textarea-wrapper .plan-add__flag {
-  display: block;
-  float: right;
-  width: 35px;
+  top: -5px;
+
+  width: 85px;
   height: 24px;
 
-  background-color: tomato;
+  background-color: transparent;
+  background-image: linear-gradient(to right, transparent 0, $white-color 25%);
   border: none;
+
+  &::after {
+    display: none;
+  }
+}
+
+.plan-add__flag .plan-add__icon-flag {
+  position: absolute;
+  top: 0;
+  left: 50px;
 }
 
 .plan-add__fieldset--step-three {
   position: relative;
 
-  padding-bottom: 1px;
+  padding-bottom: 2px;
+}
+
+.plan-add__fieldset--step-two .plan-add__btn-next {
+  margin-top: 24px;
 }
 
 .plan-add__fieldset--step-three .plan-add__btn-next {
   margin-top: 14px;
 }
 
+.plan-add__textarea-wrapper label {
+  position: relative;
+}
 
 @media (min-width: $tablet) {
   .plan-add {
