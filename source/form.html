@@ -108,7 +108,6 @@
         <h1 class="page-main__title">
           <span class="page-main__title-text">Направления</span>
         </h1>
-        <a class="page-main__return-link" href="index.html">На главную</a>
       </div>
     </div>
 
@@ -266,15 +265,21 @@
                   </label>
                   <div class="plan-add__field-wrapper plan-add__field-wrapper--half">
                     <button class="btn plan-add__btn plan-add__btn--minus">
-                      <svg width="14" height="2">
+                      <svg class="plan-add__icon-minus plan-add__icon-minus--mobile" width="14" height="2">
                         <use xlink:href="#qty-minus-mobile"></use>
+                      </svg>
+                      <svg class="plan-add__icon-minus plan-add__icon-minus--tablet" width="20" height="2">
+                        <use xlink:href="#qty-minus"></use>
                       </svg>
                     </button>
                     <input class="plan-add__number numberfield" type="text" name="numOfPeople" id="numOfPeople"
                       value="2" pattern="[1-9]{1,2}" required>
                     <button class="btn plan-add__btn plan-add__btn--plus">
-                      <svg width="14" height="14">
+                      <svg class="plan-add__icon-plus plan-add__icon-plus--mobile" width="14" height="14">
                         <use xlink:href="#qty-plus-mobile"></use>
+                      </svg>
+                      <svg class="plan-add__icon-plus plan-add__icon-plus--tablet" width="20" height="20">
+                        <use xlink:href="#qty-plus"></use>
                       </svg>
                     </button>
                   </div>
@@ -287,15 +292,21 @@
                   </label>
                   <div class="plan-add__field-wrapper plan-add__field-wrapper--half">
                     <button class="btn plan-add__btn plan-add__btn--minus">
-                      <svg width="14" height="2">
+                      <svg class="plan-add__icon-minus plan-add__icon-minus--mobile" width="14" height="2">
                         <use xlink:href="#qty-minus-mobile"></use>
+                      </svg>
+                      <svg class="plan-add__icon-minus plan-add__icon-minus--tablet" width="20" height="2">
+                        <use xlink:href="#qty-minus"></use>
                       </svg>
                     </button>
                     <input class="plan-add__number numberfield" type="text" name="numOfDays" id="numOfDays" value="2"
                       pattern="[1-9]{1,3}" required>
                     <button class="btn plan-add__btn plan-add__btn--plus">
-                      <svg width="14" height="14">
+                      <svg class="plan-add__icon-plus plan-add__icon-plus--mobile" width="14" height="14">
                         <use xlink:href="#qty-plus-mobile"></use>
+                      </svg>
+                      <svg class="plan-add__icon-plus plan-add__icon-plus--tablet" width="20" height="20">
+                        <use xlink:href="#qty-plus"></use>
                       </svg>
                     </button>
                   </div>
@@ -434,7 +445,12 @@
                 </div>
               </div>
 
-              <a class="btn plan-add__btn-next" href="#">Следующий шаг</a>
+              <a class="btn plan-add__btn-next" href="#">
+                <span>Следующий шаг</span>
+                <svg width="10" height="14">
+                  <use xlink:href="#triangle-arrow-right"></use>
+                </svg>
+              </a>
             </div>
           </fieldset>
 
@@ -475,6 +491,9 @@
                   <svg class="plan-add__reset-btn" width="9" height="9">
                     <use xlink:href="#small-cross"></use>
                   </svg>
+                  <svg class="plan-add__icon-dropdown" width="12" height="7">
+                    <use xlink:href="#dropdown-form"></use>
+                  </svg>
                 </div>
                 <svg class="plan-add__arrow" width="5" height="10">
                   <use xlink:href="#small-arrow"></use>
@@ -493,6 +512,9 @@
                   <svg class="plan-add__reset-btn" width="9" height="9">
                     <use xlink:href="#small-cross"></use>
                   </svg>
+                  <svg class="plan-add__icon-dropdown" width="12" height="7">
+                    <use xlink:href="#dropdown-form"></use>
+                  </svg>
                 </div>
                 <svg class="plan-add__arrow" width="5" height="10">
                   <use xlink:href="#small-arrow"></use>
@@ -501,8 +523,9 @@
               <li class="plan-add__item plan-add__item--drop">
                 <button class="btn plan-add__btn-select-country" type="button">
                   <span>Выберите страну</span>
-                  <svg class="plan-add__reset-btn" width="9" height="9">
-                    <use xlink:href="#small-cross"></use>
+
+                  <svg class="plan-add__icon-dropdown" width="12" height="7">
+                    <use xlink:href="#dropdown-form"></use>
                   </svg>
                 </button>
                 <div class="plan-add__dropdown dropdown">
@@ -558,6 +581,9 @@
                     <li class="plan-add__dropdown-item"><a href="#">Азербайджанм</a></li>
                   </ul>
                 </div>
+                <svg class="plan-add__reset-btn" width="9" height="9">
+                  <use xlink:href="#small-cross"></use>
+                </svg>
                 <svg class="plan-add__arrow" width="5" height="10">
                   <use xlink:href="#small-arrow"></use>
                 </svg>
@@ -572,8 +598,19 @@
               </li>
             </ul>
             <div class="plan-creation__btn-wrapper">
-              <a class="btn plan-add__btn-next" href="#">Следующий шаг</a>
-              <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a></div>
+              <a class="btn plan-add__btn-next" href="#">
+                <span>Следующий шаг</span>
+                <svg width="10" height="14">
+                  <use xlink:href="#triangle-arrow-right"></use>
+                </svg>
+              </a>
+              <a class=" btn plan-add__btn-prew" href="#">
+                <svg width="10" height="14">
+                  <use xlink:href="#triangle-arrow-left"></use>
+                </svg>
+                <span>На шаг назад</span>
+              </a>
+            </div>
           </fieldset>
 
           <fieldset class="plan-add__fieldset plan-add__fieldset--step-three fieldset">
@@ -623,8 +660,19 @@
             </div>
 
             <div class="plan-creation__btn-wrapper">
-              <button class="btn plan-add__btn-next" type="button">Отправить</button>
-              <a class=" btn plan-add__btn-prew" href="#">На шаг назад</a>
+              <button class="btn plan-add__btn-next" type="button">
+                <span>Отправить</span>
+                <svg width="10" height="14">
+                  <use xlink:href="#triangle-arrow-right"></use>
+                </svg>
+              </button>
+              <a class=" btn plan-add__btn-prew" href="#">
+                <svg width="10" height="14">
+                  <use xlink:href="#triangle-arrow-left"></use>
+                </svg>
+                <swap>На шаг назад</swap>
+
+              </a>
             </div>
           </fieldset>
         </section>
