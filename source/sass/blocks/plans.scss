@@ -223,15 +223,20 @@
   .plans__country {
     width: 45.3%;
     margin: 0;
-    margin-left: 33px;
+    padding: 0;
+    padding-left: 35px;
+
+    border: none;
   }
 
   .plans__travelmates {
     width: 14.3%;
     margin-right: 10px;
+    margin-left: 0;
   }
 
   .plans__btn {
+    margin-right: 0;
     margin-left: auto;
   }
 }

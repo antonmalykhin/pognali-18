@@ -1657,23 +1657,26 @@
   .plan-add__label-wrapper--with-children {
     order: 2;
     align-self: center;
-    margin-right: 10px;
+    margin-right: 12px;
     margin-left: auto;
+    padding-top: 10px;
   }
 
 
   .plan-add__field-wrapper--date {
-    width: 100%;
+    width: 97.8%;
     margin-top: 31px;
+    margin-right: auto;
     margin-bottom: 0;
+    margin-left: auto;
   }
 
-  .plan-add__btn--back::after {
+  .plan-add__btn--back svg {
     left: 6px;
   }
 
-  .plan-add__btn--front::after {
-    left: 37px;
+  .plan-add__btn--front svg {
+    right: 0;
   }
 
   .plan-add__field-wrapper--calendar {
@@ -1761,7 +1764,7 @@
   }
 
   .plan-add__fieldset--step-three {
-    padding-bottom: 86px;
+    padding-bottom: 88px;
   }
 
   .plan-add__fieldset--step-two .plan-add__pagination {
@@ -1802,6 +1805,24 @@
     width: 73.2%;
   }
 
+  .plan-add__select-wrapper {
+    .plan-add__icon-dropdown {
+      right: 29.6%;
+    }
+
+    &::after {
+      right: 27%;
+    }
+  }
+
+  .plan-add__flag svg {
+    left: 35px;
+  }
+
+  .plan-add__reset-btn {
+    right: -2px;
+  }
+
   .plan-add__btn-select-country {
     width: 73.2%;
   }
@@ -1819,6 +1840,8 @@
   }
 
   .plan-add__fieldset--step-two .plan-add__btn-prew {
+    width: 15%;
+
     text-align: right;
   }
 
@@ -1861,8 +1884,11 @@
   }
 
   .plan-add__textarea-wrapper .plan-add__flag {
+    top: -26px;
+    // margin-right: 125px;
+    right: -134px;
+
     margin-top: 7px;
-    margin-right: 125px;
   }
 
   .plan-add__label--lowercase::before {
@@ -1884,6 +1910,7 @@
   }
 
   .plan-add__fieldset--step-three .plan-add__btn-prew {
+    width: 14.6%;
     margin-right: 12px;
 
     text-align: right;
