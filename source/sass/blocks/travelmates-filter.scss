@@ -92,14 +92,14 @@
 
   background-color: $white-color;
   border-radius: 4px;
+}
 
-  svg {
-    position: absolute;
-    top: 5px;
-    left: 5px;
+.travelmates-filter__tick-field svg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
 
-    fill: #192144;
-  }
+  fill: #192144;
 }
 
 .travelmates-filter__tick-field--unchecked svg {
@@ -111,7 +111,6 @@
   margin-top: 5px;
   margin-bottom: 12px;
 }
-
 
 .travelmates-filter__item--music {
   margin-right: 0;
@@ -350,14 +349,14 @@
 
     width: 24px;
     height: 24px;
+  }
 
-    svg {
-      top: 6px;
-      left: 6px;
+  .travelmates-filter__tick-field svg {
+    top: 6px;
+    left: 6px;
 
-      width: 12px;
-      height: 12px;
-    }
+    width: 12px;
+    height: 12px;
   }
 
   .travelmates-filter__list--transport {

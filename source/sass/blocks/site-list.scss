@@ -1,13 +1,78 @@
 .site-list {
-  @include list-reset;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .site-list__item a {
-  font-family: $main-font;
+  display: block;
+
+  font-weight: 500;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-family: $main-font;
+  text-align: center;
   color: #192144;
+  text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .site-list {
+    width: 100%;
+    margin-bottom: 153px;
+    padding-left: 57px;
+  }
+
+  .site-list__item a {
+    font-size: 60px;
+    line-height: 1.19;
+    text-align: left;
+    letter-spacing: -0.6px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    order: -1;
+    width: 48%;
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 144px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 39px;
+
+      width: 60px;
+      height: 2px;
+
+      background-color: $white-color;
+    }
+  }
+
+  .site-list__item {
+    margin-right: 34px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__item a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white-color;
+    letter-spacing: -0.1px;
+  }
 }

@@ -1,5 +1,14 @@
 .contacts-list {
-  @include list-reset;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.contacts-list__item {
+  margin-bottom: 23px;
 }
 
 .contacts-list__phone {
@@ -42,11 +51,11 @@
   fill: #ffd74b;
 }
 
-.contact-list__phone-icon--desktop {
+.contacts-list__phone-icon--desktop {
   display: none;
 }
 
-.contact-list__email-icon--desktop {
+.contacts-list__email-icon--desktop {
   display: none;
 }
 
@@ -82,47 +91,71 @@
 }
 
 @media (min-width: $tablet) {
+  .contacts-list {
+    width: auto;
+    margin-bottom: 109px;
+    padding-left: 86px;
+  }
+
+  .contacts-list__item {
+    margin-bottom: 38px;
+  }
+
   .contacts-list__phone {
     font-size: 28px;
     line-height: 1;
-
-    svg {
-      top: -25px;
-      left: -29px;
-
-      width: 27px;
-      height: 27px;
-      padding: 20.3px;
-    }
   }
+
+  .contacts-list__phone svg {
+    top: -25px;
+    left: -29px;
+
+    width: 27px;
+    height: 27px;
+    padding: 20.3px;
+  }
+
 
   .contacts-list__email {
     font-size: 28px;
     line-height: 1;
+  }
 
-    svg {
-      top: -23px;
-      left: -29px;
+  .contacts-list__email svg {
+    top: -23px;
+    left: -29px;
 
-      width: 27px;
-      height: 27px;
-      padding: 20.3px;
-    }
+    width: 27px;
+    height: 27px;
+    padding: 20.3px;
   }
 }
 
 @media (min-width: $desktop) {
-  .contact-list__phone-icon--mobile {
+  .contacts-list {
+    display: flex;
+    width: 100px;
+    min-height: 50px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .contacts-list__item {
+    width: 50%;
+  }
+
+  .contacts-list__phone-icon--mobile {
     display: none;
   }
 
-  .contact-list__email-icon--mobile {
+  .contacts-list__email-icon--mobile {
     display: none;
   }
 
-  .contacts-list__phone .contact-list__phone-icon--desktop {
-    top: 0;
-    left: 27px;
+  .contacts-list__phone .contacts-list__phone-icon--desktop {
+    top: 1px;
+    left: 2px;
 
     display: block;
     width: 18px;
@@ -134,9 +167,9 @@
     fill: #161c35;
   }
 
-  .contacts-list__email .contact-list__email-icon--desktop {
-    top: 0;
-    left: 27px;
+  .contacts-list__email .contacts-list__email-icon--desktop {
+    top: 1px;
+    left: 2px;
 
     display: block;
     width: 18px;

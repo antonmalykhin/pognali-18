@@ -43,34 +43,33 @@
 
 .intro-title__phone {
   padding: 0;
+}
 
-  svg {
-    top: 0;
-    left: 1px;
+.intro-title__phone svg {
+  top: 0;
+  left: 1px;
 
-    padding: 11px;
+  padding: 11px;
 
-    background-color: #ff8c30;
+  background-color: #ff8c30;
 
-    fill: #161c35;
-  }
+  fill: #161c35;
 }
 
 .intro-title__email {
   padding: 0;
-
-  svg {
-    top: 0;
-    left: 41px;
-
-    padding: 11px;
-
-    background-color: #ffbd2f;
-
-    fill: #161c35;
-  }
 }
 
+.intro-title__email svg {
+  top: 0;
+  left: 41px;
+
+  padding: 11px;
+
+  background-color: #ffbd2f;
+
+  fill: #161c35;
+}
 
 .intro-title__login {
   align-self: center;

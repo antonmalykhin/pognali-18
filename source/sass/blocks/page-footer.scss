@@ -40,12 +40,12 @@
 
   width: 46px;
   height: 46px;
+}
 
-  svg {
-    position: absolute;
+.page-footer__link svg {
+  position: absolute;
 
-    fill: #1d2e5b;
-  }
+  fill: #1d2e5b;
 }
 
 .page-footer__link--facebook svg {
@@ -78,11 +78,12 @@
 
 .page-footer__dev-link {
   margin-top: 5px;
-
-  svg {
-    fill: #192144;
-  }
 }
+
+.page-footer__dev-link svg {
+  fill: #192144;
+}
+
 
 @media (min-width: $tablet) {
   .page-footer {

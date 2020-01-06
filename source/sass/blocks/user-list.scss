@@ -1,5 +1,10 @@
 .user-list {
-  @include list-reset;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 63px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .user-list__item {
@@ -18,7 +23,12 @@
 
 @media (min-width: $tablet) {
   .user-list {
-    display: flex;
+    display: block;
+    order: -1;
+    width: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-left: 0;
   }
 
   .user-list__item {
@@ -34,14 +44,25 @@
 }
 
 @media (min-width: $desktop) {
+  .user-list {
+    order: 4;
+    width: 14.5%;
+    margin: 0;
+    padding-left: 0;
+  }
+
   .user-list__login {
     display: block;
+    margin-top: 2px;
     padding: 15px;
+    padding-top: 17px;
+    padding-bottom: 13px;
 
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
+    letter-spacing: 0;
 
     border-radius: 25px;
   }

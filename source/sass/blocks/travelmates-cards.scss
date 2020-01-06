@@ -161,12 +161,12 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+}
 
-  svg {
-    position: absolute;
-    top: -4px;
-    left: 5px;
-  }
+.travelmates-cards__flag svg {
+  position: absolute;
+  top: -4px;
+  left: 5px;
 }
 
 .travelmates-cards__transport-level {
@@ -288,14 +288,14 @@
 
 .travelmates-cards__btn-text {
   position: relative;
+}
 
-  svg {
-    position: absolute;
-    top: -2px;
-    left: -32px;
+.travelmates-cards__btn-text svg {
+  position: absolute;
+  top: -2px;
+  left: -32px;
 
-    fill: #1d2e5b;
-  }
+  fill: #1d2e5b;
 }
 
 .travelmates-cards__pagination {
@@ -396,14 +396,14 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
 
-    svg {
-      top: 0;
-      left: 0;
+  .travelmates-cards__flag svg {
+    top: 0;
+    left: 0;
 
-      width: 35px;
-      height: 24px;
-    }
+    width: 35px;
+    height: 24px;
   }
 
   .travelmates-cards__transport-level {
@@ -503,17 +503,15 @@
     letter-spacing: -0.5px;
   }
 
-  .travelmates-cards__btn-text {
-    svg {
-      position: absolute;
-      top: -5px;
-      left: -50px;
+  .travelmates-cards__btn-text svg {
+    position: absolute;
+    top: -5px;
+    left: -50px;
 
-      width: 27px;
-      height: 27px;
+    width: 27px;
+    height: 27px;
 
-      fill: #1d2e5b;
-    }
+    fill: #1d2e5b;
   }
 
   .travelmates-cards__btn--mobile {
@@ -754,10 +752,10 @@
 
   .travelmates-cards__flag {
     margin-bottom: 6px;
+  }
 
-    svg {
-      left: -9px;
-    }
+  .travelmates-cards__flag svg {
+    left: -9px;
   }
 
   .travelmates-cards__transport-level {

@@ -204,14 +204,14 @@
 
   border: 1px solid #cbced9;
   border-radius: 4px;
+}
 
-  svg {
-    position: absolute;
-    top: 7px;
-    left: 8px;
+.plan-add__tick-field svg {
+  position: absolute;
+  top: 7px;
+  left: 8px;
 
-    fill: #192144;
-  }
+  fill: #192144;
 }
 
 .plan-add__unit {
@@ -255,14 +255,14 @@
 
   background-color: transparent;
   border-radius: 4px;
+}
 
-  svg {
-    position: absolute;
+.plan-add__btn svg {
+  position: absolute;
 
-    opacity: 0.3;
+  opacity: 0.3;
 
-    fill: #606161;
-  }
+  fill: #606161;
 }
 
 .plan-add__btn--minus {
@@ -299,24 +299,23 @@
   position: absolute;
   top: 0;
   left: 0;
+}
 
-  svg {
-    top: 13px;
-    left: 0;
-  }
+.plan-add__btn--back svg {
+  top: 13px;
+  left: 0;
 }
 
 .plan-add__btn--front {
   position: absolute;
   top: 0;
   right: 0;
-
-  svg {
-    top: 13px;
-    right: 0;
-  }
 }
 
+.plan-add__btn--front svg {
+  top: 13px;
+  right: 0;
+}
 
 .plan-add__table {
   margin: 0 auto;
@@ -425,10 +424,10 @@
   text-transform: uppercase;
 
   border-radius: 20px;
+}
 
-  svg {
-    display: none;
-  }
+.plan-add__btn-next svg {
+  display: none;
 }
 
 .plan-add__btn-prew {
@@ -440,10 +439,10 @@
   text-transform: uppercase;
 
   background-color: transparent;
+}
 
-  svg {
-    display: none;
-  }
+.plan-add__btn-prew svg {
+  display: none;
 }
 
 .plan-add__btn-select-country {
@@ -739,12 +738,6 @@
   border: 1px solid #cbced9;
   border-radius: 4px;
 
-  svg {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -760,6 +753,12 @@
   }
 }
 
+.plan-add__flag svg {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
 .plan-add__reset-btn {
   position: absolute;
   top: -10px;
@@ -770,10 +769,10 @@
 
   background-color: #edeff5;
   border-radius: 50%;
+}
 
-  use {
-    opacity: 0.3;
-  }
+.plan-add__reset-btn use {
+  opacity: 0.3;
 }
 
 .plan-add__textarea-wrapper .plan-add__flag {
@@ -924,14 +923,14 @@
   .plan-add__tick-field {
     width: 34px;
     height: 34px;
+  }
 
-    svg {
-      top: 11px;
-      left: 12px;
+  .plan-add__tick-field svg {
+    top: 11px;
+    left: 12px;
 
-      width: 12px;
-      height: 12px;
-    }
+    width: 12px;
+    height: 12px;
   }
 
   .plan-add__label {
@@ -1090,30 +1089,30 @@
     text-transform: none;
 
     border-radius: 20px;
+  }
 
-    svg {
-      position: absolute;
-      top: 33px;
-      right: 36px;
+  .plan-add__btn-next svg {
+    position: absolute;
+    top: 33px;
+    right: 36px;
 
-      display: block;
+    display: block;
 
-      fill: #1d2e5b;
-    }
+    fill: #1d2e5b;
   }
 
   .plan-add__btn-prew {
     position: relative;
+  }
 
-    svg {
-      position: absolute;
-      top: 4px;
-      left: 3px;
+  .plan-add__btn-prew svg {
+    position: absolute;
+    top: 4px;
+    left: 3px;
 
-      display: block;
+    display: block;
 
-      fill: #1d2e5b;
-    }
+    fill: #1d2e5b;
   }
 
   .plan-add__list {
@@ -1219,14 +1218,14 @@
     &::after {
       display: none;
     }
+  }
 
-    svg {
-      top: 12px;
-      left: 9px;
+  .plan-add__flag svg {
+    top: 12px;
+    left: 9px;
 
-      width: 70px;
-      height: 47px;
-    }
+    width: 70px;
+    height: 47px;
   }
 
   .plan-add__reset-btn {

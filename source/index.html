@@ -16,7 +16,7 @@
   </div>
 
   <header class="page-header">
-    <nav class="main-nav container">
+    <nav class="main-nav main-nav--closed container">
 
       <div class="page-header__wrapper">
         <a class="main-nav__logo page-header__logo">
@@ -32,47 +32,66 @@
             <img class="main-nav__logo-image page-header__logo-image" src="img/logo-mobile-blue@1x.png"
               srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип сервиса «Погнали»">
           </picture>
+          <picture>
+            <source type="image/webp" media="(min-width: 1350px)"
+              srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp 2x">
+            <source media="(min-width: 1350px)"
+              srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
+            <img class="main-nav__logo-image main-nav__logo-image--invert page-header__logo-image"
+              src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19"
+              alt="Логотип сервиса «Погнали»">
+          </picture>
         </a>
         <button class="main-nav__toggle open-close-btn" type="button" aria-label="Открыть меню">
-          <svg aria-hidden="true" focusable="false" width="19" height="19">
+          <svg class="main-nav__toggle-icon main-nav__toggle-icon--close" aria-hidden="true" focusable="false"
+            width="19" height="19">
             <use xlink:href="#menu-close"></use>
+          </svg>
+          <svg class="main-nav__toggle-icon main-nav__toggle-icon--open" aria-hidden="true" focusable="false" width="25"
+            height="11">
+            <use xlink:href="#menu"></use>
           </svg>
         </button>
       </div>
 
-      <ul class="main-nav__list main-nav__site-list site-list">
-        <li class="main-nav__site-item main-nav__item site-list__item"><a>О сервисе</a></li>
-        <li class="main-nav__site-item main-nav__item site-list__item"><a href="form.html">Направления</a></li>
-        <li class="main-nav__site-item main-nav__item site-list__item"><a href="catalog.html">Попутчики</a></li>
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__item site-list__item"><a>О сервисе</a></li>
+        <li class="main-nav__item site-list__item"><a href="form.html">Направления</a></li>
+        <li class="main-nav__item site-list__item"><a href="catalog.html">Попутчики</a></li>
       </ul>
-      <ul class="main-nav__list main-nav__user-list user-list">
-        <li class="main-nav__user-item user-list__item">
+
+      <ul class="main-nav__list user-list">
+        <li class="main-nav__item user-list__item">
           <a class="btn user-list__login" href="#">авторизация</a>
         </li>
       </ul>
 
-      <ul class="main-nav__list main-nav__contacts contacts-list">
-        <li class="main-nav__contact contacts-list__item">
+      <ul class="main-nav__list contacts-list">
+        <li class="main-nav__item contacts-list__item">
           <a class="main-nav__link contacts-list__phone" href="tel:8-800-555-86-28">
-            <svg class="contact-list__phone-icon contact-list__phone-icon--mobile" aria-hidden="true" focusable="false"
-              width="18" height="18">
+            <svg class="contacts-list__phone-icon contacts-list__phone-icon--mobile" aria-hidden="true"
+              focusable="false" width="18" height="18">
               <use xlink:href="#contacts-phone"></use>
             </svg>
-            <svg class="contact-list__phone-icon contact-list__phone-icon--desktop" aria-hidden="true" focusable="false"
-              width="18" height="18">
+            <svg class="contacts-list__phone-icon contacts-list__phone-icon--desktop" aria-hidden="true"
+              focusable="false" width="18" height="18">
               <use xlink:href="#topmenu-phone"></use>
             </svg>
             <span>8 800 555-86-28</span>
           </a>
         </li>
-        <li class="main-nav__contact contacts-list__item">
+        <li class="main-nav__item contacts-list__item">
           <a class="main-nav__link contacts-list__email" href="mailto:mail@htmlacademy.ru">
-            <svg class="contact-list__email-icon contact-list__email-icon--mobile" aria-hidden="true" focusable="false"
-              width="18" height="18">
+            <svg class="contacts-list__email-icon contacts-list__email-icon--mobile" aria-hidden="true"
+              focusable="false" width="18" height="18">
               <use xlink:href="#contacts-mail"></use>
             </svg>
-            <svg class="contact-list__email-icon contact-list__email-icon--desktop" aria-hidden="true" focusable="false"
-              width="18" height="18">
+            <svg class="contacts-list__email-icon contacts-list__email-icon--desktop" aria-hidden="true"
+              focusable="false" width="18" height="18">
               <use xlink:href="#topmenu-mail"></use>
             </svg>
             <span>mail@htmlacademy.ru</span>
@@ -80,22 +99,22 @@
         </li>
       </ul>
 
-      <ul class="main-nav__list main-nav__social-items social-list">
-        <li class="main-nav__social-item social-list__item">
+      <ul class="main-nav__list social-list">
+        <li class="main-nav__item social-list__item">
           <a class="main-nav__social-link social-list__link social-list__link--facebook" href="#" aria-label="facebook">
             <svg aria-hidden="true" focusable="false" width="11" height="21">
               <use xlink:href="#facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="main-nav__social-item social-list__item">
+        <li class="main-nav__item social-list__item">
           <a class="main-nav__social-link social-list__link social-list__link--vk" href="#" aria-label="вконтакте">
             <svg aria-hidden="true" focusable="false" width="23" height="12">
               <use xlink:href="#vk"></use>
             </svg>
           </a>
         </li>
-        <li class="main-nav__social-item social-list__item">
+        <li class="main-nav__item social-list__item">
           <a class="main-nav__social-link social-list__link social-list__link--instagram" href="#"
             aria-label="instagram">
             <svg aria-hidden="true" focusable="false" width="18" height="18">
@@ -540,29 +559,31 @@
     </div>
   </footer>
 
-  <section class="rates rates__business-plans modal">
-    <div class="rates__wrapper container">
-      <h2 class="rates__title">Бизнес-тарифы</h2>
-      <ul class="rates__list">
-        <li class="rates__item">
-          <p class="rates__plan">Реклама у блоггера</p>
-          <p class="rates__price">300 000 руб./пост</p>
-        </li>
-        <li class="rates__item">
-          <p class="rates__plan">Накрутка подписчиков</p>
-          <p class="rates__price">от 1 руб./шт.</p>
-        </li>
-        <li class="rates__item">
-          <p class="rates__plan">Лайки от ботов</p>
-          <p class="rates__price">от 20 коп./лайк</p>
-        </li>
-        <li class="rates__item">
-          <p class="rates__plan">Ваш продакт-плейсмент</p>
-          <p class="rates__price">Индивидуально</p>
-        </li>
-      </ul>
+  <section class="rates modal">
+    <div class="rates__business-plans">
+      <div class="rates__wrapper container">
+        <h2 class="rates__title">Бизнес-тарифы</h2>
+        <ul class="rates__list">
+          <li class="rates__item">
+            <p class="rates__plan">Реклама у блоггера</p>
+            <p class="rates__price">300 000 руб./пост</p>
+          </li>
+          <li class="rates__item">
+            <p class="rates__plan">Накрутка подписчиков</p>
+            <p class="rates__price">от 1 руб./шт.</p>
+          </li>
+          <li class="rates__item">
+            <p class="rates__plan">Лайки от ботов</p>
+            <p class="rates__price">от 20 коп./лайк</p>
+          </li>
+          <li class="rates__item">
+            <p class="rates__plan">Ваш продакт-плейсмент</p>
+            <p class="rates__price">Индивидуально</p>
+          </li>
+        </ul>
+      </div>
+      <button class="btn rates__btn rates__btn--close">Закрыть окно</button>
     </div>
-    <button class="btn rates__btn rates__btn--close">Закрыть окно</button>
   </section>
 
   <script src="libs/picturefill.min.js"></script>

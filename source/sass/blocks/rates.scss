@@ -311,39 +311,21 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: -26px;
-    //   left: -8px;
-
-    //   width: 69px;
-    //   height: 69px;
-
-    //   background-color: #e0e5f0;
-    //   background-image: url("../img/business.svg");
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    //   background-size: 26%;
-    //   border-radius: 50%;
-    // }
-
-    svg {
-      position: absolute;
-      top: -25px;
-      left: -8px;
-
-      padding: 23px 26px;
-      overflow: visible;
-
-      background-color: #e1e5f1;
-      border-radius: 50%;
-
-      fill: #132576;
-    }
   }
 
+  .rates__btn svg {
+    position: absolute;
+    top: -25px;
+    left: -8px;
+
+    padding: 23px 26px;
+    overflow: visible;
+
+    background-color: #e1e5f1;
+    border-radius: 50%;
+
+    fill: #132576;
+  }
 
   .rates__business-plans {
     padding: 0;

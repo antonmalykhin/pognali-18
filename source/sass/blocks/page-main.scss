@@ -104,17 +104,16 @@
     line-height: 24px;
     color: #ffffff;
     text-transform: uppercase;
+  }
 
-    svg {
-      position: absolute;
-      top: 3px;
-      right: 2px;
+  .page-main__return-link svg {
+    position: absolute;
+    top: 3px;
+    right: 2px;
 
-      fill: $white-color;
-    }
+    fill: $white-color;
   }
 }
-
 
 @media (min-width: $desktop) {
   .page-main__wrapper {

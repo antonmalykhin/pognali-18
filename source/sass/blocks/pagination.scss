@@ -13,32 +13,32 @@
   height: 50px;
 
   border: none;
+}
 
+.pagination__btn svg {
+  position: absolute;
 
-  svg {
-    position: absolute;
-
-    fill: #192144;
-  }
+  fill: #192144;
 }
 
 .pagination__btn--back {
   border-right: 1px solid #edeff6;
   border-radius: 20px 0 0 20px;
-
-  svg {
-    top: 16px;
-    left: 62px;
-  }
 }
+
+.pagination__btn--back svg {
+  top: 16px;
+  left: 62px;
+}
+
 
 .pagination__btn--front {
   border-radius: 0 20px 20px 0;
+}
 
-  svg {
-    top: 16px;
-    right: 62px;
-  }
+.pagination__btn--front svg {
+  top: 16px;
+  right: 62px;
 }
 
 .pagination__list {
