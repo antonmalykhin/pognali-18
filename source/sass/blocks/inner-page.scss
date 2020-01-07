@@ -1,0 +1,13 @@
+.inner-page__nav {
+  padding-top: 19px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet) {
+  .inner-page__nav--closed {
+    padding-top: 40px;
+    padding-bottom: 109px;
+
+    background-color: #161c35;
+  }
+}
