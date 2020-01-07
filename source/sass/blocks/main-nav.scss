@@ -8,6 +8,19 @@
   background-color: $white-color;
 }
 
+.main-nav__logo {
+  display: block;
+  width: 100px;
+  height: 15px;
+
+  background-image: url("../img/logo-mobile-blue@1x.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/logo-mobile-blue@2x.png");
+  }
+}
+
 .main-nav .main-nav__toggle-icon--close {
   display: block;
 }
@@ -16,18 +29,18 @@
   display: none;
 }
 
-.main-nav .main-nav__logo-image {
-  display: block;
-}
-
-.main-nav .main-nav__logo-image--invert {
-  display: none;
-}
-
 .main-nav--closed {
   padding-bottom: 48px;
 
   background-color: #161c36;
+}
+
+.main-nav--closed .main-nav__logo {
+  background-image: url("../img/logo-mobile-white@1x.png");
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/logo-mobile-white@2x.png");
+  }
 }
 
 .main-nav--closed .main-nav__toggle {
@@ -39,14 +52,6 @@
 }
 
 .main-nav--closed .main-nav__toggle-icon--open {
-  display: block;
-}
-
-.main-nav--closed .main-nav__logo-image {
-  display: none;
-}
-
-.main-nav--closed .main-nav__logo-image--invert {
   display: block;
 }
 
@@ -75,10 +80,31 @@
     padding: 40px;
   }
 
+  .main-nav__logo {
+    display: block;
+    width: 166px;
+    height: 42px;
+
+    background-image: url("../img/logo-tablet-blue@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/logo-tablet-blue@2x.png");
+    }
+  }
+
   .main-nav--closed {
     padding-bottom: 76px;
 
     background-color: #182044;
+  }
+
+  .main-nav--closed .main-nav__logo {
+    background-image: url("../img/logo-tablet-white@1x.png");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/logo-tablet-white@2x.png");
+    }
   }
 
   .main-nav--closed .main-nav__list:nth-of-type(2) {
@@ -99,6 +125,19 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav .main-nav__logo {
+    display: block;
+    width: 200px;
+    height: 52px;
+
+    background-image: url("../img/logo-desktop-white@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/logo-desktop-white@2x.png");
+    }
   }
 
   .main-nav .main-nav__list {

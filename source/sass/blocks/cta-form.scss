@@ -304,26 +304,48 @@
     margin-top: 76px;
   }
 
-  .cta-form__email {
-    &::before {
-      top: -33px;
-      left: -58px;
+  .cta-form__item {
+    width: 42.7%;
+  }
 
-      width: 88px;
-      height: 88px;
-    }
+  // .cta-form__email {
+  //   &::before {
+  //     top: -33px;
+  //     left: -58px;
+
+  //     width: 88px;
+  //     height: 88px;
+  //   }
+  // }
+
+  .cta-form__email svg {
+    top: -35px;
+    left: -61px;
+
+    width: 36px;
+    height: 36px;
+    padding: 27px;
   }
 
 
   .cta-form__phone {
     margin-left: 4px;
 
-    &::before {
-      top: -33px;
-      left: -58px;
+    // &::before {
+    //   top: -33px;
+    //   left: -58px;
 
-      width: 88px;
-      height: 88px;
-    }
+    //   width: 88px;
+    //   height: 88px;
+    // }
+  }
+
+  .cta-form__phone svg {
+    top: -35px;
+    left: -61px;
+
+    width: 36px;
+    height: 36px;
+    padding: 27px;
   }
 }
