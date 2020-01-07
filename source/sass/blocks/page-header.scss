@@ -17,19 +17,6 @@
     margin-bottom: 98px;
     padding-top: 2px;
   }
-
-  // .page-header__logo {
-  //   display: block;
-  //   width: 166px;
-  //   height: 42px;
-
-  //   background-image: url("../img/logo-tablet-white@1x.png");
-  //   background-repeat: no-repeat;
-
-  //   @media (min-resolution: $retina) {
-  //     background-image: url("../img/logo-tablet-white@2x.png");
-  //   }
-  // }
 }
 
 @media (min-width: $desktop) {
@@ -42,18 +29,5 @@
     width: 15.2%;
     margin-bottom: 0;
     padding: 0;
-  }
-
-  .page-header__logo {
-    display: block;
-    width: 200px;
-    height: 52px;
-
-    background-image: url("../img/logo-desktop-white@1x.png");
-    background-repeat: no-repeat;
-
-    @media (min-resolution: $retina) {
-      background-image: url("../img/logo-desktop-white@2x.png");
-    }
   }
 }
