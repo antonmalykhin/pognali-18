@@ -9,28 +9,33 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="inner-page">
 
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
 
   <header class="page-header">
-    <nav class="main-nav container">
+    <nav class="main-nav main-nav--closed inner-page__nav inner-page__nav--closed container">
 
       <div class="page-header__wrapper">
         <a href="index.html" class="main-nav__logo page-header__logo"></a>
         <button class="main-nav__toggle open-close-btn" type="button" aria-label="Открыть меню">
-          <svg aria-hidden="true" focusable="false" width="19" height="19">
+          <svg class="main-nav__toggle-icon main-nav__toggle-icon--close" aria-hidden="true" focusable="false"
+            width="19" height="19">
             <use xlink:href="#menu-close"></use>
+          </svg>
+          <svg class="main-nav__toggle-icon main-nav__toggle-icon--open" aria-hidden="true" focusable="false" width="25"
+            height="11">
+            <use xlink:href="#menu"></use>
           </svg>
         </button>
       </div>
 
       <ul class="main-nav__list site-list">
-        <li class="main-nav__item main-nav__item site-list__item"><a href="index.html">О сервисе</a></li>
-        <li class="main-nav__item main-nav__item site-list__item"><a href="form.html">Направления</a></li>
-        <li class="main-nav__item main-nav__item site-list__item"><a>Попутчики</a></li>
+        <li class="main-nav__item site-list__item"><a href="index.html">О сервисе</a></li>
+        <li class="main-nav__item site-list__item"><a href="form.html">Направления</a></li>
+        <li class="main-nav__item site-list__item"><a>Попутчики</a></li>
       </ul>
       <ul class="main-nav__list user-list">
         <li class="main-nav__user-item user-list__item">
@@ -105,7 +110,8 @@
       </div>
     </div>
 
-    <section class="countries-filter">
+    <section class="countries-filter countries-filter--closed">
+      <!-- countries-filter--closed-->
       <div class="page-main__wrapper container">
 
         <div class="countries-filter__container">
@@ -132,10 +138,13 @@
                 </li>
               </ul>
               <a class="countries-filter__btn countries-filter__btn--top" href="#">
-
-                <span>Свернуть</span>
-                <svg class="countries-filter__icon-filter-close" width="12" height="12">
+                <span class="countries-filter__btn-text countries-filter__btn-text--close">Свернуть</span>
+                <span class="countries-filter__btn-text countries-filter__btn-text--open">Показать все</span>
+                <svg class="countries-filter__icon-filter countries-filter__icon-filter--close" width="12" height="12">
                   <use xlink:href="#filter-close"></use>
+                </svg>
+                <svg class="countries-filter__icon-filter countries-filter__icon-filter--open" width="17" height="3">
+                  <use xlink:href="#dots"></use>
                 </svg>
               </a>
             </div>
@@ -1220,7 +1229,7 @@
             </div>
           </li>
 
-          <li class="travelmates-cards__item">
+          <li class="travelmates-cards__item travelmates-cards__item--pixelperfect">
             <div class="travelmates-cards__user user-card">
               <picture>
                 <source type="image/webp" media="(min-width: 1350px)"
@@ -1321,7 +1330,7 @@
             </div>
           </li>
 
-          <li class="travelmates-cards__item">
+          <li class="travelmates-cards__item travelmates-cards__item--pixelperfect">
             <div class="travelmates-cards__user user-card">
 
               <picture>
@@ -1429,7 +1438,7 @@
             </div>
           </li>
 
-          <li class="travelmates-cards__item">
+          <li class="travelmates-cards__item travelmates-cards__item--pixelperfect">
             <div class="travelmates-cards__user user-card">
 
               <picture>

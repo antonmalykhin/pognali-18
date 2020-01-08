@@ -50,7 +50,9 @@
   position: relative;
 
   margin-top: 31px;
-  padding: 19px 0;
+  padding-top: 20px;
+  padding-right: 33px;
+  padding-bottom: 18px;
   padding-left: 20px;
 
   font-weight: 700;
@@ -67,13 +69,16 @@
     content: "";
     position: absolute;
     top: 21px;
-    right: 20px;
+    right: -1px;
 
-    width: 10px;
-    height: 14px;
+    width: 12px;
+    height: 0;
 
-    background-image: url("../img/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
+    border: 7px solid #1d2e5b;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: scaleX(1.4);
   }
 }
 
@@ -122,8 +127,10 @@
 
   .map__btn {
     margin-top: 61px;
-    padding: 26px 33px;
-    padding-bottom: 25px;
+    padding-top: 27px;
+    padding-right: 55px;
+    padding-bottom: 24px;
+    padding-left: 33px;
 
     font-size: 24px;
     line-height: 24px;
@@ -132,7 +139,7 @@
 
     &::after {
       top: 31px;
-      right: 33px;
+      right: 12px;
     }
   }
 
@@ -163,7 +170,7 @@
     width: auto;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 249px;
+    margin-left: 251px;
 
     &::before {
       top: -32px;
@@ -176,7 +183,7 @@
 
   .map__address svg {
     top: -32px;
-    left: -27px;
+    left: -28px;
 
     width: 28px;
     height: 43px;
@@ -184,9 +191,9 @@
   }
 
   .map__btn {
-    width: 252px;
+    width: 230px;
     margin-top: 0;
-    margin-right: 75px;
+    margin-right: 74px;
   }
 
   .map__map-block {

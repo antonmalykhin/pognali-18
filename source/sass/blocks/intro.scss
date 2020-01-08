@@ -23,11 +23,14 @@
 
 @media (min-width: $desktop) {
   .intro {
+    position: relative;
+    z-index: 10;
     background-color: #141c33;
     background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 59.9% 4px, center -104px;
     background-size: 431px, 1810px;
+    border-radius: 0 0 60px 60px;
 
     @media (min-resolution: $retina) {
       background-image: url("../img/traveller-illustration-desktop@2x.png"), url("../img/globe-back-desktop@2x.jpg");

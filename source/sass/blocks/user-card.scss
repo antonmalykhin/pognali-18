@@ -56,7 +56,7 @@
 .user-card__user-name {
   font-weight: 700;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 20px;
   font-family: $main-font;
   color: #1d2e5b;
   font-style: normal;
@@ -146,8 +146,8 @@
 
   .user-card__icon {
     position: absolute;
-    top: 11px;
-    left: 9px;
+    top: 12px;
+    left: 10px;
   }
 
   .user-card__icon--active {

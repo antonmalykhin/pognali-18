@@ -101,8 +101,8 @@
 
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: 98% 34.1%;
-    background-size: 373.7px;
+    background-position: 97.9% 34.3%;
+    background-size: 376px;
 
     @media (min-resolution: $retina) {
       background-image: url("../img/about-tablet@2x.png");
@@ -143,8 +143,12 @@
     display: block;
     box-sizing: border-box;
     width: 274px;
-    margin-top: 52px;
-    padding: 28px 33px;
+    margin-top: 51px;
+    margin-left: 1px;
+    padding-top: 30px;
+    padding-right: 33px;
+    padding-bottom: 27px;
+    padding-left: 33px;
 
     font-weight: 700;
     font-size: 24px;
@@ -156,24 +160,30 @@
     &::after {
       content: "";
       position: absolute;
-      top: 32px;
+      top: 34px;
       right: 29px;
 
       width: 0;
       height: 0;
 
-      border: 8px solid #182d59;
+      border: 7px solid #182d59;
       border-top-color: transparent;
       border-right-color: transparent;
       border-bottom-color: transparent;
+      transform: scaleX(1.5);
     }
   }
 }
 
 @media (min-width: $desktop) {
   .about {
+    position: relative;
+    z-index: 5;
+
     min-height: 515px;
+    margin-top: -60px;
     padding: 0;
+    padding-top: 61px;
 
     border-radius: 0 0 60px 60px;
 
@@ -188,7 +198,7 @@
     box-sizing: border-box;
     padding-top: 126px;
     padding-right: 70px;
-    padding-bottom: 164px;
+    padding-bottom: 163px;
     padding-left: 70px;
 
     background-image: url("../img/about-desktop@1x.png");

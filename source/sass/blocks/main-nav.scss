@@ -15,10 +15,23 @@
 
   background-image: url("../img/logo-mobile-blue@1x.png");
   background-repeat: no-repeat;
+  background-size: 100%;
 
   @media (min-resolution: $retina) {
     background-image: url("../img/logo-mobile-blue@2x.png");
   }
+}
+
+.main-nav__toggle {
+  position: relative;
+
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.main-nav__toggle-icon {
+  position: absolute;
 }
 
 .main-nav .main-nav__toggle-icon--close {
@@ -30,7 +43,7 @@
 }
 
 .main-nav--closed {
-  padding-bottom: 48px;
+  padding-bottom: 42px;
 
   background-color: #161c36;
 }
@@ -52,7 +65,12 @@
 }
 
 .main-nav--closed .main-nav__toggle-icon--open {
+  top: 4px;
+  right: 0;
+
   display: block;
+
+  fill: $white-color;
 }
 
 .main-nav--closed .main-nav__list {
@@ -94,7 +112,7 @@
   }
 
   .main-nav--closed {
-    padding-bottom: 76px;
+    padding-bottom: 72px;
 
     background-color: #182044;
   }
@@ -109,6 +127,15 @@
 
   .main-nav--closed .main-nav__list:nth-of-type(2) {
     display: flex;
+  }
+
+  .main-nav--closed .main-nav__toggle-icon--open {
+    top: 7px;
+    right: -1px;
+
+    display: block;
+
+    fill: #ffffff;
   }
 }
 

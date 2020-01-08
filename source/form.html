@@ -9,19 +9,23 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="inner-page">
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
 
   <header class="page-header">
     <nav class="main-nav container">
-
       <div class="page-header__wrapper">
         <a class="main-nav__logo page-header__logo" href="index.html"></a>
         <button class="main-nav__toggle open-close-btn" type="button" aria-label="Открыть меню">
-          <svg aria-hidden="true" focusable="false" width="19" height="19">
+          <svg class="main-nav__toggle-icon main-nav__toggle-icon--close" aria-hidden="true" focusable="false"
+            width="19" height="19">
             <use xlink:href="#menu-close"></use>
+          </svg>
+          <svg class="main-nav__toggle-icon main-nav__toggle-icon--open" aria-hidden="true" focusable="false" width="25"
+            height="11">
+            <use xlink:href="#menu"></use>
           </svg>
         </button>
       </div>

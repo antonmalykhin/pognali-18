@@ -10,7 +10,7 @@
   position: relative;
 
   padding-top: 52px;
-  padding-bottom: 39px;
+  padding-bottom: 38px;
 
 
   &::after {
@@ -36,7 +36,7 @@
 .rates__title {
   width: 150px;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   margin-left: 25px;
 
   font-weight: 700;
@@ -140,6 +140,10 @@
   text-align: center;
   color: #192144;
   font-style: normal;
+}
+
+.rates__btn svg {
+  display: none;
 }
 
 .rates__btn--close {
@@ -318,6 +322,7 @@
     top: -25px;
     left: -8px;
 
+    display: block;
     padding: 23px 26px;
     overflow: visible;
 
@@ -408,14 +413,14 @@
     margin: 0 auto;
     padding: 0;
     padding-top: 106px;
-    padding-bottom: 188px;
+    padding-bottom: 187px;
 
     &::after {
-      top: 285px;
-      right: 74px;
+      top: 286px;
+      right: 73px;
 
       width: 200px;
-      height: 200px;
+      height: 198px;
     }
   }
 
@@ -427,18 +432,19 @@
   .rates__list {
     width: 61.7%;
     margin-left: 77px;
+    padding-top: 6px;
 
     &::after {
-      top: -46px;
-      right: -133px;
+      top: -45px;
+      right: -134px;
 
-      width: 445px;
+      width: 444px;
       height: 300px;
     }
   }
 
   .rates__item {
-    padding-bottom: 18px;
+    padding-bottom: 19px;
   }
 
   .rates__item:nth-of-type(1)::after {
@@ -466,8 +472,8 @@
   }
 
   .rates__btn {
-    margin-top: 60px;
-    margin-left: 77px;
+    margin-top: 59px;
+    margin-left: 78px;
   }
 
   .rates__btn::after {
