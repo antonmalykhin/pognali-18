@@ -137,14 +137,16 @@
   }
 
   .page-main__title-text {
-    margin-left: 33px;
+    margin-left: 34px;
 
     &::after {
-      left: 1px;
+      bottom: -71px;
+      left: 0;
     }
   }
 
   .page-main__return-link {
+    margin-top: 3px;
     margin-right: 62px;
   }
 
@@ -156,9 +158,4 @@
     margin: 0 auto;
     padding-top: 77px;
   }
-
-  //   .page-main__container {
-
-  //   padding-left: 17px;
-  // }
 }

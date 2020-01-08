@@ -17,7 +17,7 @@
   margin-bottom: 10px;
   padding: 24px;
   padding-top: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
 
   list-style: none;
 
@@ -59,7 +59,6 @@
   font-family: $main-font;
   vertical-align: middle;
   color: #1d2e5b;
-  // text-transform: lowercase;
   font-style: normal;
 }
 
@@ -92,7 +91,7 @@
 
 .plans__btn {
   display: block;
-  margin-top: 20px;
+  margin-top: 22px;
 
   font-weight: 500;
   font-size: 14px;
@@ -209,9 +208,9 @@
     align-items: center;
     margin-bottom: 15px;
     padding-top: 37px;
-    padding-right: 39px;
+    padding-right: 36px;
     padding-bottom: 36px;
-    padding-left: 42px;
+    padding-left: 43px;
 
     &::before {
       position: relative;
@@ -221,7 +220,7 @@
   }
 
   .plans__country {
-    width: 45.3%;
+    width: 45.1%;
     margin: 0;
     padding: 0;
     padding-left: 35px;

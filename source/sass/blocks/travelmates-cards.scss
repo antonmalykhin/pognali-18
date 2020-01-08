@@ -721,20 +721,34 @@
 
   .travelmates-cards__user {
     flex-wrap: nowrap;
-    min-height: 285px;
   }
 
   .travelmates-cards__photo {
-    width: 82.9%;
+    width: 285px;
     height: auto;
+    margin: 0;
     margin-right: 59px;
 
+    border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
   .travelmates-cards__container {
+    position: relative;
+
     width: 30%;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -2px;
+
+      width: 1px;
+      height: 100%;
+
+      background-image: linear-gradient(to bottom, transparent 15%, #e6e6e6 55%, transparent 100%)
+    }
   }
 
   .travelmates-cards__user-name {
@@ -756,7 +770,7 @@
   }
 
   .travelmates-cards__pagination {
-    margin-top: 70px;
+    margin-top: 71px;
   }
 
   .travelmates-cards__visit {
@@ -768,7 +782,7 @@
 
   .travelmates-cards__flags {
     flex-direction: column;
-    margin-left: 54px;
+    margin-left: 50px;
   }
 
   .travelmates-cards__text--flags {
@@ -776,22 +790,49 @@
   }
 
   .travelmates-cards__flag {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
 
   .travelmates-cards__flag svg {
-    left: -9px;
+    left: -6px;
   }
 
-  .travelmates-cards__transport-level {
+  .travelmates-cards__item .travelmates-cards__transport-level {
     position: absolute;
-    right: 45px;
-    bottom: 42px;
+    right: 44px;
+    bottom: 41px;
 
     flex-direction: row;
-    // justify-content: flex-start;
     align-items: center;
-    width: 248px;
+    width: 249px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .travelmates-cards__item:nth-of-type(3) .travelmates-cards__transport-level {
+    position: absolute;
+    right: 44px;
+    bottom: 41px;
+
+    flex-direction: row;
+    align-items: center;
+    width: 249px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .travelmates-cards__item:nth-of-type(4) .travelmates-cards__transport-level {
+    position: absolute;
+    right: 44px;
+    bottom: 41px;
+
+    flex-direction: row;
+    align-items: center;
+    width: 249px;
 
     &::after {
       display: none;
@@ -800,6 +841,7 @@
 
   .travelmates-cards__transport-list {
     flex-direction: row;
+    margin-top: -2px;
   }
 
   .travelmates-cards__transport-icon--plane {

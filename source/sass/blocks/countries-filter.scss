@@ -428,7 +428,7 @@
 
   .countries-filter__icon-filter {
     top: 0;
-    left: -16px;
+    left: -15px;
 
     width: 23px;
     height: 15px;
@@ -482,5 +482,17 @@
   .countries-filter__btn--bottom {
     margin-top: 33px;
     padding-left: 14px;
+  }
+
+  .countries-filter--closed {
+    padding-top: 131px;
+    padding-bottom: 41px;
+
+    background-color: #e2e5f2;
+  }
+
+  .countries-filter--closed .countries-filter__btn--top {
+    // padding: 0 74px 0 0;
+    margin-right: 27px;
   }
 }

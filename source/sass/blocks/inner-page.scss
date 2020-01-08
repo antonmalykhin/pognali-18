@@ -11,3 +11,11 @@
     background-color: #161c35;
   }
 }
+
+@media (min-width: $desktop) {
+  .inner-page__nav--closed,
+  .inner-page__nav {
+    padding-top: 47px;
+    padding-bottom: 7px;
+  }
+}

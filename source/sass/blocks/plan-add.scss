@@ -1,9 +1,9 @@
 .plan-add {
   position: relative;
 
-  margin-top: -30px;
+  margin-top: -31px;
   padding: 0 25px;
-  padding-top: 29px;
+  padding-top: 30px;
   padding-bottom: 72px;
 
   background-color: #d4d9eb;
@@ -58,7 +58,7 @@
 }
 
 .plan-add__pagination-item {
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .plan-add__pagination-item::after {
@@ -116,7 +116,7 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 25px;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 
   background-color: $white-color;
   border-radius: 10px;
@@ -125,7 +125,7 @@
 .plan-add__fieldset--step-two {
   position: relative;
 
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 .plan-add__label-wrapper {
@@ -269,15 +269,15 @@
   position: absolute;
   top: 0;
   left: 0;
+}
 
-  .plan-add__icon-minus--mobile {
-    top: 21px;
-    left: 14px;
-  }
+.plan-add__btn--minus .plan-add__icon-minus--mobile {
+  top: 21px;
+  left: 14px;
+}
 
-  .plan-add__icon-minus--tablet {
-    display: none;
-  }
+.plan-add__btn--minus .plan-add__icon-minus--tablet {
+  display: none;
 }
 
 .plan-add__btn--plus {
@@ -319,7 +319,7 @@
 
 .plan-add__table {
   margin: 0 auto;
-  margin-top: 18px;
+  margin-top: 17px;
 }
 
 .plan-add__day-of-week {
@@ -400,7 +400,7 @@
   }
 }
 
-.plan_add__first-day {
+.plan-add__first-day {
   display: none;
 }
 
@@ -416,9 +416,10 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-bottom: 17px;
   padding: 12px;
+  padding-bottom: 10px;
 
   text-align: center;
   text-transform: uppercase;
@@ -478,19 +479,19 @@
     border: 1px solid #cbced9;
     border-radius: 50%;
   }
+}
 
-  .plan-add__reset-btn {
-    top: -11px;
-    right: -11px;
-  }
+.plan-add__btn-select-country .plan-add__reset-btn {
+  top: -11px;
+  right: -11px;
+}
 
-  .plan-add__icon-dropdown {
-    position: absolute;
-    top: 17px;
-    right: 14px;
+.plan-add__btn-select-country .plan-add__icon-dropdown {
+  position: absolute;
+  top: 17px;
+  right: 14px;
 
-    opacity: 0.3;
-  }
+  opacity: 0.3;
 }
 
 .plan-add__btn-add-country {
@@ -524,15 +525,16 @@
     border: 1px solid #cbced9;
     border-radius: 50%;
   }
-
-  .plan-add__icon-plus {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-
-    opacity: 0.2;
-  }
 }
+
+.plan-add__btn-add-country .plan-add__icon-plus {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  opacity: 0.2;
+}
+
 
 .plan-add__list {
   margin: 0;
@@ -548,15 +550,16 @@
   display: flex;
   margin-top: 21px;
   margin-bottom: 22px;
-
-  .plan-add__arrow {
-    position: absolute;
-    right: 48px;
-    bottom: -16px;
-
-    fill: #cbced9;
-  }
 }
+
+.plan-add__item .plan-add__arrow {
+  position: absolute;
+  right: 50px;
+  bottom: -16px;
+
+  fill: #cbced9;
+}
+
 
 .plan-add__item--drop {
   position: relative;
@@ -697,7 +700,7 @@
     content: "";
     position: absolute;
     top: 1px;
-    right: 50px;
+    right: 52px;
 
     width: 55px;
     height: 40px;
@@ -731,7 +734,7 @@
   right: 0;
 
   box-sizing: border-box;
-  width: 51px;
+  width: 53px;
   height: 100%;
 
   background-color: #ffffff;
@@ -745,8 +748,8 @@
     left: -5px;
     z-index: 10;
 
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
 
     background-color: #1d2d5b;
     border-radius: 50%;
@@ -799,15 +802,15 @@
 .plan-add__fieldset--step-three {
   position: relative;
 
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 .plan-add__fieldset--step-two .plan-add__btn-next {
-  margin-top: 24px;
+  margin-top: 25px;
 }
 
 .plan-add__fieldset--step-three .plan-add__btn-next {
-  margin-top: 14px;
+  margin-top: 17px;
 }
 
 .plan-add__textarea-wrapper label {
@@ -816,6 +819,7 @@
 
 @media (min-width: $tablet) {
   .plan-add {
+    margin-top: -30px;
     padding: 0 75px;
     padding-top: 53px;
     padding-bottom: 118px;
@@ -852,8 +856,8 @@
 
 
   .plan-add__pagination {
-    top: 66px;
-    right: 45px;
+    top: 64px;
+    right: 49px;
   }
 
   .plan-add__pagination-item {
@@ -891,7 +895,7 @@
     justify-content: space-between;
     order: 1;
     width: 100%;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     padding-top: 25px;
 
     border-top: 1px solid #d6d9e6;
@@ -917,7 +921,7 @@
   .plan-add__label-wrapper--with-children {
     order: 1;
     width: 100%;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .plan-add__tick-field {
@@ -977,33 +981,35 @@
 
   .plan-add__btn--minus {
     left: 10px;
-
-    .plan-add__icon-minus--mobile {
-      display: none;
-    }
-
-    .plan-add__icon-minus--tablet {
-      top: 24px;
-      left: 13px;
-
-      display: block;
-    }
   }
+
+  .plan-add__btn--minus .plan-add__icon-minus--mobile {
+    display: none;
+  }
+
+  .plan-add__btn--minus .plan-add__icon-minus--tablet {
+    top: 24px;
+    left: 13px;
+
+    display: block;
+  }
+
 
   .plan-add__btn--plus {
     right: -16px;
-
-    .plan-add__icon-plus--mobile {
-      display: none;
-    }
-
-    .plan-add__icon-plus--tablet {
-      top: 15px;
-      right: 35px;
-
-      display: block;
-    }
   }
+
+  .plan-add__btn--plus .plan-add__icon-plus--mobile {
+    display: none;
+  }
+
+  .plan-add__btn--plus .plan-add__icon-plus--tablet {
+    top: 15px;
+    right: 35px;
+
+    display: block;
+  }
+
 
   .plan-add__btn--back svg {
     top: 17px;
@@ -1024,10 +1030,16 @@
 
   .plan-add__date {
     height: 87px;
+    padding-top: 14px;
+    padding-bottom: 8px;
 
     font-weight: 700;
     font-size: 36px;
     text-align: center;
+  }
+
+  .plan-add__table {
+    margin-top: 19px;
   }
 
   .plan-add__table th {
@@ -1063,7 +1075,6 @@
     }
   }
 
-
   .plan-add__table td {
     width: 75px;
     height: 68px;
@@ -1079,10 +1090,12 @@
     position: relative;
 
     order: 3;
-    width: 53.9%;
+    width: 53.8%;
     margin-top: 30px;
-    padding: 29px 10px;
+    padding-top: 30px;
     padding-right: 54px;
+    padding-bottom: 27px;
+    padding-left: 10px;
 
     font-size: 24px;
     line-height: 1;
@@ -1093,7 +1106,7 @@
 
   .plan-add__btn-next svg {
     position: absolute;
-    top: 33px;
+    top: 34px;
     right: 36px;
 
     display: block;
@@ -1108,7 +1121,7 @@
   .plan-add__btn-prew svg {
     position: absolute;
     top: 4px;
-    left: 3px;
+    left: 1px;
 
     display: block;
 
@@ -1127,7 +1140,7 @@
       content: "";
       position: absolute;
       top: 0;
-      right: calc(24% + 7px);
+      right: calc(24% + 8px);
       z-index: 0;
 
       width: 1px;
@@ -1146,8 +1159,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 27px;
-      right: 24%;
+      top: 26px;
+      right: 24.1%;
       z-index: 1;
 
       width: 15px;
@@ -1178,24 +1191,21 @@
     }
   }
 
-  .plan-add__select-wrapper {
-    .plan-add__icon-dropdown {
-      top: 31px;
-      right: calc(30% + 30px);
+  .plan-add__select-wrapper .plan-add__icon-dropdown {
+    top: 31px;
+    right: calc(30% + 30px);
 
-      width: 17px;
-      height: 9px;
-    }
-
-    &::after {
-      right: calc(30% + 7px);
-
-      height: 69px;
-
-      border: none;
-    }
+    width: 17px;
+    height: 9px;
   }
 
+  .plan-add__select-wrapper::after {
+    right: calc(30% + 7px);
+
+    height: 69px;
+
+    border: none;
+  }
 
   .plan-add__select {
     width: 69.5%;
@@ -1222,7 +1232,7 @@
 
   .plan-add__flag svg {
     top: 12px;
-    left: 9px;
+    left: 8px;
 
     width: 70px;
     height: 47px;
@@ -1290,7 +1300,7 @@
 
   .plan-add__fieldset--step-two {
     margin-bottom: 51px;
-    padding-bottom: 51px;
+    padding-bottom: 53px;
   }
 
   .plan-add__fieldset--step-two .plan-add__description {
@@ -1303,18 +1313,19 @@
     padding-bottom: 35px;
   }
 
-  .plan-add__fieldset--step-two .plan-creation__btn-wrapper {
+  .plan-add__fieldset--step-two .plan-add__btn-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 48px;
+    margin-top: 47px;
   }
 
   .plan-add__fieldset--step-two .plan-add__btn-next {
     order: 1;
-    width: 53.5%;
+    width: 53.7%;
     margin: 0;
+    margin-left: -1px;
   }
 
 
@@ -1322,6 +1333,8 @@
     order: 2;
     width: 27.6%;
     margin: 0;
+    margin-top: 3px;
+    margin-right: -2px;
     padding-left: 34px;
 
     font-size: 24px;
@@ -1358,8 +1371,9 @@
     width: 94.3%;
     height: 142px;
     margin-top: 13px;
-    padding: 16px 19px;
+    padding: 16px;
     padding-right: 30px;
+    padding-left: 18px;
 
     font-size: 20px;
     line-height: 24px;
@@ -1405,6 +1419,7 @@
     order: 2;
     width: 27.6%;
     margin: 0;
+    margin-right: -2px;
     padding-left: 34px;
 
     font-size: 24px;
@@ -1415,18 +1430,19 @@
 
   .plan-add__fieldset--step-three .plan-add__btn-next {
     margin-top: 14px;
-    padding-left: 31px;
+    margin-left: -1px;
+    padding-left: 33px;
 
     text-align: left;
   }
 
-  .plan-add__fieldset--step-three .plan-creation__btn-wrapper {
+  .plan-add__fieldset--step-three .plan-add__btn-wrapper {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 27px;
+    margin-top: 28px;
   }
 
   .plan-add__dropdown {
@@ -1526,7 +1542,8 @@
     margin-bottom: 39px;
 
     &::after {
-      top: 8px;
+      top: 7px;
+      left: 0;
 
       opacity: 30%;
     }
@@ -1589,7 +1606,7 @@
   }
 
   .plan-add__label-wrapper {
-    width: auto;
+    width: 218px;
     margin: 0;
   }
 
@@ -1599,6 +1616,7 @@
     width: 47.5%;
     margin-bottom: 13px;
     margin-left: 10px;
+    padding-top: 24px;
 
     border-top: none;
   }
@@ -1632,7 +1650,7 @@
     order: 4;
     width: 27.9%;
     margin-top: 40px;
-    margin-left: 12px;
+    margin-left: 10px;
     padding-left: 32px;
 
     text-align: left;
@@ -1643,39 +1661,61 @@
   }
 
   .plan-add__unit {
+    box-sizing: border-box;
     width: 81px;
+    padding-top: 2px;
+    padding-right: 1px;
 
     text-align: right;
+
+    opacity: 1;
+  }
+
+  .plan-add__container--duration .plan-add__unit {
+    padding-right: 9px;
+  }
+
+  .plan-add__btn--minus .plan-add__icon-minus--tablet {
+    left: 6px;
+  }
+
+  .plan-add__btn--plus .plan-add__icon-plus--tablet {
+    left: 14px;
   }
 
   .plan-add__label--checkbox-label {
     width: 100%;
     margin-top: 46px;
+
+    letter-spacing: 2.4px;
   }
 
   .plan-add__label-wrapper--with-children {
     order: 2;
     align-self: center;
-    margin-right: 12px;
+    width: 245px;
+    margin-right: 8px;
     margin-left: auto;
-    padding-top: 10px;
+    padding-top: 11px;
   }
 
 
   .plan-add__field-wrapper--date {
     width: 97.8%;
-    margin-top: 31px;
+    margin-top: 32px;
     margin-right: auto;
-    margin-bottom: 0;
+    margin-bottom: 1px;
     margin-left: auto;
   }
 
   .plan-add__btn--back svg {
-    left: 6px;
+    top: 18px;
+    left: -1px;
   }
 
   .plan-add__btn--front svg {
-    right: 0;
+    top: 18px;
+    right: -1px;
   }
 
   .plan-add__field-wrapper--calendar {
@@ -1758,7 +1798,7 @@
     position: relative;
 
     padding-right: 162px;
-    padding-bottom: 104px;
+    padding-bottom: 105px;
     padding-left: 162px;
   }
 
@@ -1779,14 +1819,14 @@
     padding-top: 62px;
 
     &::after {
-      right: 22.3%;
+      right: 22.4%;
 
       height: 135%;
     }
   }
 
   .plan-add__item::after {
-    top: 25px;
+    top: 26px;
     right: 21.7%;
   }
 
@@ -1804,18 +1844,21 @@
     width: 73.2%;
   }
 
-  .plan-add__select-wrapper {
-    .plan-add__icon-dropdown {
-      right: 29.6%;
-    }
+  .plan-add__select-wrapper .plan-add__icon-dropdown {
+    right: 29.6%;
+  }
 
-    &::after {
-      right: 27%;
-    }
+  .plan-add__select-wrapper::after {
+    right: 27%;
   }
 
   .plan-add__flag svg {
     left: 35px;
+  }
+
+  .plan-add__btn-prew svg {
+    top: 4px;
+    left: 4px;
   }
 
   .plan-add__reset-btn {
@@ -1830,16 +1873,18 @@
     width: 73.2%;
   }
 
-  .plan-add__fieldset--step-two .plan-creation__btn-wrapper {
+  .plan-add__fieldset--step-two .plan-add__btn-wrapper {
     margin-top: 54px;
   }
 
   .plan-add__fieldset--step-two .plan-add__btn-next {
-    width: 28.5%;
+    width: 28.6%;
+    margin-left: -2px;
   }
 
   .plan-add__fieldset--step-two .plan-add__btn-prew {
     width: 15%;
+    margin-right: 1px;
 
     text-align: right;
   }
@@ -1858,7 +1903,7 @@
 
   .plan-add__fieldset--step-three .plan-add__label {
     width: 50%;
-    padding-top: 10px;
+    padding-top: 9px;
     padding-left: 8px;
   }
 
@@ -1874,6 +1919,7 @@
   }
 
   .plan-add__textarea-wrapper {
+    margin-bottom: 23px;
     padding-top: 66px;
   }
 
@@ -1904,13 +1950,17 @@
     border-width: 4px;
   }
 
-  .plan-add__fieldset--step-three .plan-creation__btn-wrapper {
-    margin-top: 35px;
+  .plan-add__fieldset--step-three .plan-add__btn-wrapper {
+    margin-top: 37px;
+  }
+
+  .plan-add__fieldset--step-three .plan-add__btn-next {
+    margin-left: 10px;
   }
 
   .plan-add__fieldset--step-three .plan-add__btn-prew {
     width: 14.6%;
-    margin-right: 12px;
+    margin-right: 13px;
 
     text-align: right;
   }
