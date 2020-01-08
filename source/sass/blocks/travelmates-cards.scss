@@ -738,6 +738,7 @@
     position: relative;
 
     width: 30%;
+
     &::after {
       content: "";
       position: absolute;
@@ -747,7 +748,7 @@
       width: 1px;
       height: 100%;
 
-      background-image: linear-gradient(to bottom, transparent 15%, #e6e6e6 55%, transparent 100%)
+      background-image: linear-gradient(to bottom, transparent 15%, #e6e6e6 55%, transparent 100%);
     }
   }
 
