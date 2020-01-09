@@ -150,6 +150,7 @@
 .countries__country {
   margin-top: 11px;
   margin-bottom: 2px;
+  margin-left: -1px;
 
   font-weight: 700;
   font-size: 21px;
@@ -157,6 +158,7 @@
   font-family: $main-font;
   color: #161c35;
   font-style: normal;
+  letter-spacing: -0.1px;
 }
 
 .countries__slogan {
