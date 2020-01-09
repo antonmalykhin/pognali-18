@@ -969,10 +969,9 @@
   }
 
   .plan-add__btn {
-    top: 10px;
-
+    // top: 10px;
     width: 70px;
-    height: 70px;
+    height: 100%;
 
     &::after {
       width: 20px;
@@ -980,40 +979,40 @@
     }
   }
 
-  .plan-add__btn--minus {
-    left: 10px;
-  }
+  // .plan-add__btn--minus {
+  //   left: 10px;
+  // }
 
   .plan-add__btn--minus .plan-add__icon-minus--mobile {
     display: none;
   }
 
   .plan-add__btn--minus .plan-add__icon-minus--tablet {
-    top: 24px;
-    left: 13px;
+    top: 34px;
+    left: 23px;
 
     display: block;
   }
 
 
-  .plan-add__btn--plus {
-    right: -16px;
-  }
+  // .plan-add__btn--plus {
+  //   right: -16px;
+  // }
 
   .plan-add__btn--plus .plan-add__icon-plus--mobile {
     display: none;
   }
 
   .plan-add__btn--plus .plan-add__icon-plus--tablet {
-    top: 15px;
-    right: 35px;
+    top: 25px;
+    right: 19px;
 
     display: block;
   }
 
 
   .plan-add__btn--back svg {
-    top: 17px;
+    top: 27px;
     left: 16px;
 
     width: 19px;
@@ -1021,7 +1020,7 @@
   }
 
   .plan-add__btn--front svg {
-    top: 17px;
+    top: 27px;
     right: 15px;
 
     width: 19px;
@@ -1240,13 +1239,19 @@
   }
 
   .plan-add__reset-btn {
-    top: 19px;
+    top: 14px;
+    right: -16px;
 
-    width: 18px;
-    height: 18px;
+    width: 45px;
+    height: 45px;
 
     background-color: transparent;
     opacity: 0.2;
+  }
+
+  .plan-add__reset-btn svg {
+    width: 18px;
+    height: 18px;
   }
 
   .plan-add__btn-add-country {
@@ -1406,7 +1411,6 @@
       border-bottom: none;
     }
   }
-
 
   .plan-add__textarea-wrapper--last {
     border: none;
@@ -1677,11 +1681,11 @@
   }
 
   .plan-add__btn--minus .plan-add__icon-minus--tablet {
-    left: 6px;
+    left: 20px;
   }
 
   .plan-add__btn--plus .plan-add__icon-plus--tablet {
-    left: 14px;
+    left: 30px;
   }
 
   .plan-add__label--checkbox-label {
@@ -1710,12 +1714,12 @@
   }
 
   .plan-add__btn--back svg {
-    top: 18px;
+    top: 28px;
     left: -1px;
   }
 
   .plan-add__btn--front svg {
-    top: 18px;
+    top: 28px;
     right: -1px;
   }
 
@@ -1863,7 +1867,7 @@
   }
 
   .plan-add__reset-btn {
-    right: -2px;
+    right: -9px;
   }
 
   .plan-add__btn-select-country {
