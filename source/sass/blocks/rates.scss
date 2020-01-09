@@ -10,7 +10,7 @@
   position: relative;
 
   padding-top: 52px;
-  padding-bottom: 39px;
+  padding-bottom: 38px;
 
 
   &::after {
@@ -36,7 +36,7 @@
 .rates__title {
   width: 150px;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   margin-left: 25px;
 
   font-weight: 700;
@@ -142,6 +142,10 @@
   font-style: normal;
 }
 
+.rates__btn svg {
+  display: none;
+}
+
 .rates__btn--close {
   width: 270px;
 
@@ -203,14 +207,15 @@
   }
 
   .rates__wrapper {
-    padding: 0 40px;
     padding-top: 73px;
-    padding-bottom: 87px;
+    padding-right: 48px;
+    padding-bottom: 86px;
+    padding-left: 47px;
 
 
     &::after {
-      top: 408px;
-      right: 78px;
+      top: 409px;
+      right: 85px;
       z-index: 2;
     }
   }
@@ -303,32 +308,29 @@
   .rates__btn {
     position: relative;
 
-    margin-top: 59px;
+    margin-top: 60px;
     padding-left: 82px;
 
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -26px;
-      left: -8px;
-
-      width: 69px;
-      height: 69px;
-
-      background-color: #e0e5f0;
-      background-image: url("../img/business.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 26%;
-      border-radius: 50%;
-    }
   }
 
+  .rates__btn svg {
+    position: absolute;
+    top: -25px;
+    left: -8px;
+
+    display: block;
+    padding: 23px 26px;
+    overflow: visible;
+
+    background-color: #e1e5f1;
+    border-radius: 50%;
+
+    fill: #132576;
+  }
 
   .rates__business-plans {
     padding: 0;
@@ -411,14 +413,14 @@
     margin: 0 auto;
     padding: 0;
     padding-top: 106px;
-    padding-bottom: 188px;
+    padding-bottom: 187px;
 
     &::after {
-      top: 285px;
-      right: 74px;
+      top: 286px;
+      right: 73px;
 
       width: 200px;
-      height: 200px;
+      height: 198px;
     }
   }
 
@@ -430,18 +432,19 @@
   .rates__list {
     width: 61.7%;
     margin-left: 77px;
+    padding-top: 6px;
 
     &::after {
-      top: -46px;
-      right: -133px;
+      top: -45px;
+      right: -134px;
 
-      width: 445px;
+      width: 444px;
       height: 300px;
     }
   }
 
   .rates__item {
-    padding-bottom: 18px;
+    padding-bottom: 19px;
   }
 
   .rates__item:nth-of-type(1)::after {
@@ -469,8 +472,8 @@
   }
 
   .rates__btn {
-    margin-top: 60px;
-    margin-left: 77px;
+    margin-top: 59px;
+    margin-left: 78px;
   }
 
   .rates__btn::after {

@@ -25,7 +25,7 @@
 
   padding: 0 49px;
   padding-top: 5px;
-  padding-bottom: 64px;
+  padding-bottom: 63px;
 
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@
 
   width: 96%;
   margin-top: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 
   font-weight: 300;
   font-size: 16px;
@@ -85,8 +85,8 @@
     border-radius: 0 0 60px 60px;
 
     &::before {
-      top: 1px;
-      left: 33px;
+      top: 0;
+      left: 40px;
 
       width: 688px;
       height: 213px;
@@ -94,13 +94,14 @@
   }
 
   .about__wrapper {
-    padding: 0 67px;
     padding-top: 40px;
+    padding-right: 67px;
     padding-bottom: 88px;
+    padding-left: 74px;
 
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: 100% 35.4%;
+    background-position: 97.9% 34.3%;
     background-size: 376px;
 
     @media (min-resolution: $retina) {
@@ -118,7 +119,7 @@
   }
 
   .about__text {
-    width: 46%;
+    width: 48%;
     margin-top: 0;
     margin-bottom: 32px;
     margin-left: 1px;
@@ -142,8 +143,12 @@
     display: block;
     box-sizing: border-box;
     width: 274px;
-    margin-top: 52px;
-    padding: 28px 33px;
+    margin-top: 51px;
+    margin-left: 1px;
+    padding-top: 30px;
+    padding-right: 33px;
+    padding-bottom: 27px;
+    padding-left: 33px;
 
     font-weight: 700;
     font-size: 24px;
@@ -155,24 +160,30 @@
     &::after {
       content: "";
       position: absolute;
-      top: 32px;
+      top: 34px;
       right: 29px;
 
       width: 0;
       height: 0;
 
-      border: 8px solid #182d59;
+      border: 7px solid #182d59;
       border-top-color: transparent;
       border-right-color: transparent;
       border-bottom-color: transparent;
+      transform: scaleX(1.5);
     }
   }
 }
 
 @media (min-width: $desktop) {
   .about {
+    position: relative;
+    z-index: 5;
+
     min-height: 515px;
+    margin-top: -60px;
     padding: 0;
+    padding-top: 61px;
 
     border-radius: 0 0 60px 60px;
 
@@ -187,7 +198,7 @@
     box-sizing: border-box;
     padding-top: 126px;
     padding-right: 70px;
-    padding-bottom: 164px;
+    padding-bottom: 163px;
     padding-left: 70px;
 
     background-image: url("../img/about-desktop@1x.png");

@@ -10,7 +10,7 @@
 
 .cta-form__wrapper {
   padding-top: 102px;
-  padding-bottom: 39px;
+  padding-bottom: 11px;
 }
 
 .cta-form__title {
@@ -79,14 +79,16 @@
     content: "";
     position: absolute;
     top: 24px;
-    left: 27px;
+    right: 2px;
 
-    width: 10px;
-    height: 14px;
+    width: 12px;
+    height: 0;
 
-    background-image: url("../img/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    border: 7px solid #1d2e5b;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: scaleX(1.4);
   }
 }
 
@@ -134,7 +136,9 @@
 
   .cta-form__wrapper {
     padding-top: 136px;
-    padding-bottom: 79px;
+    padding-right: 48px;
+    padding-bottom: 78px;
+    padding-left: 48px;
   }
 
   .cta-form__title {
@@ -164,7 +168,10 @@
   .cta-form__field {
     height: 81px;
     margin-bottom: 59px;
-    padding: 21px 36px;
+    padding-top: 21px;
+    padding-right: 100px;
+    padding-bottom: 22px;
+    padding-left: 35px;
 
     font-size: 24px;
     line-height: 24px;
@@ -186,23 +193,21 @@
 
     &::after {
       top: 34px;
-      left: 35px;
-
-      width: 10px;
-      height: 14px;
+      right: 15px;
     }
   }
 
   .cta-form__list {
-    margin-top: 61px;
-    margin-left: 10px;
+    margin-top: 62px;
+    margin-bottom: 0;
+    margin-left: 9px;
+    padding-left: 0;
   }
 
   .cta-form__item {
     margin-bottom: 38px;
     padding-left: 48px;
   }
-
 
   .cta-form__item:last-of-type {
     margin-bottom: 0;
@@ -248,8 +253,8 @@
 
   .cta-form__wrapper {
     padding: 0;
-    padding-top: 168px;
-    padding-bottom: 93px;
+    padding-top: 167px;
+    padding-bottom: 94px;
   }
 
   .cta-form__title {
@@ -258,7 +263,7 @@
 
   .cta-form__text {
     width: 60%;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
 
   .cta-form__form {
@@ -267,15 +272,20 @@
 
   .cta-form__field {
     margin-bottom: 69px;
-    padding-left: 32px;
+    margin-left: -1px;
+    padding: 24px 364px 22px 35px;
   }
 
   .cta-form__btn {
     width: 325px;
+    padding-top: 3px;
+    padding-right: 55px;
+    padding-bottom: 1px;
+    padding-left: 1px;
 
     &::after {
       top: 34px;
-      left: 277px;
+      left: 284px;
     }
   }
 
@@ -291,35 +301,43 @@
     color: #1d2e5b;
   }
 
+  .cta-form__text:last-of-type {
+    letter-spacing: 0.4px;
+  }
+
   .cta-form__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 65%;
     margin: 0 auto;
-    margin-top: 76px;
+    margin-top: 75px;
   }
 
-  .cta-form__email {
-    &::before {
-      top: -33px;
-      left: -58px;
+  .cta-form__item {
+    width: 42.7%;
+  }
 
-      width: 88px;
-      height: 88px;
-    }
+  .cta-form__email svg {
+    top: -34px;
+    left: -59px;
+
+    width: 36px;
+    height: 36px;
+    padding: 27px;
   }
 
 
   .cta-form__phone {
     margin-left: 4px;
+  }
 
-    &::before {
-      top: -33px;
-      left: -58px;
+  .cta-form__phone svg {
+    top: -34px;
+    left: -60px;
 
-      width: 88px;
-      height: 88px;
-    }
+    width: 36px;
+    height: 36px;
+    padding: 27px;
   }
 }

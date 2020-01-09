@@ -56,7 +56,7 @@
 .user-card__user-name {
   font-weight: 700;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 20px;
   font-family: $main-font;
   color: #1d2e5b;
   font-style: normal;
@@ -126,28 +126,12 @@
   }
 }
 
-.user-card__transport-item:nth-of-type(1) {
-  .user-card__transport-type::before {
-    background-image: url("../img/plane.svg");
-  }
+.user-card__transport-icon {
+  fill: #1d2e5b;
 }
 
-.user-card__transport-item:nth-of-type(2) {
-  .user-card__transport-type::before {
-    background-image: url("../img/bus.svg");
-  }
-}
-
-.user-card__transport-item:nth-of-type(3) {
-  .user-card__transport-type::before {
-    background-image: url("../img/bike.svg");
-  }
-}
-
-.user-card__transport-item:nth-of-type(4) {
-  .user-card__transport-type::before {
-    background-image: url("../img/run.svg");
-  }
+.user-card__transport-icon--disable {
+  fill: #cccccc;
 }
 
 .user-card__like-btn {
@@ -156,30 +140,40 @@
   width: 31px;
   height: 31px;
 
-  background-color: #edeff6;
+  background-color: #edeff5;
   border: none;
   border-radius: 50%;
 
-  &::after {
-    content: "";
+  .user-card__icon {
     position: absolute;
-    top: 11px;
+    top: 12px;
     left: 10px;
+  }
 
-    width: 13px;
-    height: 11px;
+  .user-card__icon--active {
+    display: none;
+  }
 
-    background-image: url("../img/heart.svg");
-    background-repeat: no-repeat;
+  .user-card__icon--not-active {
+    display: block;
+
+    opacity: 0.3;
+
+    fill: #192144;
   }
 }
 
 .user-card__like-btn--selected {
   background-color: #f9eaea;
 
-  &::after {
-    background-image: url("../img/heart-active.svg");
-    opacity: 1;
+  .user-card__icon--active {
+    display: block;
+
+    fill: #f02323;
+  }
+
+  .user-card__icon--not-active {
+    display: none;
   }
 }
 
@@ -237,4 +231,14 @@
 
   background-color: transparent;
   border: none;
+}
+
+@media (min-width: $tablet) {
+  .user-card__like-btn .user-card__icon {
+    top: 18px;
+    left: 15px;
+
+    width: 20px;
+    height: 17px;
+  }
 }

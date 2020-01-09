@@ -2,60 +2,91 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 40px;
 
   background-color: $white-color;
 }
 
-.main-nav__list {
-  width: 100%;
+.main-nav__logo {
+  display: block;
+  width: 100px;
+  height: 15px;
+
+  background-image: url("../img/logo-mobile-blue@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/logo-mobile-blue@2x.png");
+  }
 }
 
-.main-nav__site-list {
-  margin-bottom: 60px;
+.main-nav__toggle {
+  position: relative;
+
+  display: block;
+  width: 25px;
+  height: 25px;
 }
 
-.main-nav__site-list a {
+.main-nav__toggle-icon {
+  position: absolute;
+}
+
+.main-nav .main-nav__toggle-icon--close {
+  display: block;
+}
+
+.main-nav .main-nav__toggle-icon--open {
+  display: none;
+}
+
+.main-nav--closed {
+  padding-bottom: 42px;
+
+  background-color: #161c36;
+}
+
+.main-nav--closed .main-nav__logo {
+  background-image: url("../img/logo-mobile-white@1x.png");
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/logo-mobile-white@2x.png");
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  padding: 0;
+}
+
+.main-nav--closed .main-nav__toggle-icon--close {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle-icon--open {
+  top: 4px;
+  right: 0;
+
   display: block;
 
-  text-align: center;
+  fill: $white-color;
 }
 
-.main-nav__user-list {
-  margin-bottom: 60px;
+.main-nav--closed .main-nav__list {
+  display: none;
 }
 
-.main-nav__contacts {
-  margin-bottom: 60px;
-}
-
-.main-nav__contact {
-  margin-bottom: 19px;
+.main-nav--closed .page-header__wrapper {
+  margin: 0;
 }
 
 .main-nav__link {
+  position: relative;
+
   display: block;
 
   text-transform: uppercase;
-
-  &::before {
-    top: -11px;
-  }
-}
-
-.main-nav__social-items {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-}
-
-.main-nav__social-item {
-  margin-right: 28px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
 }
 
 .main-nav__social-link {
@@ -67,84 +98,81 @@
     padding: 40px;
   }
 
-  .main-nav__list {
-    padding-left: 60px;
+  .main-nav__logo {
+    display: block;
+    width: 166px;
+    height: 42px;
+
+    background-image: url("../img/logo-tablet-blue@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/logo-tablet-blue@2x.png");
+    }
   }
 
-  .main-nav__user-list {
-    order: -1;
-    width: 40%;
-    margin-bottom: 0;
-    padding-left: 0;
+  .main-nav--closed {
+    padding-bottom: 72px;
+
+    background-color: #182044;
   }
 
-  .main-nav__social-items {
-    justify-content: flex-start;
+  .main-nav--closed .main-nav__logo {
+    background-image: url("../img/logo-tablet-white@1x.png");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/logo-tablet-white@2x.png");
+    }
   }
 
-  .main-nav__site-item a {
-    text-align: left;
+  .main-nav--closed .main-nav__list:nth-of-type(2) {
+    display: flex;
+  }
+
+  .main-nav--closed .main-nav__toggle-icon--open {
+    top: 7px;
+    right: -1px;
+
+    display: block;
+
+    fill: #ffffff;
   }
 }
-
 
 @media (min-width: $desktop) {
   .main-nav {
     align-items: center;
     width: 1320px;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 47px;
+    padding-bottom: 7px;
 
-    // background-color: $darkblue-color;
+    background-color: transparent;
   }
 
   .main-nav__toggle {
     display: none;
   }
 
-  .main-nav__list {
-    margin-bottom: 0;
-    padding-left: 0;
-  }
+  .main-nav .main-nav__logo {
+    display: block;
+    width: 200px;
+    height: 52px;
 
-  .main-nav__site-list {
-    display: flex;
-    flex-wrap: wrap;
-    order: -1;
-    width: 48%;
-  }
+    background-image: url("../img/logo-desktop-white@1x.png");
+    background-repeat: no-repeat;
 
-  .main-nav__site-item {
-    margin-right: 34px;
-
-    &:last-of-type {
-      margin-right: 0;
+    @media (min-resolution: $retina) {
+      background-image: url("../img/logo-desktop-white@2x.png");
     }
   }
 
-  .main-nav__site-item a {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    // color: $white-color;
-  }
-
-  .main-nav__user-list {
-    order: 4;
-    width: 14.5%;
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-
-  .main-nav__contacts {
+  .main-nav .main-nav__list {
     display: flex;
-    width: 100px;
-    min-height: 50px;
-    margin-left: auto;
   }
 
-  .main-nav__contact {
-    width: 50%;
+  .main-nav .main-nav__list:last-of-type {
+    display: none;
   }
 
   .main-nav__link span {
@@ -156,9 +184,5 @@
 
     width: 51px;
     height: 51px;
-  }
-
-  .main-nav__social-items {
-    display: none;
   }
 }
