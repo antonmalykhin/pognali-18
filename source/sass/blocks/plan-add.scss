@@ -767,14 +767,15 @@
   top: -10px;
   right: -10px;
 
-  padding: 6px;
+  padding: 2px 6px 1px 6px;
   overflow: visible;
 
   background-color: #edeff5;
+  border: none;
   border-radius: 50%;
 }
 
-.plan-add__reset-btn use {
+.plan-add__reset-btn svg {
   opacity: 0.3;
 }
 

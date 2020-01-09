@@ -166,7 +166,7 @@
 @media (min-width: $desktop) {
   .page-footer {
     margin-top: -55px;
-    padding-top: 44px;
+    padding-top: 45px;
     padding-right: 0;
     padding-bottom: 45px;
     padding-left: 0;
@@ -181,12 +181,36 @@
   }
 
   .page-footer__list {
-    margin: 3px 42px 0 0;
+    margin: 2px 44px 0 0;
+  }
+
+  .page-footer__list .page-footer__item {
+    width: 60px;
+    height: 60px;
   }
 
   .page-footer__item a {
-    width: 61px;
-    height: 61px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .page-footer__link--facebook svg {
+    top: 16px;
+    left: 23px;
+  }
+
+  .page-footer__link--vk svg {
+    top: 23px;
+    left: 14px;
+  }
+
+
+  .page-footer__link--instagram svg {
+    top: 19px;
+    left: 19px;
+
+    width: 23px;
+    height: 23px;
   }
 
   .page-footer__logo-img {

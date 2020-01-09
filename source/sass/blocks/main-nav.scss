@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-top: 27px;
-  padding-bottom: 40px;
+  padding-top: 22px;
+  padding-bottom: 36px;
 
   background-color: $white-color;
 }
@@ -30,20 +30,44 @@
   height: 25px;
 }
 
-.main-nav__toggle-icon {
-  position: absolute;
-}
+.main-nav__icon {
+  position: relative;
 
-.main-nav .main-nav__toggle-icon--close {
-  display: block;
-}
+  width: 25px;
+  height: 25px;
 
-.main-nav .main-nav__toggle-icon--open {
-  display: none;
+  transform: rotateZ(45deg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #cccccc;
+    border-radius: 5px;
+    transform: rotateZ(90deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #cccccc;
+    border-radius: 5px;
+  }
 }
 
 .main-nav--closed {
-  padding-bottom: 42px;
+  padding-bottom: 47px;
 
   background-color: #161c36;
 }
@@ -60,17 +84,35 @@
   padding: 0;
 }
 
-.main-nav--closed .main-nav__toggle-icon--close {
-  display: none;
-}
+.main-nav--closed .main-nav__icon {
+  transform: rotateZ(0);
 
-.main-nav--closed .main-nav__toggle-icon--open {
-  top: 4px;
-  right: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
 
-  display: block;
+    width: 25px;
+    height: 3px;
 
-  fill: $white-color;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transform: rotateZ(0);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
 }
 
 .main-nav--closed .main-nav__list {
@@ -117,6 +159,18 @@
     background-color: #182044;
   }
 
+  .main-nav--closed .main-nav__icon {
+    &::before {
+      top: 7px;
+      left: 1px;
+    }
+
+    &::after {
+      top: 15px;
+      left: 1px;
+    }
+  }
+
   .main-nav--closed .main-nav__logo {
     background-image: url("../img/logo-tablet-white@1x.png");
 
@@ -127,15 +181,6 @@
 
   .main-nav--closed .main-nav__list:nth-of-type(2) {
     display: flex;
-  }
-
-  .main-nav--closed .main-nav__toggle-icon--open {
-    top: 7px;
-    right: -1px;
-
-    display: block;
-
-    fill: #ffffff;
   }
 }
 

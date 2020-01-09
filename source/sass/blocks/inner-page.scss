@@ -3,6 +3,11 @@
   padding-bottom: 20px;
 }
 
+.inner-page__nav--closed {
+  padding-top: 14px;
+  padding-bottom: 25px;
+}
+
 @media (min-width: $tablet) {
   .inner-page__nav--closed {
     padding-top: 40px;

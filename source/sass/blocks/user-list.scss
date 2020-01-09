@@ -1,7 +1,7 @@
 .user-list {
   width: 100%;
   margin: 0;
-  margin-bottom: 63px;
+  margin-bottom: 64px;
   padding: 0;
 
   list-style: none;
@@ -13,6 +13,10 @@
 
 .user-list__login {
   display: block;
+  padding-top: 17px;
+  padding-right: 17px;
+  padding-bottom: 15px;
+  padding-left: 14px;
 
   text-align: center;
   text-transform: uppercase;
