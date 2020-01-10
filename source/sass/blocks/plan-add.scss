@@ -211,7 +211,17 @@
   top: 7px;
   left: 8px;
 
+  display: none;
+
   fill: #192144;
+}
+
+.plan-add__checkbox:checked ~ .plan-add__tick-field svg {
+  display: block;
+}
+
+.plan-add__checkbox:focus ~ .plan-add__tick-field {
+  outline: 5px auto;
 }
 
 .plan-add__unit {

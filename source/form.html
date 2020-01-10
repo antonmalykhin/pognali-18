@@ -122,16 +122,17 @@
               </picture>
 
               <label class="plan-creation__btn-wrapper plan-creation__btn-wrapper--small">
-                <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Фото</span>
                 <input class="plan-creation__file user-card__file-field filefield visually-hidden" type="file"
                   name="changePhoto" id="changePhotoTop">
+                <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Фото</span>
               </label>
 
             </div>
+
             <label class="plan-creation__btn-wrapper plan-creation__btn-wrapper--big">
-              <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Сменить фото</span>
               <input class="plan-creation__file user-card__file-field filefield visually-hidden" type="file"
                 name="changePhoto" id="changePhotoBottom">
+              <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Сменить фото</span>
             </label>
 
             <fieldset class="plan-creation__fieldset plan-creation__fieldset--tags user-card__fieldset fieldset">
@@ -146,7 +147,7 @@
               <ul class="plan-creation__transport-list user-card__transport-list transport-list">
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                    <input class="plan-creation__input transport-list__input checkbox visually-hidden" type="checkbox"
                       name="transport" value="авиаперелет">
                     <svg class="plan-creation__icon plan-creation__icon--plane user-card__transport-icon" width="14"
                       height="16" role="img" focusable="false" aria-label="Авиаперелет">
@@ -156,7 +157,7 @@
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                    <input class="plan-creation__input transport-list__input checkbox visually-hidden" type="checkbox"
                       name="transport" value="автотранспорт">
                     <svg class="plan-creation__icon plan-creation__icon--bus user-card__transport-icon" width="13"
                       height="16" role="img" focusable="false" aria-label="Автотранспорт">
@@ -166,7 +167,7 @@
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                    <input class="plan-creation__input transport-list__input checkbox visually-hidden" type="checkbox"
                       name="transport" value="велосипед">
                     <svg
                       class="plan-creation__icon plan-creation__icon--bike user-card__transport-icon user-card__transport-icon--disable"
@@ -177,7 +178,7 @@
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                    <input class="plan-creation__input transport-list__input checkbox visually-hidden" type="checkbox"
                       name="transport" value="пешком">
                     <svg class="plan-creation__icon plan-creation__icon--run user-card__transport-icon" width="15"
                       height="17" role="img" focusable="false" aria-label="Пешком">
@@ -298,8 +299,8 @@
                 </div>
 
                 <label class="plan-add__label-wrapper plan-add__label-wrapper--with-children">
-                  <input class="plan-add__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren"
-                    required>
+                  <input class="plan-add__checkbox checkbox visually-hidden" type="checkbox" name="withChildren"
+                    id="withChildren" required>
                   <span class="plan-add__tick-field">
                     <svg width="9" height="9">
                       <use xlink:href="#tick"></use>

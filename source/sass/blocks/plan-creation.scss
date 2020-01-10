@@ -136,11 +136,17 @@
   justify-content: center;
 }
 
+.plan-creation__item {
+  cursor: pointer;
+}
+
 .plan-creation__icon {
   overflow: visible;
 
   background-color: $white-color;
   border-radius: 50%;
+
+  fill: #cccccc;
 }
 
 .plan-creation__icon--plane {
@@ -169,6 +175,18 @@
   padding-right: 9px;
   padding-bottom: 9px;
   padding-left: 10px;
+}
+
+.plan-creation__input:checked ~ .plan-creation__icon {
+  fill: #1d2e5b;
+}
+
+.plan-creation__input:focus ~ .plan-creation__icon {
+  outline: 5px auto;
+}
+
+.plan-creation__file:focus + .plan-creation__change-photo-btn {
+  outline: 5px auto;
 }
 
 .plan-creation__title {
