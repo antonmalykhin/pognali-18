@@ -4,7 +4,7 @@
 
   margin-top: -38px;
   padding-top: 39px;
-  padding-bottom: 5px;
+  padding-bottom: 14px;
 
   background-color: $white-color;
   border-radius: 30px 30px 0 0;
@@ -31,8 +31,8 @@
   width: 46px;
   height: 46px;
   margin: 0;
+  // background-color: #ffd65c;
 
-  background-color: #ffd65c;
   border-radius: 50%;
 }
 
@@ -41,6 +41,9 @@
 
   width: 46px;
   height: 46px;
+
+  background-color: #ffd65c;
+  border-radius: 50%;
 }
 
 .page-footer__link svg {
@@ -65,21 +68,28 @@
 }
 
 .page-footer__developer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
   margin-top: 37px;
 }
 
-.page-footer__dev-text {
-  margin-top: 19px;
+.page-footer__dev-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 12px;
 }
 
-.page-footer__dev-link {
-  margin-top: 9px;
-}
+// .page-footer__dev-text {
+//    margin-top: 19px;
+// }
 
 .page-footer__dev-link svg {
+  margin-top: 2px;
+
   fill: #192144;
 }
 
@@ -130,7 +140,7 @@
   }
 
   .page-footer__dev-text {
-    margin-top: 22px;
+    margin-top: 0;
     margin-left: 2px;
 
     font-size: 20px;
@@ -138,7 +148,7 @@
   }
 
   .page-footer__dev-link {
-    margin-top: 11px;
+    margin-top: 3px;
     margin-right: 1px;
   }
 
@@ -168,7 +178,7 @@
     margin-top: -55px;
     padding-top: 44px;
     padding-right: 0;
-    padding-bottom: 45px;
+    padding-bottom: 46px;
     padding-left: 0;
   }
 
@@ -181,7 +191,7 @@
   }
 
   .page-footer__list {
-    margin: 2px 44px 0 0;
+    margin: 5px 44px 0 0;
   }
 
   .page-footer__list .page-footer__item {
@@ -213,18 +223,40 @@
     height: 23px;
   }
 
+  .page-footer__link:hover,
+  .page-footer__link:focus {
+    background-color: #ffbd30;
+  }
+
+  .page-footer__link:active svg {
+    fill: rgba(#1d2e5b, 0.3);
+  }
+
   .page-footer__logo-img {
     width: 200px;
     height: 52px;
   }
 
   .page-footer__dev-link {
-    margin-top: 10px;
+    margin-top: 3px;
     margin-right: 0;
   }
 
   .page-footer__dev-text {
-    margin-top: 21px;
+    margin-top: 0;
     margin-left: 3px;
+  }
+
+  .page-footer__dev-link svg {
+    margin-top: 3px;
+  }
+
+  .page-footer__dev-link:hover,
+  .page-footer__dev-link:focus {
+    opacity: 0.6;
+  }
+
+  .page-footer__dev-link:active {
+    opacity: 0.3;
   }
 }
