@@ -250,5 +250,20 @@
     z-index: 2;
 
     margin-top: 84px;
+
+    color: #1d2e5b;
+  }
+
+  .about__btn:hover,
+  .about__btn:focus {
+    background-color: #ffbd30;
+  }
+
+  .about__btn:active {
+    color: rgba(#161c35, 0.3);
+  }
+
+  .about__btn:active::after {
+    border-left-color: rgba(#1d2e5b, 0.3);
   }
 }

@@ -8,7 +8,6 @@
 .map__wrapper {
   position: relative;
   z-index: 1;
-  // padding: 0 25px;
 
   padding-top: 48px;
   padding-bottom: 35px;
@@ -59,7 +58,7 @@
   font-size: 18px;
   line-height: 18px;
   font-family: $main-font;
-  color: #1d2e5b;
+  color: #192144;
   font-style: normal;
 
   border: 3px solid #192144;
@@ -74,7 +73,7 @@
     width: 12px;
     height: 0;
 
-    border: 7px solid #1d2e5b;
+    border: 7px solid #192144;
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
@@ -194,6 +193,24 @@
     width: 230px;
     margin-top: 0;
     margin-right: 74px;
+  }
+
+  .map__btn:hover,
+  .map__btn:focus {
+    color: #ffffff;
+
+    border-color: transparent;
+  }
+
+  .map__btn:hover::after,
+  .map__btn:focus::after {
+    border-left-color: #ffffff;
+  }
+
+  .map__btn:active {
+    color: #ffffff;
+
+    opacity: 0.3;
   }
 
   .map__map-block {

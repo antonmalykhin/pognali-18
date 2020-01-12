@@ -424,6 +424,19 @@
     display: block;
   }
 
+  .countries__btn--top:hover,
+  .countries__btn--top:focus {
+    background-color: #ffbd30;
+  }
+
+  .countries__btn--top:active {
+    color: rgba(#161c35, 0.3);
+  }
+
+  .countries__btn--top:active::after {
+    border-left-color: rgba(#1d2e5b, 0.3);
+  }
+
   .countries__btn--bottom {
     display: none;
   }

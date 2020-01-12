@@ -428,6 +428,19 @@
     margin-left: 3px;
   }
 
+  .travelmates__btn--top:hover,
+  .travelmates__btn--top:focus {
+    background-color: #ffbd30;
+  }
+
+  .travelmates__btn--top:active {
+    color: rgba(#161c35, 0.3);
+  }
+
+  .travelmates__btn--top:active::after {
+    border-left-color: rgba(#1d2e5b, 0.3);
+  }
+
   .travelmates__btn--bottom {
     display: none;
   }

@@ -476,12 +476,34 @@
     margin-left: 78px;
   }
 
+  .rates__btn span {
+    color: #132576;
+  }
+
   .rates__btn::after {
     top: -24px;
     left: -6px;
 
     width: 67px;
     height: 67px;
+  }
+
+  .rates__btn:hover span,
+  .rates__btn:focus span {
+    opacity: 0.7;
+  }
+
+  .rates__btn:hover svg,
+  .rates__btn:focus svg {
+    fill: rgba(#132576, 0.7);
+  }
+
+  .rates__btn:active span {
+    opacity: 0.3;
+  }
+
+  .rates__btn:active svg {
+    fill: rgba(#132576, 0.3);
   }
 
   .rates__business-plans {

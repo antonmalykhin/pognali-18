@@ -26,9 +26,11 @@
       </div>
 
       <ul class="main-nav__list site-list">
-        <li class="main-nav__item site-list__item"><a>О сервисе</a></li>
-        <li class="main-nav__item site-list__item"><a href="form.html">Направления</a></li>
-        <li class="main-nav__item site-list__item"><a href="catalog.html">Попутчики</a></li>
+        <li class="main-nav__item site-list__item"><a class="site-list__link"><span>О сервисе</span></a></li>
+        <li class="main-nav__item site-list__item"><a class="site-list__link" href="form.html"><span
+              data-hover="Направления">Направления</span></a></li>
+        <li class="main-nav__item site-list__item"><a class="site-list__link" href="catalog.html"><span
+              data-hover="Попутчики">Попутчики</span></a></li>
       </ul>
 
       <ul class="main-nav__list user-list">
@@ -409,7 +411,7 @@
             <p class="rates__price">59 руб./мес</p>
           </li>
         </ul>
-        <a class="rates__btn">
+        <a class="rates__btn" href="#">
           <svg width="17" height="21">
             <use xlink:href="img/sprite.svg#business"></use>
           </svg>
@@ -426,7 +428,8 @@
           это быстро и бесплатно!
           Уже зарегистрированы? Тогда скорее <a class="cta-form__link" href="#">авторизуйтесь</a>.</p>
         <form class="cta-form__form" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="cta-form__field emailfield" type="email" placeholder="E-mail">
+          <input class="cta-form__field emailfield" type="email" placeholder="Email"
+            pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" onfocus="this.value='Введенный текст'" onblur="this.value=''">
           <button class="btn cta-form__btn" type="button" aria-label="Зарегистрироваться"><span
               class="cta-form__btn-text">Регистрация</span></button>
         </form>

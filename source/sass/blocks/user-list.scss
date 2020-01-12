@@ -70,4 +70,13 @@
 
     border-radius: 25px;
   }
+
+  .user-list__login:hover,
+  .user-list__login:focus {
+    background-color: #ffbd30;
+  }
+
+  .user-list__login:active {
+    color: rgba(#161c35, 0.3);
+  }
 }
