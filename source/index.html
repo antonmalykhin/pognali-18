@@ -263,11 +263,13 @@
         <ul class="travelmates__list">
           <li class="travelmates__item">
             <div class="user-card">
-              <picture>
-                <source type="image/webp" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp 2x">
-                <img class="travelmates__photo user-card__photo" src="img/firsova-desktop@1x.jpg"
-                  srcset="img/firsova-desktop@2x.jpg 2x" width="270" height="270" alt="Фотография пользователя">
-              </picture>
+              <div class="travelmates__photo-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp 2x">
+                  <img class="travelmates__photo user-card__photo" src="img/firsova-desktop@1x.jpg"
+                    srcset="img/firsova-desktop@2x.jpg 2x" width="270" height="270" alt="Фотография пользователя">
+                </picture>
+              </div>
 
               <div class=" travelmates__level-label user-card__level-label">
                 <div class="user-card__circle"></div>
@@ -275,17 +277,17 @@
                 <p class="travelmates__level user-card__level">level</p>
               </div>
               <ul class="travelmates__flags user-card__flags">
-                <li class="user-card__flag">
+                <li class="user-card__flag" data-hover="Шри-Ланка">
                   <svg width="35" height="24" role="img" focusable="false" aria-label="Шри-Ланка">
                     <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
                   </svg>
                 </li>
-                <li class="user-card__flag">
+                <li class="user-card__flag" data-hover="Тайланд">
                   <svg width="35" height="24" role="img" focusable="false" aria-label="Тайланд">
                     <use xlink:href="img/sprite.svg#flag-thailand"></use>
                   </svg>
                 </li>
-                <li class="user-card__flag">
+                <li class="user-card__flag" data-hover="Сейшелы">
                   <svg width="35" height="24" role="img" focusable="false" aria-label="Сейшелы">
                     <use xlink:href="img/sprite.svg#flag-seychelles"></use>
                   </svg>
@@ -298,25 +300,25 @@
               <p class="travelmates__tags user-card__tags">#ЗОЖ #ПП #Фитнес #пляж
                 #авокадо #смузи</p>
               <ul class="travelmates__transport-list user-card__transport-list">
-                <li class="user-card__transport-item">
+                <li class="user-card__transport-item" data-hover="Авиаперелет">
                   <svg class="user-card__transport-icon" width="19" height="21" role="img" focusable="false"
                     aria-label="Авиаперелет">
                     <use xlink:href="img/sprite.svg#plane"></use>
                   </svg>
                 </li>
-                <li class="user-card__transport-item">
+                <li class="user-card__transport-item" data-hover="Автотранспорт">
                   <svg class="user-card__transport-icon user-card__transport-icon--disable" width="17" height="21"
                     role="img" focusable="false" aria-label="Автотранспорт">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </li>
-                <li class="user-card__transport-item">
+                <li class="user-card__transport-item" data-hover="Велосипед">
                   <svg class="user-card__transport-icon user-card__transport-icon--disable" width="24" height="21"
                     role="img" focusable="false" aria-label="Велосипед">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </li>
-                <li class="user-card__transport-item">
+                <li class="user-card__transport-item" data-hover="Пешком">
                   <svg class="user-card__transport-icon user-card__transport-icon--disable" width="20" height="21"
                     role="img" focusable="false" aria-label="Пешком">
                     <use xlink:href="img/sprite.svg#run"></use>
@@ -329,23 +331,25 @@
           <li class="travelmates__item travelmates__item--online">
 
             <div class="user-card">
-              <picture>
-                <source type="image/webp" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
-                <img class="travelmates__photo user-card__photo" src="img/demin-desktop@1x.jpg"
-                  srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270" alt="Фотография пользователя">
-              </picture>
+              <div class="travelmates__photo-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+                  <img class="travelmates__photo user-card__photo" src="img/demin-desktop@1x.jpg"
+                    srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270" alt="Фотография пользователя">
+                </picture>
+              </div>
               <div class=" travelmates__level-label user-card__level-label">
                 <div class="user-card__circle"></div>
                 <p class="travelmates__scores user-card__scores">80</p>
                 <p class="travelmates__level user-card__level">level</p>
               </div>
               <ul class="travelmates__flags user-card__flags">
-                <li class="user-card__flag">
+                <li class="user-card__flag" data-hover="Бельгия">
                   <svg width="35" height="24" role="img" focusable="false" aria-label="Бельгия">
                     <use xlink:href="img/sprite.svg#flag-belgium"></use>
                   </svg>
                 </li>
-                <li class="user-card__flag">
+                <li class="user-card__flag" data-hover="Чехия">
                   <svg width="35" height="24" role="img" focusable="false" aria-label="Чехия">
                     <use xlink:href="img/sprite.svg#flag-czech"></use>
                   </svg>
@@ -358,25 +362,25 @@
               <p class="travelmates__tags user-card__tags">#бургер #бар #футбол
                 #концерт #крафт</p>
               <ul class="travelmates__transport-list user-card__transport-list">
-                <li class="user-card__transport-item">
+                <li class="user-card__transport-item" data-hover="Авиаперелет">
                   <svg class="user-card__transport-icon" width="19" height="21" role="img" focusable="false"
                     aria-label="Авиаперелет">
                     <use xlink:href="img/sprite.svg#plane"></use>
                   </svg>
                 </li>
-                <li class="user-card__transport-item">
+                <li class="user-card__transport-item" data-hover="Автотранспорт">
                   <svg class="user-card__transport-icon" width="17" height="21" role="img" focusable="false"
                     aria-label="Автотранспорт">
                     <use xlink:href="img/sprite.svg#bus"></use>
                   </svg>
                 </li>
-                <li class="user-card__transport-item">
+                <li class="user-card__transport-item" data-hover="Велосипед">
                   <svg class="user-card__transport-icon user-card__transport-icon--disable" width="24" height="21"
                     role="img" focusable="false" aria-label="Велосипед">
                     <use xlink:href="img/sprite.svg#bike"></use>
                   </svg>
                 </li>
-                <li class="user-card__transport-item">
+                <li class="user-card__transport-item" data-hover="Пешком">
                   <svg class="user-card__transport-icon" width="20" height="21" role="img" focusable="false"
                     aria-label="Пешком">
                     <use xlink:href="img/sprite.svg#run"></use>
