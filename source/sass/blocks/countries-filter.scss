@@ -36,7 +36,8 @@
 .countries-filter__icon-filter--close {
   position: absolute;
   top: 3px;
-  right: 7px;
+  // right: 7px;
+  left: 8px;
 
   fill: #192144;
 }
@@ -70,6 +71,7 @@
 
 .countries-filter__polises {
   order: 1;
+  width: 100%;
   margin-bottom: 14px;
   margin-left: 25px;
 }
@@ -128,7 +130,21 @@
   text-transform: uppercase;
 }
 
+
+.countries-filter__btn--bottom {
+  position: relative;
+
+  padding: 13px 14px 9px 38px;
+
+  cursor: pointer;
+}
+
+.countries-filter__btn--bottom .countries-filter__btn-text {
+  display: inline;
+}
+
 .countries-filter__btn-text .countries-filter__icon-filter-close {
+  position: absolute;
   top: 1px;
   left: -24px;
 }
@@ -407,7 +423,6 @@
   }
 
   .countries-filter__wrapper {
-    // width: auto;
     padding-right: 31px;
     padding-left: 35px;
   }
@@ -436,6 +451,15 @@
     height: 15px;
   }
 
+  .countries-filter__icon-filter--close {
+    top: -2px;
+    right: 37px;
+    left: auto;
+
+    width: 18px;
+    height: 18px;
+  }
+
   .countries-filter__polises {
     width: 50%;
     margin-left: 33px;
@@ -444,7 +468,6 @@
   .countries-filter__btn--top {
     margin-left: auto;
     padding-right: 120px;
-
 
     .countries-filter__icon-filter-close {
       top: -1px;
@@ -486,6 +509,20 @@
     padding-left: 14px;
   }
 
+  .countries-filter__btn--bottom:hover,
+  .countries-filter__btn--bottom:focus {
+    background-color: #c8cee8;
+  }
+
+  .countries-filter__btn--bottom:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+
+  .countries-filter__btn--bottom:active .countries-filter__btn-text {
+    opacity: 0.3;
+  }
+
+
   .countries-filter--closed {
     padding-top: 131px;
     padding-bottom: 41px;
@@ -496,5 +533,14 @@
   .countries-filter--closed .countries-filter__btn--top {
     // padding: 0 74px 0 0;
     margin-right: 27px;
+  }
+
+  .countries-filter__btn--top:hover,
+  .countries-filter__btn--top:focus {
+    opacity: 0.6;
+  }
+
+  .countries-filter__btn--top:active {
+    opacity: 0.3;
   }
 }

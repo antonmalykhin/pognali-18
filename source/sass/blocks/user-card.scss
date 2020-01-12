@@ -345,4 +345,22 @@
   .user-card__transport-item:focus::after {
     display: block;
   }
+
+  .user-card__like-btn:hover,
+  .user-card__like-btn:focus {
+    background-color: #e2e5f2;
+  }
+
+  .user-card__like-btn:active svg {
+    opacity: 0.1;
+  }
+
+  .user-card__like-btn--selected:hover,
+  .user-card__like-btn--selected:focus {
+    background-color: #f9d8d8;
+  }
+
+  .user-card__like-btn--selected:active svg {
+    opacity: 0.3;
+  }
 }

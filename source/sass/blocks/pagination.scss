@@ -125,4 +125,23 @@
   .pagination__btn--front svg {
     right: 17px;
   }
+
+  .pagination__btn:hover,
+  .pagination__btn:focus {
+    opacity: 0.6;
+  }
+
+  .pagination__btn:active {
+    opacity: 0.3;
+  }
+
+  .pagination__number:hover,
+  .pagination__number:focus {
+    opacity: 0.6;
+  }
+
+  .pagination__number--current:hover,
+  .pagination__number--current:focus {
+    opacity: 1;
+  }
 }

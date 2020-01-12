@@ -26,6 +26,7 @@
 
   background-color: #1d2e5b;
   border-radius: 50%;
+  cursor: pointer;
 
   &:nth-of-type(1) {
     left: -3px;
@@ -50,5 +51,16 @@
 
     width: 13px;
     height: 13px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider .slider__handle:hover,
+  .slider .slider__handle:focus {
+    transform: scale(1.4);
+  }
+
+  .slider .slider__handle:active {
+    box-shadow: 0 3px 7px 0 rgba(29, 45, 91, 0.34);
   }
 }

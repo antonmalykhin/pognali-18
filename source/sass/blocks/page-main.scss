@@ -150,6 +150,15 @@
     margin-right: 62px;
   }
 
+  .page-main__return-link:hover,
+  .page-main__return-link:focus {
+    opacity: 0.6;
+  }
+
+  .page-main__return-link:active {
+    opacity: 0.3;
+  }
+
   .page-main__container {
     display: flex;
     flex-direction: row-reverse;
