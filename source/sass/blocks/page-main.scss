@@ -1,5 +1,5 @@
 .page-main {
-  padding-top: 94px;
+  // padding-top: 94px;
 
   background-color: #edeff6;
 }
@@ -10,7 +10,7 @@
 
 .page-main__title-bg {
   position: relative;
-  z-index: 1;
+  z-index: 15;
 
   background-color: #161c35;
   border-radius: 0 0 20px 20px;
@@ -58,7 +58,7 @@
 @media (min-width: $tablet) {
   .page-main__title-bg {
     position: relative;
-    z-index: 2;
+    z-index: 15;
 
     border-radius: 0 0 60px 60px;
   }
@@ -120,7 +120,7 @@
 
 @media (min-width: $desktop) {
   .page-main {
-    padding-top: 0;
+    padding-top: 106px;
   }
 
   .page-main__wrapper {
@@ -134,7 +134,7 @@
   }
 
   .page-main__title-wrapper {
-    padding-top: 118px;
+    padding-top: 224px;
     padding-bottom: 67px;
   }
 

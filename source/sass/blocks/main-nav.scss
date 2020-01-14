@@ -75,7 +75,7 @@
   z-index: 20;
 
   width: calc(100% - 50px);
-  padding-bottom: 47px;
+  padding-bottom: 26px;
 
   background-color: #161c36;
 }
@@ -143,6 +143,7 @@
   background-size: contain;
 }
 
+
 @media (min-width: $tablet) {
   .main-nav {
     padding: 40px;
@@ -196,13 +197,14 @@
 @media (min-width: $desktop) {
   .main-nav {
     position: relative;
+    // left: calc(50% - 659px);
     align-items: center;
     width: 1320px;
     padding: 0;
     padding-top: 47px;
     padding-bottom: 7px;
 
-    background-color: transparent;
+    background-color: #161c34;
   }
 
   .main-nav__toggle {

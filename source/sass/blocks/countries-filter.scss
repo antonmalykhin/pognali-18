@@ -1,12 +1,22 @@
 .countries-filter {
-  margin-top: -20px;
-  margin-bottom: 24px;
+  position: absolute;
+  top: 133px;
+  left: 0;
+  z-index: 10;
+
+  width: calc(100% - 50px);
+  margin-top: 0;
+  // margin-bottom: 24px;
   padding: 0 25px;
-  padding-top: 37px;
+  padding-top: 27px;
   padding-bottom: 28px;
 
   background-color: #e2e5f2;
   border-radius: 0 0 20px 20px;
+}
+
+.countries-filter + div {
+  margin-top: 76px;
 }
 
 .countries-filter__title {
@@ -171,7 +181,16 @@
 }
 
 .countries-filter--closed {
+  position: relative;
+  top: 0;
+
+  margin-top: -10px;
+  margin-bottom: 24px;
   padding-bottom: 3px;
+}
+
+.countries-filter--closed + div {
+  margin-top: 0;
 }
 
 .countries-filter--closed .countries-filter__icon-filter--open {
@@ -212,14 +231,21 @@
 
 @media (min-width: $tablet) {
   .countries-filter {
-    margin-top: -70px;
-    margin-bottom: 46px;
+    // margin-top: -70px;
+    // margin-bottom: 46px;
+    top: 281px;
+
+    width: calc(100% - 141px);
     padding-top: 106px;
     padding-right: 70px;
     padding-bottom: 74px;
     padding-left: 71px;
 
     border-radius: 0 0 60px 60px;
+  }
+
+  .countries-filter + div {
+    margin-top: 182px;
   }
 
   .countries-filter__container {
@@ -375,8 +401,17 @@
   }
 
   .countries-filter--closed {
+    top: 0;
+
+    width: auto;
+    margin-top: -70px;
+    margin-bottom: 46px;
     padding-top: 131px;
     padding-bottom: 41px;
+  }
+
+  .countries-filter--closed + div {
+    margin-top: 0;
   }
 
   .countries-filter--closed .countries-filter__btn--top {
@@ -414,12 +449,20 @@
 
 @media (min-width: $desktop) {
   .countries-filter {
+    position: relative;
+    top: 0;
+
+    width: auto;
     margin-bottom: 0;
     padding: 0;
-    padding-top: 107px;
-    padding-bottom: 71px;
+    padding-top: 36px;
+    padding-bottom: 72px;
 
     background-color: transparent;
+  }
+
+  .countries-filter + div {
+    margin-top: 0;
   }
 
   .countries-filter__wrapper {
