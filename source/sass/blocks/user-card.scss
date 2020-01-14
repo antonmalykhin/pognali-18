@@ -212,7 +212,8 @@
 }
 
 .user-card__fieldset {
-  border: 1px solid #cbced9;
+  position: relative;
+
   border-radius: 10px;
 }
 
@@ -227,10 +228,12 @@
 }
 
 .user-card__textarea {
+  box-sizing: border-box;
   width: 270px;
 
   background-color: transparent;
-  border: none;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
 }
 
 @media (min-width: $tablet) {

@@ -1,4 +1,6 @@
 .page-main {
+  padding-top: 94px;
+
   background-color: #edeff6;
 }
 
@@ -117,6 +119,10 @@
 }
 
 @media (min-width: $desktop) {
+  .page-main {
+    padding-top: 0;
+  }
+
   .page-main__wrapper {
     width: 1320px;
     margin: 0 auto;

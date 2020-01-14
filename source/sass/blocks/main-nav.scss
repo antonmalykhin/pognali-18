@@ -1,6 +1,10 @@
 .main-nav {
+  position: fixed;
+  z-index: 20;
+
   display: flex;
   flex-wrap: wrap;
+  width: auto;
   margin: 0 auto;
   padding-top: 22px;
   padding-bottom: 36px;
@@ -67,6 +71,10 @@
 }
 
 .main-nav--closed {
+  position: fixed;
+  z-index: 20;
+
+  width: calc(100% - 50px);
   padding-bottom: 47px;
 
   background-color: #161c36;
@@ -154,6 +162,7 @@
   }
 
   .main-nav--closed {
+    width: calc(100% - 80px);
     padding-bottom: 72px;
 
     background-color: #182044;
@@ -186,6 +195,7 @@
 
 @media (min-width: $desktop) {
   .main-nav {
+    position: relative;
     align-items: center;
     width: 1320px;
     padding: 0;

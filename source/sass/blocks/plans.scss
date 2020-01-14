@@ -238,4 +238,13 @@
     margin-right: 0;
     margin-left: auto;
   }
+
+  .plans__btn:hover,
+  .plans__btn:focus {
+    opacity: 0.6;
+  }
+
+  .plans__btn:active {
+    opacity: 0.1;
+  }
 }
