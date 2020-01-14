@@ -30,6 +30,3 @@ var changeClass = function(item) {
     item.classList.add("plan-add__btn-select-country--opened");
   }
 }
-
-
-
