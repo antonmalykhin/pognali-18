@@ -180,4 +180,22 @@
 
     fill: #161c35;
   }
+
+  .contacts-list__phone:hover .contacts-list__phone-icon--desktop,
+  .contacts-list__phone:focus .contacts-list__phone-icon--desktop {
+    background-color: #f26926;
+  }
+
+  .contacts-list__phone:active .contacts-list__phone-icon--desktop {
+    fill: rgba(#161c35, 0.3);
+  }
+
+  .contacts-list__email:hover .contacts-list__email-icon--desktop,
+  .contacts-list__email:focus .contacts-list__email-icon--desktop {
+    background-color: #ff8d30;
+  }
+
+  .contacts-list__email:active .contacts-list__email-icon--desktop {
+    fill: rgba(#161c35, 0.3);
+  }
 }

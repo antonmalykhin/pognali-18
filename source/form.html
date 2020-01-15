@@ -5,35 +5,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали</title>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="libs/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="inner-page">
-  <div style="display: none;">
-    <include src="build/img/sprite.svg"></include>
-  </div>
 
   <header class="page-header">
     <nav class="main-nav main-nav--closed inner-page__nav inner-page__nav--closed container">
       <div class="page-header__wrapper">
         <a class="main-nav__logo page-header__logo" href="index.html"></a>
         <button class="main-nav__toggle open-close-btn" type="button" aria-label="Открыть меню">
-          <svg class="main-nav__toggle-icon main-nav__toggle-icon--close" aria-hidden="true" focusable="false"
-            width="19" height="19">
-            <use xlink:href="#menu-close"></use>
-          </svg>
-          <svg class="main-nav__toggle-icon main-nav__toggle-icon--open" aria-hidden="true" focusable="false" width="25"
-            height="11">
-            <use xlink:href="#menu"></use>
-          </svg>
+          <div class="main-nav__icon"></div>
         </button>
       </div>
 
       <ul class="main-nav__list site-list">
-        <li class="main-nav__item site-list__item"><a href="index.html">О сервисе</a></li>
-        <li class="main-nav__item site-list__item"><a>Направления</a></li>
-        <li class="main-nav__item site-list__item"><a href="catalog.html">Попутчики</a></li>
+        <li class="main-nav__item site-list__item"><a class="site-list__link" href="index.html"><span
+              data-hover="О сервисе">О сервисе</span></a></li>
+        <li class="main-nav__item site-list__item"><a class="site-list__link"><span>Направления</span></a></li>
+        <li class="main-nav__item site-list__item"><a class="site-list__link" href="catalog.html"><span
+              data-hover="Попутчики">Попутчики</span></a></li>
       </ul>
       <ul class="main-nav__list user-list">
         <li class="main-nav__item user-list__item">
@@ -45,10 +41,10 @@
         <li class="main-nav__item contacts-list__item">
           <a class="main-nav__link contacts-list__phone" href="tel:8-800-555-86-28">
             <svg class="contacts-list__phone-icon contacts-list__phone-icon--mobile" width="18" height="18">
-              <use xlink:href="#contacts-phone"></use>
+              <use xlink:href="img/sprite.svg#contacts-phone"></use>
             </svg>
             <svg class="contacts-list__phone-icon contacts-list__phone-icon--desktop" width="18" height="18">
-              <use xlink:href="#topmenu-phone"></use>
+              <use xlink:href="img/sprite.svg#topmenu-phone"></use>
             </svg>
             <span>8 800 555-86-28</span>
           </a>
@@ -56,10 +52,10 @@
         <li class="main-nav__item contacts-list__item">
           <a class="main-nav__link contacts-list__email" href="mailto:mail@htmlacademy.ru">
             <svg class="contacts-list__email-icon contacts-list__email-icon--mobile" width="18" height="18">
-              <use xlink:href="#contacts-mail"></use>
+              <use xlink:href="img/sprite.svg#contacts-mail"></use>
             </svg>
             <svg class="contacts-list__email-icon contacts-list__email-icon--desktop" width="18" height="18">
-              <use xlink:href="#topmenu-mail"></use>
+              <use xlink:href="img/sprite.svg#topmenu-mail"></use>
             </svg>
             <span>mail@htmlacademy.ru</span>
           </a>
@@ -70,14 +66,14 @@
         <li class="main-nav__stem social-list__item">
           <a class="main-nav__social-link social-list__link social-list__link--facebook" href="#" aria-label="facebook">
             <svg width="11" height="21">
-              <use xlink:href="#facebook"></use>
+              <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="main-nav__item social-list__item">
           <a class="main-nav__social-link social-list__link social-list__link--vk" href="#" aria-label="вконтакте">
             <svg width="23" height="12">
-              <use xlink:href="#vk"></use>
+              <use xlink:href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
@@ -85,14 +81,14 @@
           <a class="main-nav__social-link social-list__link social-list__link--instagram" href="#"
             aria-label="instagram">
             <svg width="18" height="18">
-              <use xlink:href="#instagram"></use>
+              <use xlink:href="img/sprite.svg#instagram"></use>
             </svg></a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main inner-page__main">
 
     <div class="page-main__title-bg">
       <div class="page-main__title-wrapper container">
@@ -129,16 +125,17 @@
               </picture>
 
               <label class="plan-creation__btn-wrapper plan-creation__btn-wrapper--small">
-                <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Фото</span>
                 <input class="plan-creation__file user-card__file-field filefield visually-hidden" type="file"
                   name="changePhoto" id="changePhotoTop">
+                <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Фото</span>
               </label>
 
             </div>
+
             <label class="plan-creation__btn-wrapper plan-creation__btn-wrapper--big">
-              <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Сменить фото</span>
               <input class="plan-creation__file user-card__file-field filefield visually-hidden" type="file"
                 name="changePhoto" id="changePhotoBottom">
+              <span class="plan-creation__change-photo-btn user-card__change-photo-btn">Сменить фото</span>
             </label>
 
             <fieldset class="plan-creation__fieldset plan-creation__fieldset--tags user-card__fieldset fieldset">
@@ -153,42 +150,42 @@
               <ul class="plan-creation__transport-list user-card__transport-list transport-list">
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                    <input class="plan-creation__input transport-list__input checkbox visually-hidden" type="checkbox"
                       name="transport" value="авиаперелет">
                     <svg class="plan-creation__icon plan-creation__icon--plane user-card__transport-icon" width="14"
                       height="16" role="img" focusable="false" aria-label="Авиаперелет">
-                      <use xlink:href="#plane"></use>
+                      <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                    <input class="plan-creation__input transport-list__input checkbox visually-hidden" type="checkbox"
                       name="transport" value="автотранспорт">
                     <svg class="plan-creation__icon plan-creation__icon--bus user-card__transport-icon" width="13"
                       height="16" role="img" focusable="false" aria-label="Автотранспорт">
-                      <use xlink:href="#bus"></use>
+                      <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                    <input class="plan-creation__input transport-list__input checkbox visually-hidden" type="checkbox"
                       name="transport" value="велосипед">
                     <svg
                       class="plan-creation__icon plan-creation__icon--bike user-card__transport-icon user-card__transport-icon--disable"
                       width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
-                      <use xlink:href="#bike"></use>
+                      <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="plan-creation__item transport-list__item">
                   <label>
-                    <input class="plan-creation__input transport-list__input radiobutton visually-hidden" type="radio"
+                    <input class="plan-creation__input transport-list__input checkbox visually-hidden" type="checkbox"
                       name="transport" value="пешком">
                     <svg class="plan-creation__icon plan-creation__icon--run user-card__transport-icon" width="15"
                       height="17" role="img" focusable="false" aria-label="Пешком">
-                      <use xlink:href="#run"></use>
+                      <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
                   </label>
                 </li>
@@ -257,20 +254,20 @@
                   <div class="plan-add__field-wrapper plan-add__field-wrapper--half">
                     <button class="btn plan-add__btn plan-add__btn--minus">
                       <svg class="plan-add__icon-minus plan-add__icon-minus--mobile" width="14" height="2">
-                        <use xlink:href="#qty-minus-mobile"></use>
+                        <use xlink:href="img/sprite.svg#qty-minus-mobile"></use>
                       </svg>
                       <svg class="plan-add__icon-minus plan-add__icon-minus--tablet" width="20" height="2">
-                        <use xlink:href="#qty-minus"></use>
+                        <use xlink:href="img/sprite.svg#qty-minus"></use>
                       </svg>
                     </button>
                     <input class="plan-add__number numberfield" type="text" name="numOfPeople" id="numOfPeople"
                       value="2" pattern="[1-9]{1,2}" required>
                     <button class="btn plan-add__btn plan-add__btn--plus">
                       <svg class="plan-add__icon-plus plan-add__icon-plus--mobile" width="14" height="14">
-                        <use xlink:href="#qty-plus-mobile"></use>
+                        <use xlink:href="img/sprite.svg#qty-plus-mobile"></use>
                       </svg>
                       <svg class="plan-add__icon-plus plan-add__icon-plus--tablet" width="20" height="20">
-                        <use xlink:href="#qty-plus"></use>
+                        <use xlink:href="img/sprite.svg#qty-plus"></use>
                       </svg>
                     </button>
                   </div>
@@ -284,20 +281,20 @@
                   <div class="plan-add__field-wrapper plan-add__field-wrapper--half">
                     <button class="btn plan-add__btn plan-add__btn--minus">
                       <svg class="plan-add__icon-minus plan-add__icon-minus--mobile" width="14" height="2">
-                        <use xlink:href="#qty-minus-mobile"></use>
+                        <use xlink:href="img/sprite.svg#qty-minus-mobile"></use>
                       </svg>
                       <svg class="plan-add__icon-minus plan-add__icon-minus--tablet" width="20" height="2">
-                        <use xlink:href="#qty-minus"></use>
+                        <use xlink:href="img/sprite.svg#qty-minus"></use>
                       </svg>
                     </button>
                     <input class="plan-add__number numberfield" type="text" name="numOfDays" id="numOfDays" value="2"
                       pattern="[1-9]{1,3}" required>
                     <button class="btn plan-add__btn plan-add__btn--plus">
                       <svg class="plan-add__icon-plus plan-add__icon-plus--mobile" width="14" height="14">
-                        <use xlink:href="#qty-plus-mobile"></use>
+                        <use xlink:href="img/sprite.svg#qty-plus-mobile"></use>
                       </svg>
                       <svg class="plan-add__icon-plus plan-add__icon-plus--tablet" width="20" height="20">
-                        <use xlink:href="#qty-plus"></use>
+                        <use xlink:href="img/sprite.svg#qty-plus"></use>
                       </svg>
                     </button>
                   </div>
@@ -305,11 +302,11 @@
                 </div>
 
                 <label class="plan-add__label-wrapper plan-add__label-wrapper--with-children">
-                  <input class="plan-add__checkbox checkbox" type="checkbox" name="withChildren" id="withChildren"
-                    required>
+                  <input class="plan-add__checkbox checkbox visually-hidden" type="checkbox" name="withChildren"
+                    id="withChildren" required>
                   <span class="plan-add__tick-field">
                     <svg width="9" height="9">
-                      <use xlink:href="#tick"></use>
+                      <use xlink:href="img/sprite.svg#tick"></use>
                     </svg>
                   </span>
                   <span class="plan-add__label plan-add__label--checkbox-label">Можно с
@@ -320,13 +317,13 @@
                 <div class="plan-add__field-wrapper plan-add__field-wrapper--date">
                   <button class="btn plan-add__btn plan-add__btn--back">
                     <svg width="9" height="18">
-                      <use xlink:href="#month-arrow-left"></use>
+                      <use xlink:href="img/sprite.svg#month-arrow-left"></use>
                     </svg>
                   </button>
                   <input class="plan-add__date datefield" type="text" name="date" id="date" required value="март 2019">
                   <button class="btn plan-add__btn plan-add__btn--front">
                     <svg width="9" height="18">
-                      <use xlink:href="#month-arrow-right"></use>
+                      <use xlink:href="img/sprite.svg#month-arrow-right"></use>
                     </svg>
                   </button>
                 </div>
@@ -369,67 +366,69 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><span class="plan-add__day plan-add__day--passed">23</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">24</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">25</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">26</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">27</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">28</span></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">23</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">24</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">25</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">26</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">27</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">28</button></td>
                         <td>
-                          <span class="plan-add__day plan-add__day--passed">1<span
-                              class="plan-add__first-day">мар</span></span>
+                          <button class="plan-add__day plan-add__day--disabled" type="button">1<span
+                              class="plan-add__first-day">мар</span></button>
 
                         </td>
                       </tr>
                       <tr>
-                        <td><span class="plan-add__day plan-add__day--passed">2</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">3</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">4</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">5</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">6</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">7</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">8</span></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">2</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">3</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">4</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">5</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">6</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">7</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">8</button></td>
                       </tr>
                       <tr>
-                        <td><span class="plan-add__day plan-add__day--passed">9</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">10</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">11</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">12</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">13</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">14</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">15</span></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">9</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">10</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">11</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">12</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">13</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">14</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">15</button></td>
                       </tr>
                       <tr>
-                        <td><span class="plan-add__day plan-add__day--passed">16</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">17</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">18</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">19</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">20</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">21</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">22</span></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">16</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">17</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">18</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">19</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">20</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">21</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">22</button></td>
                       </tr>
                       <tr>
-                        <td><span class="plan-add__day plan-add__day--passed">23</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">24</span></td>
-                        <td><span class="plan-add__day plan-add__day--passed">25</span></td>
-                        <td><span class="plan-add__day plan-add__day--selected plan-add__day--current">26<span
-                              class="plan-add__start">Заезд</span></span></td>
-                        <td><span class="plan-add__day plan-add__day--selected">27</span></td>
-                        <td><span class="plan-add__day plan-add__day--selected">28<span
-                              class="plan-add__finish">Выезд</span></span></td>
-                        <td><span class="plan-add__day">29</span></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">23</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">24</button></td>
+                        <td><button class="plan-add__day plan-add__day--disabled" type="button">25</button></td>
+                        <td><button class="plan-add__day plan-add__day--selected plan-add__day--start"
+                            type="button">26<span>Заезд</span></button></td>
+                        <td><button class="plan-add__day plan-add__day--selected" type="button">27</button></td>
+                        <td><button class="plan-add__day plan-add__day--selected plan-add__day--finish"
+                            type="button">28<span>Выезд
+                            </span></button></td>
+                        <td><button class="plan-add__day" type="button">29</button></td>
                       </tr>
                       <tr>
-                        <td><span class="plan-add__day">30</span></td>
-                        <td><span class="plan-add__day">31</span></td>
+                        <td><button class="plan-add__day" type="button">30</button></td>
+                        <td><button class="plan-add__day" type="button">31</button></td>
                         <td>
-                          <span class="plan-add__day">1<span class="plan-add__first-day">апр</span></span>
+                          <button class="plan-add__day" type="button">1<span
+                              class="plan-add__first-day">апр</span></button>
 
                         </td>
-                        <td><span class="plan-add__day">2</span></td>
-                        <td><span class="plan-add__day">3</span></td>
-                        <td><span class="plan-add__day">4</span></td>
-                        <td><span class="plan-add__day">5</span></td>
+                        <td><button class="plan-add__day" type="button">2</button></td>
+                        <td><button class="plan-add__day" type="button">3</button></td>
+                        <td><button class="plan-add__day" type="button">4</button></td>
+                        <td><button class="plan-add__day" type="button">5</button></td>
                       </tr>
                     </tbody>
                   </table>
@@ -439,7 +438,7 @@
               <a class="btn plan-add__btn-next" href="#">
                 <span>Следующий шаг</span>
                 <svg width="10" height="14">
-                  <use xlink:href="#triangle-arrow-right"></use>
+                  <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
                 </svg>
               </a>
             </div>
@@ -476,18 +475,20 @@
                   </select>
                   <div class="plan-add__flag">
                     <svg width="35" height="24">
-                      <use xlink:href="#flag-bosnia"></use>
+                      <use xlink:href="img/sprite.svg#flag-bosnia"></use>
                     </svg>
                   </div>
-                  <svg class="plan-add__reset-btn" width="9" height="9">
-                    <use xlink:href="#small-cross"></use>
-                  </svg>
+                  <button class="plan-add__reset-btn" type="button" aria-label="очистить поле">
+                    <svg width="9" height="9">
+                      <use xlink:href="img/sprite.svg#small-cross"></use>
+                    </svg>
+                  </button>
                   <svg class="plan-add__icon-dropdown" width="12" height="7">
-                    <use xlink:href="#dropdown-form"></use>
+                    <use xlink:href="img/sprite.svg#dropdown-form"></use>
                   </svg>
                 </div>
                 <svg class="plan-add__arrow" width="5" height="10">
-                  <use xlink:href="#small-arrow"></use>
+                  <use xlink:href="img/sprite.svg#small-arrow"></use>
                 </svg>
               </li>
               <li class="plan-add__item">
@@ -497,65 +498,187 @@
                   </select>
                   <div class="plan-add__flag">
                     <svg width="35" height="24">
-                      <use xlink:href="#flag-czech"></use>
+                      <use xlink:href="img/sprite.svg#flag-czech"></use>
                     </svg>
                   </div>
-                  <svg class="plan-add__reset-btn" width="9" height="9">
-                    <use xlink:href="#small-cross"></use>
-                  </svg>
+                  <button class="plan-add__reset-btn" type="button" aria-label="очистить поле">
+                    <svg width="9" height="9">
+                      <use xlink:href="img/sprite.svg#small-cross"></use>
+                    </svg>
+                  </button>
                   <svg class="plan-add__icon-dropdown" width="12" height="7">
-                    <use xlink:href="#dropdown-form"></use>
+                    <use xlink:href="img/sprite.svg#dropdown-form"></use>
                   </svg>
                 </div>
                 <svg class="plan-add__arrow" width="5" height="10">
-                  <use xlink:href="#small-arrow"></use>
+                  <use xlink:href="img/sprite.svg#small-arrow"></use>
                 </svg>
               </li>
               <li class="plan-add__item plan-add__item--drop">
                 <button class="btn plan-add__btn-select-country" type="button">
                   <span>Выберите страну</span>
-
-                  <svg class="plan-add__icon-dropdown" width="12" height="7">
-                    <use xlink:href="#dropdown-form"></use>
-                  </svg>
+                  <span class="plan-add__drop-icon"></span>
                 </button>
                 <div class="plan-add__dropdown dropdown">
                   <table class="plan-add__dropdown-table table">
                     <tbody>
                       <tr>
-                        <td><a class="plan-add__dropdown-link plan-add__dropdown-link--selected" href="#">а</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">б</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">в</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">г</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">д</a></td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter"
+                              checked>
+                            <span class="plan-add__dropdown-letter">а</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">б</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">в</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">г</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">д</span>
+                          </label>
+                        </td>
                       </tr>
                       <tr>
-                        <td><a class="plan-add__dropdown-link" href="#">е</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">з</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">и</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">к</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">л</a></td>
+                        <td> <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">е</span>
+                          </label>
+                        </td>
+                        <td> <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">з</span>
+                          </label>
+                        </td>
+                        <td> <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">и</span>
+                          </label>
+                        </td>
+                        <td> <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">к</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">л</span>
+                          </label>
+                        </td>
                       </tr>
                       <tr>
-                        <td><a class="plan-add__dropdown-link" href="#">м</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">н</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">о</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">п</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">р</a></td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">м</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">н</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">о</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">п</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">р</span>
+                          </label>
+                        </td>
                       </tr>
                       <tr>
-                        <td><a class="plan-add__dropdown-link" href="#">с</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">т</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">у</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">ф</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">х</a></td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">с</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">т</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">у</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">ф</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">х</span>
+                          </label>
+
+                        </td>
                       </tr>
                       <tr>
-                        <td><a class="plan-add__dropdown-link" href="#">ч</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">ш</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">э</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">ю</a></td>
-                        <td><a class="plan-add__dropdown-link" href="#">я</a></td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">ч</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">ш</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">э</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">ю</span>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input class="plan-add__dropdown-input visually-hidden" type="radio" name="firstLetter">
+                            <span class="plan-add__dropdown-letter">я</span>
+                          </label>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -572,18 +695,20 @@
                     <li class="plan-add__dropdown-item"><a href="#">Азербайджанм</a></li>
                   </ul>
                 </div>
-                <svg class="plan-add__reset-btn" width="9" height="9">
-                  <use xlink:href="#small-cross"></use>
-                </svg>
+                <button class="plan-add__reset-btn" type="button" aria-label="очистить поле">
+                  <svg width="9" height="9">
+                    <use xlink:href="img/sprite.svg#small-cross"></use>
+                  </svg>
+                </button>
                 <svg class="plan-add__arrow" width="5" height="10">
-                  <use xlink:href="#small-arrow"></use>
+                  <use xlink:href="img/sprite.svg#small-arrow"></use>
                 </svg>
               </li>
               <li class="plan-add__item">
                 <button class="btn plan-add__btn-add-country" type="button">
                   <span>Добавить страну</span>
                   <svg class="plan-add__icon-plus" width="14" height="14">
-                    <use xlink:href="#qty-plus-mobile"></use>
+                    <use xlink:href="img/sprite.svg#qty-plus-mobile"></use>
                   </svg>
                 </button>
               </li>
@@ -592,12 +717,12 @@
               <a class="btn plan-add__btn-next" href="#">
                 <span>Следующий шаг</span>
                 <svg width="10" height="14">
-                  <use xlink:href="#triangle-arrow-right"></use>
+                  <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
                 </svg>
               </a>
               <a class=" btn plan-add__btn-prew" href="#">
                 <svg width="10" height="14">
-                  <use xlink:href="#triangle-arrow-left"></use>
+                  <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
                 </svg>
                 <span>На шаг назад</span>
               </a>
@@ -629,7 +754,7 @@
                 <span class="plan-add__label plan-add__label--lowercase">Босния и Герцеговина</span>
                 <span class="plan-add__flag">
                   <svg class="plan-add__icon-flag" width="35" height="24">
-                    <use xlink:href="#flag-bosnia"></use>
+                    <use xlink:href="img/sprite.svg#flag-bosnia"></use>
                   </svg>
                 </span>
                 <textarea class="plan-add__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
@@ -642,7 +767,7 @@
                 <span class="plan-add__label plan-add__label--lowercase">Чехия</span>
                 <span class="plan-add__flag">
                   <svg class="plan-add__icon-flag" width="35" height="24">
-                    <use xlink:href="#flag-czech"></use>
+                    <use xlink:href="img/sprite.svg#flag-czech"></use>
                   </svg>
                 </span>
                 <textarea class="plan-add__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
@@ -654,12 +779,12 @@
               <button class="btn plan-add__btn-next" type="button">
                 <span>Отправить</span>
                 <svg width="10" height="14">
-                  <use xlink:href="#triangle-arrow-right"></use>
+                  <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
                 </svg>
               </button>
               <a class=" btn plan-add__btn-prew" href="#">
                 <svg width="10" height="14">
-                  <use xlink:href="#triangle-arrow-left"></use>
+                  <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
                 </svg>
                 <swap>На шаг назад</swap>
 
@@ -692,7 +817,7 @@
           <a class="page-footer__link page-footer__link--facebook social-list__link social-list__link--facebook"
             href="#" aria-label="facebook">
             <svg aria-hidden="true" focusable="false" width="11" height="21">
-              <use xlink:href="#facebook"></use>
+              <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
@@ -700,7 +825,7 @@
           <a class="page-footer__link page-footer__link--vk social-list__link social-list__link--vk" href="#"
             aria-label="вконтакте">
             <svg aria-hidden="true" focusable="false" width="23" height="12">
-              <use xlink:href="#vk"></use>
+              <use xlink:href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
@@ -708,17 +833,17 @@
           <a class="page-footer__link page-footer__link--instagram social-list__link social-list__link--instagram"
             href="#" aria-label="instagram">
             <svg aria-hidden="true" focusable="false" width="18" height="18">
-              <use xlink:href="#instagram"></use>
+              <use xlink:href="img/sprite.svg#instagram"></use>
             </svg></a>
         </li>
       </ul>
 
       <div class="page-footer__developer developer">
-        <p class="page-footer__dev-text developer__text">Разработано</p>
         <a class="page-footer__dev-link developer__link" href="https://htmlacademy.ru/intensive/adaptive"
           target="_blank" aria-label="сайт HTMLAcademy">
+          <span class="page-footer__dev-text developer__text">Разработано</span>
           <svg aria-hidden="true" focusable="false" width="27" height="34">
-            <use xlink:href="#htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -726,6 +851,9 @@
   </footer>
 
   <script src="libs/picturefill.min.js"></script>
+  <script src="libs/svgxuse.min.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/mainNav.js"></script>
 </body>
 
 </html>

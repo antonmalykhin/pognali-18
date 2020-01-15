@@ -1,9 +1,13 @@
 .main-nav {
+  position: fixed;
+  z-index: 20;
+
   display: flex;
   flex-wrap: wrap;
+  width: auto;
   margin: 0 auto;
-  padding-top: 27px;
-  padding-bottom: 40px;
+  padding-top: 22px;
+  padding-bottom: 36px;
 
   background-color: $white-color;
 }
@@ -30,20 +34,48 @@
   height: 25px;
 }
 
-.main-nav__toggle-icon {
-  position: absolute;
-}
+.main-nav__icon {
+  position: relative;
 
-.main-nav .main-nav__toggle-icon--close {
-  display: block;
-}
+  width: 25px;
+  height: 25px;
 
-.main-nav .main-nav__toggle-icon--open {
-  display: none;
+  transform: rotateZ(45deg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #cccccc;
+    border-radius: 5px;
+    transform: rotateZ(90deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #cccccc;
+    border-radius: 5px;
+  }
 }
 
 .main-nav--closed {
-  padding-bottom: 42px;
+  position: fixed;
+  z-index: 20;
+
+  width: calc(100% - 50px);
+  padding-bottom: 26px;
 
   background-color: #161c36;
 }
@@ -60,17 +92,35 @@
   padding: 0;
 }
 
-.main-nav--closed .main-nav__toggle-icon--close {
-  display: none;
-}
+.main-nav--closed .main-nav__icon {
+  transform: rotateZ(0);
 
-.main-nav--closed .main-nav__toggle-icon--open {
-  top: 4px;
-  right: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
 
-  display: block;
+    width: 25px;
+    height: 3px;
 
-  fill: $white-color;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transform: rotateZ(0);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
 }
 
 .main-nav--closed .main-nav__list {
@@ -93,6 +143,7 @@
   background-size: contain;
 }
 
+
 @media (min-width: $tablet) {
   .main-nav {
     padding: 40px;
@@ -112,9 +163,22 @@
   }
 
   .main-nav--closed {
+    width: calc(100% - 80px);
     padding-bottom: 72px;
 
     background-color: #182044;
+  }
+
+  .main-nav--closed .main-nav__icon {
+    &::before {
+      top: 7px;
+      left: 1px;
+    }
+
+    &::after {
+      top: 15px;
+      left: 1px;
+    }
   }
 
   .main-nav--closed .main-nav__logo {
@@ -128,26 +192,19 @@
   .main-nav--closed .main-nav__list:nth-of-type(2) {
     display: flex;
   }
-
-  .main-nav--closed .main-nav__toggle-icon--open {
-    top: 7px;
-    right: -1px;
-
-    display: block;
-
-    fill: #ffffff;
-  }
 }
 
 @media (min-width: $desktop) {
   .main-nav {
+    position: relative;
+    // left: calc(50% - 659px);
     align-items: center;
     width: 1320px;
     padding: 0;
     padding-top: 47px;
     padding-bottom: 7px;
 
-    background-color: transparent;
+    background-color: #161c34;
   }
 
   .main-nav__toggle {

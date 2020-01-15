@@ -57,7 +57,7 @@
 
   width: 80%;
   margin-bottom: 21px;
-  margin-left: 25px;
+  margin-left: 24px;
 
   font-weight: 300;
   font-size: 16px;
@@ -144,7 +144,7 @@
 
   display: block;
   width: 80%;
-  margin-top: 9px;
+  margin-top: 10px;
   margin-right: auto;
   margin-bottom: 15px;
   margin-left: auto;
@@ -238,7 +238,7 @@
     padding-bottom: 88px;
     padding-left: 72px;
 
-    background-image: url("../../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png");
+    background-image: url("../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 408px 140px, 40px 486px;
 
@@ -416,9 +416,47 @@
     padding-bottom: 23px;
   }
 
+  .travelmates__photo-wrapper {
+    height: 285px;
+    overflow: hidden;
+
+    border-radius: 17px 17px 0 0;
+  }
+
+  .travelmates__photo {
+    transition: all 0.2s;
+  }
+
+  .travelmates__item:hover,
+  .travelmates__item:focus {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.07);
+  }
+
+  .travelmates__item:hover .travelmates__photo,
+  .travelmates__item:focus .travelmates__photo {
+    transform: scale(1.05);
+
+    transition: all 0.2s;
+  }
+
+  .travelmates__flags {
+    margin-top: -12px;
+  }
+
   .travelmates__name {
+    position: relative;
+
     margin-top: 16px;
     margin-bottom: 19px;
+  }
+
+  .travelmates__name:hover span,
+  .travelmates__name:focus span {
+    color: rgba(#1d2e5b, 0.7);
+  }
+
+  .travelmates__name:focus span {
+    color: rgba(#1d2e5b, 0.3);
   }
 
   .travelmates__btn--top {
@@ -426,6 +464,19 @@
     width: 192px;
     margin-top: 83px;
     margin-left: 3px;
+  }
+
+  .travelmates__btn--top:hover,
+  .travelmates__btn--top:focus {
+    background-color: #ffbd30;
+  }
+
+  .travelmates__btn--top:active {
+    color: rgba(#161c35, 0.3);
+  }
+
+  .travelmates__btn--top:active::after {
+    border-left-color: rgba(#1d2e5b, 0.3);
   }
 
   .travelmates__btn--bottom {

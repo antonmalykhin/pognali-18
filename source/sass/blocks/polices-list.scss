@@ -24,3 +24,19 @@
     line-height: 1;
   }
 }
+
+@media (min-width: $desktop) {
+  .polices-list__link:hover,
+  .polices-list__link:focus {
+    opacity: 0.6;
+  }
+
+  .polices-list__link:active {
+    opacity: 1;
+  }
+
+  .polices-list__link--current:hover,
+  .polices-list__link--current:focus {
+    opacity: 1;
+  }
+}

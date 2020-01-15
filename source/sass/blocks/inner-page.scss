@@ -1,14 +1,36 @@
 .inner-page__nav {
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 36px;
+}
+
+.inner-page__nav--closed {
+  padding-top: 14px;
+  padding-bottom: 25px;
+}
+
+.inner-page__main {
+  padding-top: 64px;
+
+  background-color: #edeff6;
 }
 
 @media (min-width: $tablet) {
+  .inner-page__nav {
+    padding-top: 41px;
+    padding-bottom: 65px;
+  }
+
   .inner-page__nav--closed {
     padding-top: 40px;
     padding-bottom: 109px;
 
     background-color: #161c35;
+  }
+
+  .inner-page__main {
+    padding-top: 199px;
+
+    background-color: #edeff6;
   }
 }
 
@@ -17,5 +39,11 @@
   .inner-page__nav {
     padding-top: 47px;
     padding-bottom: 7px;
+  }
+
+  .inner-page__main {
+    padding-top: 0;
+
+    background-color: #edeff6;
   }
 }

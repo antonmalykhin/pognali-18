@@ -253,6 +253,8 @@
   position: absolute;
   top: 38px;
   left: 46px;
+
+  cursor: pointer;
 }
 
 .travelmates-cards__btn {
@@ -719,19 +721,41 @@
     border-radius: 20px;
   }
 
+  .travelmates-cards__item:hover,
+  .travelmates-cards__item:focus {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.07);
+  }
+
   .travelmates-cards__user {
     flex-wrap: nowrap;
   }
 
-  .travelmates-cards__photo {
+  .travelmates-cards__photo-wrapper {
     width: 285px;
-    height: auto;
-    margin: 0;
     margin-right: 59px;
+    overflow: hidden;
 
     border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+  }
+
+  .travelmates-cards__photo {
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    transition: all 0.2s;
+  }
+
+  .travelmates-cards__item:hover .travelmates-cards__photo,
+  .travelmates-cards__item:focus .travelmates-cards__photo {
+    transform: scale(1.05);
+
+    transition: all 0.2s;
   }
 
   .travelmates-cards__container {
@@ -756,6 +780,15 @@
     margin-top: 47px;
   }
 
+  .travelmates-cards__user-name:hover,
+  .travelmates-cards__user-name:focus {
+    opacity: 0.6;
+  }
+
+  .travelmates-cards__user-name:active {
+    opacity: 0.3;
+  }
+
   .travelmates-cards__online-status {
     left: -25px;
   }
@@ -764,10 +797,32 @@
     width: 80%;
   }
 
+  .travelmates-cards__btn--tablet:hover,
+  .travelmates-cards__btn--tablet:focus {
+    background-color: #ffbd30;
+  }
+
+  .travelmates-cards__btn--tablet:active {
+    color: rgba(#161c35, 0.3);
+  }
+
   .travelmates-cards__show-more-btn {
+    width: 20%;
+    margin: 0 auto;
     margin-top: 70px;
     padding-right: 25px;
     padding-left: 0;
+
+    text-align: center;
+  }
+
+  .travelmates-cards__show-more-btn:hover,
+  .travelmates-cards__show-more-btn:focus {
+    opacity: 0.6;
+  }
+
+  .travelmates-cards__show-more-btn:active {
+    opacity: 0.3;
   }
 
   .travelmates-cards__pagination {
@@ -792,6 +847,17 @@
 
   .travelmates-cards__flag {
     margin-bottom: 7px;
+  }
+
+  .travelmates-cards__flag:hover,
+  .travelmates-cards__flag:focus {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .travelmates-cards__flag svg {
@@ -843,6 +909,17 @@
   .travelmates-cards__transport-list {
     flex-direction: row;
     margin-top: -2px;
+  }
+
+  .travelmates-cards__transport-item:hover,
+  .travelmates-cards__transport-item:focus {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .travelmates-cards__transport-icon--plane {

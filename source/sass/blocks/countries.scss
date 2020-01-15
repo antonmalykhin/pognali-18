@@ -150,6 +150,7 @@
 .countries__country {
   margin-top: 11px;
   margin-bottom: 2px;
+  margin-left: -1px;
 
   font-weight: 700;
   font-size: 21px;
@@ -157,6 +158,7 @@
   font-family: $main-font;
   color: #161c35;
   font-style: normal;
+  letter-spacing: -0.1px;
 }
 
 .countries__slogan {
@@ -420,6 +422,19 @@
 
   .countries__btn--top {
     display: block;
+  }
+
+  .countries__btn--top:hover,
+  .countries__btn--top:focus {
+    background-color: #ffbd30;
+  }
+
+  .countries__btn--top:active {
+    color: rgba(#161c35, 0.3);
+  }
+
+  .countries__btn--top:active::after {
+    border-left-color: rgba(#1d2e5b, 0.3);
   }
 
   .countries__btn--bottom {

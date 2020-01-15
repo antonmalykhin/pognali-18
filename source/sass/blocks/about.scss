@@ -25,7 +25,7 @@
 
   padding: 0 49px;
   padding-top: 5px;
-  padding-bottom: 63px;
+  padding-bottom: 62px;
 
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@
   z-index: 1;
 
   margin-top: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 
   font-weight: 700;
   font-size: 24px;
@@ -59,7 +59,7 @@
 
   width: 96%;
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 
   font-weight: 300;
   font-size: 16px;
@@ -250,5 +250,20 @@
     z-index: 2;
 
     margin-top: 84px;
+
+    color: #1d2e5b;
+  }
+
+  .about__btn:hover,
+  .about__btn:focus {
+    background-color: #ffbd30;
+  }
+
+  .about__btn:active {
+    color: rgba(#161c35, 0.3);
+  }
+
+  .about__btn:active::after {
+    border-left-color: rgba(#1d2e5b, 0.3);
   }
 }

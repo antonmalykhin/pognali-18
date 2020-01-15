@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали</title>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="libs/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="inner-page">
-
-  <div style="display: none;">
-    <include src="build/img/sprite.svg"></include>
-  </div>
 
   <header class="page-header">
     <nav class="main-nav main-nav--closed inner-page__nav inner-page__nav--closed container">
@@ -21,23 +21,18 @@
       <div class="page-header__wrapper">
         <a href="index.html" class="main-nav__logo page-header__logo"></a>
         <button class="main-nav__toggle open-close-btn" type="button" aria-label="Открыть меню">
-          <svg class="main-nav__toggle-icon main-nav__toggle-icon--close" aria-hidden="true" focusable="false"
-            width="19" height="19">
-            <use xlink:href="#menu-close"></use>
-          </svg>
-          <svg class="main-nav__toggle-icon main-nav__toggle-icon--open" aria-hidden="true" focusable="false" width="25"
-            height="11">
-            <use xlink:href="#menu"></use>
-          </svg>
+          <div class="main-nav__icon"></div>
         </button>
       </div>
 
       <ul class="main-nav__list site-list">
-        <li class="main-nav__item site-list__item"><a href="index.html">О сервисе</a></li>
-        <li class="main-nav__item site-list__item"><a href="form.html">Направления</a></li>
-        <li class="main-nav__item site-list__item"><a>Попутчики</a></li>
+        <li class="main-nav__item site-list__item"><a class="site-list__link" href="index.html"><span
+              data-hover="О сервисе">О сервисе</span></a></li>
+        <li class="main-nav__item site-list__item"><a class="site-list__link" href="form.html"><span
+              data-hover="Направления">Направления</span></a></li>
+        <li class="main-nav__item site-list__item"><a class="site-list__link"><span>Попутчики</span></a></li>
       </ul>
-      <ul class="main-nav__list user-list">
+      <ul class=" main-nav__list user-list">
         <li class="main-nav__user-item user-list__item">
           <a class="btn user-list__login" href="#">авторизация</a>
         </li>
@@ -47,10 +42,10 @@
         <li class="main-nav__item contacts-list__item">
           <a class="main-nav__link contacts-list__phone" href="tel:8-800-555-86-28">
             <svg class="contacts-list__phone-icon contacts-list__phone-icon--mobile" width="18" height="18">
-              <use xlink:href="#contacts-phone"></use>
+              <use xlink:href="img/sprite.svg#contacts-phone"></use>
             </svg>
             <svg class="contacts-list__phone-icon contacts-list__phone-icon--desktop" width="18" height="18">
-              <use xlink:href="#topmenu-phone"></use>
+              <use xlink:href="img/sprite.svg#topmenu-phone"></use>
             </svg>
             <span>8 800 555-86-28</span>
           </a>
@@ -58,10 +53,10 @@
         <li class="main-nav__item contacts-list__item">
           <a class="main-nav__link contacts-list__email" href="mailto:mail@htmlacademy.ru">
             <svg class="contacts-list__email-icon contacts-list__email-icon--mobile" width="18" height="18">
-              <use xlink:href="#contacts-mail"></use>
+              <use xlink:href="img/sprite.svg#contacts-mail"></use>
             </svg>
             <svg class="contacts-list__email-icon contacts-list__email-icon--desktop" width="18" height="18">
-              <use xlink:href="#topmenu-mail"></use>
+              <use xlink:href="img/sprite.svg#topmenu-mail"></use>
             </svg>
             <span>mail@htmlacademy.ru</span>
           </a>
@@ -72,14 +67,14 @@
         <li class="main-nav__item social-list__item">
           <a class="main-nav__social-link social-list__link social-list__link--facebook" href="#" aria-label="facebook">
             <svg width="11" height="21">
-              <use xlink:href="#facebook"></use>
+              <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="main-nav__item social-list__item">
           <a class="main-nav__social-link social-list__link social-list__link--vk" href="#" aria-label="вконтакте">
             <svg width="23" height="12">
-              <use xlink:href="#vk"></use>
+              <use xlink:href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
@@ -87,14 +82,14 @@
           <a class="main-nav__social-link social-list__link social-list__link--instagram" href="#"
             aria-label="instagram">
             <svg width="18" height="18">
-              <use xlink:href="#instagram"></use>
+              <use xlink:href="img/sprite.svg#instagram"></use>
             </svg></a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main inner-page__main">
 
     <div class="page-main__title-bg">
       <div class="page-main__title-wrapper container">
@@ -104,14 +99,13 @@
         <a class="page-main__return-link" href="index.html">
           <span>На главную</span>
           <svg width="32" height="16">
-            <use xlink:href="#return"></use>
+            <use xlink:href="img/sprite.svg#return"></use>
           </svg>
         </a>
       </div>
     </div>
 
     <section class="countries-filter countries-filter--closed">
-      <!-- countries-filter--closed-->
       <div class="page-main__wrapper container">
 
         <div class="countries-filter__container">
@@ -119,7 +113,7 @@
             <div class="countries-filter__header">
               <h2 class="countries-filter__title">
                 <svg class="countries-filter__icon-filter" width="15" height="10 ">
-                  <use xlink:href="#filter"></use>
+                  <use xlink:href="img/sprite.svg#filter"></use>
                 </svg>
                 <span>Фильтрация по странам</span>
               </h2>
@@ -141,10 +135,10 @@
                 <span class="countries-filter__btn-text countries-filter__btn-text--close">Свернуть</span>
                 <span class="countries-filter__btn-text countries-filter__btn-text--open">Показать все</span>
                 <svg class="countries-filter__icon-filter countries-filter__icon-filter--close" width="12" height="12">
-                  <use xlink:href="#filter-close"></use>
+                  <use xlink:href="img/sprite.svg#filter-close"></use>
                 </svg>
                 <svg class="countries-filter__icon-filter countries-filter__icon-filter--open" width="17" height="3">
-                  <use xlink:href="#dots"></use>
+                  <use xlink:href="img/sprite.svg#dots"></use>
                 </svg>
               </a>
             </div>
@@ -868,7 +862,7 @@
         <button class="countries-filter__btn countries-filter__btn--bottom">
           <span class="countries-filter__btn-text">
             <svg class="countries-filter__icon-filter-close" width="12" height="12">
-              <use xlink:href="#filter-close"></use>
+              <use xlink:href="img/sprite.svg#filter-close"></use>
             </svg>
             Свернуть
           </span>
@@ -888,7 +882,7 @@
                 <button class="travelmates-filter__legend" type="button">
                   <span>Хобби</span>
                   <svg class="travelmates-filter__icon-dropdown" width="8" height="4">
-                    <use xlink:href="#dropdown"></use>
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
                   </svg>
                 </button>
                 <ul class="travelmates-filter__list travelmates-filter__list--hobby">
@@ -898,7 +892,7 @@
                         value="спортзал">
                       <span class="travelmates-filter__tick-field">
                         <svg width="9" height="9">
-                          <use xlink:href="#tick"></use>
+                          <use xlink:href="img/sprite.svg#tick"></use>
                         </svg>
                       </span>
                       <span class="travelmates-filter__label">Спортзал</span>
@@ -910,7 +904,7 @@
                         value="кальян">
                       <span class="travelmates-filter__tick-field travelmates-filter__tick-field--unchecked">
                         <svg width="9" height="9">
-                          <use xlink:href="#tick"></use>
+                          <use xlink:href="img/sprite.svg#tick"></use>
                         </svg>
                       </span>
                       <span class="travelmates-filter__label">Кальян</span>
@@ -922,7 +916,7 @@
                         value="диван">
                       <span class="travelmates-filter__tick-field travelmates-filter__tick-field--unchecked">
                         <svg width="9" height="9">
-                          <use xlink:href="#tick"></use>
+                          <use xlink:href="img/sprite.svg#tick"></use>
                         </svg>
                       </span>
                       <span class="travelmates-filter__label">Диван</span>
@@ -937,7 +931,7 @@
                   <span>Музыка</span>
                   <svg class="travelmates-filter__icon-dropdown travelmates-filter__icon-dropdown--open" width="8"
                     height="4">
-                    <use xlink:href="#dropdown"></use>
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
                   </svg>
                 </button>
                 <ul class="travelmates-filter__list travelmates-filter__list--music">
@@ -947,7 +941,7 @@
                         value="тяжелый рок">
                       <span class="travelmates-filter__tick-field">
                         <svg width="9" height="9">
-                          <use xlink:href="#tick"></use>
+                          <use xlink:href="img/sprite.svg#tick"></use>
                         </svg>
                       </span>
                       <span class="travelmates-filter__label">Тяжелый рок</span>
@@ -959,7 +953,7 @@
                         value="русский рэп">
                       <span class="travelmates-filter__tick-field travelmates-filter__tick-field--unchecked">
                         <svg width="9" height="9">
-                          <use xlink:href="#tick"></use>
+                          <use xlink:href="img/sprite.svg#tick"></use>
                         </svg>
                       </span>
                       <span class="travelmates-filter__label">Русский рэп</span>
@@ -971,7 +965,7 @@
                         value="евроденс">
                       <span class="travelmates-filter__tick-field travelmates-filter__tick-field--unchecked">
                         <svg width="9" height="9">
-                          <use xlink:href="#tick"></use>
+                          <use xlink:href="img/sprite.svg#tick"></use>
                         </svg>
                       </span>
                       <span class="travelmates-filter__label">Евроденс</span>
@@ -986,7 +980,7 @@
                 <button class="travelmates-filter__legend" type="button">
                   <span>Еда</span>
                   <svg class="travelmates-filter__icon-dropdown" width="8" height="4">
-                    <use xlink:href="#dropdown"></use>
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
                   </svg>
                 </button>
                 <ul class="travelmates-filter__list travelmates-filter__list--food">
@@ -996,7 +990,7 @@
                         value="мясоед">
                       <span class="travelmates-filter__tick-field">
                         <svg width="9" height="9">
-                          <use xlink:href="#tick"></use>
+                          <use xlink:href="img/sprite.svg#tick"></use>
                         </svg>
                       </span>
                       <span class="travelmates-filter__label">Мясоед</span>
@@ -1008,7 +1002,7 @@
                         value="сидит на пп">
                       <span class="travelmates-filter__tick-field travelmates-filter__tick-field--unchecked">
                         <svg width="9" height="9">
-                          <use xlink:href="#tick"></use>
+                          <use xlink:href="img/sprite.svg#tick"></use>
                         </svg>
                       </span>
                       <span class="travelmates-filter__label">Сидит на ПП</span>
@@ -1020,7 +1014,7 @@
                         value="веган-сыроед">
                       <span class="travelmates-filter__tick-field travelmates-filter__tick-field--unchecked">
                         <svg width="9" height="9">
-                          <use xlink:href="#tick"></use>
+                          <use xlink:href="img/sprite.svg#tick"></use>
                         </svg>
                       </span>
                       <span class="travelmates-filter__label">Веган-сыроед</span>
@@ -1036,7 +1030,7 @@
                   <span>Транспорт</span>
                   <svg class="travelmates-filter__icon-dropdown travelmates-filter__icon-dropdown--open" width="8"
                     height="4">
-                    <use xlink:href="#dropdown"></use>
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
                   </svg>
                 </button>
                 <ul class="travelmates-filter__list travelmates-filter__list--transport transport-list">
@@ -1046,7 +1040,7 @@
                         type="radio" name="transport" value="авиаперелет">
                       <svg class="travelmates-filter__transport-icon travelmates-filter__transport-icon--plane"
                         width="14" height="16" role="img" aria-label="авиаперелет" focusable="false">
-                        <use xlink:href="#plane"></use>
+                        <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
                     </label>
                   </li>
@@ -1056,7 +1050,7 @@
                         type="radio" name="transport" value="автотранспорт">
                       <svg class="travelmates-filter__transport-icon travelmates-filter__transport-icon--bus" width="13"
                         height="16" role="img" aria-label="автотранспорт" focusable="false">
-                        <use xlink:href="#bus"></use>
+                        <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
                     </label>
                   </li>
@@ -1066,7 +1060,7 @@
                         type="radio" name="transport" value="велосипед">
                       <svg class="travelmates-filter__transport-icon travelmates-filter__transport-icon--bike"
                         width="19" height="17" role="img" aria-label="велосипед" focusable="false">
-                        <use xlink:href="#bike"></use>
+                        <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
                     </label>
                   </li>
@@ -1076,7 +1070,7 @@
                         type="radio" name="transport" value="пешком">
                       <svg class="travelmates-filter__transport-icon travelmates-filter__transport-icon--run" width="15"
                         height="17" role="img" aria-label="пешком" focusable="false">
-                        <use xlink:href="#run"></use>
+                        <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
                     </label>
                   </li>
@@ -1090,7 +1084,7 @@
                   <span>Левел</span>
                   <svg class="travelmates-filter__icon-dropdown travelmates-filter__icon-dropdown--open" width="8"
                     height="4">
-                    <use xlink:href="#dropdown"></use>
+                    <use xlink:href="img/sprite.svg#dropdown"></use>
                   </svg>
                 </button>
                 <div class="travelmates-filter__level-container">
@@ -1121,18 +1115,21 @@
         <ul class="travelmates-cards__list">
           <li class="travelmates-cards__item">
             <div class="travelmates-cards__user user-card">
-              <picture>
-                <source type="image/webp" media="(min-width: 1350px)"
-                  srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp 2x">
-                <source media="(min-width: 1350px)" srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg 2x">
-                <img class=" travelmates-cards__photo user-card__photo user-card__photo--small"
-                  src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70"
-                  alt="Фотография пользователя Таня Фирсова">
-              </picture>
+              <div class="travelmates-cards__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1350px)"
+                    srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp 2x">
+                  <source media="(min-width: 1350px)"
+                    srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg 2x">
+                  <img class=" travelmates-cards__photo user-card__photo user-card__photo--small"
+                    src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70"
+                    alt="Фотография пользователя Таня Фирсова">
+                </picture>
+              </div>
 
               <div class="travelmates-cards__container">
                 <a href="#"
@@ -1140,10 +1137,10 @@
                 <button class="travelmates-cards__like-btn user-card__like-btn user-card__like-btn--selected"
                   aria-label="Поставить лайк">
                   <svg class="user-card__icon user-card__icon--active" width="13" height="11">
-                    <use xlink:href="#heart-active"></use>
+                    <use xlink:href="img/sprite.svg#heart-active"></use>
                   </svg>
                   <svg class="user-card__icon user-card__icon--not-active" width="13" height="11">
-                    <use xlink:href="#heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
 
@@ -1163,19 +1160,19 @@
                 <ul class="travelmates-cards__flags user-card__flags">
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-sri-lanka"></use>
+                      <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
                     </svg>
                     <span>Шри-Ланка</span>
                   </li>
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-thailand"></use>
+                      <use xlink:href="img/sprite.svg#flag-thailand"></use>
                     </svg>
                     <span>Тайланд</span>
                   </li>
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-seychelles"></use>
+                      <use xlink:href="img/sprite.svg#flag-seychelles"></use>
                     </svg>
                     <span>Сейшелы</span>
                   </li>
@@ -1190,28 +1187,28 @@
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--plane user-card__transport-icon"
                         width="14" height="16" role="img" focusable="false" aria-label="Авиаперелет">
-                        <use xlink:href="#plane"></use>
+                        <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bus user-card__transport-icon  user-card__transport-icon--disable"
                         width="13" height="16" role="img" focusable="false" aria-label="Автотранспорт">
-                        <use xlink:href="#bus"></use>
+                        <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bike user-card__transport-icon user-card__transport-icon--disable"
                         width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
-                        <use xlink:href="#bike"></use>
+                        <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--run user-card__transport-icon user-card__transport-icon--disable"
                         width="15" height="17" role="img" focusable="false" aria-label="Пешком">
-                        <use xlink:href="#run"></use>
+                        <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1231,28 +1228,30 @@
 
           <li class="travelmates-cards__item travelmates-cards__item--pixelperfect">
             <div class="travelmates-cards__user user-card">
-              <picture>
-                <source type="image/webp" media="(min-width: 1350px)"
-                  srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp 2x">
-                <source media="(min-width: 1350px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
-                <img class="travelmates-cards__photo user-card__photo user-card__photo--small"
-                  src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70"
-                  alt="Фотография пользователя Петя Демин">
-              </picture>
+              <div class="travelmates-cards__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1350px)"
+                    srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp 2x">
+                  <source media="(min-width: 1350px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
+                  <img class="travelmates-cards__photo user-card__photo user-card__photo--small"
+                    src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70"
+                    alt="Фотография пользователя Петя Демин">
+                </picture>
+              </div>
 
               <div class="travelmates-cards__container">
                 <a href="#"
                   class="btn user-card__btn travelmates-cards__btn travelmates-cards__btn--tablet">Позвать!</a>
                 <button class="travelmates-cards__like-btn user-card__like-btn" aria-label="Поставить лайк">
                   <svg class="user-card__icon user-card__icon--active" width="13" height="11">
-                    <use xlink:href="#heart-active"></use>
+                    <use xlink:href="img/sprite.svg#heart-active"></use>
                   </svg>
                   <svg class="user-card__icon user-card__icon--not-active" width="13" height="11">
-                    <use xlink:href="#heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
 
@@ -1270,13 +1269,13 @@
                 <ul class="travelmates-cards__flags user-card__flags">
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-belgium"></use>
+                      <use xlink:href="img/sprite.svg#flag-belgium"></use>
                     </svg>
                     <span>Бельгия</span>
                   </li>
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-czech"></use>
+                      <use xlink:href="img/sprite.svg#flag-czech"></use>
                     </svg>
                     <span>Чехия</span>
                   </li>
@@ -1291,28 +1290,28 @@
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--plane user-card__transport-icon"
                         width="14" height="16" role="img" focusable="false" aria-label="Авиаперелет">
-                        <use xlink:href="#plane"></use>
+                        <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bus user-card__transport-icon"
                         width="13" height="16" role="img" focusable="false" aria-label="Автотранспорт">
-                        <use xlink:href="#bus"></use>
+                        <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bike user-card__transport-icon user-card__transport-icon--disable"
                         width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
-                        <use xlink:href="#bike"></use>
+                        <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--run user-card__transport-icon"
                         width="15" height="17" role="img" focusable="false" aria-label="Пешком">
-                        <use xlink:href="#run"></use>
+                        <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1332,29 +1331,29 @@
 
           <li class="travelmates-cards__item travelmates-cards__item--pixelperfect">
             <div class="travelmates-cards__user user-card">
-
-              <picture>
-                <source type="image/webp" media="(min-width: 1350px)"
-                  srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp 2x">
-                <source media="(min-width: 1350px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg 2x">
-                <img class="travelmates-cards__photo user-card__photo user-card__photo--small"
-                  src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70"
-                  alt="Фотография пользователя Марк Смолов">
-              </picture>
-
+              <div class="travelmates-cards__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1350px)"
+                    srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp 2x">
+                  <source media="(min-width: 1350px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg 2x">
+                  <img class="travelmates-cards__photo user-card__photo user-card__photo--small"
+                    src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70"
+                    alt="Фотография пользователя Марк Смолов">
+                </picture>
+              </div>
               <div class="travelmates-cards__container">
                 <a href="#"
                   class="btn user-card__btn travelmates-cards__btn travelmates-cards__btn--tablet">Позвать!</a>
                 <button class="travelmates-cards__like-btn user-card__like-btn" aria-label="Поставить лайк">
                   <svg class="user-card__icon user-card__icon--active" width="13" height="11">
-                    <use xlink:href="#heart-active"></use>
+                    <use xlink:href="img/sprite.svg#heart-active"></use>
                   </svg>
                   <svg class="user-card__icon user-card__icon--not-active" width="13" height="11">
-                    <use xlink:href="#heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
 
@@ -1372,19 +1371,19 @@
                 <ul class="travelmates-cards__flags user-card__flags">
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-usa"></use>
+                      <use xlink:href="img/sprite.svg#flag-usa"></use>
                     </svg>
                     <span>США</span>
                   </li>
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-australia"></use>
+                      <use xlink:href="img/sprite.svg#flag-australia"></use>
                     </svg>
                     <span>Австралия</span>
                   </li>
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-dominica"></use>
+                      <use xlink:href="img/sprite.svg#flag-dominica"></use>
                     </svg>
                     <span>Доминикана</span>
                   </li>
@@ -1399,28 +1398,28 @@
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--plane user-card__transport-icon"
                         width="14" height="16" role="img" focusable="false" aria-label="Авиаперелет">
-                        <use xlink:href="#plane"></use>
+                        <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bus user-card__transport-icon  user-card__transport-icon--disable"
                         width="13" height="16" role="img" focusable="false" aria-label="Автотранспорт">
-                        <use xlink:href="#bus"></use>
+                        <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bike user-card__transport-icon"
                         width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
-                        <use xlink:href="#bike"></use>
+                        <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--run user-card__transport-icon user-card__transport-icon--disable"
                         width="15" height="17" role="img" focusable="false" aria-label="Пешком">
-                        <use xlink:href="#run"></use>
+                        <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1440,30 +1439,30 @@
 
           <li class="travelmates-cards__item travelmates-cards__item--pixelperfect">
             <div class="travelmates-cards__user user-card">
-
-              <picture>
-                <source type="image/webp" media="(min-width: 1350px)"
-                  srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp 2x">
-                <source media="(min-width: 1350px)"
-                  srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg 2x">
-                <img class="travelmates-cards__photo user-card__photo user-card__photo--small"
-                  src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70"
-                  alt="Фотография пользователя Лариса Роговая">
-              </picture>
-
+              <div class="travelmates-cards__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1350px)"
+                    srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp 2x">
+                  <source media="(min-width: 1350px)"
+                    srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg 2x">
+                  <img class="travelmates-cards__photo user-card__photo user-card__photo--small"
+                    src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70"
+                    alt="Фотография пользователя Лариса Роговая">
+                </picture>
+              </div>
               <div class="travelmates-cards__container">
                 <a href="#"
                   class="btn user-card__btn travelmates-cards__btn travelmates-cards__btn--tablet">Позвать!</a>
                 <button class="travelmates-cards__like-btn user-card__like-btn" aria-label="Поставить лайк">
                   <svg class="user-card__icon user-card__icon--active" width="13" height="11">
-                    <use xlink:href="#heart-active"></use>
+                    <use xlink:href="img/sprite.svg#heart-active"></use>
                   </svg>
                   <svg class="user-card__icon user-card__icon--not-active" width="13" height="11">
-                    <use xlink:href="#heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
 
@@ -1483,13 +1482,13 @@
                 <ul class="travelmates-cards__flags user-card__flags">
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-united-kingdom"></use>
+                      <use xlink:href="img/sprite.svg#flag-united-kingdom"></use>
                     </svg>
                     <span>Великобритания</span>
                   </li>
                   <li class="travelmates-cards__flag user-card__flag">
                     <svg width="26" height="18">
-                      <use xlink:href="#flag-germany"></use>
+                      <use xlink:href="img/sprite.svg#flag-germany"></use>
                     </svg>
                     <span>Германия</span>
                   </li>
@@ -1504,28 +1503,28 @@
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--plane user-card__transport-icon"
                         width="14" height="16" role="img" focusable="false" aria-label="Авиаперелет">
-                        <use xlink:href="#plane"></use>
+                        <use xlink:href="img/sprite.svg#plane"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bus user-card__transport-icon"
                         width="13" height="16" role="img" focusable="false" aria-label="Автотранспорт">
-                        <use xlink:href="#bus"></use>
+                        <use xlink:href="img/sprite.svg#bus"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--bike user-card__transport-icon user-card__transport-icon--disable"
                         width="19" height="17" role="img" focusable="false" aria-label="Велосипед">
-                        <use xlink:href="#bike"></use>
+                        <use xlink:href="img/sprite.svg#bike"></use>
                       </svg>
                     </li>
                     <li class="travelmates-cards__transport-item user-card__transport-item">
                       <svg
                         class="travelmates-cards__transport-icon travelmates-cards__transport-icon--run user-card__transport-icon user-card__transport-icon--disable"
                         width="15" height="17" role="img" focusable="false" aria-label="Пешком">
-                        <use xlink:href="#run"></use>
+                        <use xlink:href="img/sprite.svg#run"></use>
                       </svg>
                     </li>
                   </ul>
@@ -1547,7 +1546,7 @@
 
           <span class="travelmates-cards__btn-text">
             <svg width="18" height="18">
-              <use xlink:href="#show-more-plus"></use>
+              <use xlink:href="img/sprite.svg#show-more-plus"></use>
             </svg>
             Показать еще
           </span>
@@ -1566,14 +1565,14 @@
             <li class="travelmates-cards__pagination-item">
               <a class="pagination__btn pagination__btn--back" href="#" aria-label="Назад">
                 <svg width="10" height="20">
-                  <use xlink:href="#triangle-arrow-left"></use>
+                  <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
                 </svg>
               </a>
             </li>
             <li class="travelmates-cards__pagination-item">
               <a class="pagination__btn pagination__btn--front" href="#" aria-label="Вперед">
                 <svg width="10" height="20">
-                  <use xlink:href="#triangle-arrow-right"></use>
+                  <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
                 </svg>
               </a>
             </li>
@@ -1604,7 +1603,7 @@
           <a class="page-footer__link page-footer__link--facebook social-list__link social-list__link--facebook"
             href="#" aria-label="facebook">
             <svg aria-hidden="true" focusable="false" width="11" height="21">
-              <use xlink:href="#facebook"></use>
+              <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
@@ -1612,7 +1611,7 @@
           <a class="page-footer__link page-footer__link--vk social-list__link social-list__link--vk" href="#"
             aria-label="вконтакте">
             <svg aria-hidden="true" focusable="false" width="23" height="12">
-              <use xlink:href="#vk"></use>
+              <use xlink:href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
@@ -1620,17 +1619,17 @@
           <a class="page-footer__link page-footer__link--instagram social-list__link social-list__link--instagram"
             href="#" aria-label="instagram">
             <svg aria-hidden="true" focusable="false" width="18" height="18">
-              <use xlink:href="#instagram"></use>
+              <use xlink:href="img/sprite.svg#instagram"></use>
             </svg></a>
         </li>
       </ul>
 
       <div class="page-footer__developer developer">
-        <p class="page-footer__dev-text developer__text">Разработано</p>
         <a class="page-footer__dev-link developer__link" href="https://htmlacademy.ru/intensive/adaptive"
           target="_blank" aria-label="сайт HTMLAcademy">
+          <span class="page-footer__dev-text developer__text">Разработано</span>
           <svg aria-hidden="true" focusable="false" width="27" height="34">
-            <use xlink:href="#htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -1638,6 +1637,9 @@
   </footer>
 
   <script src="libs/picturefill.min.js"></script>
+  <script src="libs/svgxuse.min.js"></script>
+  <script src="js/mainNav.js"></script>
+  <script src="js/filter.js"></script>
 </body>
 
 </html>

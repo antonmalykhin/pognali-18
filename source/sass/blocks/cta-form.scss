@@ -266,6 +266,15 @@
     margin-bottom: 57px;
   }
 
+  .cta-form__link:hover,
+  .cta-form__link:focus {
+    color: #ff8d30;
+  }
+
+  .cta-form__link:active {
+    color: rgba(#ff8d30, 0.3);
+  }
+
   .cta-form__form {
     width: 88.9%;
   }
@@ -276,12 +285,35 @@
     padding: 24px 364px 22px 35px;
   }
 
+  .cta-form__field:hover::placeholder {
+    color: rgba(#444444, 0.5);
+  }
+
+  .cta-form__field:focus {
+    font-weight: 700;
+    font-size: 1;
+    line-height: 24px;
+    color: #ffffff;
+
+    background-color: transparent;
+    border: 4px solid #ffffff;
+  }
+
+  .cta-form__field:invalid {
+    color: #ff0000;
+
+    background-color: #ffefef;
+    border-color: #ffefef;
+  }
+
   .cta-form__btn {
     width: 325px;
     padding-top: 3px;
     padding-right: 55px;
     padding-bottom: 1px;
     padding-left: 1px;
+
+    cursor: pointer;
 
     &::after {
       top: 34px;
@@ -299,6 +331,19 @@
     line-height: 24px;
     text-align: left;
     color: #1d2e5b;
+  }
+
+  .cta-form__btn:hover,
+  .cta-form__btn:focus {
+    background-color: #ffbd30;
+  }
+
+  .cta-form__btn:focus .cta-form__btn-text {
+    color: rgba(#1d2e5b, 0.3);
+  }
+
+  .cta-form__btn:focus::after {
+    border-left-color: rgba(#1d2e5b, 0.3);
   }
 
   .cta-form__text:last-of-type {
@@ -339,5 +384,41 @@
     width: 36px;
     height: 36px;
     padding: 27px;
+  }
+
+  .cta-form__email:hover,
+  .cta-form__email:focus {
+    color: #ffbd30;
+  }
+
+  .cta-form__email:hover svg,
+  .cta-form__email:focus svg {
+    fill: #ffbd30;
+  }
+
+  .cta-form__email:active {
+    color: rgba(#ffbd30, 0.3);
+  }
+
+  .cta-form__email:active svg {
+    fill: rgba(#ffbd30, 0.3);
+  }
+
+  .cta-form__phone:hover,
+  .cta-form__phone:focus {
+    color: #ffbd30;
+  }
+
+  .cta-form__phone:hover svg,
+  .cta-form__phone:focus svg {
+    fill: #ffbd30;
+  }
+
+  .cta-form__phone:active {
+    color: rgba(#ffbd30, 0.3);
+  }
+
+  .cta-form__phone:active svg {
+    fill: rgba(#ffbd30, 0.3);
   }
 }
