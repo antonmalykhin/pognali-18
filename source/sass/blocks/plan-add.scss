@@ -623,11 +623,11 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 13px;
 
   background-color: $white-color;
   border: 1px solid #cbced9;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 10px 10px;
   box-shadow: 0 20px 25px rgba(29, 46, 91, 0.102);
 }
 
@@ -648,39 +648,37 @@
 }
 
 .plan-add__dropdown-table {
-  width: 100%;
-}
-
-.plan-add__dropdown-table td {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
-.plan-add__dropdown-table tr:first-of-type td {
+.plan-add__cell {
+  box-sizing: border-box;
+  width: 20%;
+
+  border: 1px solid #cbced9;
   border-top: none;
-}
-
-.plan-add__dropdown-table td:first-of-type {
   border-left: none;
 }
 
-.plan-add__dropdown-table td:last-of-type {
+.plan-add__cell:nth-of-type(5n+5) {
   border-right: none;
 }
 
-.plan-add__dropdown-link--selected {
-  background-color: #edeff5;
-}
-
 .plan-add__dropdown-letter {
-  display: inline-block;
+  display: block;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding-top: 15px;
+  padding: 30% 0;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
-  vertical-align: middle;
   text-align: center;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -688,8 +686,12 @@
 }
 
 .plan-add__dropdown-list {
-  margin-top: 62px;
-  margin-left: 20px;
+  margin-top: 57px;
+  margin-left: 19px;
+}
+
+.plan-add__dropdown-item {
+  margin-bottom: 4px;
 }
 
 .plan-add__dropdown-item a {
@@ -880,6 +882,7 @@
   color: #ffffff;
 
   background-color: #1d2e5b;
+  border-color: #1d2e5b;
   border-radius: 4px 4px 0 0;
 }
 
@@ -1571,7 +1574,7 @@
       content: "";
       position: absolute;
       top: 0;
-      right: 202px;
+      right: 201px;
 
       width: 1px;
       height: 100%;
@@ -1582,23 +1585,16 @@
 
   .plan-add__dropdown-table {
     width: 50%;
+
+    border-top: 1px solid #cbced9;
   }
 
-  .plan-add__dropdown-table td {
-    height: 68px;
+  .plan-add__cell:nth-of-type(5n+1) {
+    border-left: 1px solid #cbced9;
   }
 
-
-  .plan-add__dropdown-table tr:first-of-type td {
-    border: 1px solid #cbced9;
-  }
-
-  .plan-add__dropdown-table td:first-of-type {
-    border: 1px solid #cbced9;
-  }
-
-  .plan-add__dropdown-table td:last-of-type {
-    border: 1px solid #cbced9;
+  .plan-add__cell:nth-of-type(5n+5) {
+    border-right: 1px solid #cbced9;
   }
 
   .plan-add__dropdown-link {
@@ -1615,15 +1611,14 @@
   }
 
   .plan-add__dropdown-letter {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
-    padding-top: 27px;
+    padding: 46% 0;
 
     font-weight: 500;
     font-size: 20px;
     line-height: 1;
-    vertical-align: middle;
     text-align: center;
     color: #1d2e5b;
     text-transform: uppercase;
@@ -2030,6 +2025,8 @@
 
   .plan-add__select-wrapper .plan-add__icon-dropdown {
     right: 29.6%;
+
+    opacity: 0.3;
   }
 
   .plan-add__select-wrapper::after {
@@ -2051,14 +2048,7 @@
     opacity: 0.1;
   }
 
-  .plan-add__reset-btn:hover svg,
-  .plan-add__reset-btn:focus svg {
-    opacity: 0.3;
-  }
 
-  .plan-add__reset-btn:active svg {
-    opacity: 0.1;
-  }
 
 
   .plan-add__btn-select-country {
@@ -2085,7 +2075,7 @@
       border: 2px solid black;
       border-top: none;
       border-left: none;
-      transform: rotateZ(45deg) scale(0.7);
+      transform: rotateZ(45deg) scale(0.9);
       opacity: 0.3;
     }
   }
@@ -2213,10 +2203,19 @@
   }
 
   .plan-add__dropdown-table {
-    width: 55.6%;
+    width: 58%;
+    padding-top: 14px;
+    padding-left: 16px;
 
-    border-collapse: separate;
-    border-spacing: 13px;
+    border: none;
+  }
+
+  .plan-add__dropdown-table .plan-add__cell {
+    width: 60px;
+    margin-right: 15px;
+    margin-bottom: 14.7px;
+
+    border: none;
   }
 
   .plan-add__dropdown-link {
@@ -2228,13 +2227,6 @@
 
     background-color: transparent;
     border: none;
-  }
-
-  .plan-add__dropdown-table td {
-    width: 60px;
-    height: 70px;
-
-    border-radius: 4px;
   }
 
   .plan-add__dropdown-link--selected {
@@ -2329,8 +2321,8 @@
     border-color: #959bb2;
   }
 
-  .plan-add__btn-select-country:hover {
-    border-color: #959bb2;
+  .plan-add__select:hover ~ svg {
+    opacity: 0.5;
   }
 
   .plan-add__btn-add-country:hover,
@@ -2360,7 +2352,7 @@
     display: inline-block;
     width: 100%;
     height: 100%;
-    padding-top: 27px;
+    padding: 24px 0;
 
     font-weight: 500;
     font-size: 20px;
@@ -2370,21 +2362,25 @@
     color: #1d2e5b;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+
+    border: 1px solid #cbced9;
+    border-radius: 5px;
   }
 
   .plan-add__dropdown-input:checked ~ .plan-add__dropdown-letter {
     color: #ffffff;
 
     background-color: #1d2e5b;
-    border-radius: 4px;
   }
 
   .plan-add__dropdown-list {
-    width: 28.2%;
+    width: 27.1%;
+    margin: 0;
     margin-top: 12px;
-    margin-right: 0;
-    margin-left: auto;
-    padding-left: 24px;
+  }
+
+  .plan-add__dropdown-item {
+    margin-bottom: 0;
   }
 
   .plan-add__btn-select-country--opened {
@@ -2402,7 +2398,7 @@
     right: 19px;
 
     transform: rotate(45deg);
-    opacity: 0.3;
+    // opacity: 1;
 
     &::after {
       width: 2px;
@@ -2411,7 +2407,7 @@
       background-color: #ffffff;
       border: none;
       transform: rotate(0);
-      opacity: 1;
+      opacity: 0.3;
     }
 
     &::before {
@@ -2426,20 +2422,15 @@
       background-color: #ffffff;
       border: none;
       transform: rotateZ(0);
-      opacity: 1;
+      opacity: 0.3;
     }
-  }
-
-  .plan-add__btn-select-country--opened:hover .plan-add__drop-icon,
-  .plan-add__btn-select-country--opened:focus .plan-add__drop-icon {
-    opacity: 1;
   }
 
   .plan-add__btn-select-country--opened:active .plan-add__drop-icon {
     opacity: 0.1;
   }
 
-  .plan-add__dropdown-table td:hover {
+  .plan-add__dropdown-letter:hover {
     border-color: #959bb2;
   }
 
@@ -2452,5 +2443,40 @@
     color: #1d2e5b;
 
     opacity: 0.3;
+  }
+
+  .plan-add__btn-select-country:hover {
+    border-color: #959bb2;
+  }
+
+  .plan-add__btn-select-country:hover .plan-add__drop-icon::after {
+    opacity: 0.5;
+  }
+
+
+  .plan-add__btn-select-country--opened:hover .plan-add__drop-icon,
+  .plan-add__btn-select-country--opened:focus .plan-add__drop-icon {
+    opacity: 1;
+  }
+
+  .plan-add__btn-select-country--opened:hover .plan-add__drop-icon::before,
+  .plan-add__btn-select-country--opened:hover .plan-add__drop-icon::after,
+  .plan-add__btn-select-country--opened:focus .plan-add__drop-icon::before,
+  .plan-add__btn-select-country--opened:focus .plan-add__drop-icon::after {
+    opacity: 1;
+  }
+
+  .plan-add__btn-select-country--opened:active .plan-add__drop-icon::before,
+  .plan-add__btn-select-country--opened:active .plan-add__drop-icon::after {
+    opacity: 0.1;
+  }
+
+  .plan-add__reset-btn:hover,
+  .plan-add__reset-btn:focus {
+    opacity: 0.3;
+  }
+
+  .plan-add__reset-btn:active {
+    opacity: 0.1;
   }
 }

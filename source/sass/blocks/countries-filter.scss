@@ -405,13 +405,15 @@
 
     width: auto;
     margin-top: -70px;
-    margin-bottom: 46px;
+    margin-bottom: 0;
     padding-top: 131px;
     padding-bottom: 41px;
   }
 
   .countries-filter--closed + div {
-    margin-top: 0;
+    margin-top: -60px;
+    background-color: #edeff6;
+    padding-top: 106px;
   }
 
   .countries-filter--closed .countries-filter__btn--top {

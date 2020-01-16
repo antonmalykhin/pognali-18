@@ -178,6 +178,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: calc(50% - 8px);
+    z-index: 10;
+
+    width: 16px;
+    height: 1px;
+
+    background-color: #cbced8;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -187,8 +200,8 @@
     width: 16px;
     height: 11px;
 
-    background-color: tomato;
-    background-image: linear-gradient(#ffffff 0, #ffffff 5px, #cbced8 5px, #cbced8 6px, #ffffff 6px, #ffffff 11px);
+    background-color: $white-color;
+    // background-image: linear-gradient(#ffffff 0, #ffffff 5px, #cbced8 5px, #cbced8 6px, #ffffff 6px, #ffffff 11px);
   }
 }
 
@@ -625,5 +638,6 @@
     color: rgba(#161c35, 0.3);
 
     background-color: #f3c72b;
+    box-shadow: none;
   }
 }
