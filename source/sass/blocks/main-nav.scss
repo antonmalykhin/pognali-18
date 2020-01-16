@@ -37,6 +37,7 @@
 .main-nav__icon {
   position: relative;
 
+  display: block;
   width: 25px;
   height: 25px;
 
@@ -98,7 +99,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 10px;
     left: 0;
 
     width: 25px;
@@ -112,7 +113,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 17px;
+    top: 18px;
     left: 0;
 
     width: 25px;
@@ -198,6 +199,7 @@
   .main-nav {
     position: relative;
     // left: calc(50% - 659px);
+
     align-items: center;
     width: 1320px;
     padding: 0;

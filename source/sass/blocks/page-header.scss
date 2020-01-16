@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  min-width: 270px;
   margin-bottom: 70px;
 }
 
@@ -23,15 +24,18 @@
 @media (min-width: $desktop) {
   .page-header {
     position: fixed;
-    width: 100%;
     z-index: 20;
-    background-color: #161c34;
+
+    width: 100%;
     margin-bottom: 0;
+
+    background-color: #161c34;
   }
 
   .page-header__wrapper {
     order: -1;
     width: 15.2%;
+    min-width: 0;
     margin-bottom: 0;
     padding: 0;
   }
