@@ -164,42 +164,44 @@
 
 .rates__business-plans {
   padding: 0;
-  padding-top: 52px;
+  padding-top: 33px;
 
   background-color: $white-color;
   border-radius: 20px;
   box-shadow: 0 20px 25px 0 rgba(29, 46, 91, 0.1);
+}
 
+.rates__business-plans .rates__wrapper {
+  padding: 0 25px;
 
-  .rates__wrapper {
-    padding: 0 25px;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .rates__title {
-    width: 100%;
-    margin-left: 0;
-
-    text-align: center;
-  }
-
-  .rates__list {
-    width: 220px;
-    padding: 0;
-  }
-
-  .rates__item::after {
+  &::after {
     display: none;
-  }
-
-  .rates__btn--close {
-    width: 100%;
   }
 }
 
+.rates__business-plans .rates__title {
+  width: 100%;
+  margin-bottom: 29px;
+  margin-left: 0;
+
+  text-align: center;
+}
+
+.rates__business-plans .rates__list {
+  width: 220px;
+  padding: 0;
+}
+
+.rates__business-plans .rates__item::after {
+  display: none;
+}
+
+.rates__business-plans .rates__btn--close {
+  width: 100%;
+  margin-top: 33px;
+  padding-top: 19px;
+  padding-bottom: 16px;
+}
 
 @media (min-width: $tablet) {
   .rates {
@@ -344,64 +346,71 @@
     &::after {
       display: none;
     }
+  }
 
-    .rates__wrapper {
-      padding: 0 90px;
-    }
+  .rates__business-plans .rates__wrapper {
+    box-sizing: border-box;
+    padding: 0 90px;
+    padding-right: 91px;
+  }
 
-    .rates__title {
-      width: 100%;
-      margin-top: 15px;
-      margin-bottom: 48px;
-    }
+  .rates__business-plans .rates__title {
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 46px;
+  }
 
-    .rates__list {
-      width: 509px;
+  .rates__business-plans .rates__list {
+    width: 506px;
 
-      &::after {
-        display: none;
-      }
-    }
-
-    .rates__item {
-      padding-top: 11px;
-      padding-bottom: 16px;
-    }
-
-
-    .rates__item::after {
+    &::after {
       display: none;
-    }
-
-    .rates__btn::after {
-      display: none;
-    }
-
-    .rates__btn--close {
-      width: 100%;
-      padding: 34px 0;
-
-      font-size: 24px;
-      line-height: 24px;
-      text-align: center;
-      text-transform: none;
-    }
-
-    .rates__plan {
-      font-weight: 300;
-      font-size: 22px;
-      line-height: 28px;
-      color: #444444;
-    }
-
-    .rates__price {
-      font-weight: 300;
-      font-size: 22px;
-      line-height: 28px;
-      color: #444444;
     }
   }
+
+  .rates__business-plans .rates__item {
+    padding-top: 11px;
+    padding-bottom: 16px;
+  }
+
+
+  .rates__business-plans .rates__item::after {
+    display: none;
+  }
+
+  .rates__business-plans .rates__btn::after {
+    display: none;
+  }
+
+  .rates__business-plans .rates__btn--close {
+    width: 100%;
+    margin-top: 51px;
+    padding: 41px 0;
+    padding-bottom: 43px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: none;
+
+    border-radius: 0 0 30px 30px;
+  }
+
+  .rates__business-plans .rates__plan {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    color: #444444;
+  }
+
+  .rates__business-plans .rates__price {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    color: #444444;
+  }
 }
+
 
 @media (min-width: $desktop) {
   .rates {
@@ -514,55 +523,62 @@
     background-color: $white-color;
     border-radius: 30px;
     box-shadow: 0 20px 25px 0 rgba(29, 46, 91, 0.1);
+  }
 
-    .rates__wrapper {
-      width: auto;
-      padding: 0 90px;
-    }
+  .rates__business-plans .rates__wrapper {
+    width: auto;
+    padding: 0 60px;
+  }
 
-    .rates__title {
-      width: 100%;
-      margin-top: 15px;
-      margin-bottom: 48px;
-    }
+  .rates__business-plans .rates__title {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 47px;
+  }
 
-    .rates__item {
-      padding-top: 11px;
-      padding-bottom: 16px;
-    }
+  .rates__business-plans .rates__list {
+    width: 630px;
+    margin-left: 0;
+  }
+
+  .rates__business-plans .rates__item {
+    padding-top: 11px;
+    padding-bottom: 16px;
+  }
 
 
-    .rates__item::after {
-      display: none;
-    }
+  .rates__business-plans .rates__item::after {
+    display: none;
+  }
 
-    .rates__btn::after {
-      display: none;
-    }
+  .rates__business-plans .rates__btn::after {
+    display: none;
+  }
 
-    .rates__btn--close {
-      width: 100%;
-      margin: 0;
-      padding: 34px 0;
+  .rates__business-plans .rates__btn--close {
+    width: 100%;
+    margin: 0;
+    margin-top: 49px;
+    padding: 41px 0;
+    padding-bottom: 43px;
 
-      font-size: 24px;
-      line-height: 24px;
-      text-align: center;
-      text-transform: none;
-    }
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: none;
+  }
 
-    .rates__plan {
-      font-weight: 300;
-      font-size: 22px;
-      line-height: 28px;
-      color: #444444;
-    }
+  .rates__business-plans .rates__plan {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    color: #444444;
+  }
 
-    .rates__price {
-      font-weight: 300;
-      font-size: 22px;
-      line-height: 28px;
-      color: #444444;
-    }
+  .rates__business-plans .rates__price {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    color: #444444;
   }
 }

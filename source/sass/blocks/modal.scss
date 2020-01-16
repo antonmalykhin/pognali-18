@@ -1,3 +1,28 @@
 .modal {
+  position: fixed;
+  top: 100px;
+  left: calc(50% - 135px);
+  z-index: 50;
+
   display: none;
+
+  border-radius: 30px;
+}
+
+.modal--show {
+  display: flex;
+}
+
+@media (min-width: $tablet) {
+  .modal {
+    top: 279px;
+    left: calc(50% - 347px);
+  }
+}
+
+@media (min-width: $desktop) {
+  .modal {
+    top: 244px;
+    left: calc(50% - 376px);
+  }
 }
