@@ -302,7 +302,7 @@
 
                 <label class="plan-add__label-wrapper plan-add__label-wrapper--with-children">
                   <input class="plan-add__checkbox checkbox visually-hidden" type="checkbox" name="withChildren"
-                    id="withChildren" required>
+                    id="withChildren">
                   <span class="plan-add__tick-field">
                     <svg width="9" height="9">
                       <use xlink:href="img/sprite.svg#tick"></use>
@@ -746,8 +746,11 @@
                     <use xlink:href="img/sprite.svg#flag-bosnia"></use>
                   </svg>
                 </span>
-                <textarea class="plan-add__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
-                  placeholder="План действий"></textarea>
+                <div class="plan-add__textarea-container">
+                  <textarea class="plan-add__textarea textarea" name="firstPlans" id="firstPlans" cols="30" rows="10"
+                    placeholder="План действий" required></textarea>
+                  <span class="plan-add__warning">Это поле должно быть заполнено</span>
+                </div>
               </label>
             </div>
 
@@ -759,8 +762,12 @@
                     <use xlink:href="img/sprite.svg#flag-czech"></use>
                   </svg>
                 </span>
-                <textarea class="plan-add__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
-                  placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <div class="plan-add__textarea-container">
+                  <textarea class="plan-add__textarea textarea" name="secondPlans" id="secondPlans" cols="30" rows="10"
+                    placeholder="План действий"
+                    required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <span class="plan-add__warning">Это поле должно быть заполнено</span>
+                </div>
               </label>
             </div>
 

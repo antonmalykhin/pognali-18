@@ -3,7 +3,7 @@
 
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 61.7% 128.5px, center;
+  background-position: 61.7% 129px, center;
   background-size: 192px, cover;
 
   @media (min-resolution: $retina) {
@@ -14,7 +14,7 @@
 .intro-title__slogan {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 225px;
+  margin-bottom: 224px;
 
   font-weight: 700;
   font-size: 36px;
@@ -43,6 +43,7 @@
 
 .intro-title__phone {
   padding: 0;
+  display: block;
 }
 
 .intro-title__phone svg {
@@ -58,6 +59,7 @@
 
 .intro-title__email {
   padding: 0;
+  display: block;
 }
 
 .intro-title__email svg {

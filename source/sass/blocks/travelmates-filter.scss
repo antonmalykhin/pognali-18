@@ -100,11 +100,13 @@
   top: 5px;
   left: 5px;
 
+  display: none;
+
   fill: #192144;
 }
 
-.travelmates-filter__tick-field--unchecked svg {
-  display: none;
+.travelmates-filter__input:checked + .travelmates-filter__tick-field svg {
+  display: block;
 }
 
 .travelmates-filter__list--transport {
@@ -128,7 +130,7 @@
   background-color: $white-color;
   border-radius: 50%;
 
-  fill: #1d2e5b;
+  fill: rgba(#000000, 0.14);
 }
 
 .travelmates-filter__transport-icon--plane {
@@ -158,6 +160,13 @@
   padding-bottom: 8px;
   padding-left: 9px;
 }
+
+.travelmates-filter__input:checked + .travelmates-filter__transport-icon {
+  opacity: 1;
+  fill: #1d2e5b;
+}
+
+
 
 
 .travelmates-filter__label {
@@ -640,4 +649,5 @@
     background-color: #f3c72b;
     box-shadow: none;
   }
+
 }
