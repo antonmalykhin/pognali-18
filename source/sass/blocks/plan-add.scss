@@ -3,7 +3,7 @@
 
   margin-top: -31px;
   padding: 0 25px;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 72px;
 
   background-color: #d4d9eb;
@@ -23,7 +23,7 @@
 
 .plan-add__part-title {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   font-weight: 700;
   font-size: 20px;
@@ -84,7 +84,7 @@
 
 .plan-add__description {
   margin-top: 0;
-
+  margin-bottom: 17px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -115,6 +115,7 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 25px;
+  padding-top: 22px;
   padding-bottom: 5px;
 
   background-color: $white-color;
@@ -123,7 +124,7 @@
 
 .plan-add__fieldset--step-two {
   position: relative;
-
+  padding-top: 22px;
   padding-bottom: 3px;
 }
 
@@ -169,7 +170,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 7px;
     left: -3px;
 
     width: 6px;
@@ -588,7 +589,7 @@
   position: relative;
 
   display: flex;
-  margin-top: 21px;
+  margin-top: 22px;
   margin-bottom: 22px;
 }
 
@@ -615,8 +616,10 @@
 
 .plan-add__textarea-container {
   position: relative;
-
+  margin-top: 17px;
+  margin-bottom: 4px;
   width: 100%;
+  height: 220px;
 }
 
 .plan-add__textarea-wrapper {
@@ -722,8 +725,8 @@
 .plan-add__textarea {
   box-sizing: border-box;
   width: 100%;
-  height: 220px;
-  margin-top: 16px;
+  height: 100%;
+
   padding: 15px;
   padding-top: 10px;
 
@@ -754,7 +757,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 9px;
     left: -14px;
 
     width: 12px;
@@ -790,22 +793,6 @@
   flex-grow: 1;
   width: auto;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 1px;
-    right: 52px;
-
-    width: 55px;
-    height: 40px;
-
-    background-image: linear-gradient(to right, transparent 0, $white-color 30%);
-    border-right: 1px solid #cbced9;
-    border-radius: 4px;
-
-    pointer-events: none;
-  }
-
   .plan-add__icon-dropdown {
     position: absolute;
     top: 18px;
@@ -818,8 +805,30 @@
   }
 }
 
+.plan-add__select-container {
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1.1px;
+    right: 52px;
+    width: 55px;
+    height: 95%;
+
+    background-image: linear-gradient(to right, transparent 0, $white-color 30%);
+    border: none;
+    border-right: 1px solid #cbced9;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    pointer-events: none;
+  }
+}
+
 .plan-add__select {
-  padding: 12px 6px;
+  padding: 11px 6px;
 
   cursor: pointer;
 }
@@ -893,7 +902,7 @@
 
 .plan-add__flag .plan-add__icon-flag {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 50px;
 }
 
@@ -982,12 +991,12 @@
   .plan-add {
     margin-top: -30px;
     padding: 0 75px;
-    padding-top: 53px;
+    padding-top: 50px;
     padding-bottom: 118px;
   }
 
   .plan-add__title {
-    margin-bottom: 56px;
+    margin-bottom: 59px;
     padding-left: 0;
 
     font-size: 36px;
@@ -997,10 +1006,10 @@
   .plan-add__fieldset {
     margin-bottom: 40px;
     padding: 40px;
-    padding-top: 48px;
+    padding-top: 45px;
     padding-right: 44px;
     padding-bottom: 38px;
-    padding-left: 44px;
+    padding-left: 43px;
 
     border-radius: 30px;
   }
@@ -1044,7 +1053,7 @@
   .plan-add__description {
     order: 0;
     width: 99%;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
 
     font-size: 20px;
     line-height: 1.27;
@@ -1160,7 +1169,6 @@
     display: block;
   }
 
-
   .plan-add__btn--back svg {
     top: 27px;
     left: 16px;
@@ -1176,7 +1184,6 @@
     width: 19px;
     height: 34px;
   }
-
 
   .plan-add__date {
     height: 87px;
@@ -1238,9 +1245,9 @@
     order: 3;
     width: 53.8%;
     margin-top: 30px;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-right: 54px;
-    padding-bottom: 27px;
+    padding-bottom: 29px;
     padding-left: 10px;
 
     font-size: 24px;
@@ -1300,7 +1307,7 @@
     position: relative;
 
     margin-top: 0;
-    margin-bottom: 4px;
+    margin-bottom: 15px;
 
     &::after {
       content: "";
@@ -1345,22 +1352,41 @@
     height: 9px;
   }
 
-  .plan-add__select-wrapper::after {
-    right: calc(30% + 7px);
+  // .plan-add__select-wrapper::after {
+  //   right: calc(30% + 7px);
 
-    height: 69px;
+  //   height: 83%;
+  //   top: px;
+
+  //   border: none;
+  // }
+
+  .plan-add__select-container {
+    width: 69.5%;
+    // height: 71px;
+    // margin-bottom: 10px;
+    // padding-bottom: 7px;
+    position: relative;
+  }
+
+  .plan-add__select-container::after {
+    right: 1px; //calc(30% + 7px);
+
+    height: 88%;
+    top: px;
 
     border: none;
   }
 
   .plan-add__select {
-    width: 69.5%;
-    height: 71px;
+    // width: 69.5%;
+    width: 100%;
+    height: 70px;
     margin: 0;
-    margin-bottom: 10px;
-    padding-bottom: 7px;
-    padding-left: 20px;
 
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -1411,8 +1437,8 @@
 
   .plan-add__btn-add-country {
     width: 69.5%;
-    height: 71px;
-    padding-top: 14px;
+    height: 70px;
+    padding-top: 9px;
     padding-left: 24px;
 
     font-size: 20px;
@@ -1436,8 +1462,8 @@
 
   .plan-add__btn-select-country {
     width: 69.5%;
-    height: 71px;
-    padding-top: 16px;
+    height: 70px;
+    padding-top: 10px;
     padding-left: 23px;
 
     font-size: 20px;
@@ -1461,17 +1487,17 @@
 
   .plan-add__fieldset--step-two {
     margin-bottom: 51px;
-    padding-bottom: 53px;
+    padding-bottom: 54px;
   }
 
   .plan-add__fieldset--step-two .plan-add__description {
     width: 75%;
-    margin-bottom: 31px;
+    margin-bottom: 34px;
   }
 
   .plan-add__fieldset--step-three {
     margin-bottom: 0;
-    padding-bottom: 35px;
+    padding-bottom: 37px;
   }
 
   .plan-add__fieldset--step-two .plan-add__btn-wrapper {
@@ -1492,10 +1518,11 @@
 
   .plan-add__fieldset--step-two .plan-add__btn-prew {
     order: 2;
-    width: 27.6%;
+    // width: 27.6%;
+    width: 30px;
     margin: 0;
     margin-top: 3px;
-    margin-right: -2px;
+    margin-right: -8px;
     padding-left: 34px;
 
     font-size: 24px;
@@ -1515,7 +1542,7 @@
     letter-spacing: -0.1px;
 
     &::before {
-      top: 8px;
+      top: 7px;
       right: -32.5%;
       left: auto;
 
@@ -1525,19 +1552,21 @@
   }
 
   .plan-add__fieldset--step-three .plan-add__description {
-    margin-bottom: 31px;
+    margin-bottom: 34px;
   }
 
   .plan-add__textarea-container {
     width: 94.3%;
+    height: 142px;
+    margin-top: 16px;
   }
 
   .plan-add__textarea {
-    height: 142px;
+    height: 100%;
     padding: 16px;
     padding-right: 30px;
     padding-left: 18px;
-
+    margin-top: 0;
     font-size: 20px;
     line-height: 24px;
   }
@@ -2039,7 +2068,7 @@
     position: relative;
 
     padding-right: 162px;
-    padding-bottom: 105px;
+    padding-bottom: 106px;
     padding-left: 162px;
   }
 
@@ -2081,15 +2110,22 @@
     margin-left: 0;
   }
 
-  .plan-add__select {
+
+  .plan-add__select-container {
     width: 73.2%;
   }
+
+  // .plan-add__select {
+  //   width: 73.2%;
+  // }
 
   .plan-add__select-wrapper .plan-add__icon-dropdown {
     right: 29.6%;
 
     opacity: 0.3;
   }
+
+
 
   .plan-add__select-wrapper::after {
     right: 27%;
@@ -2179,8 +2215,7 @@
     width: 50%;
     padding-top: 9px;
     padding-left: 8px;
-    margin-bottom: 39px;
-
+    margin-bottom: 23px;
   }
 
   .plan-add__textarea-wrapper:first-of-type {
@@ -2201,22 +2236,22 @@
   }
 
   .plan-add__textarea-wrapper {
-    margin-bottom: 23px;
+    margin-bottom: 10px;
     padding-top: 64px;
   }
 
   .plan-add__textarea-wrapper--last {
-    margin-top: 26px;
+    margin-top: 22px;
     padding-top: 10px;
   }
 
   .plan-add__textarea-wrapper .plan-add__flag {
-    margin-top: 7px;
+    margin-top: 9px;
     margin-right: 124px;
   }
 
   .plan-add__label--lowercase::before {
-    top: 17px;
+    top: 19px;
     right: -52.9%;
   }
 
@@ -2230,7 +2265,7 @@
   }
 
   .plan-add__fieldset--step-three .plan-add__btn-wrapper {
-    margin-top: 42px;
+    margin-top: 38px;
   }
 
   .plan-add__fieldset--step-three .plan-add__btn-next {

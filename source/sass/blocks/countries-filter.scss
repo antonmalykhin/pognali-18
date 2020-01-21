@@ -2,7 +2,7 @@
   position: absolute;
   top: 133px;
   left: 0;
-  z-index: 10;
+  z-index: 11;
 
   width: calc(100% - 50px);
   margin-top: 0;
@@ -15,13 +15,12 @@
   border-radius: 0 0 20px 20px;
 }
 
-.countries-filter + div {
+.countries-filter+div {
   margin-top: 76px;
 }
 
 .countries-filter__title {
   position: relative;
-
   margin-top: 0;
   margin-bottom: 30px;
   padding-left: 27px;
@@ -100,13 +99,19 @@
 }
 
 .countries-filter__table {
+  border: 1px solid #cbced9;
+  list-style: none;
+  width: 220px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  padding: 0;
+  margin-bottom: 47px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.countries-filter__table td {
-  width: 43px;
-  height: 40px;
+.countries-filter__cell {
+  width: 44px;
+  height: 41px;
 }
 
 .countries-filter__list--outside {
@@ -173,10 +178,28 @@
   display: none;
 }
 
+.countries-filter__link {
+  border-left: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  background-color: #ffffff;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.countries-filter__cell:nth-of-type(5n+6) .countries-filter__link {
+  border-left: none;
+}
+
+.countries-filter__cell:nth-of-type(n+21) .countries-filter__link {
+  border-bottom: none;
+}
 
 .countries-filter__link--current {
   color: $white-color;
-
+  border-color: #1d2e5b;
   background-color: #1d2e5b;
 }
 
@@ -189,7 +212,7 @@
   padding-bottom: 3px;
 }
 
-.countries-filter--closed + div {
+.countries-filter--closed+div {
   margin-top: 0;
 }
 
@@ -244,7 +267,7 @@
     border-radius: 0 0 60px 60px;
   }
 
-  .countries-filter + div {
+  .countries-filter+div {
     margin-top: 182px;
     background-color: #edeff6;
   }
@@ -334,31 +357,35 @@
   .countries-filter__table {
     order: 3;
     margin: 0;
-    margin-top: 36px;
+    margin-top: 43px;
+    width: 410px;
+    border: none;
   }
 
-  .countries-filter__table td {
+
+  .countries-filter__cell {
     width: 78px;
     height: 83px;
-
-    text-align: left;
-
+    margin-right: 1px;
     background-color: transparent;
     border: none;
   }
 
   .countries-filter__link {
+    padding-top: 0;
+    text-align: left;
     font-weight: 700;
     font-size: 60px;
     line-height: 1;
     color: #192144;
-
+    background-color: transparent;
+    border: none;
     opacity: 0.3;
   }
 
   .countries-filter__list {
     order: 4;
-    margin-top: 44px;
+    margin-top: 41px;
     margin-right: 70px;
     margin-left: auto;
   }
@@ -382,7 +409,7 @@
   .countries-filter__btn--bottom {
     display: block;
     width: 98.8%;
-    margin-top: 52px;
+    margin-top: 44px;
     margin-right: auto;
     margin-left: auto;
     padding: 41px 1px 37px 35px;
@@ -407,11 +434,11 @@
     width: auto;
     margin-top: -70px;
     margin-bottom: 0;
-    padding-top: 131px;
-    padding-bottom: 41px;
+    padding-top: 128px;
+    padding-bottom: 43px;
   }
 
-  .countries-filter--closed + div {
+  .countries-filter--closed+div {
     margin-top: -60px;
     background-color: #edeff6;
     padding-top: 106px;
@@ -432,8 +459,8 @@
 
   .countries-filter--closed .countries-filter__icon-filter--open {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 8px;
+    right: 6px;
     left: auto;
 
     display: block;
@@ -459,12 +486,12 @@
     margin-bottom: 0;
     padding: 0;
     padding-top: 36px;
-    padding-bottom: 72px;
+    padding-bottom: 74px;
 
     background-color: transparent;
   }
 
-  .countries-filter + div {
+  .countries-filter+div {
     margin-top: 0;
   }
 
@@ -522,22 +549,25 @@
   }
 
   .countries-filter__table {
-    margin-top: 32px;
+    margin-top: 40px;
+    width: 98.4%;
+    justify-content: space-between;
   }
 
-  .countries-filter__table td {
-    width: 251px;
-
-    vertical-align: top;
+  .countries-filter__cell {
+    width: 230px;
+    height: auto;
   }
 
   .countries-filter__link {
     opacity: 1;
+    height: auto;
+    display: inline;
   }
 
   .countries-filter__list {
     width: 100%;
-    margin-top: 19px;
+    margin-top: 31px;
   }
 
 
@@ -547,12 +577,12 @@
 
   .countries-filter__list--inside {
     display: block;
-    margin-bottom: 38px;
+    margin-bottom: 48px;
   }
 
   .countries-filter__btn--bottom {
-    margin-top: 33px;
-    padding-left: 14px;
+    margin-top: 23px;
+    padding: 39px 1px 39px 35px;
   }
 
   .countries-filter__btn--bottom:hover,

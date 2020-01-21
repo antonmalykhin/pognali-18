@@ -9,7 +9,7 @@
 }
 
 .inner-page__main {
-  padding-top: 64px;
+  padding-top: 58px;
 
   background-color: #edeff6;
 }
@@ -28,13 +28,14 @@
   }
 
   .inner-page__main {
-    padding-top: 199px;
+    padding-top: 196px;
 
     background-color: #161c35;
   }
 }
 
 @media (min-width: $desktop) {
+
   .inner-page__nav--closed,
   .inner-page__nav {
     padding-top: 47px;

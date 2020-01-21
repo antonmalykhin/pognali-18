@@ -18,6 +18,10 @@
   border-radius: 20px;
 }
 
+// .travelmates-cards__item:nth-of-type(4) .travelmates-cards__tags {
+//   width: 85px;
+// }
+
 .travelmates-cards__user {
   position: relative;
 }
@@ -54,12 +58,12 @@
 }
 
 .travelmates-cards__tags {
-  width: 85%;
+  width: 84%;
   margin-top: 17px;
   margin-bottom: 13px;
   margin-left: 5px;
 
-  letter-spacing: -0.3px;
+  letter-spacing: -0.5px;
 }
 
 .travelmates-cards__text {
@@ -150,7 +154,9 @@
   font-size: 15px;
   line-height: 15px;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: -0.1px;
+  color: #1d2e5b;
+  font-weight: 500;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -186,6 +192,7 @@
 .travelmates-cards__transport-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 4px;
 }
 
 .travelmates-cards__transport-item {
@@ -240,7 +247,7 @@
 
 .travelmates-cards__scores {
   position: absolute;
-  top: -25px;
+  top: -27px;
   left: 8px;
 
   line-height: 2;
@@ -271,7 +278,7 @@
 
 .travelmates-cards__show-more-btn {
   display: block;
-  margin-top: 26px;
+  margin-top: 25px;
   padding-left: 31px;
 
   font-weight: 700;
@@ -289,14 +296,14 @@
 
 .travelmates-cards__btn-text svg {
   position: absolute;
-  top: -2px;
+  top: 1px;
   left: -32px;
 
   fill: #1d2e5b;
 }
 
 .travelmates-cards__pagination {
-  margin-top: 26px;
+  margin-top: 27px;
   margin-bottom: 20px;
 
   border-radius: 20px;
@@ -337,7 +344,7 @@
   .travelmates-cards__photo {
     width: 190px;
     height: 190px;
-    margin-top: 2px;
+    margin-top: 4px;
     margin-right: 33px;
     margin-left: 2px;
 
@@ -355,7 +362,7 @@
   .travelmates-cards__tags {
     width: 95.1%;
     margin-top: 18px;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
     margin-left: 3px;
 
     font-size: 20px;
@@ -365,10 +372,10 @@
 
   .travelmates-cards__item {
     margin-bottom: 40px;
-    padding-top: 33px;
+    padding-top: 31px;
     padding-right: 24px;
-    padding-bottom: 7px;
-    padding-left: 33px;
+    padding-bottom: 9px;
+    padding-left: 34px;
 
     background-color: $white-color;
     border-radius: 20px;
@@ -393,7 +400,7 @@
   .travelmates-cards__visit {
     order: 1;
     width: 100%;
-    margin-top: 18px;
+    margin-top: 17px;
   }
 
   .travelmates-cards__flags {
@@ -403,16 +410,20 @@
   }
 
   .travelmates-cards__flag {
-    margin-right: 26px;
+    margin-right: 25px;
     padding-left: 49px;
 
     font-size: 20px;
     line-height: 30px;
+
+    color: #1d2e5b;
+    font-weight: 500;
+    letter-spacing: -0.1px;
   }
 
   .travelmates-cards__flag svg {
-    top: 0;
-    left: 0;
+    top: 2px;
+    left: 2px;
 
     width: 35px;
     height: 24px;
@@ -420,7 +431,8 @@
 
   .travelmates-cards__item .travelmates-cards__transport-level {
     flex-direction: column;
-    margin-top: 3px;
+    margin-top: 4px;
+    margin-right: 2px;
     margin-left: auto;
   }
 
@@ -446,32 +458,32 @@
   }
 
   .travelmates-cards__transport-icon--plane {
-    top: 1px;
-    left: 4px;
+    top: 3px;
+    left: 3px;
 
     width: 19px;
     height: 21px;
   }
 
   .travelmates-cards__transport-icon--bus {
-    top: 0;
-    left: 7px;
+    top: 2px;
+    left: 6px;
 
     width: 17px;
     height: 21px;
   }
 
   .travelmates-cards__transport-icon--bike {
-    top: -3px;
-    left: 4px;
+    top: -1px;
+    left: 3px;
 
     width: 24px;
     height: 21px;
   }
 
   .travelmates-cards__transport-icon--run {
-    top: -2px;
-    left: 6px;
+    top: 0;
+    left: 5px;
 
     width: 20px;
     height: 21px;
@@ -511,7 +523,7 @@
 
   .travelmates-cards__rating {
     order: 2;
-    margin-top: 17px;
+    margin-top: 15px;
     margin-bottom: 0;
     margin-left: 7px;
 
@@ -520,7 +532,7 @@
   }
 
   .travelmates-cards__show-more-btn {
-    margin-top: 50px;
+    margin-top: 49px;
     padding-left: 41px;
 
     font-size: 21px;
@@ -529,7 +541,7 @@
 
   .travelmates-cards__btn-text svg {
     position: absolute;
-    top: -5px;
+    top: -2px;
     left: -50px;
 
     width: 27px;
@@ -547,8 +559,8 @@
     order: 1;
     width: 120px;
     margin: 0;
-    padding: 16px 15px 12px 10px;
-
+    margin-left: -3px;
+    padding: 14px 15px 12px 13px;
     font-size: 20px;
     line-height: 1.1;
 
@@ -564,14 +576,14 @@
     letter-spacing: 0;
 
     &::before {
-      top: 8px;
+      top: 10px;
       left: -83px;
 
       width: 70px;
     }
 
     &::after {
-      top: 8px;
+      top: 10px;
       right: -33px;
 
       width: calc(100% - 72px);
@@ -611,7 +623,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 52px;
+    margin-top: 53px;
   }
 
   .travelmates-cards__pagination-numbers {
@@ -699,11 +711,31 @@
 
   .travelmates-cards__online-status {
     position: absolute;
-    top: 11px;
+    top: 13px;
     right: -30px;
 
     width: 7px;
     height: 7px;
+  }
+
+
+  .travelmates-cards__item--pixelperfect:nth-of-type(3) .travelmates-cards__visit {
+    margin-top: 18px;
+  }
+
+  .travelmates-cards__item--pixelperfect:nth-of-type(3) .travelmates-cards__flags {
+
+    margin-top: 17px;
+  }
+
+  .travelmates-cards__item--pixelperfect:nth-of-type(3) .travelmates-cards__flag {
+
+    margin-right: 24px;
+  }
+
+
+  .travelmates-cards__item--pixelperfect:nth-of-type(4) .travelmates-cards__visit {
+    margin-top: 18px;
   }
 }
 
@@ -777,7 +809,7 @@
   }
 
   .travelmates-cards__user-name {
-    margin-top: 47px;
+    margin-top: 45px;
   }
 
   .travelmates-cards__user-name:hover,
@@ -809,7 +841,7 @@
   .travelmates-cards__show-more-btn {
     width: 20%;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 69px;
     padding-right: 25px;
     padding-left: 0;
 
@@ -826,13 +858,13 @@
   }
 
   .travelmates-cards__pagination {
-    margin-top: 71px;
+    margin-top: 72px;
   }
 
   .travelmates-cards__visit {
     width: 30%;
     height: 150px;
-    margin-top: 32px;
+    margin-top: 30px;
     overflow: overlay;
   }
 
@@ -866,7 +898,7 @@
 
   .travelmates-cards__item .travelmates-cards__transport-level {
     position: absolute;
-    right: 44px;
+    right: 41px;
     bottom: 41px;
 
     flex-direction: row;
@@ -909,7 +941,7 @@
   .travelmates-cards__transport-list {
     flex-direction: row;
     margin-top: -2px;
-    margin-left: 12px;
+    margin-left: 13px;
   }
 
   .travelmates-cards__transport-item {
@@ -951,5 +983,15 @@
   .travelmates-cards__pagination-directions {
     width: 9%;
     margin-right: 27px;
+  }
+
+  .travelmates-cards__item--pixelperfect:nth-of-type(3) .travelmates-cards__flags {
+
+    margin-top: 30px;
+  }
+
+  .travelmates-cards__item--pixelperfect:nth-of-type(4) .travelmates-cards__flags {
+
+    margin-top: 30px;
   }
 }
