@@ -183,15 +183,15 @@
   padding-left: 10px;
 }
 
-.plan-creation__input:checked ~ .plan-creation__icon {
+.plan-creation__input:checked~.plan-creation__icon {
   fill: #1d2e5b;
 }
 
-.plan-creation__input:focus ~ .plan-creation__icon {
+.plan-creation__input:focus~.plan-creation__icon {
   outline: 5px auto;
 }
 
-.plan-creation__file:focus + .plan-creation__change-photo-btn {
+.plan-creation__file:focus+.plan-creation__change-photo-btn {
   outline: 5px auto;
 }
 
@@ -384,7 +384,7 @@
   }
 
   .plan-creation__container {
-    margin-bottom: 39px;
+    margin-bottom: 41px;
     padding: 0;
   }
 
@@ -422,7 +422,7 @@
   }
 
   .plan-creation__title {
-    margin-bottom: 39px;
+    margin-bottom: 42px;
     margin-left: 8px;
     padding: 0;
   }

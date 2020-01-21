@@ -180,6 +180,10 @@
   }
 }
 
+.plan-add__label--lowercase:last-of-type::before {
+  top: 10px;
+}
+
 .plan-add__label--checkbox-label {
   font-weight: 400;
   font-size: 15px;
@@ -215,11 +219,11 @@
   fill: #192144;
 }
 
-.plan-add__checkbox:checked ~ .plan-add__tick-field svg {
+.plan-add__checkbox:checked~.plan-add__tick-field svg {
   display: block;
 }
 
-.plan-add__checkbox:focus ~ .plan-add__tick-field {
+.plan-add__checkbox:focus~.plan-add__tick-field {
   outline: 5px auto;
 }
 
@@ -630,7 +634,8 @@
 .plan-add__dropdown {
   position: absolute;
   top: 41px;
-  z-index: 20;
+  left: 0;
+  z-index: 19;
 
   display: none;
   flex-direction: column;
@@ -762,7 +767,7 @@
 
 .plan-add__warning {
   position: absolute;
-  bottom: 6px;
+  bottom: 1px;
   left: 1px;
 
   display: none;
@@ -914,17 +919,17 @@
   border-radius: 4px 4px 0 0;
 }
 
-.plan-add__dropdown-input:checked ~ .plan-add__dropdown-letter {
+.plan-add__dropdown-input:checked~.plan-add__dropdown-letter {
   color: #ffffff;
 
   background-color: #1d2e5b;
 }
 
-.plan-add__btn-select-country--opened + .plan-add__dropdown {
+.plan-add__btn-select-country--opened+.plan-add__dropdown {
   display: block;
 }
 
-.plan-add__btn-select-country--opened ~ .plan-add__reset-btn {
+.plan-add__btn-select-country--opened~.plan-add__reset-btn {
   display: none;
 }
 
@@ -969,7 +974,7 @@
   border-color: #f47e7e;
 }
 
-.plan-add__textarea:invalid + .plan-add__warning {
+.plan-add__textarea:invalid+.plan-add__warning {
   display: block;
 }
 
@@ -1713,7 +1718,7 @@
     transform: scale(0.7);
   }
 
-  .plan-add__btn-select-country--opened + .plan-add__dropdown {
+  .plan-add__btn-select-country--opened+.plan-add__dropdown {
     display: flex;
   }
 
@@ -1735,7 +1740,7 @@
   .plan-add {
     margin-top: -52px;
     padding: 0;
-    padding-top: 56px;
+    padding-top: 53px;
     padding-bottom: 82px;
 
     border-radius: 60px 60px 0 0;
@@ -1745,6 +1750,7 @@
     box-sizing: border-box;
     margin-left: 0;
     padding-left: 70px;
+    margin-bottom: 59px;
   }
 
   .plan-add__pagination {
@@ -1792,7 +1798,7 @@
     margin: 0 auto;
     margin-bottom: 45px;
     padding: 150px;
-    padding-top: 99px;
+    padding-top: 96px;
     padding-bottom: 88px;
 
     border-radius: 60px;
@@ -1810,7 +1816,7 @@
 
   .plan-add__description {
     width: 55%;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
     margin-left: 10px;
   }
 
@@ -2071,7 +2077,7 @@
 
   .plan-add__fieldset--step-two .plan-add__description {
     width: 40%;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
     margin-left: 0;
   }
 
@@ -2166,13 +2172,15 @@
 
   .plan-add__fieldset--step-three .plan-add__description {
     width: 50%;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 
   .plan-add__fieldset--step-three .plan-add__label {
     width: 50%;
     padding-top: 9px;
     padding-left: 8px;
+    margin-bottom: 39px;
+
   }
 
   .plan-add__textarea-wrapper:first-of-type {
@@ -2182,21 +2190,23 @@
   .plan-add__fieldset--step-three .plan-add__textarea {
     width: 71.6%;
     margin-left: 10px;
-    padding: 24px 25px;
-    padding-right: 10px;
+    padding: 22px 10px 24px 24px;
+    margin-top: 0;
+    height: 100%;
   }
 
   .plan-add__textarea-container {
     width: 100%;
+    height: 142px;
   }
 
   .plan-add__textarea-wrapper {
     margin-bottom: 23px;
-    padding-top: 66px;
+    padding-top: 64px;
   }
 
   .plan-add__textarea-wrapper--last {
-    margin-top: 22px;
+    margin-top: 26px;
     padding-top: 10px;
   }
 
@@ -2220,7 +2230,7 @@
   }
 
   .plan-add__fieldset--step-three .plan-add__btn-wrapper {
-    margin-top: 37px;
+    margin-top: 42px;
   }
 
   .plan-add__fieldset--step-three .plan-add__btn-next {
@@ -2376,7 +2386,7 @@
     border-color: #959bb2;
   }
 
-  .plan-add__select:hover ~ svg {
+  .plan-add__select:hover~svg {
     opacity: 0.5;
   }
 
@@ -2422,7 +2432,7 @@
     border-radius: 5px;
   }
 
-  .plan-add__dropdown-input:checked ~ .plan-add__dropdown-letter {
+  .plan-add__dropdown-input:checked~.plan-add__dropdown-letter {
     color: #ffffff;
 
     background-color: #1d2e5b;
@@ -2444,7 +2454,7 @@
     background-color: #1d2e5b;
   }
 
-  .plan-add__btn-select-country--opened + .plan-add__dropdown {
+  .plan-add__btn-select-country--opened+.plan-add__dropdown {
     display: flex;
   }
 

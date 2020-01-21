@@ -24,8 +24,8 @@
   z-index: 2;
 
   padding: 0 49px;
-  padding-top: 5px;
-  padding-bottom: 62px;
+  padding-top: 27px;
+  padding-bottom: 63px;
 
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
@@ -42,8 +42,8 @@
   position: relative;
   z-index: 1;
 
-  margin-top: 24px;
-  margin-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 16px;
 
   font-weight: 700;
   font-size: 24px;
@@ -94,14 +94,14 @@
   }
 
   .about__wrapper {
-    padding-top: 40px;
+    padding-top: 36px;
     padding-right: 67px;
     padding-bottom: 88px;
     padding-left: 74px;
 
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: 97.9% 34.3%;
+    background-position: 98% 35.1%;
     background-size: 376px;
 
     @media (min-resolution: $retina) {
@@ -111,7 +111,7 @@
 
   .about__title {
     margin-top: 2px;
-    margin-bottom: 39px;
+    margin-bottom: 41px;
 
     font-weight: 700;
     font-size: 45px;
@@ -143,11 +143,11 @@
     display: block;
     box-sizing: border-box;
     width: 274px;
-    margin-top: 51px;
+    margin-top: 53px;
     margin-left: 1px;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-right: 33px;
-    padding-bottom: 27px;
+    padding-bottom: 29px;
     padding-left: 33px;
 
     font-weight: 700;
@@ -196,7 +196,7 @@
     position: relative;
 
     box-sizing: border-box;
-    padding-top: 126px;
+    padding-top: 122px;
     padding-right: 70px;
     padding-bottom: 163px;
     padding-left: 70px;
@@ -236,7 +236,7 @@
   .about__text {
     position: relative;
     z-index: 2;
-
+    margin-bottom: 40px;
     width: 52%;
   }
 
@@ -249,7 +249,7 @@
     position: relative;
     z-index: 2;
 
-    margin-top: 84px;
+    margin-top: 86px;
 
     color: #1d2e5b;
   }

@@ -36,11 +36,13 @@
 
 .page-main__title-text {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -13px;
+    bottom: -11px;
     left: 0;
 
     width: 100%;
@@ -79,6 +81,7 @@
   .page-main__title-text {
     margin-left: 33px;
 
+    display: block;
     font-weight: 700;
     font-size: 60px;
     line-height: 1;
@@ -134,8 +137,8 @@
   }
 
   .page-main__title-wrapper {
-    padding-top: 224px;
-    padding-bottom: 67px;
+    padding-top: 220px;
+    padding-bottom: 71px;
   }
 
   .page-main__title {
@@ -146,7 +149,7 @@
     margin-left: 34px;
 
     &::after {
-      bottom: -71px;
+      bottom: -75px;
       left: 0;
     }
   }

@@ -90,7 +90,7 @@
   font-style: normal;
 }
 
-.user-cart__country-name {
+.user-card__country-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -102,6 +102,10 @@
 
 .user-card__transport-list {
   @include list-reset;
+}
+
+.user-card__transport-item {
+  position: relative;
 }
 
 .user-card__transport-type {

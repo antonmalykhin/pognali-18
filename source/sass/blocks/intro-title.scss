@@ -1,9 +1,9 @@
 .intro-title {
   padding: 0 25px;
-
+  padding-bottom: 3px;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 61.7% 129px, center;
+  background-position: 61.7% 132px, center;
   background-size: 192px, cover;
 
   @media (min-resolution: $retina) {
@@ -27,7 +27,7 @@
 
 .intro-title__btns-container {
   position: relative;
-  top: 20px;
+  top: 23px;
 
   display: flex;
   justify-content: center;
@@ -79,6 +79,9 @@
 
   text-transform: uppercase;
   letter-spacing: -0.5px;
+
+  padding-left: 37px;
+  padding-right: 40px;
 }
 
 

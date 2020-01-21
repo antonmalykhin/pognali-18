@@ -13,7 +13,7 @@
   position: relative;
 
   padding: 25px;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-right: 50px;
   padding-bottom: 32px;
   padding-left: 24px;
@@ -94,7 +94,7 @@
 
 .instruction__item:nth-of-type(4) {
   padding-top: 15px;
-  padding-bottom: 22px;
+  padding-bottom: 23px;
 
   background-color: #ffd74b;
   border-bottom-right-radius: 10px;
@@ -119,10 +119,10 @@
   }
 }
 
-.instruction__item a {
+.instruction__item p {
   display: block;
   width: 73%;
-
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -162,7 +162,8 @@
 
   .instruction__item:nth-of-type(1) {
     flex-grow: 1;
-    padding-bottom: 61px;
+    padding-top: 29px;
+    padding-bottom: 63px;
 
     border-radius: 20px 0 0 0;
 
@@ -176,8 +177,8 @@
     top: 0;
 
     width: 48%;
-    padding-top: 31px;
-    padding-bottom: 61px;
+    padding-top: 29px;
+    padding-bottom: 63px;
     padding-left: 19px;
 
     border-radius: 0 20px 0 0;
@@ -195,8 +196,8 @@
 
   .instruction__item:nth-of-type(3) {
     flex-grow: 1;
-    padding-top: 31px;
-    padding-bottom: 61px;
+    padding-top: 29px;
+    padding-bottom: 63px;
     padding-left: 33px;
 
     border-radius: 0 0 0 20px;
@@ -214,8 +215,8 @@
     top: 0;
 
     width: 48%;
-    padding-top: 31px;
-    padding-bottom: 61px;
+    padding-top: 29px;
+    padding-bottom: 63px;
     padding-left: 19px;
 
     border-radius: 0 0 20px 0;
@@ -238,7 +239,7 @@
     }
   }
 
-  .instruction__item a {
+  .instruction__item p {
     width: 69%;
 
     font-weight: 700;
@@ -251,7 +252,7 @@
 @media (min-width: $desktop) {
   .instruction {
     width: 100%;
-    margin-top: 91px;
+    margin-top: 94px;
     padding: 0;
 
     background-color: transparent;
@@ -270,16 +271,20 @@
     }
   }
 
+  .instruction__item p {
+    width: 67%;
+  }
+
   .instruction__item:nth-of-type(1) {
     flex-grow: 0;
-    padding-top: 29px;
-    padding-bottom: 30px;
+    padding-top: 27px;
+    padding-bottom: 32px;
     padding-left: 34px;
 
     border-radius: 20px 0 0 20px;
 
     &::after {
-      top: 29px;
+      top: 27px;
       left: 268px;
 
       font-size: 24px;
@@ -291,8 +296,8 @@
     top: 0;
 
     width: 26.2%;
-    padding-top: 29px;
-    padding-bottom: 30px;
+    padding-top: 27px;
+    padding-bottom: 32px;
     padding-left: 15px;
 
     border-radius: 0;
@@ -309,15 +314,19 @@
       background-color: #ffa530;
       border-radius: 20px 0 0 20px;
     }
+
+    &::after {
+      top: 27px;
+    }
   }
 
   .instruction__item:nth-of-type(3) {
     top: 0;
 
     width: 26.1%;
-    padding-top: 29px;
-    padding-bottom: 30px;
-    padding-left: 16px;
+    padding-top: 27px;
+    padding-bottom: 32px;
+    padding-left: 15px;
 
     border-radius: 0;
 
@@ -336,7 +345,7 @@
     }
 
     &::after {
-      top: 29px;
+      top: 27px;
       left: 284px;
 
       font-size: 24px;
@@ -348,14 +357,15 @@
     top: 0;
 
     width: 22.7%;
-    padding-top: 29px;
-    padding-bottom: 30px;
-    padding-left: 15px;
+    padding-top: 27px;
+    padding-bottom: 32px;
+    padding-left: 14px;
 
     border-radius: 0 20px 20px 0;
 
     &::after {
       left: 253px;
+      top: 27px;
     }
 
     &::before {

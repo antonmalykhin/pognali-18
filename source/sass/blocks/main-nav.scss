@@ -99,7 +99,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 9px;
     left: 0;
 
     width: 25px;
@@ -113,7 +113,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 18px;
+    top: 17px;
     left: 0;
 
     width: 25px;
@@ -173,12 +173,12 @@
   .main-nav--closed .main-nav__icon {
     &::before {
       top: 7px;
-      left: 1px;
+      left: 0;
     }
 
     &::after {
       top: 15px;
-      left: 1px;
+      left: 0;
     }
   }
 
@@ -192,6 +192,7 @@
 
   .main-nav--closed .main-nav__list:nth-of-type(2) {
     display: flex;
+    margin-right: 1px;
   }
 }
 
