@@ -15,12 +15,19 @@
 }
 
 .user-card__circle {
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
+}
 
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
-  opacity: 0.6;
+.user-card__circle-bg {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.user-card__circle-segment {
+  stroke: #ff8d30;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-width: 2;
 }
 
 .user-card__scores {
