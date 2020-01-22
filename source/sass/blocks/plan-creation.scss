@@ -15,7 +15,6 @@
   padding: 0 25px;
 }
 
-
 .plan-creation__level-label {
   position: relative;
 }
@@ -89,7 +88,6 @@
   padding-top: 12px;
   padding-bottom: 11px;
 
-
   font-weight: 700;
   font-size: 17px;
   line-height: 1;
@@ -101,7 +99,6 @@
 .plan-creation__btn-wrapper--small {
   display: none;
 }
-
 
 .plan-creation__fieldset {
   width: 100%;
@@ -206,15 +203,15 @@
   padding-left: 10px;
 }
 
-.plan-creation__input:checked~.plan-creation__icon {
+.plan-creation__input:checked ~ .plan-creation__icon {
   fill: #1d2e5b;
 }
 
-.plan-creation__input:focus~.plan-creation__icon {
+.plan-creation__input:focus ~ .plan-creation__icon {
   outline: 5px auto;
 }
 
-.plan-creation__file:focus+.plan-creation__change-photo-btn {
+.plan-creation__file:focus + .plan-creation__change-photo-btn {
   outline: 5px auto;
 }
 
@@ -226,7 +223,6 @@
   line-height: 1;
   font-family: $main-font;
 }
-
 
 @media (min-width: $tablet) {
   .plan-creation {
@@ -333,7 +329,6 @@
     right: 35px;
   }
 
-
   .plan-creation__photo-wrapper {
     order: 2;
     margin-top: 0;
@@ -345,7 +340,6 @@
 
     border-radius: 6px;
   }
-
 
   .plan-creation__transport-type::before {
     width: 43px;
@@ -532,7 +526,6 @@
   .plan-creation__fieldset--tags .plan-creation__legend {
     left: 22px;
   }
-
 
   .plan-creation__fieldset--transport {
     order: 4;

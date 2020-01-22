@@ -11,7 +11,8 @@
   padding-top: 79px;
   padding-bottom: 30px;
 
-  background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
+  background-image: url("../img/rogovaya-back-mobile@1x.png"),
+    url("../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: -10px 341px, 152px 69px;
 
@@ -30,7 +31,8 @@
   }
 
   @media (min-resolution: $retina) {
-    background-image: url("../img/rogovaya-back-mobile@2x.png"), url("../img/smolov-back-desktop@2x.png");
+    background-image: url("../img/rogovaya-back-mobile@2x.png"),
+      url("../img/smolov-back-desktop@2x.png");
     background-size: 71px, 143px;
   }
 }
@@ -123,7 +125,6 @@
     height: 1px;
     background-color: #ffffff;
     opacity: 0.3;
-
   }
 }
 
@@ -149,7 +150,6 @@
 .travelmates__flags li:last-of-type {
   margin-right: 0;
 }
-
 
 .travelmates__flags img {
   width: 35px;
@@ -240,7 +240,7 @@
 
 .travelmates__item:last-of-type .travelmates__transport-icon--plane {
   left: 1px;
-  top: 2px
+  top: 2px;
 }
 
 .travelmates__item:last-of-type .travelmates__transport-icon--bus {
@@ -252,7 +252,6 @@
   left: 0;
   top: 2px;
 }
-
 
 .travelmates__item:last-of-type .travelmates__transport-icon--run {
   left: 0;
@@ -305,7 +304,8 @@
     padding-bottom: 88px;
     padding-left: 72px;
 
-    background-image: url("../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png");
+    background-image: url("../img/rogovaya-back-desktop@1x.png"),
+      url("../img/smolov-back-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 408px 140px, 40px 486px;
 
@@ -319,7 +319,8 @@
     }
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png");
+      background-image: url("../../img/rogovaya-back-desktop@2x.png"),
+        url("../img/smolov-back-desktop@2x.png");
       background-size: 285px, 143px;
     }
   }
@@ -454,7 +455,6 @@
     }
   }
 }
-
 
 @media (min-width: $desktop) {
   .travelmates__wrapper {

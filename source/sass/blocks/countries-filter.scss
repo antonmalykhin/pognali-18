@@ -15,7 +15,7 @@
   border-radius: 0 0 20px 20px;
 }
 
-.countries-filter+div {
+.countries-filter + div {
   margin-top: 76px;
 }
 
@@ -45,7 +45,6 @@
 .countries-filter__icon-filter--close {
   position: absolute;
   top: 3px;
-  // right: 7px;
   left: 8px;
 
   fill: #192144;
@@ -145,7 +144,6 @@
   text-transform: uppercase;
 }
 
-
 .countries-filter__btn--bottom {
   position: relative;
 
@@ -189,11 +187,11 @@
   text-align: center;
 }
 
-.countries-filter__cell:nth-of-type(5n+6) .countries-filter__link {
+.countries-filter__cell:nth-of-type(5n + 6) .countries-filter__link {
   border-left: none;
 }
 
-.countries-filter__cell:nth-of-type(n+21) .countries-filter__link {
+.countries-filter__cell:nth-of-type(n + 21) .countries-filter__link {
   border-bottom: none;
 }
 
@@ -212,7 +210,7 @@
   padding-bottom: 3px;
 }
 
-.countries-filter--closed+div {
+.countries-filter--closed + div {
   margin-top: 0;
 }
 
@@ -254,8 +252,6 @@
 
 @media (min-width: $tablet) {
   .countries-filter {
-    // margin-top: -70px;
-    // margin-bottom: 46px;
     top: 281px;
 
     width: calc(100% - 141px);
@@ -267,7 +263,7 @@
     border-radius: 0 0 60px 60px;
   }
 
-  .countries-filter+div {
+  .countries-filter + div {
     margin-top: 182px;
     background-color: #edeff6;
   }
@@ -341,7 +337,6 @@
     height: 18px;
   }
 
-
   .countries-filter__polises {
     display: flex;
     order: 1;
@@ -361,7 +356,6 @@
     width: 410px;
     border: none;
   }
-
 
   .countries-filter__cell {
     width: 78px;
@@ -438,7 +432,7 @@
     padding-bottom: 43px;
   }
 
-  .countries-filter--closed+div {
+  .countries-filter--closed + div {
     margin-top: -60px;
     background-color: #edeff6;
     padding-top: 106px;
@@ -491,7 +485,7 @@
     background-color: transparent;
   }
 
-  .countries-filter+div {
+  .countries-filter + div {
     margin-top: 0;
   }
 
@@ -570,7 +564,6 @@
     margin-top: 31px;
   }
 
-
   .countries-filter__list--outside {
     display: none;
   }
@@ -597,7 +590,6 @@
   .countries-filter__btn--bottom:active .countries-filter__btn-text {
     opacity: 0.3;
   }
-
 
   .countries-filter--closed {
     padding-top: 131px;
