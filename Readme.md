@@ -1,4 +1,4 @@
-# Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Погнали»
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
